@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd "/media/linusboyle/新加卷/Baldurs Gate Enhanced Edition"
+optirun ./start.sh
+cd
+exit 0

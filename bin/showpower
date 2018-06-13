@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+while true
+do
+    clear;
+    powerstatus|figlet ;
+    sleep 3m
+done
