@@ -11,7 +11,6 @@ let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let mapleader = ','
 let g:mapleader = ','
 
-set termguicolors
 
 " 开启语法高亮
 syntax enable
@@ -34,42 +33,21 @@ set autoread
 " 启动的时候不显示那个援助乌干达儿童的提示
 set shortmess=atI
 
-" 备份,到另一个位置. 防止误删, 目前是取消备份
-"set backup
-"set backupext=.bak
-"set backupdir=/tmp/vimbk/
-
 " 取消备份。 视情况自己改
 set nobackup
 " 关闭交换文件
 set noswapfile
 
-
-" TODO: remove this, use gundo
-" create undo file
-" if has('persistent_undo')
-  " " How many undos
-  " set undolevels=1000
-  " " number of lines to save for undo
-  " set undoreload=10000
-  " " So is persistent undo ...
-  " "set undofile
-  " set noundofile
-  " " set undodir=/tmp/vimundo/
-" endif
-
-set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
+set wildignore=*.swp,*.bak,*.pyc,*.class,.svn,*.png
 
 " 突出显示当前列
 set cursorcolumn
 " 突出显示当前行
 set cursorline
 
-
 " 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制, 不需要可以去掉
 " 好处：误删什么的，如果以前屏幕打开，可以找回
-set t_ti= t_te=
-
+"set t_ti= t_te=
 
 " 鼠标暂不启用, 键盘党....
 set mouse-=a
@@ -117,9 +95,9 @@ set scrolloff=7
 " set winwidth=79
 
 " 命令行（在状态行下）的高度，默认为1，这里是2
-set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+"set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 " Always show the status line - use 2 lines for the status bar
-set laststatus=2
+"set laststatus=2
 
 " 显示行号
 set number
@@ -130,7 +108,6 @@ set number
 set showmatch
 " How many tenths of a second to blink when matching brackets
 set matchtime=2
-
 
 " 设置文内智能搜索提示
 " 高亮search命中的文本
@@ -174,7 +151,7 @@ set smartindent
 set autoindent
 
 " tab相关变更
-" 设置Tab键的宽度        [等同的空格个数]
+" 设置Tab键的宽度 [等同的空格个数]
 set tabstop=4
 " 每一次缩进对应的空格数
 set shiftwidth=4
@@ -351,7 +328,6 @@ nnoremap <F3> :set list! list?<CR>
 "inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
 
-
 " 分屏窗口移动, Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -407,7 +383,7 @@ nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 
 " 去掉搜索高亮
-"noremap <silent><leader>/ :nohls<CR>
+noremap <silent><leader>/ :nohls<CR>
 
 " switch # *
 nnoremap # *
@@ -424,8 +400,8 @@ nnoremap * #
 "nnoremap [b :bprevious<cr>
 "nnoremap ]b :bnext<cr>
 " 使用方向键切换buffer
-noremap <left> :bp<CR>
-noremap <right> :bn<CR>
+"noremap <left> :bp<CR>
+"noremap <right> :bn<CR>
 
 
 " tab 操作
@@ -460,16 +436,16 @@ noremap <leader>0 :tablast<cr>
 
 " Toggles between the active and last active tab "
 " The first tab is always 1 "
-let g:last_active_tab = 1
-" nnoremap <leader>gt :execute 'tabnext ' . g:last_active_tab<cr>
- nnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
-" vnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
-"nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
-autocmd TabLeave * let g:last_active_tab = tabpagenr()
+"let g:last_active_tab = 1
+"" nnoremap <leader>gt :execute 'tabnext ' . g:last_active_tab<cr>
+ "nnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
+"" vnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
+""nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
+"autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
 " 新建tab  Ctrl+t
-nnoremap <C-t>     :tabnew
-inoremap <C-t>     <Esc>:tabnew
+"nnoremap <C-t>     :tabnew
+"inoremap <C-t>     <Esc>:tabnew
 
 
 " => 选中及操作改键
@@ -500,7 +476,6 @@ nnoremap <leader>v V`}
 
 " w!! to sudo & write a file
 "cmap w!! w !sudo tee >/dev/null %
-
 
 inoremap jk <Esc>
 
@@ -605,30 +580,40 @@ endif
 "==========================================
 
 " Set extra options when running in GUI mode
-if has("gui_running")
-    set guifont=Monaco:h14
-    if has("gui_gtk2")   "GTK2
-        set guifont=Monaco\ 12,Monospace\ 12
-    endif
-    set guioptions-=T
-    set guioptions+=e
-    set guioptions-=r
-    set guioptions-=L
-    set guitablabel=%M\ %t
-    set showtabline=1
-    set linespace=2
-    set noimd
-    set t_Co=256
-endif
+"if has("gui_running")
+    "set guifont=Monaco:h14
+    "if has("gui_gtk2")   "GTK2
+        "set guifont=Monaco\ 12,Monospace\ 12
+    "endif
+    "set guioptions-=T
+    "set guioptions+=e
+    "set guioptions-=r
+    "set guioptions-=L
+    "set guitablabel=%M\ %t
+    "set showtabline=1
+    "set linespace=2
+    "set noimd
+    "set t_Co=256
+"endif
 
 noremap <c-z> <NOP>
 noremap <c-s> <NOP>
+
+if $TERM=="fbterm" || $TERM=="screen"|| $TERM=="rxvt-unicode-256color"
+    set notermguicolors
+    let g:airline#extensions#tabline#enabled = 0
+    let g:airline#extensions#tabline#buffer_nr_show = 0
+else
+    set termguicolors
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#buffer_nr_show = 1
+endif
 
 " theme主题
 set background=dark
 set t_Co=256
 "colorscheme solarized
-colorscheme one
+colorscheme monokai
 
 
 " 设置标记一列的背景颜色和数字一行颜色一致
@@ -649,11 +634,9 @@ highlight SpellLocal term=underline cterm=underline
 
 "插件
 
-
 let g:airline_theme='violet'
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
+
 "powerline
 "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 
@@ -721,8 +704,9 @@ map <Leader><leader>l <Plug>(easymotion-lineforward)
 " 设置跳转到方法/函数定义的快捷键 
 "nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR> 
 " 触发补全快捷键 
-let g:ycm_key_list_select_completion = ['<TAB>', '<c-n>','<Down>'] 
-let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>'] 
+let g:ycm_key_list_select_completion = ['<TAB>'] 
+let g:ycm_key_list_previous_completion = ['<c-p>'] 
+
 " 最小自动触发补全的字符大小设置为 3 
 "let g:ycm_min_num_of_chars_for_completion = 3 
 set completeopt=menu,menuone
@@ -732,9 +716,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_server_log_level = 'info'
 let g:ycm_complete_in_strings = 1
 let g:ycm_cache_omnifunc = 0
-let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_collect_identifiers_from_tags_files = 0
 let g:ycm_show_diagnostics_ui = 1
-
 
 "white list
 let g:ycm_filetype_whitelist = {
@@ -746,13 +729,11 @@ let g:ycm_filetype_whitelist = {
             \ "java":1,
             \ "vim":1,
             \ "javascript":1,
+            \ "make":1,
 			\ }
 "nnoremap <leader>s :YcmCompleter GetType<CR>
 nnoremap <leader>f :YcmCompleter FixIt<CR>
 
-"let g:ycm_enable_diagnostic_highlighting = 0
-
-"let g:ycm_key_invoke_completion = '<F9>'
 let g:ycm_semantic_triggers =  {
 			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
 			\ 'cs,lua,javascript': ['re!\w{2}'],
@@ -781,7 +762,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-d>"
 
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_start_word_key      = '<C-m>'
-let g:multi_cursor_select_all_word_key = '<F3>'
 let g:multi_cursor_next_key            = '<C-m>'
 let g:multi_cursor_prev_key            = '<C-r>'
 let g:multi_cursor_skip_key            = '<C-n>'
@@ -803,7 +783,8 @@ execute "set <M-m>=\em"
 noremap <m-p> :LeaderfFunction!<cr>
 "noremap <m-n> :LeaderfBuffer<cr>
 noremap <m-m> :LeaderfTag<cr>
-let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
+"let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
+let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
 let g:Lf_WorkingDirectoryMode = 'Ac'
@@ -880,7 +861,5 @@ noremap <F5> :PreviewSignature!<cr>
 inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
 
 noremap <F10> :cclose<cr>
-
-
 "delimitmate
 let delimitMate_expand_cr = 1

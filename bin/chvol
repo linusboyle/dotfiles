@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#change the volume using amixer
+#and send notifications
 msg="Master Volume: "
 
 if [ $1 == "raise" ];then

@@ -8,7 +8,7 @@ schema_list:
   - schema: luna_pinyin
   - schema: easy_en 
   - schema: stroke
-
+  - schema: cangjie5
 switcher:
   caption: 〔方案選單〕
   hotkeys:

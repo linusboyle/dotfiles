@@ -1,0 +1,104 @@
+!Xft
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+!!!!!!!!urxvt!!!!!
+URxvt.font: xft:SourceCode Variable:size=13:antialias=true,xft:Font Awesome 5 Free:size=13:antialias=true,xft:WenQuanYi Micro Hei Mono:size=13:antialias=true
+
+!URxvt.transparent: false
+URxvt.borderless: true
+URxvt.urgentOnBell: false
+!URxvt.depth:       24
+!URxvt.buffered:    true
+
+URxvt.scrollBar: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.scrollstyle: plain
+
+URxvt.jumpScroll: true
+URxvt.skipScroll: true
+URxvt.saveLines:  8000
+URxvt.visualBell: false
+
+URxvt.inputMethod:fcitx
+
+URxvt.inheritPixmap:true
+!URxvt.background:#000000
+!URxvt.foreground:#ffffff
+!URxvt.colorBD:Gray95
+!URxvt.colorUL:Green
+!URxvt.color1:Red2
+!URxvt.color4:RoyalBlue
+!URxvt.color5:Magenta2
+!URxvt.color8:Gray50
+!URxvt.color10:Green2
+!URxvt.color12:DodgerBlue
+!URxvt.color14:Cyan2
+!URxvt.color15:Gray95
+
+URxvt.scrollBar_floating:False
+URxvt.mouseWheelScrollPage:True
+URxvt.cursorBlink:True
+
+URxvt.shading: 20
+
+URxvt.background:#2f343f
+URxvt.foreground:#d7d7d7
+
+! black
+URxvt.color0:#383c4a
+URxvt.color8:#383c4a
+! red
+URxvt.color1:#e28d9d
+URxvt.color9:#e28d9d
+! green
+URxvt.color2:#bfd888
+URxvt.color10:#bfd888
+! yellow
+URxvt.color3:#df936c
+URxvt.color11:#df936c
+! blue
+URxvt.color4:#5294e2
+URxvt.color12:#5294e2
+! magenta
+URxvt.color5:#f74771
+URxvt.color13:#f74771
+! cyan
+URxvt.color6:#7c818c
+URxvt.color14:#7c818c
+! white
+URxvt.color7:#d7d7d7
+URxvt.color15:#d7d7d7
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+URxvt.letterSpace: -1
+
+URxvt.perl-ext-common: ...,keyboard-select
+URxvt.keysym.M-w: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keyboard-select.clipboard: true
+!!!!!rofi!!!!!!
+rofi.color-window: argb:c82d303b, #7c8389, #1d1f21
+rofi.color-normal: argb:31d1f21, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
+rofi.color-urgent: argb:2c1d1f21, #cc6666, argb:e54b5160, #a54242, #f9f9f9
+rofi.color-active: argb:2c1d1f21, #65acff, argb:e44b5160, #4491ed, #f9f9f9
+rofi.width: 100
+rofi.lines: 7
+rofi.font: SourceCode Variable 14
+rofi.bw: 0
+rofi.padding: 400
+rofi.eh: 1
+!rofi.separator-style: solid
+rofi.hide-scrollbar: true

@@ -25,7 +25,7 @@ augroup END
 
 "visible mark
 Plug 'kshenoy/vim-signature'
-
+"very useful utils
 Plug 'tpope/vim-unimpaired'
 Plug 'danro/rename.vim'
 Plug 'pbrisbin/vim-mkdir'
@@ -38,15 +38,23 @@ Plug 'godlygeek/tabular'
 Plug 'Raimondi/delimitMate'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
-"Plug 'kien/rainbow_parentheses.vim'
+"Plug 'kien/rainbow_parentheses.vim' 
 Plug 'SirVer/ultisnips'
 Plug 'skywind3000/vim-preview'
+"if $TERM=="fbterm" || $TERM=="screen"|| $TERM=="rxvt-unicode-256color"
+    ""disable airline in certain terminal
+    "Plug 'vim-airline/vim-airline',{'on' : []}
+    "Plug 'vim-airline/vim-airline-themes',{'on' : []}
+"else
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+"endif
+
 Plug 'rdnetto/YCM-Generator',{ 'on' : [],'branch':'stable'}
 "Plug 'Shougo/echodoc.vim'
 Plug 'Yggdroot/LeaderF'
 
+"text object
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-syntax'

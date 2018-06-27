@@ -1,0 +1,7 @@
+#!/bin/bash
+
+RES=$(dmenu_path |rofi -dmenu) 
+
+if test -n "$RES" ; then
+    urxvt --hold -e bash -c "echo running $RES ...: ;$RES"
+fi

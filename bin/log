@@ -1,0 +1,10 @@
+#!/bin/bash
+
+BINPATH="$HOME/app/Tunet2015_linux/bin"
+pd=$PWD
+
+cd $BINPATH
+./Tunet2015-c
+
+echo;
+cd $pd
