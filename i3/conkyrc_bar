@@ -13,7 +13,7 @@ TEXT
 [
 #{ "full_text" : "", "color": "\#BADA55"},
 #{ "full_text": " ${exec curl icanhazip.com}"},
-{ "full_text": ${if_mpd_playing} \
+#{ "full_text": ${if_mpd_playing} \
 "  ${mpd_smart}"\
 ${else}""${endif} },
 { "full_text" : ${if_up enp4s0}"  ${upspeed enp4s0}/s  ${downspeed enp4s0}/s"${else}""${endif}, "color" : "\#94F397" },

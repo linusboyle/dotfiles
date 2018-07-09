@@ -1,7 +1,10 @@
 #!/bin/bash
 
-RES=$(dmenu_path |rofi -dmenu) 
+#laucher without target hint
+#just type in command
+RES=$(echo |rofi -dmenu -p '>_:' -mesg "Input the line to exec") 
 
+#quit when any key is pressed
 if test -n "$RES" ; then
-    urxvt --hold -e bash -c "echo running $RES ...: ;$RES"
+    urxvt -e bash -c "echo running \\\"\"$RES\"\\\" ...: |lolcat ; $RES ; read -n 1"
 fi

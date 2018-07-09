@@ -36,7 +36,7 @@ set shortmess=atI
 " 取消备份。 视情况自己改
 set nobackup
 " 关闭交换文件
-set noswapfile
+"set noswapfile
 
 set wildignore=*.swp,*.bak,*.pyc,*.class,.svn,*.png
 
@@ -860,6 +860,12 @@ autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
 noremap <F5> :PreviewSignature!<cr>
 inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
 
+
+"关闭quickfix
 noremap <F10> :cclose<cr>
+
 "delimitmate
 let delimitMate_expand_cr = 1
+
+"colorizer
+noremap <F12> :ColorToggle<cr>

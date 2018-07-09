@@ -1,4 +1,13 @@
+# config file for i3 
+# by linusboyle,based on many other dotfiles ;)
+# 狷墨居主人
+
+# >>>>定义变量<<<<
+
 set $mod Mod4
+set $super bindsym Mod4
+
+set $exe exec --no-startup-id
 
 set $WS1  1:
 set $WS2  2:
@@ -11,147 +20,131 @@ set $WS8  8:
 set $WS9  9:
 set $WS0 10:
 
+
+# >>>字体<<<
 font pango:SourceCode Variable 9
 
-assign [class="Google-chrome"] $WS2
-assign [class="Deepin-terminal"] $WS1
-assign [class="URxvt"] $WS1
-assign [class="Typora"] $WS3
-assign [class="dde-file-manager"] $WS4
-assign [class="Nautilus"] $WS4
+# >>>窗口<<<
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+# 按下mod用鼠标点击任意位置修改浮动窗口
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec urxvt
+# 为应用指定工作区
+# 暂时无用
+#assign [class="Google-chrome"] $WS2
+#assign [class="Deepin-terminal"] $WS1
+#assign [class="URxvt"] $WS1
+#assign [class="Typora"] $WS3
+#assign [class="dde-file-manager"] $WS4
+#assign [class="Nautilus"] $WS4
 
-# kill focused window
-bindsym $mod+Shift+q kill
-bindsym mod1+F4 kill
+# 自定义应用启动按键
+# 终端
+$super+Return $exe urxvt
+$super+t      $exe typora
+$super+e      $exe nautilus
+$super+c      $exe google-chrome
 
-bindsym $mod+d exec --no-startup-id rofi_run 
-bindsym $mod+w exec --no-startup-id rofi_term 
+# 关闭窗口
+$super+q kill
+#bindsym mod1+F4 kill
 
-# change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+# 启动器
+$super+d $exe rofi_run 
+$super+w $exe rofi_term 
+bindsym mod1+Tab $exe rofi_win
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# 移动焦点
+$super+h focus left
+$super+j focus down
+$super+k focus up
+$super+l focus right
 
+#$super+Left focus left
+#$super+Down focus down
+#$super+Up focus up
+#$super+Right focus right
+
+# 禁止焦点随鼠标移动
 focus_follows_mouse no
 
-# move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+# 移动窗口
+$super+Shift+h move left
+$super+Shift+j move down
+$super+Shift+k move up
+$super+Shift+l move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+#$super+Shift+Left move left
+#$super+Shift+Down move down
+#$super+Shift+Up move up
+#$super+Shift+Right move right
 
+# 开启前往当前工作区自动返回上一工作区
 workspace_auto_back_and_forth yes
 
 # 改变分割方向
-bindsym $mod+v split toggle
+$super+v split toggle
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# 全屏
+$super+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+x layout toggle all
+# 切换窗口模式 
+$super+x layout toggle all
 
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# 切换浮动/平铺
+$super+Shift+space floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# 切换浮动/平铺焦点
+$super+space focus mode_toggle
 
-# focus the parent container
-#bindsym $mod+a focus parent
+# 隐藏窗口 
+$super+Shift+minus move scratchpad
 
-# focus the child container
-#bindsym $mod+d focus child
+# 恢复窗口
+$super+minus scratchpad show
 
-# move focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
+# 聚焦上一级容器
+$super+p focus parent
 
-# show the scratchpad window
-# use mod+mouse to move or regular keybindings
-bindsym $mod+minus scratchpad show
+# >>>工作区<<<
+# 切换
+$super+1 workspace $WS1
+$super+2 workspace $WS2
+$super+3 workspace $WS3
+$super+4 workspace $WS4
+$super+5 workspace $WS5
+$super+6 workspace $WS6
+$super+7 workspace $WS7
+$super+8 workspace $WS8
+$super+9 workspace $WS9
+$super+0 workspace $WS0
 
+$super+Tab workspace next
 
-# switch to workspace
-bindsym $mod+1 workspace $WS1
-bindsym $mod+2 workspace $WS2
-bindsym $mod+3 workspace $WS3
-bindsym $mod+4 workspace $WS4
-bindsym $mod+5 workspace $WS5
-bindsym $mod+6 workspace $WS6
-bindsym $mod+7 workspace $WS7
-bindsym $mod+8 workspace $WS8
-bindsym $mod+9 workspace $WS9
-bindsym $mod+0 workspace $WS0
+# 移动至工作区
+$super+Shift+1 move container to workspace $WS1
+$super+Shift+2 move container to workspace $WS2
+$super+Shift+3 move container to workspace $WS3
+$super+Shift+4 move container to workspace $WS4
+$super+Shift+5 move container to workspace $WS5
+$super+Shift+6 move container to workspace $WS6
+$super+Shift+7 move container to workspace $WS7
+$super+Shift+8 move container to workspace $WS8
+$super+Shift+9 move container to workspace $WS9
+$super+Shift+0 move container to workspace $WS0
 
-bindsym $mod+Tab workspace next
+# >>>i3<<<
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $WS1
-bindsym $mod+Shift+2 move container to workspace $WS2
-bindsym $mod+Shift+3 move container to workspace $WS3
-bindsym $mod+Shift+4 move container to workspace $WS4
-bindsym $mod+Shift+5 move container to workspace $WS5
-bindsym $mod+Shift+6 move container to workspace $WS6
-bindsym $mod+Shift+7 move container to workspace $WS7
-bindsym $mod+Shift+8 move container to workspace $WS8
-bindsym $mod+Shift+9 move container to workspace $WS9
-bindsym $mod+Shift+0 move container to workspace $WS0
+# 重新加载配置文件
+$super+Shift+c reload
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
+# 重新启动i3
+$super+Shift+r restart
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+# 退出
+# $super+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-bindsym $mod+r mode "resize"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# 状态栏
 bar {
         #i3bar_command deepin-topbar
         status_command sh $HOME/.config/i3/conky.sh
@@ -159,7 +152,7 @@ bar {
         font pango:Input Mono 12
         
         bindsym button1 nop
-        bindsym button3 exec --no-startup-id deepin-system-monitor
+        bindsym button3 $exe deepin-system-monitor
 
         tray_padding 2
 
@@ -178,92 +171,110 @@ bar {
     }
 }
 
+# 颜色
+client.focused              #21618C #21618C #FFFFFF
+client.focused_inactive 	#101010 #000000 #FFFFFF
+client.unfocused           	#101010 #000000 #FFFFFF
+client.urgent               #CD5C5C #CD5C5C #FFFFFF
 
-
-# 窗口颜色                边框    背景    文字    提示
-client.focused          #333333 #333333 #FFFFFF #333333
-client.focused_inactive #999999 #999999 #FFFFFF #3399FF
-client.unfocused        #999999 #999999 #FFFFFF #3399FF
-client.urgent           #990000 #990000 #FFFFFF #990000
-client.placeholder      #000000 #000000 #FFFFFF #000000
-client.background       #FFFFFF
-
-new_window none
+# 边界
+new_window pixel 1
 new_float none
-
 hide_edge_borders both
 
+# 自动聚焦设置
 no_focus [class="deepin-notifications"]
 
-#设置笔记本音量控制按键的行为
-bindsym XF86AudioRaiseVolume exec --no-startup-id chvol raise
-bindsym XF86AudioLowerVolume exec --no-startup-id chvol down
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+# >>>模式<<<
 
-#自定义应用启动按键
-bindsym $mod+t exec --no-startup-id typora
-bindsym $mod+e exec --no-startup-id nautilus
+# 调整大小
+mode "resize" {
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
-#背景图片
-exec feh --bg-fill ~/Pictures/Wallpapers/simple_gnu_linux_wallpaper_by_dablim-d5kdma2.jpg
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
-#系统切换模式
-set $Locker i3lock --color "#000000" && sleep 1
-set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (p) poweroff
-mode "$mode_system" {
-	bindsym l exec --no-startup-id $Locker, mode "default"
-	bindsym e exec --no-startup-id i3-msg exit, mode "default"
-	bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-	bindsym r exec --no-startup-id systemctl reboot, mode "default"
-	bindsym p exec --no-startup-id systemctl poweroff -i, mode "default"
-
-	#back to normal: Enter or Escape
-	bindsym Return mode "default"
-	bindsym Escape mode "default"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
 }
-bindsym $mod+Delete mode "$mode_system"
+$super+r mode "resize"
 
-#mpd 控制模式
-set $mpc MPD Control (s) Stop (t) Toggle (n) Next (r) Previous
-
-mode "$mpc" {
-    bindsym s exec --no-startup-id mpc stop, mode "default"
-    bindsym t exec --no-startup-id mpc toggle, mode "default"
-    bindsym n exec --no-startup-id mpc next, mode "default"
-    bindsym r exec --no-startup-id mpc previous, mode "default"
-
-	bindsym Return mode "default"
-	bindsym Escape mode "default"
-}
-bindsym $mod+o mode "$mpc"
-
-#合成器
-exec --no-startup-id compton -b &
-
-#换成deepin的通知服务
-exec --no-startup-id dunst &
-
-#禁用主板鸣笛
-exec --no-startup-id xset b off
-
-#mpd server
-exec --no-startup-id mpd &
-
-#load the xresources
-exec --no-startup-id xrdb ~/.Xresources &
-
-#调整透明度
+#调整透明度 废弃
 set $transparent (a) 100% (b) 75% (c) 50% (d) 25% (e) 0%
 
 mode "$transparent" {
-    bindsym a exec --no-startup-id transset 1 -a, mode "default"
-    bindsym b exec --no-startup-id transset .75 -a, mode "default"
-    bindsym c exec --no-startup-id transset .5 -a, mode "default"
-    bindsym d exec --no-startup-id transset .25 -a, mode "default"
-    bindsym e exec --no-startup-id transset 0 -a, mode "default"
+    bindsym a $exe transset 1 -a, mode "default"
+    bindsym b $exe transset .75 -a, mode "default"
+    bindsym c $exe transset .5 -a, mode "default"
+    bindsym d $exe transset .25 -a, mode "default"
+    bindsym e $exe transset 0 -a, mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
 
-bindsym $mod+q mode $transparent
+$super+a mode $transparent
+
+
+set $Locker i3lock --color "#000000" && sleep 1
+#系统切换模式
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (p) poweroff
+mode "$mode_system" {
+	bindsym l $exe lock, mode "default"
+	bindsym e $exe i3-msg exit, mode "default"
+	bindsym s $exe $Locker && systemctl suspend, mode "default"
+	bindsym r $exe systemctl reboot, mode "default"
+	bindsym p $exe systemctl poweroff -i, mode "default"
+
+	#back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+$super+Delete mode "$mode_system"
+
+#mpd 控制模式
+set $mpc MPD Control (s) Stop (t) Toggle (n) Next (r) Previous
+
+mode "$mpc" {
+    bindsym s $exe mpc stop, mode "default"
+    bindsym t $exe mpc toggle, mode "default"
+    bindsym n $exe mpc next, mode "default"
+    bindsym r $exe mpc previous, mode "default"
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+$super+o mode "$mpc"
+
+# >>>按键<<<
+
+#设置笔记本音量控制按键的行为
+#按键不怎么灵，考虑替代方案
+bindsym XF86AudioRaiseVolume $exe chvol raise
+bindsym XF86AudioLowerVolume $exe chvol down
+bindsym XF86AudioMute $exe amixer -q set Master toggle
+
+# >>>自动启动<<<
+
+#背景图片
+exec feh --bg-fill "/home/linusboyle/pix/Wallpapers/2017 金馬影展TGHFF 紅盒子-f001292.png"
+
+#合成器
+$exe compton -b &
+
+#通知服务
+$exe dunst &
+
+#禁用主板鸣笛
+$exe xset b off
+
+#mpd server
+$exe mpd &
+
+#load the xresources
+$exe xrdb ~/.Xresources &

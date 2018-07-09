@@ -18,7 +18,7 @@ LINES=`tput lines`
 read width height <<< `echo -e "5;$FILENAME" | $W3MIMGDISPLAY`
 
 max_width=$(($FONTW * $COLUMNS))
-max_height=$(($FONTH * $LINES))
+max_height=$(($FONTH * $(($LINES -2)) ))
 
 if test $width -gt $max_width ; then
     height=$(($height * $max_width / $width))

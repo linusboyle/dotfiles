@@ -1,4 +1,4 @@
 #!/bin/bash
 
-flatpak run com.deepin.Screenshot
+flatpak run org.deepin.flatdeb.deepin-screenshot
 exit 0

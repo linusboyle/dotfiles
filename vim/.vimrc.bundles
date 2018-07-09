@@ -13,6 +13,7 @@ let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 Plug 'morhetz/gruvbox'
 
+Plug 'chrisbra/Colorizer'
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -25,10 +26,14 @@ augroup END
 
 "visible mark
 Plug 'kshenoy/vim-signature'
+
 "very useful utils
+"enhanced keybind
 Plug 'tpope/vim-unimpaired'
+"rename and mkdir in vim
 Plug 'danro/rename.vim'
 Plug 'pbrisbin/vim-mkdir'
+"like the sublime
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
