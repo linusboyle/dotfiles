@@ -6,7 +6,6 @@
 
 set $mod Mod4
 set $super bindsym Mod4
-
 set $exe exec --no-startup-id
 
 set $WS1  1:
@@ -250,31 +249,31 @@ mode "$mpc" {
 	bindsym Escape mode "default"
 }
 $super+o mode "$mpc"
-
 # >>>按键<<<
 
 #设置笔记本音量控制按键的行为
 #按键不怎么灵，考虑替代方案
-bindsym XF86AudioRaiseVolume $exe chvol raise
-bindsym XF86AudioLowerVolume $exe chvol down
-bindsym XF86AudioMute $exe amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume $exe volraise
+bindsym XF86AudioLowerVolume $exe voldown
+bindsym XF86AudioMute $exe mute 
 
 # >>>自动启动<<<
 
 #背景图片
-exec feh --bg-fill "/home/linusboyle/pix/Wallpapers/2017 金馬影展TGHFF 紅盒子-f001292.png"
+exec_always --no-startup-id feh --bg-fill "/home/linusboyle/pix/Wallpapers/2017 金馬影展TGHFF 紅盒子-f001292.png"
 
 #合成器
-$exe compton -b &
+exec --no-startup-id compton -b
 
 #通知服务
-$exe dunst &
+exec --no-startup-id killall deepin-notifications
+exec --no-startup-id dunst &
 
 #禁用主板鸣笛
-$exe xset b off
+exec --no-startup-id xset b off
 
 #mpd server
-$exe mpd &
+exec --no-startup-id mpd &
 
 #load the xresources
-$exe xrdb ~/.Xresources &
+exec_always --no-startup-id xrdb ~/.Xresources

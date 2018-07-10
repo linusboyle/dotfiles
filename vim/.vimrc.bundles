@@ -12,6 +12,7 @@ Plug 'crusoexia/vim-monokai'
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 Plug 'morhetz/gruvbox'
+Plug 'skywind3000/vim-keysound',{'on': 'KeysoundEnable'}
 
 Plug 'chrisbra/Colorizer'
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
@@ -34,7 +35,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'danro/rename.vim'
 Plug 'pbrisbin/vim-mkdir'
 "like the sublime
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 "Plug 'vim-scripts/ctags.vim'
@@ -82,6 +83,6 @@ Plug 'jelera/vim-javascript-syntax',{'for':'javascript'}
 "Plug 'mattn/emmet-vim'
 "Plug 'xsbeats/vim-blade'
 "Plug 'groenewege/vim-less'
-Plug 'plasticboy/vim-markdown',{'for':'markdown'}
+Plug 'plasticboy/vim-markdown',{'for':'markdown.mkd'}
 
 call plug#end()

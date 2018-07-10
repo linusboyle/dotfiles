@@ -268,18 +268,14 @@ endif
 "==========================================
 
 " 主要按键重定义
-
-" 关闭方向键, 强迫自己用 hjkl
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-"Treat long lines as break lines (useful when moving around in them)
-"se swap之后，同物理行上线直接跳
-nnoremap k gk
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap gk k
-nnoremap j gj
 nnoremap gj j
 
 " F1 - F6 设置
@@ -288,9 +284,8 @@ nnoremap gj j
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
 noremap <F1> <Esc>"
 
-" F2 行号开关，用于鼠标复制代码用
-" 为方便复制，用<F2>开启/关闭行号显示:
-"深度终端无效
+" F11 行号开关，用于鼠标复制代码用
+" 为方便复制，用<F11>开启/关闭行号显示:
 function! HideNumber()
   if(&relativenumber == &number)
     set relativenumber! number!
@@ -301,7 +296,8 @@ function! HideNumber()
   endif
   set number?
 endfunc
-"nnoremap <F2> :call HideNumber()<CR>
+
+nnoremap <F11> :call HideNumber()<CR>
 " F3 显示可打印字符开关
 nnoremap <F3> :set list! list?<CR>
 " F4 换行开关
@@ -337,19 +333,19 @@ map <C-l> <C-W>l
 
 " http://stackoverflow.com/questions/13194428/is-better-way-to-zoom-windows-in-vim-than-zoomwin
 " Zoom / Restore window.
-function! s:ZoomToggle() abort
-    if exists('t:zoomed') && t:zoomed
-        execute t:zoom_winrestcmd
-        let t:zoomed = 0
-    else
-        let t:zoom_winrestcmd = winrestcmd()
-        resize
-        vertical resize
-        let t:zoomed = 1
-    endif
-endfunction
-command! ZoomToggle call s:ZoomToggle()
-nnoremap <silent> <Leader>z :ZoomToggle<CR>
+"function! s:ZoomToggle() abort
+    "if exists('t:zoomed') && t:zoomed
+        "execute t:zoom_winrestcmd
+        "let t:zoomed = 0
+    "else
+        "let t:zoom_winrestcmd = winrestcmd()
+        "resize
+        "vertical resize
+        "let t:zoomed = 1
+    "endif
+"endfunction
+"command! ZoomToggle call s:ZoomToggle()
+"nnoremap <silent> <Leader>z :ZoomToggle<CR>
 
 
 " Go to home and end using capitalized directions
@@ -362,6 +358,7 @@ nnoremap ; :
 
 
 " 命令行模式增强，ctrl - a到行首， -e 到行尾
+" 记录
 cnoremap <C-j> <t_kd>
 cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
@@ -869,3 +866,14 @@ let delimitMate_expand_cr = 1
 
 "colorizer
 noremap <F12> :ColorToggle<cr>
+
+"sound
+let g:keysound_enable = 0
+" 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
+let g:keysound_theme = 'default'
+" 设置 python 版本：2 或者3 默认会自动检测
+let g:keysound_py_version = 2
+" 设置音量：0-1000
+let g:keysound_volume = 500
+
+noremap <F9> :KeysoundEnable<cr>
