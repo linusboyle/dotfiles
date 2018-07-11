@@ -1,4 +1,6 @@
 #!/bin/bash
+#linusboyle
+#just an util script to log in to the f*king Tsinghua University Network
 
 BINPATH="$HOME/app/Tunet2015_linux/bin"
 pd=$PWD

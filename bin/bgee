@@ -1,4 +1,5 @@
 #!/bin/bash
+# start the game,hhh:)
 
 cd "/media/linusboyle/新加卷/Baldurs Gate Enhanced Edition"
 optirun ./start.sh

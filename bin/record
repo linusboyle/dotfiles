@@ -1,3 +1,4 @@
 #!/bin/bash
+#plain alias
 
 flatpak run org.deepin.flatdeb.deepin-screen-recorder
