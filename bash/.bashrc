@@ -124,6 +124,8 @@ fi
 export EDITOR=vim
 export SHELL="/bin/bash"
 
+ulimit -c unlimited
+
 set -o vi
 
 

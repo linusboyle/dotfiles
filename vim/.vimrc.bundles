@@ -23,6 +23,7 @@ augroup load_ycm
     autocmd!
     autocmd InsertEnter * call plug#load('YouCompleteMe')
     autocmd InsertEnter * call plug#load('YCM-Generator')
+    autocmd InsertEnter * execute "autocmd! load_ycm InsertEnter *"
 augroup END
 
 "visible mark
@@ -31,9 +32,8 @@ Plug 'kshenoy/vim-signature'
 "very useful utils
 "enhanced keybind
 Plug 'tpope/vim-unimpaired'
-"rename and mkdir in vim
+"rename in vim
 Plug 'danro/rename.vim'
-Plug 'pbrisbin/vim-mkdir'
 "like the sublime
 "Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
