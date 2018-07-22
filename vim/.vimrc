@@ -40,7 +40,7 @@ set nobackup
 " 关闭交换文件
 "set noswapfile
 
-set wildignore+=*.swp,*.bak,*.pyc,*.class,.svn,*.png,*.o,*.obj,*.a,*.so,*.jpg
+set wildignore+=*.swp,*.bak,*.pyc,*.class,.svn,*.png,*.o,*.obj,*.a,*.so,*.jpg,*.ttf,*.otf,*.svg
 
 " 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制, 不需要可以去掉
 " 好处：误删什么的，如果以前屏幕打开，可以找回
@@ -458,7 +458,7 @@ augroup filetype_grp
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab ai
     autocmd FileType ruby,javascript,html,css,xml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
     autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown onoremap <buffer> ih :<c-u>execute "normal! ?^#\\+\r:nohlsearch\r0vg_" <cr>
-    autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
+    "autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
 
     autocmd BufRead,BufNewFile *.part set filetype=html
     autocmd FileType vim setlocal foldmethod=marker
@@ -581,7 +581,7 @@ let g:ycm_filetype_whitelist = {
             \ "vim":1,
             \ "javascript":1,
             \ "make":1,
-            \ "markdown.mkd":1,
+            \ "markdown":1,
 			\ }
 
 "nnoremap <leader>s :YcmCompleter GetType<CR>
@@ -710,7 +710,7 @@ inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
 
 
 "quickfix
-noremap <F10> :cw<cr>
+noremap <F10> :cclose<cr>
 
 "delimitmate
 let delimitMate_expand_cr = 1

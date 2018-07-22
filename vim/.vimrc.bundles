@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/Plug')
+
 "usually used
-"
+
 "colorscheme
 Plug 'rakr/vim-one'
 Plug 'croaky/vim-colors-github'
@@ -9,11 +10,13 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'iCyMind/NeoSolarized'
 Plug 'crusoexia/vim-monokai'
+
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
-Plug 'morhetz/gruvbox'
-Plug 'skywind3000/vim-keysound',{'on': 'KeysoundEnable'}
 
+Plug 'morhetz/gruvbox'
+
+Plug 'skywind3000/vim-keysound',{'on': 'KeysoundEnable'}
 Plug 'chrisbra/Colorizer'
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
 Plug 'ludovicchabant/vim-gutentags'
@@ -34,17 +37,16 @@ Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-unimpaired'
 "rename in vim
 Plug 'danro/rename.vim'
-"like the sublime
-"Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-"Plug 'vim-scripts/ctags.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'Raimondi/delimitMate'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
+
 "Plug 'kien/rainbow_parentheses.vim' 
+
 Plug 'SirVer/ultisnips'
 Plug 'skywind3000/vim-preview'
 "if $TERM=="fbterm" || $TERM=="screen"|| $TERM=="rxvt-unicode-256color"
@@ -57,7 +59,6 @@ Plug 'vim-airline/vim-airline-themes'
 "endif
 
 Plug 'rdnetto/YCM-Generator',{ 'on' : [],'branch':'stable'}
-"Plug 'Shougo/echodoc.vim'
 Plug 'Yggdroot/LeaderF'
 
 "text object
@@ -83,6 +84,6 @@ Plug 'jelera/vim-javascript-syntax',{'for':'javascript'}
 "Plug 'mattn/emmet-vim'
 "Plug 'xsbeats/vim-blade'
 "Plug 'groenewege/vim-less'
-Plug 'plasticboy/vim-markdown',{'for':'markdown.mkd'}
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()

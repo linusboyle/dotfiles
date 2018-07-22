@@ -1,3 +1,5 @@
+shopt -s expand_aliases
+
 # for gtk compile
 alias gtkcc="gcc `pkg-config --cflags --libs gtk+-3.0`"
 
@@ -16,3 +18,4 @@ alias ...='cd ../..'
 alias xupdate='xrdb $HOME/.Xresources'
 alias py='python'
 alias py3='python3'
+alias ag="ag --path-to-ignore $HOME/.ignore"

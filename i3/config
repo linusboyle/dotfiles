@@ -37,6 +37,8 @@ floating_modifier $mod
 #assign [class="dde-file-manager"] $WS4
 #assign [class="Nautilus"] $WS4
 
+for_window [class="deepin-system-monitor"] floating enable
+
 # 自定义应用启动按键
 # 终端
 $super+Return $exe urxvt
@@ -49,7 +51,7 @@ $super+q kill
 #bindsym mod1+F4 kill
 
 # 启动器
-$super+d $exe rofi_run 
+$super+r $exe rofi_run 
 $super+w $exe rofi_term 
 bindsym mod1+Tab $exe rofi_win
 
@@ -146,28 +148,31 @@ $super+Shift+r restart
 # 状态栏
 bar {
         #i3bar_command deepin-topbar
-        status_command sh $HOME/.config/i3/conky.sh
+        status_command $HOME/src/bumblebee-status/bumblebee-status -m time mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="deepin-system-monitor" memory.left-click="deepin-system-monitor" memory.format="{used}" -t solarized-powerline
+           #status_command $HOME/src/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink pasource -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized-powerline
+
         position top
-        font pango:Input Mono 12
+        font pango:Input Mono 11
         
-        bindsym button1 nop
-        bindsym button3 $exe deepin-system-monitor
+        #bindsym button1 nop
+        #bindsym button3 $exe deepin-system-monitor
 
         tray_padding 2
+        #tray_output none
 
-        separator_symbol ""
+        #separator_symbol ""
 
         colors {
-        background #10101000
+        background #101010
         statusline #FFFFFF
         separator  #3399FF
         # 工作区颜色         边框    背景    文字
-        focused_workspace  #3297FD #11111100 #FFFFFF
-        active_workspace   #FFFFFF #FFFFFF00 #FFFFFF
-        inactive_workspace #111111 #11111100 #FFFFFF
-        urgent_workspace   #990000 #11111100 #FFFFFF
-        binding_mode       #990000 #99000000 #FFFFFF
-    }
+        #focused_workspace  #3297FD #11111100 #FFFFFF
+        #active_workspace   #FFFFFF #FFFFFF00 #FFFFFF
+        #inactive_workspace #111111 #11111100 #FFFFFF
+        #urgent_workspace   #990000 #11111100 #FFFFFF
+        #binding_mode       #990000 #99000000 #FFFFFF
+        }
 }
 
 # 颜色
@@ -201,7 +206,7 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-$super+r mode "resize"
+bindsym mod1+r mode "resize"
 
 #调整透明度 废弃
 set $transparent (a) 100% (b) 75% (c) 50% (d) 25% (e) 0%

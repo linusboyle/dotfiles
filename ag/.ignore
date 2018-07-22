@@ -1,0 +1,14 @@
+*.swp
+*.bak
+*.pyc
+*.class
+.svn
+*.png
+*.o
+*.obj
+*.a
+*.so
+*.jpg
+*.ttf
+*.otf
+*.svg

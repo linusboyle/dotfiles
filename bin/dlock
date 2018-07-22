@@ -3,7 +3,10 @@
 # blur the screen and lock,used in dde
 
 tmpFile="/tmp/dlock_img.png"
-# This is fun!
+if test -f $tmpFile; then
+    rm -f $tmpFile
+fi
+
 scrot -m "$tmpFile"
 convert "$tmpFile" -blur 80x5 "$tmpFile"
 #composite -gravity SouthEast -geometry +40+40 ~/Pictures/lockscreen/jojo.png "$tmpFile" "$tmpFile"
