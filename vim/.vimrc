@@ -1,26 +1,45 @@
+" vim:set foldmethod=marker foldlevel=0:
+
 " vim configuration file of Linus Boyle
 " with referrence to a great many others' files
 " this configuration file is folded in the method "marker"
 
 " General Configuration-------------{{{
+
+" very important :)
 set nocp
 
+" 3rd-party plugins first
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-" 修改leader键
+" use bash aliases
+let g:is_bash	   = 1
+let $BASH_ENV = "~/.bash_aliases"
+
+" leader key
 let mapleader = ','
 let g:mapleader = ','
 
-" 开启语法高亮
+" syntax highlight
 syntax enable
 syntax on
 
-" history存储容量
+" history storage
 set history=2000
 
+"beautifier
+set formatprg=clang-format\ -style=WebKit
+
+"augroup beautify
+    "autocmd!
+    "autocmd BufWritePre *.cpp,*.c,*.h execute "normal! ggVGgq\<C-o>\<C-o>"
+"augroup END
+
+" program used when running :grep
 set grepprg=ag\ --vimgrep
+
 " 检测文件类型
 filetype on
 " 针对不同的文件类型采用不同的缩进格式
@@ -30,16 +49,19 @@ filetype plugin on
 " 启动自动补全
 filetype plugin indent on
 
-" 文件修改之后自动载入
+" autoload the file if it is edited 
 set autoread
-" 启动的时候不显示那个援助乌干达儿童的提示
+
+" sorry for you poor kids...
 set shortmess=atI
 
-" 取消备份。 视情况自己改
+" disable backup
 set nobackup
-" 关闭交换文件
+
+" no swapfile,it's really dangerous sometimes,take care
 "set noswapfile
 
+" as the name suggest
 set wildignore+=*.swp,*.bak,*.pyc,*.class,.svn,*.png,*.o,*.obj,*.a,*.so,*.jpg,*.ttf,*.otf,*.svg
 
 " 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制, 不需要可以去掉
@@ -92,6 +114,14 @@ set ttyfast
 set cursorcolumn
 " 突出显示当前行
 set cursorline
+
+augroup cursor_display
+    autocmd!
+    autocmd InsertLeave,WinEnter * set cursorline
+    autocmd InsertEnter,WinLeave * set nocursorline
+    autocmd InsertLeave,WinEnter * set cursorcolumn
+    autocmd InsertEnter,WinLeave * set nocursorcolumn
+augroup END
 
 " 显示当前的行号列号
 "set ruler
@@ -339,12 +369,32 @@ nnoremap <leader>u viwU
   "set number?
 "endfunc
 
+"no help,thx
+noremap <F1> <NOP>
+
 "nnoremap <F11> :call HideNumber()<CR>
 " F3 显示可打印字符开关
 "nnoremap <F3> :set list! list?<CR>
 
 " F6 语法开关，关闭语法可以加快大文件的展示
 "nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+
+"quickfix
+nnoremap <F10> :call QuickfixToggle()<cr>
+
+let g:quickfix_is_open = 0
+
+function! QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+        execute g:quickfix_return_to_window . "wincmd w"
+    else
+        let g:quickfix_return_to_window = winnr()
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
 "}}}
 
 "Commandline Mapping--------------------{{{
@@ -437,12 +487,12 @@ inoremap <c-h> <left>
 "FileType Settings------------------------{{{
 function! AutoSetFileHead()
     "如果文件类型为.sh文件
-    if &filetype == 'sh'
+    if &filetype ==# 'sh'
         call setline(1, "\#!/bin/bash")
     endif
 
     "如果文件类型为python
-    if &filetype == 'python'
+    if &filetype ==# 'python'
          call setline(1, "\#!/usr/bin/env python")
          call append(1, "\# encoding: utf-8")
          "call setline(1, "\# -*- coding: utf-8 -*-")
@@ -456,16 +506,20 @@ endfunc
 augroup filetype_grp
     autocmd!
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab ai
+
     autocmd FileType ruby,javascript,html,css,xml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
+
     autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown onoremap <buffer> ih :<c-u>execute "normal! ?^#\\+\r:nohlsearch\r0vg_" <cr>
     "autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
 
     autocmd BufRead,BufNewFile *.part set filetype=html
-    autocmd FileType vim setlocal foldmethod=marker
-    autocmd BufReadPre,BufNewFile .vimrc setlocal foldmethod=marker foldlevel=0 foldlevelstart=0
+
+    "autocmd FileType vim setlocal foldmethod=marker
+    "autocmd BufReadPre,BufNewFile .vimrc setlocal foldmethod=marker foldlevel=0 foldlevelstart=0
     "autocmd BufRead,BufNewFile *.vue set filetype=vue.html.javascript tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
     "au BufWinEnter *.php set mps-=<:>
-    autocmd FileType c,cpp,java set mps+= =:;
+    "autocmd FileType c,cpp,java set mps+= =:;
+
     "定义函数AutoSetFileHead，自动插入文件头
     autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
 augroup END
@@ -480,6 +534,8 @@ augroup END
 " }}}
 
 "Theme Settings--------------------{{{
+
+" I dont't know why I don't use gvimrc either.
 if (has("gui_running"))
     set termguicolors
     let g:airline#extensions#tabline#enabled = 0
@@ -491,7 +547,7 @@ if (has("gui_running"))
     set guioptions-=L
     colorscheme one
 else
-    if &term=="fbterm" || &term=="screen"|| &term=="rxvt-unicode-256color"
+    if &term ==# "fbterm" || &term ==# "screen"|| &term ==# "rxvt-unicode-256color" || &term ==# "linux"
         set notermguicolors
         let g:airline#extensions#tabline#enabled = 0
         let g:airline#extensions#tabline#buffer_nr_show = 0
@@ -525,24 +581,24 @@ highlight SpellLocal term=underline cterm=underline
 
 "}}}
 
-"Plugin-------------------------{{{
+"Plugin Setting-------------------------{{{
 
 "airline
 let g:airline_theme='violet'
 let g:airline_powerline_fonts = 1
 
+" nerdtree
 if has("gui_running")
     augroup nerdtree_gui
         autocmd!
-        "nerdtree
         autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
     augroup END
 else
     augroup nerdtree_cli
         autocmd!
-        "nerdtree
         autocmd StdinReadPre * let s:std_in=1
         autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+        "the last remaining window
         autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
     augroup END
 endif
@@ -556,6 +612,7 @@ noremap <Leader><leader>l <Plug>(easymotion-lineforward)
 "YCM-------------------------------{{{
 let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+
 " 触发补全快捷键 
 let g:ycm_key_list_select_completion = ['<TAB>'] 
 let g:ycm_key_list_previous_completion = ['<c-p>'] 
@@ -580,11 +637,13 @@ let g:ycm_filetype_whitelist = {
             \ "java":1,
             \ "vim":1,
             \ "javascript":1,
+            \ "html":1,
             \ "make":1,
             \ "markdown":1,
 			\ }
 
 "nnoremap <leader>s :YcmCompleter GetType<CR>
+" kind of useful
 nnoremap <leader>f :YcmCompleter FixIt<CR>
 
 let g:ycm_semantic_triggers =  {
@@ -611,29 +670,34 @@ let g:ycm_semantic_triggers =  {
 
 " ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<F4>"
-let g:UltiSnipsJumpForwardTrigger="<c-x>"
-let g:UltiSnipsJumpBackwardTrigger="<c-d>"
+"let g:UltiSnipsExpandTrigger="<F4>"
+"let g:UltiSnipsJumpForwardTrigger="<c-x>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-d>"
 
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
+"let g:cpp_class_scope_highlight = 1
+"let g:cpp_member_variable_highlight = 1
 
 set noshowmode
 
-"Leaderf
+"Leaderf -------------------------------------{{{
 let g:Lf_ShortcutF = '<c-p>'
 "let g:Lf_ShortcutB = '<m-n>'
 noremap <c-n> :LeaderfMru<cr>
-execute "set <M-p>=\ep"
-execute "set <M-n>=\en"
-execute "set <M-m>=\em"
+
+if(!has("gui_running"))
+    execute "set <M-p>=\ep"
+    execute "set <M-n>=\en"
+    execute "set <M-m>=\em"
+endif
+
 noremap <m-p> :LeaderfFunction!<cr>
 "noremap <m-n> :LeaderfBuffer<cr>
 noremap <m-m> :LeaderfTag<cr>
+
 "let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 
-let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
+let g:Lf_RootMarkers = ['.project', '.root', '.svn','.hg','.git']
 let g:Lf_WorkingDirectoryMode = 'Ac'
 let g:Lf_WindowHeight = 0.30
 let g:Lf_CacheDirectory = expand('~/.vim/cache')
@@ -641,6 +705,7 @@ let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'powerline'
 let g:Lf_PreviewResult = {'Function':0}
+let g:Lf_Ctags= '/usr/local/bin/gtags' 
 
 let g:Lf_NormalMap = {
 	\ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
@@ -650,7 +715,7 @@ let g:Lf_NormalMap = {
 	\ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
 	\ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
 	\ }
-
+"}}}
 
 "gutentags
 " gutentags 搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
@@ -660,11 +725,14 @@ let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
 let g:gutentags_ctags_tagfile = '.tags'
 
 let g:gutentags_modules = []
-if executable('ctags')
-	let g:gutentags_modules += ['ctags']
-endif
+
+"if executable('ctags')
+	"let g:gutentags_modules += ['ctags']
+"endif
 if executable('gtags-cscope') && executable('gtags')
 	let g:gutentags_modules += ['gtags_cscope']
+else
+    echo "no gtags found,I think you reinstalled the system,take care bro.:)"
 endif
 
 " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
@@ -699,6 +767,7 @@ inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
 inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
 
 noremap <F2> :PreviewTag<cr> 
+
 augroup quickfix_preview
     autocmd!
     autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
@@ -709,11 +778,13 @@ noremap <F5> :PreviewSignature!<cr>
 inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
 
 
-"quickfix
-noremap <F10> :cclose<cr>
-
 "delimitmate
 let delimitMate_expand_cr = 1
+
+augroup delimit_pair
+    autocmd!
+    autocmd FileType cpp let b:delimitMate_matchpairs = "(:),[:],{:}"
+augroup END
 
 "colorizer
 nnoremap <F12> :ColorToggle<cr>
@@ -738,3 +809,57 @@ iabbrev mian main
 iabbrev @@ linusboyle@gmail.com
 iabbrev ccopy Copyright 2018 Linus Boyle,all rights reserved
 "}}}
+
+" Own Advanced Setting-----------------{{{
+function! Find_project_root()
+
+    let l:path = simplify(expand("%:p:h"))
+    let l:previous_path = ""
+    let l:markers = ['.root','.git','.svn']
+
+    while l:path != l:previous_path
+        for root in l:markers
+            if !empty(globpath(l:path, root, 1))
+                let l:proj_dir = simplify(fnamemodify(l:path, ':p'))
+                if l:proj_dir == '/'
+                    return ""
+                endif
+                return l:proj_dir
+            endif
+        endfor
+        let l:previous_path = l:path
+        let l:path = fnamemodify(l:path, ':h')
+    endwhile
+    return ""
+endfunction
+
+" grep operator
+nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+
+function! GrepOperator(type)
+    let saved_unnamed_register = @@
+    let project_root=Find_project_root()
+
+    if a:type ==# 'v'
+        normal! `<v`>y
+    elseif a:type ==# 'char'
+        normal! `[v`]y
+    else
+        "ignore multiline mode,just because it's not useful
+        return
+    endif
+
+    if empty(l:project_root)
+        "search in current dir
+        silent! execute "grep! " . shellescape(@@)
+        silent! execute "redraw!"
+    else
+        "else search in root dir
+        silent! execute "grep! " . shellescape(@@) . " ". project_root
+        silent! execute "redraw!"
+    endif
+
+    let @@ = saved_unnamed_register
+endfunction
+" }}}

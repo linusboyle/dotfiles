@@ -16,7 +16,7 @@ schema:
       * opencc - 開放中文轉換
   dependencies:
 #   - stroke
-    - emoji
+    #- emoji
 
 switches:
   - name: ascii_mode

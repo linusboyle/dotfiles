@@ -19,3 +19,5 @@ alias xupdate='xrdb $HOME/.Xresources'
 alias py='python'
 alias py3='python3'
 alias ag="ag --path-to-ignore $HOME/.ignore"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'

@@ -1,0 +1,8 @@
+inoremap jk <Esc>
+
+nnoremap [b :bprevious<cr>
+nnoremap ]b :bnext<cr>
+nnoremap ,w :w<cr>
+nnoremap ,q :q<cr>
+nnoremap H ^
+nnoremap L $

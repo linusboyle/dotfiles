@@ -2,7 +2,7 @@
 
 #deepin-anything's wrapper
 #in next version of deepin it may be useless though
-PWD=$(pwd)
+PWD=$(dirname $0)
 
 DEEPINPATH=/home/linusboyle/app/deepin-anything/cli
 
