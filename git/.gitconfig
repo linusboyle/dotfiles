@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Linus Boyle
+	email = linusboyle@gmail.com
+[color]
+    ui = true
+[core]
+    whitespace = trailing-space,space-before-tab
+    pager = less -iFRXS -x4
+[merge]
+    tool = vimdiff

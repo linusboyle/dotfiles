@@ -4,10 +4,17 @@
 " with referrence to a great many others' files
 " this configuration file is folded in the method "marker"
 
+
 " General Configuration-------------{{{
 
 " very important :)
 set nocp
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 " 3rd-party plugins first
 if filereadable(expand("~/.vimrc.bundles"))
@@ -538,29 +545,25 @@ augroup END
 " I dont't know why I don't use gvimrc either.
 if (has("gui_running"))
     set termguicolors
-    let g:airline#extensions#tabline#enabled = 0
-    let g:airline#extensions#tabline#buffer_nr_show = 0
-    set guifont=SourceCode\ Variable\ 13
+    set guifont=Source\ Code\ Pro\ SemiBold\ 13
     set guioptions-=T
     set guioptions+=e
     set guioptions-=r
     set guioptions-=L
-    colorscheme one
 else
     if &term ==# "fbterm" || &term ==# "screen"|| &term ==# "rxvt-unicode-256color" || &term ==# "linux"
         set notermguicolors
-        let g:airline#extensions#tabline#enabled = 0
-        let g:airline#extensions#tabline#buffer_nr_show = 0
         "修复tmux的问题
         set t_Co=256
+        "colorscheme monokai
     else
         set termguicolors
-        let g:airline#extensions#tabline#enabled = 1
-        let g:airline#extensions#tabline#buffer_nr_show = 1
     endif
-    colorscheme monokai
 endif
 
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#buffer_nr_show = 0
+colorscheme one
 " theme主题
 set background=dark
 

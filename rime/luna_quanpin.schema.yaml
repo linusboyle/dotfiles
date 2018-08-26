@@ -2,20 +2,16 @@
 # encoding: utf-8
 
 schema:
-  schema_id: luna_pinyin
-  name: 朙月拼音
-  version: "0.23"
+  schema_id: luna_quanpin
+  name: 全拼
+  version: "0.1"
   author:
     - 佛振 <chen.sst@gmail.com>
   description: |
-    Rime 預設的拼音輸入方案。
-    參考以下作品而創作：
-      * CC-CEDICT
-      * Android open source project
-      * Chewing - 新酷音
-      * opencc - 開放中文轉換
+    所謂「全拼」。其實是去除聲調的漢語拼音。
+    詞典供形碼用作拼音反查。
   dependencies:
-      - emoji
+    - stroke
 
 switches:
   - name: ascii_mode
@@ -26,7 +22,7 @@ switches:
   - name: simplification
     states: [ 漢字, 汉字 ]
   - name: ascii_punct
-    states: [ 句读, 标点 ]
+    states: [ 。，, ．， ]
 
 engine:
   processors:
@@ -56,49 +52,33 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
-    - xform/^([b-df-hj-np-tv-z])$/$1_/
-    - erase/^xx$/
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([zcs]h).+$/$1/
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/
     - derive/un$/uen/
     - derive/ui$/uei/
     - derive/iu$/iou/
-    - derive/([aeiou])ng$/$1gn/
-    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
-    - derive/ong$/on/
-    - derive/ao$/oa/
-    - derive/([iu])a(o|ng?)$/a$1$2/
 
 translator:
-  dictionary: luna_pinyin.extended
+  dictionary: luna_pinyin
+  prism: luna_quanpin
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
 
-custom_phrase:
-  dictionary: ""
-  user_dict: custom_phrase
-  db_class: stabledb
-  enable_completion: false
-  enable_sentence: false
-  initial_quality: 1
-
 reverse_lookup:
-  dictionary: emoji
+  dictionary: stroke
   enable_completion: true
   prefix: "`"
-# suffix: "'"
-  tips: 〔表情〕
-# preedit_format:
-#  - xlit/hspnz/一丨丿丶乙/
-# comment_format:
-#  - xform/([nl])v/$1ü/
+  suffix: "'"
+  tips: 〔筆畫〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/([nl])v/$1ü/
 
 punctuator:
-  import_preset: symbols
+  import_preset: default
 
 key_binder:
   import_preset: default
@@ -106,9 +86,4 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    punct: "^/([A-Z|a-z]*|[0-9]|10)$"
-    reverse_lookup: "`[a-z]*$"
-
-abc_segmentor:
-    extra_tags:
-        - reverse_lookup
+    reverse_lookup: "`[a-z]*'?$"

@@ -1,8 +1,7 @@
 distribution_code_name: "fcitx-rime"
 distribution_name: Rime
 distribution_version: 0.2.3
-install_time: "Thu Mar 29 22:47:06 2018"
-installation_id: linusboyle
-rime_version: 1.2.10
-sync_dir: "~/backup/rime/"
-update_time: "Mon Aug 20 19:11:30 2018"
+install_time: "Thu Aug 23 10:11:44 2018"
+installation_id: "linusboyle"
+sync_dir: "/home/linusboyle/rime"
+rime_version: 1.2.9

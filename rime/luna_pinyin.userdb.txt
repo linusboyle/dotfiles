@@ -1,0 +1,12 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	4
+#@/user_id	linusboyle
+di ren 	敵人	c=0 d=0.0995012 t=4
+fu gai 	覆蓋	c=1 d=0.995012 t=4
+lao shi 	老師	c=1 d=1 t=4
+men kou 	門口	c=0 d=0.0995012 t=4
+men kou di ren 	門口敵人	c=1 d=1 t=4
+tong bu 	同步	c=1 d=1 t=4
