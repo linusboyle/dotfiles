@@ -482,11 +482,12 @@ noremap <leader>0 :tablast<cr>
 " }}}
 
 "InsertMode Mapping-----------------------{{{
-inoremap jk <Esc>
+inoremap <c-]> <Esc>
 
 inoremap <c-l> <right>
 inoremap <c-h> <left>
 
+inoremap <c-v> <Esc>"+pi
 " }}}
 
 " }}}
@@ -590,7 +591,7 @@ highlight SpellLocal term=underline cterm=underline
 let g:airline_theme='violet'
 let g:airline_powerline_fonts = 1
 
-" nerdtree
+" nerdtree ------------------{{{
 if has("gui_running")
     augroup nerdtree_gui
         autocmd!
@@ -607,6 +608,8 @@ else
 endif
 
 noremap <F7> :NERDTreeToggle<CR>
+
+"}}}
 
 "easymotion
 noremap <Leader><leader>h <Plug>(easymotion-linebackward)
@@ -720,7 +723,7 @@ let g:Lf_NormalMap = {
 	\ }
 "}}}
 
-"gutentags
+"gutentags --------------{{{
 " gutentags 搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
 
@@ -753,32 +756,44 @@ if !isdirectory(s:vim_tags)
 endif
 
 "set global
-set cscopetag
-set cscopeprg='gtags-cscope'
 "let GtagsCscope_Auto_Load = 1
 "let GtagsCscope_Auto_Map = 1
 "let GtagsCscope_Quiet = 1
 
+let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_plus_nomap = 1
+
+noremap <silent> <leader><leader>s :GscopeFind s <C-R><C-W><cr>
+noremap <silent> <leader><leader>g :GscopeFind g <C-R><C-W><cr>
+noremap <silent> <leader><leader>c :GscopeFind c <C-R><C-W><cr>
+noremap <silent> <leader><leader>t :GscopeFind t <C-R><C-W><cr>
+noremap <silent> <leader><leader>e :GscopeFind e <C-R><C-W><cr>
+noremap <silent> <leader><leader>f :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader><leader>i :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader><leader>d :GscopeFind d <C-R><C-W><cr>
+noremap <silent> <leader><leader>a :GscopeFind a <C-R><C-W><cr>
+
+"}}}
 
 "preview 
 "Alt-U and Alt-D to scroll preview
-execute "set <M-u>=\eu"
-execute "set <M-d>=\ed"
-noremap <m-u> :PreviewScroll -1<cr>
-noremap <m-d> :PreviewScroll +1<cr>
-inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
-inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
+"execute "set <M-u>=\eu"
+"execute "set <M-d>=\ed"
+"noremap <m-u> :PreviewScroll -1<cr>
+"noremap <m-d> :PreviewScroll +1<cr>
+"inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
+"inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
 
-noremap <F2> :PreviewTag<cr> 
+"noremap <F2> :PreviewTag<cr> 
 
-augroup quickfix_preview
-    autocmd!
-    autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
-    autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
-augroup END
+"augroup quickfix_preview
+    "autocmd!
+    "autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
+    "autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
+"augroup END
 
-noremap <F5> :PreviewSignature!<cr>
-inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
+"noremap <F5> :PreviewSignature!<cr>
+"inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
 
 
 "delimitmate

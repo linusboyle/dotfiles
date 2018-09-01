@@ -7,15 +7,18 @@ shopt -s expand_aliases
 #alias tsinghualog="/home/linusboyle/Tunet2015_linux/bin/Tunet2015-c"
 #alias music=~/bin/music.sh
 #alias down='youtube-dl --external-downloader aria2c --external-downloader-arg "-x 16 -k 1M"'
-
 #alias fbterm='LANG=zh_CN.utf-8 LC_ALL="C" fbterm'
+
 #tag the music,of course
 alias tag='mid3v2'
+
 #just convenient
-alias ..='cd ..'
+#alias ..='cd ..'
 #alias ...='cd ../..'
+
 #useful for ricing
 #alias xupdate='xrdb $HOME/.Xresources'
+
 alias py='python'
 alias py3='python3'
 alias ag="ag --path-to-ignore $HOME/.ignore"
@@ -23,7 +26,9 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 # for opensuse
-
 alias qmake='qmake-qt5'
 alias lrelease='lrelease-qt5'
 alias lupdate='lupdate-qt5'
+
+# for usual use of pandoc
+alias pan='pandoc --pdf-engine=xelatex -V CJKmainfont="Noto Serif SC" -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"'

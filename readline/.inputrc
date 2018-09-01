@@ -1,0 +1,90 @@
+$include /etc/inputrc
+################################################################################
+## ~/.inputrc
+##
+## Control the behaviour of the readline library used e.g.
+## by the bash in the interactive mode for line editing.
+##
+################################################################################
+#
+# The bell style used e.g. on error or tab completion, possible values
+# are `none', `visible', and `audible' the ringing the bell.
+#
+set bell-style none
+
+#
+# If set to on, words which have more than one possible completion without
+# any possible partial completion cause the matches to be listed immediately
+# instead of ringing the bell.
+#
+set show-all-if-unmodified on
+
+#
+# If set to on, words which have more than one possible completion cause the
+# matches to be listed immediately instead of ringing the bell.
+#
+#set show-all-if-ambiguous on
+
+
+set colored-stats on
+set colored-completion-prefix On
+set menu-complete-display-prefix On
+set completion-ignore-case on
+set completion-prefix-display-length 3
+set mark-symlinked-directories on
+
+
+set editing-mode vi
+
+$if mode=vi
+  set keymap vi-command
+
+    # <ctrl> l  -- clear screen
+    "\C-l": clear-screen
+
+    # <ctrl> k  -- clear whole line
+    "\C-k": kill-whole-line
+
+    # <ctrl> a  -- move to beginning of line (^)
+    "\C-a": vi-insert-beg
+
+    # <ctrl> e  -- move to end of line ($)
+    "\C-e": vi-append-eol
+
+    # <ctrl> w  -- delete last word
+    "\C-w": backward-kill-word
+
+    # <ctrl> gx -- expand without executing
+    "\C-gx": glob-expand-word
+
+    "\C-p":history-search-backward
+    "\C-n":history-search-forward
+
+  set keymap vi-insert
+
+    # <ctrl> l  -- clear screen
+    "\C-l": clear-screen
+
+    # <ctrl> k  -- clear whole line
+    "\C-k": kill-whole-line
+
+    # <ctrl> a  -- move to beginning of line (^)
+    "\C-a": vi-insert-beg
+
+    # <ctrl> e  -- move to end of line ($)
+    "\C-e": vi-append-eol
+
+    # <ctrl> w  -- delete last word
+    "\C-w": backward-kill-word
+
+    # <ctrl> gx -- glob expand without executing
+    "\C-gx": glob-expand-word
+
+    "\C-p":history-search-backward
+    "\C-n":history-search-forward
+$endif
+
+set show-mode-in-prompt on
+
+set vi-ins-mode-string "(INSERT)"
+set vi-cmd-mode-string "(NORMAL)"
