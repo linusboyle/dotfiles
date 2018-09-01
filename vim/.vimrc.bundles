@@ -1,9 +1,15 @@
+" File              : .vimrc.bundles
+" Author            : Linus Boyle <linusboyle@gmail.com>
+" Date              : 01.09.2018
+" Last Modified Date: 01.09.2018
+" Last Modified By  : Linus Boyle <linusboyle@gmail.com>
+
 " Plugins
 
 call plug#begin('~/.vim/Plug')
 
 "colorscheme
-Plug 'rakr/vim-one'
+"Plug 'rakr/vim-one'
 Plug 'croaky/vim-colors-github'
 Plug 'jacoborus/tender.vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -15,28 +21,35 @@ Plug 'morhetz/gruvbox'
 "util
 Plug 'skywind3000/vim-keysound',{'on': 'KeysoundEnable'}
 Plug 'chrisbra/Colorizer',{'on': 'ColorToggle'}
+Plug 'danro/rename.vim'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'skywind3000/vim-preview'
+Plug 'alpertuna/vim-header'
+
 "visible mark
 Plug 'kshenoy/vim-signature'
+
 "enhanced keybind
 Plug 'tpope/vim-unimpaired'
 
-Plug 'danro/rename.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
+"insert mode enhancement
+Plug 'Raimondi/delimitMate'
+
+"auto tag generation and management
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
 
+
+"project management
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive'
 
-Plug 'godlygeek/tabular'
-Plug 'Raimondi/delimitMate'
+"moving enhancement
 Plug 'Lokaltog/vim-easymotion'
-Plug 'scrooloose/nerdcommenter'
-"Plug 'SirVer/ultisnips'
-Plug 'skywind3000/vim-preview'
 
-"encode
+"complete
 Plug 'Valloric/YouCompleteMe',{ 'on': []}
 Plug 'rdnetto/YCM-Generator',{ 'on' : [],'branch':'stable'}
 
@@ -51,16 +64,27 @@ endif
 
 Plug 'Yggdroot/LeaderF'
 
-"text object
-"Plug 'kana/vim-textobj-user'
-"Plug 'kana/vim-textobj-indent'
-"Plug 'kana/vim-textobj-syntax'
-"Plug 'kana/vim-textobj-function'
-"Plug 'sgur/vim-textobj-parameter'
-
 "lang specific
-"Plug 'sheerun/vim-polyglot'
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
+Plug 'plasticboy/vim-markdown'
+
+call plug#end()
+
+"monokai setting
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
+
+augroup load_ycm
+    autocmd!
+    autocmd InsertEnter * call plug#load('YouCompleteMe')
+    autocmd InsertEnter * call plug#load('YCM-Generator')
+    autocmd InsertEnter * execute "autocmd! load_ycm InsertEnter *"
+augroup END
+
+"all the deprecated
+"
+"Plug 'SirVer/ultisnips'
+"Plug 'sheerun/vim-polyglot'
 "Plug 'slim-template/vim-slim'
 "Plug 'vim-scripts/matchit.zip'
 "Plug 'kchmck/vim-coffee-script'
@@ -75,16 +99,11 @@ Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
 "Plug 'mattn/emmet-vim'
 "Plug 'xsbeats/vim-blade'
 "Plug 'groenewege/vim-less'
-Plug 'plasticboy/vim-markdown'
+"
+"text object
+"Plug 'kana/vim-textobj-user'
+"Plug 'kana/vim-textobj-indent'
+"Plug 'kana/vim-textobj-syntax'
+"Plug 'kana/vim-textobj-function'
+"Plug 'sgur/vim-textobj-parameter'
 
-call plug#end()
-
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
-
-augroup load_ycm
-    autocmd!
-    autocmd InsertEnter * call plug#load('YouCompleteMe')
-    autocmd InsertEnter * call plug#load('YCM-Generator')
-    autocmd InsertEnter * execute "autocmd! load_ycm InsertEnter *"
-augroup END

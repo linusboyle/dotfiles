@@ -1,5 +1,11 @@
 " vim:set foldmethod=marker foldlevel=0:
 
+" File              : .vimrc
+" Author            : Linus Boyle <linusboyle@gmail.com>
+" Date              : 01.09.2018
+" Last Modified Date: 01.09.2018
+" Last Modified By  : Linus Boyle <linusboyle@gmail.com>
+
 " vim configuration file of Linus Boyle
 " with referrence to a great many others' files
 " this configuration file is folded in the method "marker"
@@ -564,7 +570,7 @@ endif
 
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#buffer_nr_show = 0
-colorscheme one
+colorscheme monokai
 " theme主题
 set background=dark
 
@@ -588,7 +594,7 @@ highlight SpellLocal term=underline cterm=underline
 "Plugin Setting-------------------------{{{
 
 "airline
-let g:airline_theme='violet'
+let g:airline_theme='molokai'
 let g:airline_powerline_fonts = 1
 
 " nerdtree ------------------{{{
@@ -817,6 +823,11 @@ let g:keysound_py_version = 2
 let g:keysound_volume = 500
 
 nnoremap <F9> :KeysoundEnable<cr>
+
+"header
+let g:header_field_author = 'Linus Boyle'
+let g:header_field_author_email = 'linusboyle@gmail.com'
+let g:header_auto_add_header = 0
 "}}}
 
 "Abbreviation----------------------------{{{

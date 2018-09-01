@@ -1,3 +1,7 @@
+"this vimrc file is just intended for qt creator
+"the fake vim mode cannot support all my huge vimrc
+"just some mapping,of course
+
 inoremap <c-]> <Esc>
 
 nnoremap [b :bprevious<cr>

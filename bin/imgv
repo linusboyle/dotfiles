@@ -1,8 +1,13 @@
 #!/bin/bash
+# File              : bin/imgv
+# Author            : Linus Boyle <linusboyle@gmail.com>
+# Date              : 01.09.2018
+# Last Modified Date: 01.09.2018
+# Last Modified By  : Linus Boyle <linusboyle@gmail.com>
 #
 # z3bra -- 2014-01-21
 # customized by linusboyle
-#show img in terminal using w3mimgdisplay
+# show img in terminal using w3mimgdisplay
 
 
 test -z "$1" && exit
