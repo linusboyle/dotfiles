@@ -614,6 +614,8 @@ else
 endif
 
 noremap <F7> :NERDTreeToggle<CR>
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrows = 1
 
 "}}}
 
@@ -828,6 +830,9 @@ nnoremap <F9> :KeysoundEnable<cr>
 let g:header_field_author = 'Linus Boyle'
 let g:header_field_author_email = 'linusboyle@gmail.com'
 let g:header_auto_add_header = 0
+
+"echodoc
+let g:echodoc#enable_at_startup = 1
 "}}}
 
 "Abbreviation----------------------------{{{

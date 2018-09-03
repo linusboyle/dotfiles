@@ -6,8 +6,7 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 !!!!!!!!urxvt!!!!!
-URxvt.font: xft:SourceCode Variable:size=13:antialias=true,xft:FontAwesome:style=Regular:pixelsize=13,xft:Font Awesome 5 Free:pixelsize=13,xft:WenQuanYi Micro Hei Mono:size=13,xft:Font Awesome 5 Brands:pixelsize=13
-
+URxvt.font: xft:Source Code Pro:size=13:antialias=true,xft:FontAwesome:style=Regular:pixelsize=13,xft:WenQuanYi Zen Hei Mono:size=13
 
 !URxvt.transparent: false
 URxvt.borderless: true
@@ -90,6 +89,7 @@ URxvt.perl-ext-common: ...,keyboard-select
 URxvt.keysym.M-w: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keyboard-select.clipboard: true
+
 !!!!!rofi!!!!!!
 rofi.color-window: argb:dd2d303b, #7c8389, #1d1f21
 rofi.color-normal: argb:31d1f21, #c4cbd4, argb:96404552, #4084d6, #f9f9f9

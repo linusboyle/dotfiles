@@ -21,7 +21,7 @@ set $WS0 10:
 
 
 # >>>字体<<<
-font pango:SourceCode Variable 9
+font pango:Source Code Pro SemiBold 9
 
 # >>>窗口<<<
 
@@ -37,14 +37,14 @@ floating_modifier $mod
 #assign [class="dde-file-manager"] $WS4
 #assign [class="Nautilus"] $WS4
 
-for_window [class="deepin-system-monitor"] floating enable
+#for_window [class="deepin-system-monitor"] floating enable
 
 # 自定义应用启动按键
 # 终端
 $super+Return $exe urxvt
-$super+t      $exe typora
-$super+e      $exe nautilus
-$super+c      $exe google-chrome
+#$super+t      $exe typora
+$super+e      $exe dolphin
+#$super+c      $exe google-chrome
 
 # 关闭窗口
 $super+q kill
@@ -148,11 +148,11 @@ $super+Shift+r restart
 # 状态栏
 bar {
         #i3bar_command deepin-topbar
-        status_command $HOME/src/bumblebee-status/bumblebee-status -m time mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="deepin-system-monitor" memory.left-click="deepin-system-monitor" memory.format="{used}" -t solarized-powerline
+        status_command /usr/bin/bumblebee-status -m time mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="deepin-system-monitor" memory.left-click="deepin-system-monitor" memory.format="{used}" -t solarized-powerline
            #status_command $HOME/src/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink pasource -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized-powerline
 
         position top
-        font pango:Input Mono 11
+        font pango:Source Code Pro 11
         
         #bindsym button1 nop
         #bindsym button3 $exe deepin-system-monitor
@@ -187,7 +187,7 @@ new_float none
 hide_edge_borders both
 
 # 自动聚焦设置
-no_focus [class="deepin-notifications"]
+#no_focus [class="deepin-notifications"]
 
 # >>>模式<<<
 
@@ -271,8 +271,8 @@ exec_always --no-startup-id feh --bg-fill "/home/linusboyle/pix/Wallpapers/2017 
 exec --no-startup-id compton -b
 
 #通知服务
-exec --no-startup-id killall deepin-notifications
-exec --no-startup-id dunst &
+#exec --no-startup-id killall deepin-notifications
+#exec --no-startup-id dunst &
 
 #禁用主板鸣笛
 exec --no-startup-id xset b off

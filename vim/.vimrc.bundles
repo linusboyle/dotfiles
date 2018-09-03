@@ -1,15 +1,20 @@
+" vim:set foldmethod=marker foldlevel=0:
+"
 " File              : .vimrc.bundles
 " Author            : Linus Boyle <linusboyle@gmail.com>
 " Date              : 01.09.2018
 " Last Modified Date: 01.09.2018
 " Last Modified By  : Linus Boyle <linusboyle@gmail.com>
 
-" Plugins
+" Plugins -------------{{{
 
 call plug#begin('~/.vim/Plug')
 
-"colorscheme
+"colorscheme ----------------{{{
+"
+"disabled,because it takes up too much start up time
 "Plug 'rakr/vim-one'
+"
 Plug 'croaky/vim-colors-github'
 Plug 'jacoborus/tender.vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -18,7 +23,9 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'crusoexia/vim-monokai'
 Plug 'morhetz/gruvbox'
 
-"util
+"}}}
+
+"util -----------------------{{{
 Plug 'skywind3000/vim-keysound',{'on': 'KeysoundEnable'}
 Plug 'chrisbra/Colorizer',{'on': 'ColorToggle'}
 Plug 'danro/rename.vim'
@@ -27,9 +34,10 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'skywind3000/vim-preview'
 Plug 'alpertuna/vim-header'
-
 "visible mark
 Plug 'kshenoy/vim-signature'
+
+"}}}
 
 "enhanced keybind
 Plug 'tpope/vim-unimpaired'
@@ -41,9 +49,9 @@ Plug 'Raimondi/delimitMate'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
 
-
 "project management
 Plug 'scrooloose/nerdtree'
+Plug 'Yggdroot/LeaderF'
 Plug 'tpope/vim-fugitive'
 
 "moving enhancement
@@ -52,17 +60,16 @@ Plug 'Lokaltog/vim-easymotion'
 "complete
 Plug 'Valloric/YouCompleteMe',{ 'on': []}
 Plug 'rdnetto/YCM-Generator',{ 'on' : [],'branch':'stable'}
+Plug 'Shougo/echodoc.vim'
 
-if &term ==# "fbterm" || &term ==# "screen" || &term ==# "linux"
-    "disable airline in certain terminal
-    Plug 'vim-airline/vim-airline',{'on' : []}
-    Plug 'vim-airline/vim-airline-themes',{'on' : []}
-else
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-endif
-
-Plug 'Yggdroot/LeaderF'
+"if &term ==# "fbterm" || &term ==# "screen" || &term ==# "linux"
+    ""disable airline in certain terminal
+    "Plug 'vim-airline/vim-airline',{'on' : []}
+    "Plug 'vim-airline/vim-airline-themes',{'on' : []}
+"else
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
+"endif
 
 "lang specific
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
@@ -70,18 +77,23 @@ Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
-"monokai setting
+" monokai setting -------------------------{{{
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
+"}}}
 
+" ycm load autocommand -----{{{
 augroup load_ycm
     autocmd!
     autocmd InsertEnter * call plug#load('YouCompleteMe')
     autocmd InsertEnter * call plug#load('YCM-Generator')
     autocmd InsertEnter * execute "autocmd! load_ycm InsertEnter *"
 augroup END
+"}}}
 
-"all the deprecated
+"}}}
+
+"deprecated -----------{{{
 "
 "Plug 'SirVer/ultisnips'
 "Plug 'sheerun/vim-polyglot'
@@ -106,4 +118,4 @@ augroup END
 "Plug 'kana/vim-textobj-syntax'
 "Plug 'kana/vim-textobj-function'
 "Plug 'sgur/vim-textobj-parameter'
-
+"}}}
