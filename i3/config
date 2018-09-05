@@ -21,7 +21,7 @@ set $WS0 10:
 
 
 # >>>字体<<<
-font pango:Source Code Pro SemiBold 9
+font pango:Source Code Pro SemiBold 10
 
 # >>>窗口<<<
 
@@ -44,7 +44,7 @@ floating_modifier $mod
 $super+Return $exe urxvt
 #$super+t      $exe typora
 $super+e      $exe dolphin
-#$super+c      $exe google-chrome
+$super+c      $exe firefox
 
 # 关闭窗口
 $super+q kill
@@ -272,7 +272,7 @@ exec --no-startup-id compton -b
 
 #通知服务
 #exec --no-startup-id killall deepin-notifications
-#exec --no-startup-id dunst &
+exec --no-startup-id dunst &
 
 #禁用主板鸣笛
 exec --no-startup-id xset b off

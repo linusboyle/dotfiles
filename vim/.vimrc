@@ -558,7 +558,7 @@ if (has("gui_running"))
     set guioptions-=r
     set guioptions-=L
 else
-    if &term ==# "fbterm" || &term ==# "screen"|| &term ==# "rxvt-unicode-256color" || &term ==# "linux"
+    if &term ==# "fbterm" || &term ==# "screen"|| &term ==# "rxvt-unicode" || &term ==# "linux"
         set notermguicolors
         "修复tmux的问题
         set t_Co=256
