@@ -1,11 +1,17 @@
+" File              : vimrc_qt
+" Author            : Linus Boyle <linusboyle@gmail.com>
+" Date              : 05.09.2018
+" Last Modified Date: 05.09.2018
+" Last Modified By  : Linus Boyle <linusboyle@gmail.com>
+"
 "this vimrc file is just intended for qt creator
 "the fake vim mode cannot support all my huge vimrc
 "just some mapping,of course
 
 inoremap <c-]> <Esc>
 
-nnoremap [b :bprevious<cr>
-nnoremap ]b :bnext<cr>
+"nnoremap [b :bprevious<cr>
+"nnoremap ]b :bnext<cr>
 nnoremap ,w :w<cr>
 nnoremap ,q :q<cr>
 nnoremap H ^

@@ -6,9 +6,8 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 !!!!!!!!urxvt!!!!!
-URxvt.font: xft:Source Code Pro:size=13:antialias=true,xft:FontAwesome:style=Regular:pixelsize=13,xft:WenQuanYi Zen Hei Mono:size=13
+URxvt.font: xft:Source Code Pro SemiBold:size=13:antialias=true,xft:FontAwesome:pixelsize=13,xft:WenQuanYi Zen Hei Mono:size=13
 
-!URxvt.transparent: false
 URxvt.borderless: true
 URxvt.urgentOnBell: false
 !URxvt.depth:       24
@@ -25,60 +24,47 @@ URxvt*scrollTtyKeypress: true
 
 URxvt.scrollstyle: plain
 
-!URxvt.jumpScroll: true
-!URxvt.skipScroll: true
 URxvt.saveLines:  8000
 URxvt.visualBell: false
 
 URxvt.inputMethod:fcitx
 
 URxvt.inheritPixmap:true
-!URxvt.background:#000000
-!URxvt.foreground:#ffffff
-!URxvt.colorBD:Gray95
-!URxvt.colorUL:Green
-!URxvt.color1:Red2
-!URxvt.color4:RoyalBlue
-!URxvt.color5:Magenta2
-!URxvt.color8:Gray50
-!URxvt.color10:Green2
-!URxvt.color12:DodgerBlue
-!URxvt.color14:Cyan2
-!URxvt.color15:Gray95
-
 URxvt.scrollBar_floating:False
 URxvt.mouseWheelScrollPage:True
 URxvt.cursorBlink:True
 
-URxvt.shading: 20
+URxvt.transparent: false
+URxvt.shading: 15
+URxvt.depth: 32
 
-URxvt.background:#000000
-URxvt.foreground:#ffffff
-
-! black
-URxvt.color0:#383c4a
-URxvt.color8:#383c4a
-! red
-URxvt.color1:#e28d9d
-URxvt.color9:#e28d9d
-! green
-URxvt.color2:#bfd888
-URxvt.color10:#bfd888
-! yellow
-URxvt.color3:#df936c
-URxvt.color11:#df936c
-! blue
-URxvt.color4:#5294e2
-URxvt.color12:#5294e2
-! magenta
-URxvt.color5:#f74771
-URxvt.color13:#f74771
-! cyan
-URxvt.color6:#7c818c
-URxvt.color14:#7c818c
-! white
-URxvt.color7:#d7d7d7
-URxvt.color15:#d7d7d7
+!! Colors:
+   URxvt.foreground: #aacccc
+   URxvt.background: #334455
+!! black
+   URxvt.color0:     #2e1f1f
+   URxvt.color8:     #bb8899
+!! red
+   URxvt.color1:     #aa0e50
+   URxvt.color9:     #bb8899
+!! green
+   URxvt.color2:     #1dcc9f
+   URxvt.color10:    #1fd9a9
+!! yellow
+   URxvt.color3:     #27c282
+   URxvt.color11:    #2cdb93
+!! blue
+   URxvt.color4:     #7182a8
+   URxvt.color12:    #8194bf
+!! magenta
+   URxvt.color5:     #aa5566
+   URxvt.color13:    #7f5aa1
+!! cyan
+   URxvt.color6:     #22ddcc
+   URxvt.color14:    #669997
+!! white
+   URxvt.color7:     #b7bbbd
+   URxvt.color15: #d9d9d9
 
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0

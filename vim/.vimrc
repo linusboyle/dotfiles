@@ -557,6 +557,7 @@ if (has("gui_running"))
     set guioptions+=e
     set guioptions-=r
     set guioptions-=L
+    colorscheme monokai
 else
     if &term ==# "fbterm" || &term ==# "screen"|| &term ==# "rxvt-unicode" || &term ==# "linux"
         set notermguicolors
@@ -565,12 +566,12 @@ else
         "colorscheme monokai
     else
         set termguicolors
+        colorscheme monokai
     endif
 endif
 
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#buffer_nr_show = 0
-colorscheme monokai
 " theme主题
 set background=dark
 
