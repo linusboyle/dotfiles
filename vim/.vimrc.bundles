@@ -14,7 +14,7 @@ call plug#begin('~/.vim/Plug')
 "
 "disabled,because it takes up too much start up time
 "Plug 'rakr/vim-one'
-"
+
 Plug 'croaky/vim-colors-github'
 Plug 'jacoborus/tender.vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -22,18 +22,18 @@ Plug 'KeitaNakamura/neodark.vim'
 Plug 'iCyMind/NeoSolarized'
 Plug 'crusoexia/vim-monokai'
 Plug 'morhetz/gruvbox'
+Plug 'liuchengxu/space-vim-dark'
 
 "}}}
 
 "util -----------------------{{{
-Plug 'skywind3000/vim-keysound',{'on': 'KeysoundEnable'}
-Plug 'chrisbra/Colorizer',{'on': 'ColorToggle'}
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
-Plug 'skywind3000/vim-preview'
+"Plug 'skywind3000/vim-preview'
 Plug 'alpertuna/vim-header'
+
 "visible mark
 Plug 'kshenoy/vim-signature'
 
@@ -61,6 +61,8 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'Valloric/YouCompleteMe',{ 'on': []}
 Plug 'rdnetto/YCM-Generator',{ 'on' : [],'branch':'stable'}
 Plug 'Shougo/echodoc.vim'
+Plug 'w0rp/ale'
+Plug 'CharlesGueunet/VimFilify'
 
 "if &term ==# "fbterm" || &term ==# "screen" || &term ==# "linux"
     ""disable airline in certain terminal
@@ -74,7 +76,12 @@ Plug 'Shougo/echodoc.vim'
 "lang specific
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
 Plug 'plasticboy/vim-markdown'
+Plug 'leafgarland/typescript-vim'
 
+"Plug 'vim-python/python-syntax',{'for':'python'}
+"let g:python_highlight_all = 1
+
+Plug 'sillybun/vim-repl', {'do': './install.sh'}
 call plug#end()
 
 " monokai setting -------------------------{{{
@@ -111,6 +118,7 @@ augroup END
 "Plug 'mattn/emmet-vim'
 "Plug 'xsbeats/vim-blade'
 "Plug 'groenewege/vim-less'
+"Plug 'python-mode/python-mode',{'for':'python'}
 "
 "text object
 "Plug 'kana/vim-textobj-user'

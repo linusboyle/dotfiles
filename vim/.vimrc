@@ -27,6 +27,10 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+"let $GTAGSLABEL = 'native-pygments'
+"let $GTAGSCONF = '/etc/gtags.conf'
+set cscopeprg=gtags-cscope
+
 " use bash aliases
 let g:is_bash	   = 1
 let $BASH_ENV = "~/.bash_aliases"
@@ -135,6 +139,12 @@ augroup cursor_display
     autocmd InsertLeave,WinEnter * set cursorcolumn
     autocmd InsertEnter,WinLeave * set nocursorcolumn
 augroup END
+
+" 自动退出quickfix
+aug QFClose
+  au!
+  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
+aug END
 
 " 显示当前的行号列号
 "set ruler
@@ -551,27 +561,31 @@ augroup END
 
 " I dont't know why I don't use gvimrc either.
 if (has("gui_running"))
-    set termguicolors
     set guifont=Source\ Code\ Pro\ SemiBold\ 13
     set guioptions-=T
     set guioptions+=e
     set guioptions-=r
+    set guioptions-=m
     set guioptions-=L
-    colorscheme monokai
+    colorscheme space-vim-dark
 else
-    if &term ==# "fbterm" || &term ==# "screen"|| &term ==# "rxvt-unicode" || &term ==# "linux"
+    if &term ==# "fbterm" || &term ==# "linux"
         set notermguicolors
-        "修复tmux的问题
-        set t_Co=256
+        set t_Co=8
         "colorscheme monokai
     else
-        set termguicolors
-        colorscheme monokai
+        if &term ==# "screen"|| &term ==# "rxvt-unicode"  
+            "修复tmux的问题
+            set notermguicolors
+            set t_Co=256
+            "colorscheme monokai
+        else
+            set termguicolors
+            colorscheme space-vim-dark
+        endif
     endif
 endif
 
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#tabline#buffer_nr_show = 0
 " theme主题
 set background=dark
 
@@ -635,12 +649,12 @@ let g:ycm_key_list_previous_completion = ['<c-p>']
 set completeopt=menu,menuone
 
 let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
 let g:ycm_server_log_level = 'info'
 let g:ycm_complete_in_strings = 1
 let g:ycm_cache_omnifunc = 0
 let g:ycm_collect_identifiers_from_tags_files = 0
-let g:ycm_show_diagnostics_ui = 1
+let g:ycm_show_diagnostics_ui = 0
 
 "white list
 let g:ycm_filetype_whitelist = {
@@ -659,11 +673,11 @@ let g:ycm_filetype_whitelist = {
 
 "nnoremap <leader>s :YcmCompleter GetType<CR>
 " kind of useful
-nnoremap <leader>f :YcmCompleter FixIt<CR>
+"nnoremap <leader>f :YcmCompleter FixIt<CR>
 
 let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-			\ 'cs,lua,javascript': ['re!\w{2}'],
+			\ 'c,cpp,java,python,go,erlang,perl': ['re!\w{2}'],
+			\ 'cs,lua,html,javascript': ['re!\w{2}'],
 			\ }
 "}}}
 
@@ -706,7 +720,7 @@ if(!has("gui_running"))
 endif
 
 noremap <m-p> :LeaderfFunction!<cr>
-"noremap <m-n> :LeaderfBuffer<cr>
+noremap <m-b> :LeaderfBuffer<cr>
 noremap <m-m> :LeaderfTag<cr>
 
 "let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
@@ -720,7 +734,7 @@ let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'powerline'
 let g:Lf_PreviewResult = {'Function':0}
-let g:Lf_Ctags= '/usr/local/bin/gtags' 
+let g:Lf_Ctags= '/usr/bin/ctags' 
 
 let g:Lf_NormalMap = {
 	\ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
@@ -740,12 +754,19 @@ let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
 let g:gutentags_ctags_tagfile = '.tags'
 
 let g:gutentags_modules = []
+let g:gutentags_define_advanced_commands = 1
 
 "if executable('ctags')
-	"let g:gutentags_modules += ['ctags']
+    "let g:gutentags_modules += ['ctags']
 "endif
+
+" 配置 ctags 的参数
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+
 if executable('gtags-cscope') && executable('gtags')
-	let g:gutentags_modules += ['gtags_cscope']
+    let g:gutentags_modules += ['gtags_cscope']
 else
     echo "no gtags found,I think you reinstalled the system,take care bro.:)"
 endif
@@ -754,10 +775,6 @@ endif
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 
-" 配置 ctags 的参数
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
 " 检测 ~/.cache/tags 不存在就新建
 if !isdirectory(s:vim_tags)
@@ -769,6 +786,7 @@ endif
 "let GtagsCscope_Auto_Map = 1
 "let GtagsCscope_Quiet = 1
 
+"plus
 let g:gutentags_auto_add_gtags_cscope = 0
 let g:gutentags_plus_nomap = 1
 
@@ -814,18 +832,18 @@ augroup delimit_pair
 augroup END
 
 "colorizer
-nnoremap <F12> :ColorToggle<cr>
+"nnoremap <F12> :ColorToggle<cr>
 
 "sound
-let g:keysound_enable = 0
-" 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
-let g:keysound_theme = 'default'
-" 设置 python 版本：2 或者3 默认会自动检测
-let g:keysound_py_version = 2
-" 设置音量：0-1000
-let g:keysound_volume = 500
+"let g:keysound_enable = 0
+ "设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
+"let g:keysound_theme = 'default'
+ "设置 python 版本：2 或者3 默认会自动检测
+"let g:keysound_py_version = 2
+ "设置音量：0-1000
+"let g:keysound_volume = 500
 
-nnoremap <F9> :KeysoundEnable<cr>
+"nnoremap <F9> :KeysoundEnable<cr>
 
 "header
 let g:header_field_author = 'Linus Boyle'
@@ -834,6 +852,70 @@ let g:header_auto_add_header = 0
 
 "echodoc
 let g:echodoc#enable_at_startup = 1
+
+
+"indent line 
+let g:indentLine_char = '┆'
+
+"repl
+nnoremap <leader>r :REPLToggle<Cr>
+let g:sendtorepl_invoke_key = "<leader>o" 
+let g:repl_position = 3
+let g:repl_width = 50
+let g:repl_program = {
+			\	"python": "python3",
+			\	"default": "bash",
+            \   "javascript": "node",
+            \   "cpp": "cling",
+			\	}
+let g:repl_input_symbols = {
+            \   'python': ['>>>', '>>>>', 'ipdb>', 'pdb', '...'],
+            \   'javascript': ['>', '...'],
+            \   'cpp':['[cling]$','[cling]$ ?'],
+            \   }
+let g:repl_exit_commands = {
+			\	"python": "quit()",
+            \   "node":'.exit',
+            \   "cling":".q",
+			\	"bash": "exit",
+			\	"zsh": "exit",
+			\	"default": "exit",
+			\	}
+
+"ale
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
+let g:ale_set_highlights = 0
+
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_open_list = 1
+let g:ale_list_window_size = 5
+let g:ale_lint_on_text_changed = 'normal'
+augroup cpp_ale_config
+         autocmd FileType cpp let g:custom_cpp_options = Filify#process('.ale', {'default_return':'-std=c++14 -Wall'})
+         autocmd FileType cpp let g:ale_cpp_clang_options = g:custom_cpp_options
+         autocmd FileType cpp let g:ale_cpp_gcc_options = g:custom_cpp_options
+         autocmd FileType cpp let g:ale_cpp_clangtidy_options = g:custom_cpp_options
+augroup END
+
+augroup c_ale_config
+         autocmd FileType c let g:custom_c_options = Filify#process('.ale', {'default_return':'-std=c11 -Wall'})
+         autocmd FileType c let g:ale_c_clang_options = g:custom_c_options
+         autocmd FileType c let g:ale_c_gcc_options = g:custom_c_options
+         autocmd FileType c let g:ale_c_clangtidy_options = g:custom_c_options
+augroup END
+"python-mode ---------{{{
+let g:pymode_options = 0
+let g:pymode_indent = 0
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
+let g:pymode_run = 0
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0
+"let g:pymode_rope_completion_bind = '<C-\>'
+"let g:pymode_breakpoint_bind = '<leader>b'
+"}}}
 "}}}
 
 "Abbreviation----------------------------{{{

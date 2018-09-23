@@ -7,11 +7,17 @@ Xft.lcdfilter: lcddefault
 
 !!!!!!!!urxvt!!!!!
 URxvt.font: xft:Source Code Pro SemiBold:size=13:antialias=true,xft:FontAwesome:pixelsize=13,xft:WenQuanYi Zen Hei Mono:size=13
+URxvt.terminalName:rxvt-unicode-256color
 
 URxvt.borderless: true
 URxvt.urgentOnBell: false
-!URxvt.depth:       24
-!URxvt.buffered:    true
+
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0000/c800
+urxvt*background: [90]#000000
+URxvt*fading: 20
+URxvt.shading: 20
 
 URxvt.scrollBar: false
 
@@ -34,47 +40,62 @@ URxvt.scrollBar_floating:False
 URxvt.mouseWheelScrollPage:True
 URxvt.cursorBlink:True
 
-URxvt.transparent: false
-URxvt.shading: 15
-URxvt.depth: 32
+!URxvt.transparent: false
+!URxvt.depth: 32
 
-!! Colors:
-   URxvt.foreground: #aacccc
-   URxvt.background: #334455
-!! black
-   URxvt.color0:     #2e1f1f
-   URxvt.color8:     #bb8899
-!! red
-   URxvt.color1:     #aa0e50
-   URxvt.color9:     #bb8899
-!! green
-   URxvt.color2:     #1dcc9f
-   URxvt.color10:    #1fd9a9
-!! yellow
-   URxvt.color3:     #27c282
-   URxvt.color11:    #2cdb93
-!! blue
-   URxvt.color4:     #7182a8
-   URxvt.color12:    #8194bf
-!! magenta
-   URxvt.color5:     #aa5566
-   URxvt.color13:    #7f5aa1
-!! cyan
-   URxvt.color6:     #22ddcc
-   URxvt.color14:    #669997
-!! white
-   URxvt.color7:     #b7bbbd
-   URxvt.color15: #d9d9d9
+#define term_background		#000000
+#define term_foreground		#dfdfdf
+
+#define term_dark_black		#000000
+#define term_dark_red		#cd0000
+#define term_dark_green		#00cd00
+#define term_dark_yellow	#cdcd00
+#define term_dark_blue		#0000cd
+#define term_dark_magenta	#cd00cd
+#define term_dark_cyan		#00cdcd
+#define term_dark_white		#e5e5e5
+#define term_light_black	#4d4d4d
+#define term_light_red		#ff0000
+#define term_light_green	#00ff00
+#define term_light_yellow	#ffff00
+#define term_light_blue		#0000ff
+#define term_light_magenta	#ff00ff
+#define term_light_cyan		#00ffff
+#define term_light_white #ffffff
+
+
+*background:              term_background
+*foreground:              term_foreground
+
+! URxvt*highlightTextColor:      term_dark_black
+! URxvt*highlightColor:          term_light_white
+
+! Sixteen colors for terminals.
+*color0:                  term_dark_black
+*color1:                  term_dark_red
+*color2:                  term_dark_green
+*color3:                  term_dark_yellow
+*color4:                  term_dark_blue
+*color5:                  term_dark_magenta
+*color6:                  term_dark_cyan
+*color7:                  term_dark_white
+*color8:                  term_light_black
+*color9:                  term_light_red
+*color10:                 term_light_green
+*color11:                 term_light_yellow
+*color12:                 term_light_blue
+*color13:                 term_light_magenta
+*color14:                 term_light_cyan
+*color15:                 term_light_white
 
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
-
 URxvt.letterSpace: -1
 
-URxvt.perl-ext-common: ...,keyboard-select
-URxvt.keysym.M-w: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.keyboard-select.clipboard: true
+!URxvt.perl-ext-common: ...,keyboard-select
+!URxvt.keysym.M-w: perl:keyboard-select:activate
+!URxvt.keysym.M-s: perl:keyboard-select:search
+!URxvt.keyboard-select.clipboard: true
 
 !!!!!rofi!!!!!!
 !rofi.color-window: argb:dd2d303b, #7c8389, #1d1f21
