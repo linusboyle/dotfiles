@@ -61,3 +61,5 @@ fortune;
 
 export EDITOR=vim
 export GTAGSLABEL=native-pygments
+
+. tmux_color.sh

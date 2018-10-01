@@ -47,7 +47,6 @@ floating_modifier $mod
 assign [class="pr"] $WS4
 assign [class="tm"] $WS4
 
-
 for_window [class="ksysguard"] floating enable
 for_window [class="Wine"] floating enable
 
@@ -57,6 +56,9 @@ $super+Return $exe $terminal
 #$super+t      $exe typora
 $super+e      $exe $filemanager
 $super+c      $exe $browser
+
+#polybar
+$super+b $exe togglebar
 
 # 关闭窗口
 $super+q kill
@@ -278,15 +280,15 @@ bindsym XF86AudioMute $exe mute
 # >>>自动启动<<<
 
 #背景图片
-$exe feh --bg-fill "/home/linusboyle/pix/Wallpapers/2017 金馬影展TGHFF 紅盒子-f001292.png"
-$exe get-wallpaper
+$exe feh --bg-fill "/home/linusboyle/pix/bg.jpg"
+#$exe get-wallpaper
 
 #合成器
 $exe compton -b
 
 #通知服务
 #exec --no-startup-id killall deepin-notifications
-$exe dunst
+$exe twmnd
 
 #禁用主板鸣笛
 $exe xset b off

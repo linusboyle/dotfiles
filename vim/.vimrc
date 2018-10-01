@@ -27,17 +27,13 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-"let $GTAGSLABEL = 'native-pygments'
-"let $GTAGSCONF = '/etc/gtags.conf'
 set cscopeprg=gtags-cscope
 
 " use bash aliases
 let g:is_bash	   = 1
 let $BASH_ENV = "~/.bash_aliases"
 
-" leader key
-let mapleader = ','
-let g:mapleader = ','
+"let g:mapleader = ','
 
 " syntax highlight
 syntax enable
@@ -106,7 +102,7 @@ set noerrorbells
 set t_vb=
 
 "键码等待时间
-set tm=500
+set tm=400
 
 " Remember info about open buffers on close
 set viminfo^=%
@@ -146,20 +142,11 @@ aug QFClose
   au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
 aug END
 
-" 显示当前的行号列号
-"set ruler
 " 在状态栏显示正在输入的命令
 set showcmd
-" 左下角显示当前vim模式
-"set showmode
 
 " 在上下移动光标时，光标的上方或下方至少会保留显示的行数
 set scrolloff=7
-
-" 命令行（在状态行下）的高度，默认为1，这里是2
-"set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
-" Always show the status line - use 2 lines for the status bar
-"set laststatus=2
 
 " 括号配对情况, 跳转并高亮一下匹配的括号
 set showmatch
@@ -170,10 +157,18 @@ set matchtime=2
 set hlsearch
 " 打开增量搜索模式,随着键入即时搜索
 set incsearch
-" 搜索时忽略大小写
-set ignorecase
+
+augroup dynamic_smartcase
+    autocmd!
+    autocmd CmdLineEnter : set smartcase
+    autocmd CmdLineEnter : set ignorecase
+    autocmd CmdLineLeave : set nosmartcase
+    autocmd CmdLineLeave : set noignorecase
+augroup END
+
+set noignorecase
 " 有一个或以上大写字母时仍大小写敏感
-set smartcase
+set nosmartcase
 
 " 代码折叠
 set foldenable
@@ -186,18 +181,6 @@ set foldenable
 " marker    使用标记进行折叠, 默认标记是 {{{ 和 }}}
 set foldmethod=indent
 set foldlevel=99
-" 代码折叠自定义快捷键 <leader>zz
-"let g:FoldMethod = 0
-"map <leader>zz :call ToggleFold()<cr>
-"fun! ToggleFold(){{{}}}
-    "if g:FoldMethod == 0
-        "exe "normal! zM"
-        "let g:FoldMethod = 1
-    "else
-        "exe "normal! zR"
-        "let g:FoldMethod = 0
-    "endif
-"endfun
 
 " 缩进配置
 " Smart indent
@@ -235,6 +218,7 @@ augroup focus_grp
     au FocusLost * :set norelativenumber
     au FocusGained * :set relativenumber
 augroup END
+
 " 插入模式下用绝对行号, 普通模式下用相对
 augroup relativenumber_grp
     autocmd!
@@ -275,9 +259,6 @@ set formatoptions+=B
 set wildmenu
 set wildmode =list,full
 
-"autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
-
-
 function! Test_Dir_Exist()
   let dir = expand('%:p:h')
   if !isdirectory(dir)
@@ -317,7 +298,7 @@ noremap H ^
 noremap L g_
 
 " Map ; to : and save a million keystrokes 用于快速进入命令行
-nnoremap ; :
+"nnoremap ; :
 
 nnoremap <space> viw
 
@@ -498,8 +479,6 @@ noremap <leader>0 :tablast<cr>
 " }}}
 
 "InsertMode Mapping-----------------------{{{
-inoremap <c-]> <Esc>
-
 inoremap <c-l> <right>
 inoremap <c-h> <left>
 
@@ -530,13 +509,8 @@ endfunc
 augroup filetype_grp
     autocmd!
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab ai
-
     autocmd FileType ruby,javascript,html,css,xml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
-
     autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown onoremap <buffer> ih :<c-u>execute "normal! ?^#\\+\r:nohlsearch\r0vg_" <cr>
-    "autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
-
-    autocmd BufRead,BufNewFile *.part set filetype=html
 
     "autocmd FileType vim setlocal foldmethod=marker
     "autocmd BufReadPre,BufNewFile .vimrc setlocal foldmethod=marker foldlevel=0 foldlevelstart=0
@@ -544,13 +518,11 @@ augroup filetype_grp
     "au BufWinEnter *.php set mps-=<:>
     "autocmd FileType c,cpp,java set mps+= =:;
 
-    "定义函数AutoSetFileHead，自动插入文件头
     autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
 augroup END
 
 augroup highlight_grp
     autocmd!
-    "设置可以高亮的关键字
     autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
     autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
 augroup END
@@ -654,7 +626,10 @@ let g:ycm_server_log_level = 'info'
 let g:ycm_complete_in_strings = 1
 let g:ycm_cache_omnifunc = 0
 let g:ycm_collect_identifiers_from_tags_files = 0
-let g:ycm_show_diagnostics_ui = 0
+let g:ycm_show_diagnostics_ui = 1
+let g:ycm_always_populate_location_list = 1
+let g:ycm_error_symbol = '×'
+let g:ycm_warning_symbol = '☯'
 
 "white list
 let g:ycm_filetype_whitelist = {
@@ -665,10 +640,11 @@ let g:ycm_filetype_whitelist = {
             \ "python":1,
             \ "java":1,
             \ "vim":1,
-            \ "javascript":1,
             \ "html":1,
             \ "make":1,
             \ "markdown":1,
+            \ "javascript":1,
+            \ "typescript":1,
 			\ }
 
 "nnoremap <leader>s :YcmCompleter GetType<CR>
@@ -677,7 +653,8 @@ let g:ycm_filetype_whitelist = {
 
 let g:ycm_semantic_triggers =  {
 			\ 'c,cpp,java,python,go,erlang,perl': ['re!\w{2}'],
-			\ 'cs,lua,html,javascript': ['re!\w{2}'],
+			\ 'cs,lua': ['re!\w{2}'],
+			\ 'html': ['re!\w{2}','</'],
 			\ }
 "}}}
 
@@ -831,20 +808,6 @@ augroup delimit_pair
     autocmd FileType cpp let b:delimitMate_matchpairs = "(:),[:],{:}"
 augroup END
 
-"colorizer
-"nnoremap <F12> :ColorToggle<cr>
-
-"sound
-"let g:keysound_enable = 0
- "设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
-"let g:keysound_theme = 'default'
- "设置 python 版本：2 或者3 默认会自动检测
-"let g:keysound_py_version = 2
- "设置音量：0-1000
-"let g:keysound_volume = 500
-
-"nnoremap <F9> :KeysoundEnable<cr>
-
 "header
 let g:header_field_author = 'Linus Boyle'
 let g:header_field_author_email = 'linusboyle@gmail.com'
@@ -852,10 +815,6 @@ let g:header_auto_add_header = 0
 
 "echodoc
 let g:echodoc#enable_at_startup = 1
-
-
-"indent line 
-let g:indentLine_char = '┆'
 
 "repl
 nnoremap <leader>r :REPLToggle<Cr>
@@ -892,19 +851,29 @@ let g:ale_set_quickfix = 1
 let g:ale_open_list = 1
 let g:ale_list_window_size = 5
 let g:ale_lint_on_text_changed = 'normal'
-augroup cpp_ale_config
-         autocmd FileType cpp let g:custom_cpp_options = Filify#process('.ale', {'default_return':'-std=c++14 -Wall'})
-         autocmd FileType cpp let g:ale_cpp_clang_options = g:custom_cpp_options
-         autocmd FileType cpp let g:ale_cpp_gcc_options = g:custom_cpp_options
-         autocmd FileType cpp let g:ale_cpp_clangtidy_options = g:custom_cpp_options
-augroup END
+"let g:ale_completion_enabled = 1
 
-augroup c_ale_config
-         autocmd FileType c let g:custom_c_options = Filify#process('.ale', {'default_return':'-std=c11 -Wall'})
-         autocmd FileType c let g:ale_c_clang_options = g:custom_c_options
-         autocmd FileType c let g:ale_c_gcc_options = g:custom_c_options
-         autocmd FileType c let g:ale_c_clangtidy_options = g:custom_c_options
-augroup END
+"augroup ale_complete
+    "autocmd!
+    "autocmd FileType javascript,typescript let b:ale_completion_enabled = 1
+"augroup END
+
+"augroup cpp_ale_config
+    "autocmd!
+    "autocmd FileType cpp let g:custom_cpp_options = Filify#process('.ale', {'default_return':'-std=c++14 -Wall'})
+    "autocmd FileType cpp let g:ale_cpp_clang_options = g:custom_cpp_options
+    "autocmd FileType cpp let g:ale_cpp_gcc_options = g:custom_cpp_options
+    "autocmd FileType cpp let g:ale_cpp_clangtidy_options = g:custom_cpp_options
+"augroup END
+
+"augroup c_ale_config
+    "autocmd!
+    "autocmd FileType c let g:custom_c_options = Filify#process('.ale', {'default_return':'-std=c11 -Wall'})
+    "autocmd FileType c let g:ale_c_clang_options = g:custom_c_options
+    "autocmd FileType c let g:ale_c_gcc_options = g:custom_c_options
+    "autocmd FileType c let g:ale_c_clangtidy_options = g:custom_c_options
+"augroup END
+
 "python-mode ---------{{{
 let g:pymode_options = 0
 let g:pymode_indent = 0
@@ -922,6 +891,7 @@ let g:pymode_rope_completion = 0
 
 "it's stupid...but useful
 iabbrev mian main
+iabbrev ture true
 
 iabbrev @@ linusboyle@gmail.com
 iabbrev ccopy Copyright 2018 Linus Boyle,all rights reserved
