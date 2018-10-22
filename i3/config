@@ -49,6 +49,9 @@ assign [class="tm"] $WS4
 
 for_window [class="ksysguard"] floating enable
 for_window [class="Wine"] floating enable
+for_window [class="Gitk"] floating enable
+for_window [class="Git-gui"] floating enable
+for_window [class="Electron"] floating enable
 
 # 自定义应用启动按键
 # 终端
@@ -280,7 +283,7 @@ bindsym XF86AudioMute $exe mute
 # >>>自动启动<<<
 
 #背景图片
-$exe feh --bg-fill "/home/linusboyle/pix/bg.jpg"
+$exe feh --bg-fill "/home/linusboyle/pix/bg2.jpg"
 #$exe get-wallpaper
 
 #合成器

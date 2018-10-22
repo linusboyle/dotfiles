@@ -23,6 +23,7 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'crusoexia/vim-monokai'
 Plug 'morhetz/gruvbox'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 "}}}
 
@@ -36,6 +37,9 @@ Plug 'alpertuna/vim-header'
 
 "visible mark
 Plug 'kshenoy/vim-signature'
+
+"async grep
+Plug 'mhinz/vim-grepper',{'on':'Grepper'}
 
 "}}}
 
@@ -56,34 +60,35 @@ Plug 'tpope/vim-fugitive'
 
 "moving enhancement
 Plug 'Lokaltog/vim-easymotion'
+Plug 'unblevable/quick-scope'
 
 "complete
 Plug 'Valloric/YouCompleteMe',{ 'on': []}
 Plug 'rdnetto/YCM-Generator',{ 'on' : [],'branch':'stable'}
 Plug 'Shougo/echodoc.vim'
 
-Plug 'mbbill/undotree'
+Plug 'mbbill/undotree',{'on':'UndotreeToggle'}
 
 "Plug 'w0rp/ale'
 "Plug 'CharlesGueunet/VimFilify'
 
-let g:deoplete#enable_at_startup = 1
-
-"if &term ==# "fbterm" || &term ==# "screen" || &term ==# "linux"
-    ""disable airline in certain terminal
-    "Plug 'vim-airline/vim-airline',{'on' : []}
-    "Plug 'vim-airline/vim-airline-themes',{'on' : []}
-"else
-    "Plug 'vim-airline/vim-airline'
-    "Plug 'vim-airline/vim-airline-themes'
-"endif
+if &term ==# "xterm-256color" || has('gui_running')
+    Plug 'itchyny/lightline.vim'
+endif
 
 "lang specific
 Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}
-Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown',{'for':'markdown'}
 Plug 'leafgarland/typescript-vim'
+Plug 'posva/vim-vue'
 
 Plug 'sillybun/vim-repl', {'do': './install.sh'}
+Plug 'mhinz/vim-startify'
+
+Plug 'ryanoasis/vim-devicons'
+"Plug 'yuttie/comfortable-motion.vim'
+Plug 'romgrk/winteract.vim'
+
 call plug#end()
 
 " monokai setting -------------------------{{{
@@ -96,7 +101,6 @@ augroup load_ycm
     autocmd!
     autocmd InsertEnter * call plug#load('YouCompleteMe')
     autocmd InsertEnter * call plug#load('YCM-Generator')
-    autocmd InsertEnter * execute "autocmd! load_ycm InsertEnter *"
 augroup END
 "}}}
 

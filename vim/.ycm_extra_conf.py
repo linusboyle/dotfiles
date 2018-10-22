@@ -32,6 +32,7 @@ flags = [
 '-DNDEBUG',
 '-x',
 'c++',
+'-std=c++17',
 ]
 
 def Settings( **kwargs ):

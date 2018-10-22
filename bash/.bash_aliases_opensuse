@@ -35,3 +35,5 @@ alias lupdate='lupdate-qt5'
 
 # for usual use of pandoc
 alias pan='pandoc --pdf-engine=xelatex -V CJKmainfont="Noto Serif SC" -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"'
+
+alias gr='. gr.sh'

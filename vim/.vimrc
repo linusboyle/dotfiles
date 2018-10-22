@@ -3,7 +3,7 @@
 " File              : .vimrc
 " Author            : Linus Boyle <linusboyle@gmail.com>
 " Date              : 01.09.2018
-" Last Modified Date: 01.09.2018
+" Last Modified Date: 01.10.2018
 " Last Modified By  : Linus Boyle <linusboyle@gmail.com>
 
 " vim configuration file of Linus Boyle
@@ -71,8 +71,7 @@ set shortmess=atI
 " disable backup
 set nobackup
 
-" no swapfile,it's really dangerous sometimes,take care
-"set noswapfile
+set undofile
 
 " as the name suggest
 set wildignore+=*.swp,*.bak,*.pyc,*.class,.svn,*.png,*.o,*.obj,*.a,*.so,*.jpg,*.ttf,*.otf,*.svg
@@ -123,6 +122,7 @@ set ttyfast
 
 "Display Settings--------------------{{{
 
+set laststatus=2
 " 突出显示当前列
 set cursorcolumn
 " 突出显示当前行
@@ -533,7 +533,7 @@ augroup END
 
 " I dont't know why I don't use gvimrc either.
 if (has("gui_running"))
-    set guifont=Source\ Code\ Pro\ SemiBold\ 13
+    set guifont=SauceCodePro\ Nerd\ Font\ Mono\ 12
     set guioptions-=T
     set guioptions+=e
     set guioptions-=r
@@ -580,25 +580,33 @@ highlight SpellLocal term=underline cterm=underline
 
 "Plugin Setting-------------------------{{{
 
-"airline
-let g:airline_theme='molokai'
-let g:airline_powerline_fonts = 1
+"line
+let g:lightline = {
+      \ 'colorscheme': 'darcula',
+      \ 'component_function': {
+      \   'filetype': 'MyFiletype',
+      \   'fileformat': 'MyFileformat',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' },
+      \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
 
 " nerdtree ------------------{{{
-if has("gui_running")
-    augroup nerdtree_gui
-        autocmd!
-        autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-    augroup END
-else
-    augroup nerdtree_cli
-        autocmd!
-        autocmd StdinReadPre * let s:std_in=1
-        autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-        "the last remaining window
-        autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-    augroup END
-endif
+augroup nerdtree_cli
+    autocmd!
+    "autocmd StdinReadPre * let s:std_in=1
+    "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    "the last remaining window
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup END
 
 noremap <F7> :NERDTreeToggle<CR>
 let g:NERDTreeMinimalUI = 1
@@ -653,7 +661,7 @@ let g:ycm_filetype_whitelist = {
 
 let g:ycm_semantic_triggers =  {
 			\ 'c,cpp,java,python,go,erlang,perl': ['re!\w{2}'],
-			\ 'cs,lua': ['re!\w{2}'],
+			\ 'cs,lua,vim': ['re!\w{2}'],
 			\ 'html': ['re!\w{2}','</'],
 			\ }
 "}}}
@@ -673,6 +681,24 @@ let g:ycm_semantic_triggers =  {
 "c tags
 "set tags+=~/.vim/tags/c.tags;
 "}}}
+
+"undo tree
+let s:undo_dir = expand("~/.cache/undodir")
+
+if !isdirectory(s:undo_dir)
+    silent! call mkdir(s:undo_dir, 'p')
+endif
+
+if has("persistent_undo")
+    set undodir=~/.cache/undodir
+    set undofile
+endif
+
+let g:undotree_WindowLayout = 3
+let g:undotree_ShortIndicators = 1
+let g:undotree_TreeNodeShape = '・'
+
+nnoremap <F6> :UndotreeToggle<cr>
 
 " ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -874,6 +900,18 @@ let g:ale_lint_on_text_changed = 'normal'
     "autocmd FileType c let g:ale_c_clangtidy_options = g:custom_c_options
 "augroup END
 
+"let g:comfortable_motion_no_default_key_mappings = 1
+"let g:comfortable_motion_impulse_multiplier = 1  " Feel free to increase/decrease this value.
+"nnoremap <silent> <C-d> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * 2)<CR>
+"nnoremap <silent> <C-u> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -2)<CR>
+"nnoremap <silent> <C-f> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * 4)<CR>
+"nnoremap <silent> <C-b> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -4)<CR>
+
+"noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
+"noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
+"
+nnoremap gw :InteractiveWindow<CR>
+
 "python-mode ---------{{{
 let g:pymode_options = 0
 let g:pymode_indent = 0
@@ -921,12 +959,12 @@ function! Find_project_root()
 endfunction
 
 " grep operator
-nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
-vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+nnoremap gs :set operatorfunc=GrepOperator<cr>g@
+vnoremap gs :<c-u>call GrepOperator(visualmode())<cr>
 
 function! GrepOperator(type)
-    let saved_unnamed_register = @@
-    let project_root=Find_project_root()
+    let l:saved_unnamed_register = @@
+    let l:project_root=Find_project_root()
 
     if a:type ==# 'v'
         normal! `<v`>y
@@ -939,12 +977,12 @@ function! GrepOperator(type)
 
     if empty(l:project_root)
         "search in current dir
-        silent! execute "grep! " . shellescape(@@)
-        silent! execute "redraw!"
+        silent! execute "Grepper -tool ag -query " . shellescape(@@) . ' .'
+        "silent! execute "redraw!"
     else
         "else search in root dir
-        silent! execute "grep! " . shellescape(@@) . " ". project_root
-        silent! execute "redraw!"
+        silent! execute "Grepper -tool ag -query " . shellescape(@@) . " ". l:project_root
+        "silent! execute "redraw!"
     endif
 
     let @@ = saved_unnamed_register
