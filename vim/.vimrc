@@ -533,7 +533,7 @@ augroup END
 
 " I dont't know why I don't use gvimrc either.
 if (has("gui_running"))
-    set guifont=SauceCodePro\ Nerd\ Font\ Mono\ 12
+    set guifont=Source\ Code\ Pro\ SemiBold\ 12
     set guioptions-=T
     set guioptions+=e
     set guioptions-=r
@@ -615,8 +615,11 @@ let g:NERDTreeDirArrows = 1
 "}}}
 
 "easymotion
-noremap <Leader><leader>h <Plug>(easymotion-linebackward)
-noremap <Leader><leader>l <Plug>(easymotion-lineforward)
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+nmap s <Plug>(easymotion-s2)
+noremap <leader><leader>w <Plug>(easymotion-w)
+noremap <leader><leader>b <Plug>(easymotion-b)
 
 "YCM-------------------------------{{{
 let g:ycm_server_python_interpreter='/usr/bin/python'
@@ -649,6 +652,7 @@ let g:ycm_filetype_whitelist = {
             \ "java":1,
             \ "vim":1,
             \ "html":1,
+            \ "vue":1,
             \ "make":1,
             \ "markdown":1,
             \ "javascript":1,
@@ -735,7 +739,7 @@ let g:Lf_WindowHeight = 0.30
 let g:Lf_CacheDirectory = expand('~/.vim/cache')
 let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
-let g:Lf_StlColorscheme = 'powerline'
+let g:Lf_StlColorscheme = 'one'
 let g:Lf_PreviewResult = {'Function':0}
 let g:Lf_Ctags= '/usr/bin/ctags' 
 
@@ -805,27 +809,6 @@ noremap <silent> <leader><leader>a :GscopeFind a <C-R><C-W><cr>
 
 "}}}
 
-"preview 
-"Alt-U and Alt-D to scroll preview
-"execute "set <M-u>=\eu"
-"execute "set <M-d>=\ed"
-"noremap <m-u> :PreviewScroll -1<cr>
-"noremap <m-d> :PreviewScroll +1<cr>
-"inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
-"inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
-
-"noremap <F2> :PreviewTag<cr> 
-
-"augroup quickfix_preview
-    "autocmd!
-    "autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
-    "autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
-"augroup END
-
-"noremap <F5> :PreviewSignature!<cr>
-"inoremap <F5> <c-\><c-o>:PreviewSignature!<cr>
-
-
 "delimitmate
 let delimitMate_expand_cr = 1
 
@@ -867,16 +850,20 @@ let g:repl_exit_commands = {
 			\	"default": "exit",
 			\	}
 
-"ale
-let g:ale_sign_error = '✗'
-let g:ale_sign_warning = '⚡'
-let g:ale_set_highlights = 0
+" quick-scope
+let g:qs_max_chars=80
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
-let g:ale_open_list = 1
-let g:ale_list_window_size = 5
-let g:ale_lint_on_text_changed = 'normal'
+"ale
+"let g:ale_sign_error = '✗'
+"let g:ale_sign_warning = '⚡'
+"let g:ale_set_highlights = 0
+
+"let g:ale_set_loclist = 0
+"let g:ale_set_quickfix = 1
+"let g:ale_open_list = 1
+"let g:ale_list_window_size = 5
+"let g:ale_lint_on_text_changed = 'normal'
 "let g:ale_completion_enabled = 1
 
 "augroup ale_complete
@@ -910,16 +897,17 @@ let g:ale_lint_on_text_changed = 'normal'
 "noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 "noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 "
+
 nnoremap gw :InteractiveWindow<CR>
 
 "python-mode ---------{{{
-let g:pymode_options = 0
-let g:pymode_indent = 0
-let g:pymode_doc = 1
-let g:pymode_doc_bind = 'K'
-let g:pymode_run = 0
-let g:pymode_rope = 0
-let g:pymode_rope_completion = 0
+"let g:pymode_options = 0
+"let g:pymode_indent = 0
+"let g:pymode_doc = 1
+"let g:pymode_doc_bind = 'K'
+"let g:pymode_run = 0
+"let g:pymode_rope = 0
+"let g:pymode_rope_completion = 0
 "let g:pymode_rope_completion_bind = '<C-\>'
 "let g:pymode_breakpoint_bind = '<leader>b'
 "}}}

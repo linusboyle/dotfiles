@@ -20,7 +20,7 @@ set $WS9  9:
 set $WS0 10:
 
 set $terminal konsole
-set $filemanager dolphin
+set $filemanager polo-gtk
 set $browser firefox
 
 # i3-gap only
@@ -52,6 +52,7 @@ for_window [class="Wine"] floating enable
 for_window [class="Gitk"] floating enable
 for_window [class="Git-gui"] floating enable
 for_window [class="Electron"] floating enable
+for_window [class="Gitg"] floating enable
 
 # 自定义应用启动按键
 # 终端
