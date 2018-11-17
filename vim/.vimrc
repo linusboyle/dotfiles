@@ -535,7 +535,7 @@ augroup END
 if (has("gui_running"))
     set guifont=Source\ Code\ Pro\ SemiBold\ 12
     set guioptions-=T
-    set guioptions+=e
+    set guioptions-=e
     set guioptions-=r
     set guioptions-=m
     set guioptions-=L
@@ -617,7 +617,7 @@ let g:NERDTreeDirArrows = 1
 "easymotion
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
-nmap s <Plug>(easymotion-s2)
+nmap s <Plug>(easymotion-overwin-f2)
 noremap <leader><leader>w <Plug>(easymotion-w)
 noremap <leader><leader>b <Plug>(easymotion-b)
 
