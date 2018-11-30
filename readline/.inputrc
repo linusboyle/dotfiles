@@ -86,5 +86,5 @@ $endif
 
 set show-mode-in-prompt on
 
-set vi-ins-mode-string "(INS)"
-set vi-cmd-mode-string "(NOR)"
+set vi-ins-mode-string "(I)"
+set vi-cmd-mode-string "(N)"

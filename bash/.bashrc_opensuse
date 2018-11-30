@@ -29,7 +29,6 @@ shopt -s globstar
 
 PS1='\w\$'
 
-
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -57,7 +56,12 @@ fi
 
 #ulimit -c unlimited
 
-fortune;
+
+
+
+printf "\e[33m"
+figlet "Welcome! Linus" -f future
+printf "\e[0m" 
 
 export EDITOR=vim
 export GTAGSLABEL=native-pygments
