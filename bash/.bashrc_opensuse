@@ -60,7 +60,7 @@ fi
 
 
 printf "\e[33m"
-figlet "Welcome! Linus" -f future
+figlet "Welcome, Linus!" -f future
 printf "\e[0m" 
 
 export EDITOR=vim
