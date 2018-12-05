@@ -1,5 +1,7 @@
+# i3 config file (v4)
+
 # config file for i3 
-# by linusboyle,based on many other dotfiles ;)
+# by linusboyle, based on many other dotfiles ;)
 # 狷墨居主人
 
 # >>>>定义变量<<<<
@@ -24,65 +26,84 @@ set $filemanager polo-gtk
 set $browser firefox
 
 # i3-gap only
-gaps inner 5
-gaps outer 5
-smart_gaps on
+#gaps inner 5
+#gaps outer 5
+#smart_gaps on
+smart_borders on
 
 # >>>字体<<<
-font pango:Source Code Pro SemiBold 10
+font pango:Source Code Pro SemiBold 8
 
 # >>>窗口<<<
 
 # 按下mod用鼠标点击任意位置修改浮动窗口
 floating_modifier $mod
 
+# 浮动窗口最大大小
+floating_maximum_size 1200 x 650
+
 # 为应用指定工作区
-# 暂时无用
-#assign [class="Google-chrome"] $WS2
-#assign [class="Deepin-terminal"] $WS1
-#assign [class="URxvt"] $WS1
-#assign [class="Typora"] $WS3
-#assign [class="dde-file-manager"] $WS4
-#assign [class="Nautilus"] $WS4
 assign [class="pr"] $WS4
 assign [class="tm"] $WS4
 
-for_window [class="ksysguard"] floating enable
-for_window [class="Wine"] floating enable
-for_window [class="Gitk"] floating enable
-for_window [class="Git-gui"] floating enable
-for_window [class="Electron"] floating enable
-for_window [class="Gitg"] floating enable
+# 指定浮动的窗口
+for_window [class="ksysguard"] border normal, floating enable
+for_window [class="Gitk"] border normal, floating enable
+for_window [class="Git-gui"] border normal, floating enable
+for_window [class="Electron"] border normal, floating enable
+for_window [class="Gitg"] border normal, floating enable
+for_window [class="Zathura"] border normal, floating enable
+
+# 标题居中
+title_align center
+
+set $purple #bf40bf
+set $white #ffffff
+set $black #000000
+set $darkblue #9933ff
+set $grey #333333
+
+# 颜色
+client.focused              $purple $purple $white
+client.focused_inactive 	$darkblue $darkblue $white #484e50 $grey
+client.unfocused           	$grey $grey $white
+client.urgent               #CD5C5C #CD5C5C $white
+
+client.background       #ffffff
+
+# 边界
+hide_edge_borders smart
+default_border pixel
+default_floating_border normal
+
+# 全屏模式下弹出窗口，退出全屏
+popup_during_fullscreen leave_fullscreen
+
+# 自动聚焦设置
+# no_focus [class="deepin-notifications"]
 
 # 自定义应用启动按键
-# 终端
 $super+Return $exe $terminal
-#$super+t      $exe typora
 $super+e      $exe $filemanager
 $super+c      $exe $browser
 
 #polybar
-$super+b $exe togglebar
+#$super+b $exe togglebar
 
 # 关闭窗口
 $super+q kill
-#bindsym mod1+F4 kill
 
 # 启动器
 $super+r $exe rofi_run 
 $super+w $exe rofi_term 
-bindsym mod1+Tab $exe rofi_win
+
+$super+a exec getwclass
 
 # 移动焦点
 $super+h focus left
 $super+j focus down
 $super+k focus up
 $super+l focus right
-
-#$super+Left focus left
-#$super+Down focus down
-#$super+Up focus up
-#$super+Right focus right
 
 # 禁止焦点随鼠标移动
 focus_follows_mouse no
@@ -92,11 +113,6 @@ $super+Shift+h move left
 $super+Shift+j move down
 $super+Shift+k move up
 $super+Shift+l move right
-
-#$super+Shift+Left move left
-#$super+Shift+Down move down
-#$super+Shift+Up move up
-#$super+Shift+Right move right
 
 # 开启前往当前工作区自动返回上一工作区
 workspace_auto_back_and_forth yes
@@ -111,13 +127,16 @@ $super+f fullscreen toggle
 $super+x layout toggle all
 
 # 切换浮动/平铺
-$super+Shift+space floating toggle
+#$super+Shift+space floating enable, border normal
+bindsym $mod+Shift+space "mark --add _; [con_mark=floating] floating disable, border pixel, mark --add --toggle _; [con_mark=_] floating enable, border normal; mark --add --toggle floating;"
+
+show_marks yes
 
 # 切换浮动/平铺焦点
 $super+space focus mode_toggle
 
 # 隐藏窗口 
-$super+Shift+minus move scratchpad
+$super+Shift+minus border normal, move scratchpad
 
 # 恢复窗口
 $super+minus scratchpad show
@@ -164,49 +183,36 @@ $super+Shift+r restart
 # $super+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # 状态栏
-#bar {
-        ##i3bar_command deepin-topbar
-        #status_command /usr/bin/bumblebee-status -m time mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" -t solarized-powerline
-           ##status_command $HOME/src/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink pasource -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized-powerline
+bar {
+        status_command /usr/bin/bumblebee-status -m time mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" -t solarized-powerline
+        #status_command $HOME/src/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink pasource -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized-powerline
 
         #position top
-        #font pango:Source Code Pro SemiBold 10
+        mode hide
+        hidden_state hide
+        modifier Mod1
+
+        font pango:Source Code Pro SemiBold 9
         
-        ##bindsym button1 nop
-        ##bindsym button3 $exe deepin-system-monitor
+        bindsym button1 nop
 
-        #tray_padding 2
-        ##tray_output none
+        tray_padding 2
 
-        ##separator_symbol ""
+        #separator_symbol ""
 
-        #colors {
-        #background #101010
-        #statusline #FFFFFF
-        #separator  #3399FF
-        ## 工作区颜色         边框    背景    文字
-        ##focused_workspace  #3297FD #11111100 #FFFFFF
-        ##active_workspace   #FFFFFF #FFFFFF00 #FFFFFF
-        ##inactive_workspace #111111 #11111100 #FFFFFF
-        ##urgent_workspace   #990000 #11111100 #FFFFFF
-        ##binding_mode       #990000 #99000000 #FFFFFF
-        #}
-#}
+        colors {
+            background #101010
+            statusline #FFFFFF
+            separator  #3399FF
+            # 工作区颜色         边框    背景    文字
+            #focused_workspace  #3297FD #11111100 #FFFFFF
+            #active_workspace   #FFFFFF #FFFFFF00 #FFFFFF
+            #inactive_workspace #111111 #11111100 #FFFFFF
+            #urgent_workspace   #990000 #11111100 #FFFFFF
+            #binding_mode       #990000 #99000000 #FFFFFF
+        }
+}
 
-# 颜色
-client.focused              #21618C #21618C #FFFFFF
-client.focused_inactive 	#101010 #000000 #FFFFFF
-client.unfocused           	#101010 #000000 #FFFFFF
-client.urgent               #CD5C5C #CD5C5C #FFFFFF
-
-# 边界
-#new_window pixel 0
-#new_float none
-#hide_edge_borders both
-for_window [class="^.*"] border pixel 0
-
-# 自动聚焦设置
-#no_focus [class="deepin-notifications"]
 
 # >>>模式<<<
 
@@ -228,21 +234,19 @@ mode "resize" {
 bindsym mod1+r mode "resize"
 
 #调整透明度 废弃
-set $transparent (a) 100% (b) 75% (c) 50% (d) 25% (e) 0%
+#set $transparent (a) 100% (b) 75% (c) 50% (d) 25% (e) 0%
 
-mode "$transparent" {
-    bindsym a $exe transset 1 -a, mode "default"
-    bindsym b $exe transset .75 -a, mode "default"
-    bindsym c $exe transset .5 -a, mode "default"
-    bindsym d $exe transset .25 -a, mode "default"
-    bindsym e $exe transset 0 -a, mode "default"
+#mode "$transparent" {
+    #bindsym a $exe transset 1 -a, mode "default"
+    #bindsym b $exe transset .75 -a, mode "default"
+    #bindsym c $exe transset .5 -a, mode "default"
+    #bindsym d $exe transset .25 -a, mode "default"
+    #bindsym e $exe transset 0 -a, mode "default"
 
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
-$super+a mode $transparent
-
+    #bindsym Return mode "default"
+    #bindsym Escape mode "default"
+#}
+#$super+a mode $transparent
 
 set $Locker i3lock --color "#000000" && sleep 1
 #系统切换模式
@@ -273,6 +277,7 @@ mode "$mpc" {
 	bindsym Escape mode "default"
 }
 $super+o mode "$mpc"
+
 # >>>按键<<<
 
 #设置笔记本音量控制按键的行为
@@ -292,7 +297,7 @@ $exe compton -b
 
 #通知服务
 #exec --no-startup-id killall deepin-notifications
-$exe twmnd
+$exe dunst
 
 #禁用主板鸣笛
 $exe xset b off
@@ -304,4 +309,4 @@ $exe mpd
 exec_always --no-startup-id xrdb ~/.Xresources
 
 #polybar
-exec_always --no-startup-id launchbar
+#exec_always --no-startup-id launchbar

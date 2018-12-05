@@ -56,10 +56,7 @@ fi
 
 #ulimit -c unlimited
 
-
-
-
-printf "\e[33m"
+printf "\e[36m"
 figlet "Welcome, Linus!" -f future
 printf "\e[0m" 
 

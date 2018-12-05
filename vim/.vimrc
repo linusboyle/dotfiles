@@ -3,13 +3,12 @@
 " File              : .vimrc
 " Author            : Linus Boyle <linusboyle@gmail.com>
 " Date              : 01.09.2018
-" Last Modified Date: 01.10.2018
+" Last Modified Date: 04.12.2018
 " Last Modified By  : Linus Boyle <linusboyle@gmail.com>
 
 " vim configuration file of Linus Boyle
 " with referrence to a great many others' files
 " this configuration file is folded in the method "marker"
-
 
 " General Configuration-------------{{{
 
@@ -30,10 +29,7 @@ endif
 set cscopeprg=gtags-cscope
 
 " use bash aliases
-let g:is_bash	   = 1
 let $BASH_ENV = "~/.bash_aliases"
-
-"let g:mapleader = ','
 
 " syntax highlight
 syntax enable
@@ -44,11 +40,6 @@ set history=2000
 
 "beautifier
 set formatprg=clang-format\ -style=WebKit
-
-"augroup beautify
-    "autocmd!
-    "autocmd BufWritePre *.cpp,*.c,*.h execute "normal! ggVGgq\<C-o>\<C-o>"
-"augroup END
 
 " program used when running :grep
 set grepprg=ag\ --vimgrep
@@ -70,11 +61,6 @@ set shortmess=atI
 
 " disable backup
 set nobackup
-
-set undofile
-
-" as the name suggest
-set wildignore+=*.swp,*.bak,*.pyc,*.class,.svn,*.png,*.o,*.obj,*.a,*.so,*.jpg,*.ttf,*.otf,*.svg
 
 " 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制, 不需要可以去掉
 " 好处：误删什么的，如果以前屏幕打开，可以找回
@@ -124,23 +110,9 @@ set ttyfast
 
 set laststatus=2
 " 突出显示当前列
-set cursorcolumn
+"set cursorcolumn
 " 突出显示当前行
-set cursorline
-
-augroup cursor_display
-    autocmd!
-    autocmd InsertLeave,WinEnter * set cursorline
-    autocmd InsertEnter,WinLeave * set nocursorline
-    autocmd InsertLeave,WinEnter * set cursorcolumn
-    autocmd InsertEnter,WinLeave * set nocursorcolumn
-augroup END
-
-" 自动退出quickfix
-aug QFClose
-  au!
-  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
-aug END
+"set cursorline
 
 " 在状态栏显示正在输入的命令
 set showcmd
@@ -208,7 +180,6 @@ set hidden
 " 00x增减数字时使用十进制
 "set nrformats=
 
-" 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
 set relativenumber 
 set number
 
@@ -217,13 +188,6 @@ augroup focus_grp
     autocmd!
     au FocusLost * :set norelativenumber
     au FocusGained * :set relativenumber
-augroup END
-
-" 插入模式下用绝对行号, 普通模式下用相对
-augroup relativenumber_grp
-    autocmd!
-    autocmd InsertEnter * :set norelativenumber
-    autocmd InsertLeave * :set relativenumber
 augroup END
 
 " }}}
@@ -258,20 +222,6 @@ set formatoptions+=B
 " 增强模式中的命令行自动完成操作
 set wildmenu
 set wildmode =list,full
-
-function! Test_Dir_Exist()
-  let dir = expand('%:p:h')
-  if !isdirectory(dir)
-    call mkdir(dir, 'p')
-    echom 'Created non-existing directory: '.dir
-  endif
-endfunction
-
-augroup Utility
-    autocmd BufWritePre * call Test_Dir_Exist()
-" 打开自动定位到最后编辑的位置, 需要确认 .viminfo 当前用户可写
-    autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-augroup END
 " }}}
 
 "Mapping----------------------{{{ 
@@ -300,8 +250,6 @@ noremap L g_
 " Map ; to : and save a million keystrokes 用于快速进入命令行
 "nnoremap ; :
 
-nnoremap <space> viw
-
 " => 选中及操作改键
 " 调整缩进后自动选中，方便再次操作
 vnoremap < <gv
@@ -313,9 +261,6 @@ nmap Y y$
 " 交换 ' `, 使得可以快速使用'跳到marked位置
 nnoremap ' `
 nnoremap ` '
-
-" remap U to <C-r> for easier redo
-nnoremap U <C-r>
 
 " Quickly close the current window
 nnoremap <leader>q :q<CR>
@@ -508,16 +453,6 @@ endfunc
 
 augroup filetype_grp
     autocmd!
-    autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab ai
-    autocmd FileType ruby,javascript,html,css,xml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
-    autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown onoremap <buffer> ih :<c-u>execute "normal! ?^#\\+\r:nohlsearch\r0vg_" <cr>
-
-    "autocmd FileType vim setlocal foldmethod=marker
-    "autocmd BufReadPre,BufNewFile .vimrc setlocal foldmethod=marker foldlevel=0 foldlevelstart=0
-    "autocmd BufRead,BufNewFile *.vue set filetype=vue.html.javascript tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
-    "au BufWinEnter *.php set mps-=<:>
-    "autocmd FileType c,cpp,java set mps+= =:;
-
     autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
 augroup END
 
@@ -531,6 +466,7 @@ augroup END
 
 "Theme Settings--------------------{{{
 
+colorscheme eldar 
 " I dont't know why I don't use gvimrc either.
 if (has("gui_running"))
     set guifont=Source\ Code\ Pro\ SemiBold\ 12
@@ -539,43 +475,14 @@ if (has("gui_running"))
     set guioptions-=r
     set guioptions-=m
     set guioptions-=L
-    colorscheme space-vim-dark
 else
-    if &term ==# "fbterm" || &term ==# "linux"
-        set notermguicolors
-        set t_Co=8
-        "colorscheme monokai
-    else
-        if &term ==# "screen"|| &term ==# "rxvt-unicode"  
-            "修复tmux的问题
-            set notermguicolors
-            set t_Co=256
-            "colorscheme monokai
-        else
-            set termguicolors
-            colorscheme space-vim-dark
-        endif
+    if &term !=# "linux" && &term !=# "fbterm" && &term !=# "screen"   
+        set termguicolors
     endif
 endif
 
 " theme主题
 set background=dark
-
-" 设置标记一列的背景颜色和数字一行颜色一致
-hi! link SignColumn   LineNr
-hi! link ShowMarksHLl DiffAdd
-hi! link ShowMarksHLu DiffChange
-
-" for error highlight，防止错误整行标红导致看不清
-highlight clear SpellBad
-highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
-highlight clear SpellCap
-highlight SpellCap term=underline cterm=underline
-highlight clear SpellRare
-highlight SpellRare term=underline cterm=underline
-highlight clear SpellLocal
-highlight SpellLocal term=underline cterm=underline
-
 "}}}
 
 "Plugin Setting-------------------------{{{
@@ -637,8 +544,11 @@ let g:ycm_server_log_level = 'info'
 let g:ycm_complete_in_strings = 1
 let g:ycm_cache_omnifunc = 0
 let g:ycm_collect_identifiers_from_tags_files = 0
+
 let g:ycm_show_diagnostics_ui = 1
 let g:ycm_always_populate_location_list = 1
+let g:ycm_enable_diagnostic_signs = 0
+
 let g:ycm_error_symbol = '×'
 let g:ycm_warning_symbol = '☯'
 
@@ -664,8 +574,8 @@ let g:ycm_filetype_whitelist = {
 "nnoremap <leader>f :YcmCompleter FixIt<CR>
 
 let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,java,python,go,erlang,perl': ['re!\w{2}'],
-			\ 'cs,lua,vim': ['re!\w{2}'],
+			\ 'c,cpp,java,python,go': ['re!\w{2}'],
+			\ 'vim': ['re!\w{2}'],
 			\ 'html': ['re!\w{2}','</'],
 			\ }
 "}}}
@@ -703,15 +613,6 @@ let g:undotree_ShortIndicators = 1
 let g:undotree_TreeNodeShape = '・'
 
 nnoremap <F6> :UndotreeToggle<cr>
-
-" ultisnips
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-"let g:UltiSnipsExpandTrigger="<F4>"
-"let g:UltiSnipsJumpForwardTrigger="<c-x>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-d>"
-
-"let g:cpp_class_scope_highlight = 1
-"let g:cpp_member_variable_highlight = 1
 
 set noshowmode
 
@@ -817,6 +718,8 @@ augroup delimit_pair
     autocmd FileType cpp let b:delimitMate_matchpairs = "(:),[:],{:}"
 augroup END
 
+nnoremap gw :InteractiveWindow<CR>
+
 "header
 let g:header_field_author = 'Linus Boyle'
 let g:header_field_author_email = 'linusboyle@gmail.com'
@@ -854,125 +757,12 @@ let g:repl_exit_commands = {
 let g:qs_max_chars=80
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
-"ale
-"let g:ale_sign_error = '✗'
-"let g:ale_sign_warning = '⚡'
-"let g:ale_set_highlights = 0
-
-"let g:ale_set_loclist = 0
-"let g:ale_set_quickfix = 1
-"let g:ale_open_list = 1
-"let g:ale_list_window_size = 5
-"let g:ale_lint_on_text_changed = 'normal'
-"let g:ale_completion_enabled = 1
-
-"augroup ale_complete
-    "autocmd!
-    "autocmd FileType javascript,typescript let b:ale_completion_enabled = 1
-"augroup END
-
-"augroup cpp_ale_config
-    "autocmd!
-    "autocmd FileType cpp let g:custom_cpp_options = Filify#process('.ale', {'default_return':'-std=c++14 -Wall'})
-    "autocmd FileType cpp let g:ale_cpp_clang_options = g:custom_cpp_options
-    "autocmd FileType cpp let g:ale_cpp_gcc_options = g:custom_cpp_options
-    "autocmd FileType cpp let g:ale_cpp_clangtidy_options = g:custom_cpp_options
-"augroup END
-
-"augroup c_ale_config
-    "autocmd!
-    "autocmd FileType c let g:custom_c_options = Filify#process('.ale', {'default_return':'-std=c11 -Wall'})
-    "autocmd FileType c let g:ale_c_clang_options = g:custom_c_options
-    "autocmd FileType c let g:ale_c_gcc_options = g:custom_c_options
-    "autocmd FileType c let g:ale_c_clangtidy_options = g:custom_c_options
-"augroup END
-
-"let g:comfortable_motion_no_default_key_mappings = 1
-"let g:comfortable_motion_impulse_multiplier = 1  " Feel free to increase/decrease this value.
-"nnoremap <silent> <C-d> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * 2)<CR>
-"nnoremap <silent> <C-u> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -2)<CR>
-"nnoremap <silent> <C-f> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * 4)<CR>
-"nnoremap <silent> <C-b> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -4)<CR>
-
-"noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
-"noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
-"
-
-nnoremap gw :InteractiveWindow<CR>
-
-"python-mode ---------{{{
-"let g:pymode_options = 0
-"let g:pymode_indent = 0
-"let g:pymode_doc = 1
-"let g:pymode_doc_bind = 'K'
-"let g:pymode_run = 0
-"let g:pymode_rope = 0
-"let g:pymode_rope_completion = 0
-"let g:pymode_rope_completion_bind = '<C-\>'
-"let g:pymode_breakpoint_bind = '<leader>b'
-"}}}
-"}}}
-
-"Abbreviation----------------------------{{{
-
-"it's stupid...but useful
-iabbrev mian main
-iabbrev ture true
-
-iabbrev @@ linusboyle@gmail.com
-iabbrev ccopy Copyright 2018 Linus Boyle,all rights reserved
 "}}}
 
 " Own Advanced Setting-----------------{{{
-function! Find_project_root()
-
-    let l:path = simplify(expand("%:p:h"))
-    let l:previous_path = ""
-    let l:markers = ['.root','.git','.svn']
-
-    while l:path != l:previous_path
-        for root in l:markers
-            if !empty(globpath(l:path, root, 1))
-                let l:proj_dir = simplify(fnamemodify(l:path, ':p'))
-                if l:proj_dir == '/'
-                    return ""
-                endif
-                return l:proj_dir
-            endif
-        endfor
-        let l:previous_path = l:path
-        let l:path = fnamemodify(l:path, ':h')
-    endwhile
-    return ""
-endfunction
 
 " grep operator
-nnoremap gs :set operatorfunc=GrepOperator<cr>g@
-vnoremap gs :<c-u>call GrepOperator(visualmode())<cr>
+nmap gs <plug>GrepOperatorNormal
+vmap gs <plug>GrepOperatorVisual
 
-function! GrepOperator(type)
-    let l:saved_unnamed_register = @@
-    let l:project_root=Find_project_root()
-
-    if a:type ==# 'v'
-        normal! `<v`>y
-    elseif a:type ==# 'char'
-        normal! `[v`]y
-    else
-        "ignore multiline mode,just because it's not useful
-        return
-    endif
-
-    if empty(l:project_root)
-        "search in current dir
-        silent! execute "Grepper -tool ag -query " . shellescape(@@) . ' .'
-        "silent! execute "redraw!"
-    else
-        "else search in root dir
-        silent! execute "Grepper -tool ag -query " . shellescape(@@) . " ". l:project_root
-        "silent! execute "redraw!"
-    endif
-
-    let @@ = saved_unnamed_register
-endfunction
 " }}}
