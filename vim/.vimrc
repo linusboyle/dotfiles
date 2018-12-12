@@ -1,243 +1,239 @@
 " vim:set foldmethod=marker foldlevel=0:
 
-" File              : .vimrc
-" Author            : Linus Boyle <linusboyle@gmail.com>
-" Date              : 01.09.2018
-" Last Modified Date: 04.12.2018
-" Last Modified By  : Linus Boyle <linusboyle@gmail.com>
+" .vimrc
+" Copyright (c) 2018 Linus Boyle <linusboyle@gmail.com>
+"
+" Permission is hereby granted, free of charge, to any person obtaining a copy
+" of this software and associated documentation files (the "Software"), to deal
+" in the Software without restriction, including without limitation the rights
+" to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+" copies of the Software, and to permit persons to whom the Software is
+" furnished to do so, subject to the following conditions:
+"
+" The above copyright notice and this permission notice shall be included in
+" all copies or substantial portions of the Software.
+"
+" THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+" FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+" AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+" LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+" OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+" SOFTWARE.
 
 " vim configuration file of Linus Boyle
 " with referrence to a great many others' files
 " this configuration file is folded in the method "marker"
 
-" General Configuration-------------{{{
+if v:progname ==? "evim"
+    finish
+endif
 
-" very important :)
 set nocp
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" 3rd-party plugins first
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
-
-set cscopeprg=gtags-cscope
-
-" use bash aliases
-let $BASH_ENV = "~/.bash_aliases"
-
 " syntax highlight
-syntax enable
-syntax on
+if has('syntax')
+    syntax enable
+    syntax on
+endif
 
-" history storage
-set history=2000
+" ftplugin
+if has('autocmd')
+    filetype plugin indent on
+    filetype on
+endif
 
-"beautifier
-set formatprg=clang-format\ -style=WebKit
+if has('diff') && v:version > 800
+    set diffopt+=algorithm:patience
+    set diffopt+=indent-heuristic
+endif
 
-" program used when running :grep
-set grepprg=ag\ --vimgrep
+" indent
+set autoindent " Use indent of previous line on new lines
+set smartindent
+set tabstop=4 " Tab键的宽度
+set shiftwidth=4 " 缩进对应的空格数
+set softtabstop=4 " Tab缩进
+set expandtab
+set smarttab
+set shiftround
 
-" 检测文件类型
-filetype on
-" 针对不同的文件类型采用不同的缩进格式
-filetype indent on
-" 允许插件
-filetype plugin on
-" 启动自动补全
-filetype plugin indent on
+" virtual edit
+if has('virtualedit')
+    set virtualedit+=block
+endif
 
-" autoload the file if it is edited 
-set autoread
+if has('linebreak')
+    set breakindent
+    set linebreak " break lines after words
+    set showbreak=...
+endif
+
+if has('folding')
+  set foldenable
+  set foldlevelstart=99
+  set foldmethod=indent
+endif
+
+" format options
+set formatoptions+=m " 如遇Unicode值大于255的文本，不必等到空格再折行
+set formatoptions+=B " 合并两行中文时，不在中间加空格
+set formatoptions+=j " merge comments
+" and do not add two spaces when joining
+set nojoinspaces
+
+" search
+if &t_Co > 2 || has("gui_running")
+    set hlsearch
+endif
+set incsearch
+
+" gutter column
+set relativenumber 
+set number
+
+if exists('+completeopt')
+    set completeopt=menu,menuone
+endif
+
+" case setting
+set noignorecase
+set nosmartcase
+
+" backspace
+set backspace+=eol,start,indent
 
 " sorry for you poor kids...
 set shortmess=atI
 
-" disable backup
+" use bash aliases
+let $BASH_ENV = "~/.bash_aliases"
+
+" esckey
+set timeoutlen=200
+
+" pop prompt on failed operation
+set confirm
+
+" history storage
+set history=2000
+
+" program used when running :grep
+if filereadable('/usr/bin/ag')
+    set grepprg=ag\ --vimgrep
+endif
+
+" autoload the file if it is edited 
+set autoread
+
+" backup/swap/undo
 set nobackup
+if has("persistent_undo")
+    let s:undo_dir = expand("~/.cache/undodir")
 
-" 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制, 不需要可以去掉
-" 好处：误删什么的，如果以前屏幕打开，可以找回
-" i don't like this
-"set t_ti= t_te=
+    if !isdirectory(s:undo_dir)
+        silent! call mkdir(s:undo_dir, 'p')
+    endif
 
-" 启用鼠标
+    set undodir=~/.cache/undodir
+    set undofile
+endif
+
+" mouse settings
 set mouse=a
-" Hide the mouse cursor while typing
 set mousehide
 
-set mps+=<:>
-
-" 禁用选择模式
-"set selection=inclusive
-"set selectmode=mouse,key
-
-" change the terminal's title
+" terminal setting
 set title
-
-" 去掉输入错误的提示声音
-set novisualbell
+set novisualbell " remove error bell
 set noerrorbells
 set t_vb=
-
-"键码等待时间
-set tm=400
-
-" Remember info about open buffers on close
-set viminfo^=%
+set ttyfast
 
 " For regular expressions turn magic on
 set magic
 
-" Configure backspace so it acts as it should act
-set backspace=eol,start,indent
+" cursor display
+set nocursorcolumn
+set nocursorline
 
-"设置左右方向键上下换行，不需要
-"set whichwrap+=<,>,h,l
+" status line display
+set laststatus=1 " default
+set noshowmode " don't show mode
 
-"快速终端
-set ttyfast
-
-"}}}
-
-"Display Settings--------------------{{{
-
-set laststatus=2
-" 突出显示当前列
-"set cursorcolumn
-" 突出显示当前行
-"set cursorline
-
-" 在状态栏显示正在输入的命令
-set showcmd
-
-" 在上下移动光标时，光标的上方或下方至少会保留显示的行数
-set scrolloff=7
-
-" 括号配对情况, 跳转并高亮一下匹配的括号
-set showmatch
-" How many tenths of a second to blink when matching brackets
-set matchtime=2
-
-" 高亮search命中的文本
-set hlsearch
-" 打开增量搜索模式,随着键入即时搜索
-set incsearch
-
-augroup dynamic_smartcase
-    autocmd!
-    autocmd CmdLineEnter : set smartcase
-    autocmd CmdLineEnter : set ignorecase
-    autocmd CmdLineLeave : set nosmartcase
-    autocmd CmdLineLeave : set noignorecase
-augroup END
-
-set noignorecase
-" 有一个或以上大写字母时仍大小写敏感
-set nosmartcase
-
-" 代码折叠
-set foldenable
-" 折叠方法
-" manual    手工折叠
-" indent    使用缩进表示折叠
-" expr      使用表达式定义折叠
-" syntax    使用语法定义折叠
-" diff      对没有更改的文本进行折叠
-" marker    使用标记进行折叠, 默认标记是 {{{ 和 }}}
-set foldmethod=indent
-set foldlevel=99
-
-" 缩进配置
-" Smart indent
-set smartindent
-" 打开自动缩进
-set autoindent
-
-" tab相关变更
-" 设置Tab键的宽度 [等同的空格个数]
-set tabstop=4
-" 每一次缩进对应的空格数
-set shiftwidth=4
-" 按退格键时可以一次删掉 4 个空格
-set softtabstop=4
-" insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
-set smarttab
-" 将Tab自动转化成空格[需要输入真正的Tab键时，使用 Ctrl+V + Tab]
-set expandtab
-" 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
-set shiftround
-
-" A buffer becomes hidden when it is abandoned
+" Allow buffers to have changes without being displayed
 set hidden
 
-" 00x增减数字时使用十进制
-"set nrformats=
+" 在状态栏显示正在输入的命令
+if has('cmdline_info')
+    set showcmd
+    set noruler " and do not show the ruler!
+endif
 
-set relativenumber 
-set number
+" don't jump!
+set noshowmatch
 
-" 失去焦点使用绝对行号
-augroup focus_grp
-    autocmd!
-    au FocusLost * :set norelativenumber
-    au FocusGained * :set relativenumber
-augroup END
+" wildmenu settings
+set wildmenu
+set wildmode=list,full
 
-" }}}
+" encodings
+"
+" Use UTF-8 if we can and env LANG didn't tell us not to
+if has('multi_byte') && !exists('$LANG') && &encoding ==# 'latin1'
+  set encoding=utf-8
+endif
 
-" FileEncode Settings-----------------------{{{ 
-
-" 设置新文件的编码为 UTF-8
-set encoding=utf-8
-" 自动判断编码时，依次尝试以下编码：
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,ucs-bom,gb18030,big5,cp936,euc-jp,euc-kr,latin1
 set helplang=cn
-"set langmenu=zh_CN.UTF-8
-"set enc=2byte-gb18030
-" 下面这句只影响普通模式 (非图形界面) 下的 Vim
 set termencoding=utf-8
 
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
+" colorscheme and gui setting
+if has('gui_running')
+    set guifont=Source\ Code\ Pro\ SemiBold\ 12
+    set guioptions-=T
+    set guioptions-=e
+    set guioptions-=r
+    set guioptions-=m
+    set guioptions-=L
+    colorscheme space-vim-dark
+else
+    colorscheme sahara 
+endif
 
-" 如遇Unicode值大于255的文本，不必等到空格再折行
-set formatoptions+=m
-" 合并两行中文时，不在中间加空格
-set formatoptions+=B
+set cscopequickfix=s-,c-,d-,i-,t-,e-,a-,g-,f-
+set cscopeprg=gtags-cscope
+    
+let g:todo_pattern = '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|BUG\|HACK\)'
+let g:debug_pattern = '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)'
 
-" }}}
+" General Mapping----------------------{{{ 
 
-"Other Editing Utilities------------------------{{{
+" grep operator
+nmap gs <plug>GrepOperatorNormal
+vmap gs <plug>GrepOperatorVisual
 
-"vimrc文件修改之后自动加载, linux
-"autocmd! bufwritepost .vimrc source %
-
-" 增强模式中的命令行自动完成操作
-set wildmenu
-set wildmode =list,full
-" }}}
-
-"Mapping----------------------{{{ 
+" gtags cscope find operations
+nmap <leader><leader>s <plug>gtagsfind_s
+nmap <leader><leader>g <plug>gtagsfind_g
+nmap <leader><leader>c <plug>gtagsfind_c
+nmap <leader><leader>t <plug>gtagsfind_t
+nmap <leader><leader>e <plug>gtagsfind_e
+nmap <leader><leader>f <plug>gtagsfind_f
+nmap <leader><leader>i <plug>gtagsfind_i
+nmap <leader><leader>d <plug>gtagsfind_d
+nmap <leader><leader>a <plug>gtagsfind_a
 
 "Fundamental Mapping---------------{{{
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-noremap <Up> <Nop>
-noremap <Down> <Nop>
+
+nnoremap <Space> <PageDown>
 
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap gk k
 nnoremap gj j
 
-" 分屏窗口移动, Smart way to move between windows
+" move between windows
 noremap <C-j> <C-W>j
 noremap <C-k> <C-W>k
 noremap <C-h> <C-W>h
@@ -247,104 +243,27 @@ noremap <C-l> <C-W>l
 noremap H ^
 noremap L g_
 
-" Map ; to : and save a million keystrokes 用于快速进入命令行
-"nnoremap ; :
-
 " => 选中及操作改键
 " 调整缩进后自动选中，方便再次操作
 vnoremap < <gv
 vnoremap > >gv
 
 " y$ -> Y Make Y behave like other capitals
-nmap Y y$
+nnoremap Y y$
 
-" 交换 ' `, 使得可以快速使用'跳到marked位置
-nnoremap ' `
-nnoremap ` '
-
-" Quickly close the current window
 nnoremap <leader>q :q<CR>
 nnoremap <leader><leader>q :q!<CR>
-" Quickly save the current file
 nnoremap <leader>w :w<CR>
-
-nnoremap <leader>e :e
 
 " 复制选中区到系统剪切板中
 vnoremap <leader>y "+y
 
-" auto jump to end of select
-" vnoremap <silent> y y`]
-" vnoremap <silent> p p`]
-" nnoremap <silent> p p`]
-
-" select all
-"map <Leader>sa ggVG
-
-" 滚动Speed up scrolling of the viewport slightly
-"nnoremap <C-e> 2<C-e>
-"nnoremap <C-y> 2<C-y>
-
-" Quickly edit/reload the vimrc file
-nnoremap <silent> <leader>ev :vsp $MYVIMRC<CR>
-nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
-
 noremap <c-z> <NOP>
 noremap <c-s> <NOP>
-
-" 选中并高亮最后一次插入的内容
-nnoremap gv `[v`]
-
-" select block
-nnoremap <leader>v V`}
-
-nnoremap <leader>u viwU
-
-" w!! to sudo & write a file
-"cmap w!! w !sudo tee >/dev/null %
-" }}}
-
-"General F1-F12 Mapping-----------------{{{
-" F11 行号开关，用于鼠标复制代码用
-" 为方便复制，用<F11>开启/关闭行号显示:
-"function! HideNumber()
-  "if(&relativenumber == &number)
-    "set relativenumber! number!
-  "elseif(&number)
-    "set number!
-  "else
-    "set relativenumber!
-  "endif
-  "set number?
-"endfunc
-
 "no help,thx
 noremap <F1> <NOP>
 
-"nnoremap <F11> :call HideNumber()<CR>
-" F3 显示可打印字符开关
-"nnoremap <F3> :set list! list?<CR>
-
-" F6 语法开关，关闭语法可以加快大文件的展示
-"nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
-
-"quickfix
-nnoremap <F10> :call QuickfixToggle()<cr>
-
-let g:quickfix_is_open = 0
-
-function! QuickfixToggle()
-    if g:quickfix_is_open
-        cclose
-        let g:quickfix_is_open = 0
-        execute g:quickfix_return_to_window . "wincmd w"
-    else
-        let g:quickfix_return_to_window = winnr()
-        copen
-        let g:quickfix_is_open = 1
-    endif
-endfunction
-"}}}
+" }}}
 
 "Commandline Mapping--------------------{{{
 cnoremap <C-j> <t_kd>
@@ -355,7 +274,7 @@ cnoremap <C-e> <End>
 
 "Search Utility-------------------------{{{
 
-"进入搜索Use sane regexes"
+" Use sane regexes
 nnoremap / /\v
 vnoremap / /\v
 
@@ -366,18 +285,12 @@ nnoremap <silent> * *zz
 nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 
-" 去掉搜索高亮
-nnoremap <silent><leader>/ :nohls<CR>
-
-" switch # *
-nnoremap # *
-nnoremap * #
+nnoremap <silent> <leader>/ :<C-U>nohlsearch<CR><C-L>
+vnoremap <silent> <leader>/ :<C-U>nohlsearch<CR>gv<C-L>
 
 "}}}
 
 "Tab/buffer Related------------------{{{
-
-nnoremap <leader>t :tabnew
 
 " normal模式下切换到确切的tab
 noremap <leader>1 1gt
@@ -391,99 +304,14 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
-" Toggles between the active and last active tab "
-" The first tab is always 1 "
-"let g:last_active_tab = 1
-"" nnoremap <leader>gt :execute 'tabnext ' . g:last_active_tab<cr>
- "nnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
-"" vnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
-""nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
-"autocmd TabLeave * let g:last_active_tab = tabpagenr()
-
-" 使用方向键切换buffer
-"noremap <left> :bp<CR>
-"noremap <right> :bn<CR>
-
-" 新建tab  Ctrl+t
-"nnoremap <C-t>     :tabnew
-"inoremap <C-t>     <Esc>:tabnew
-
-" tab切换
-"map <leader>th :tabfirst<cr>
-"map <leader>tl :tablast<cr>
-
-"map <leader>tj :tabnext<cr>
-"map <leader>tk :tabprev<cr>
-"map <leader>tn :tabnext<cr>
-"map <leader>tp :tabprev<cr>
-
-"map <leader>te :tabedit<cr>
-"map <leader>td :tabclose<cr>
-"map <leader>tm :tabm<cr>
-
 " }}}
 
 "InsertMode Mapping-----------------------{{{
 inoremap <c-l> <right>
 inoremap <c-h> <left>
-
-inoremap <c-v> <Esc>"+pi
 " }}}
 
 " }}}
-
-"FileType Settings------------------------{{{
-function! AutoSetFileHead()
-    "如果文件类型为.sh文件
-    if &filetype ==# 'sh'
-        call setline(1, "\#!/bin/bash")
-    endif
-
-    "如果文件类型为python
-    if &filetype ==# 'python'
-         call setline(1, "\#!/usr/bin/env python")
-         call append(1, "\# encoding: utf-8")
-         "call setline(1, "\# -*- coding: utf-8 -*-")
-    endif
-
-    normal G
-    normal o
-    normal o
-endfunc
-
-augroup filetype_grp
-    autocmd!
-    autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
-augroup END
-
-augroup highlight_grp
-    autocmd!
-    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
-    autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
-augroup END
-
-" }}}
-
-"Theme Settings--------------------{{{
-
-colorscheme eldar 
-" I dont't know why I don't use gvimrc either.
-if (has("gui_running"))
-    set guifont=Source\ Code\ Pro\ SemiBold\ 12
-    set guioptions-=T
-    set guioptions-=e
-    set guioptions-=r
-    set guioptions-=m
-    set guioptions-=L
-else
-    if &term !=# "linux" && &term !=# "fbterm" && &term !=# "screen"   
-        set termguicolors
-    endif
-endif
-
-" theme主题
-set background=dark
-"}}}
 
 "Plugin Setting-------------------------{{{
 
@@ -509,9 +337,6 @@ endfunction
 " nerdtree ------------------{{{
 augroup nerdtree_cli
     autocmd!
-    "autocmd StdinReadPre * let s:std_in=1
-    "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-    "the last remaining window
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup END
 
@@ -536,8 +361,6 @@ let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_key_list_select_completion = ['<TAB>'] 
 let g:ycm_key_list_previous_completion = ['<c-p>'] 
 
-set completeopt=menu,menuone
-
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_collect_identifiers_from_comments_and_strings = 0
 let g:ycm_server_log_level = 'info'
@@ -554,67 +377,29 @@ let g:ycm_warning_symbol = '☯'
 
 "white list
 let g:ycm_filetype_whitelist = {
-			\ "c":1,
-			\ "cpp":1,
-			\ "objc":1,
-			\ "sh":1,
-            \ "python":1,
-            \ "java":1,
-            \ "vim":1,
-            \ "html":1,
-            \ "vue":1,
-            \ "make":1,
-            \ "markdown":1,
-            \ "javascript":1,
-            \ "typescript":1,
-			\ }
+            \ "c":1,
+            \ "cpp":1,
+            \ "sh":1,
+            \ "html":1
+            \ }
 
 "nnoremap <leader>s :YcmCompleter GetType<CR>
 " kind of useful
 "nnoremap <leader>f :YcmCompleter FixIt<CR>
 
 let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,java,python,go': ['re!\w{2}'],
-			\ 'vim': ['re!\w{2}'],
-			\ 'html': ['re!\w{2}','</'],
-			\ }
-"}}}
-
-"tags---------------------{{{
-"gtk的tag
-"set tags+=~/.vim/tags/gtk/gtk-3.0.tags;
-"set tags+=~/.vim/tags/gtk/glib-2.0.tags;
-""set tags+=~/.vim/tags/gtk/atk-1.0.tags;
-""set tags+=~/.vim/tags/gtk/cairo.tags;
-"set tags+=~/.vim/tags/gtk/pixman-1.tags;
-""set tags+=~/.vim/tags/gtk/pango-1.0.tags;
-"set tags+=~/.vim/tags/gtk/gio-unix-2.0.tags;
-"set tags+=~/.vim/tags/gtk/gtk-pixbuf-2.0.tags;
-"set tags+=~/.vim/tags/gtk/libpng16.tags;
-
-"c tags
-"set tags+=~/.vim/tags/c.tags;
+            \ 'c,cpp': ['re!\w{2}'],
+            \ 'html': ['re!\w{2}','</'],
+            \ }
 "}}}
 
 "undo tree
-let s:undo_dir = expand("~/.cache/undodir")
-
-if !isdirectory(s:undo_dir)
-    silent! call mkdir(s:undo_dir, 'p')
-endif
-
-if has("persistent_undo")
-    set undodir=~/.cache/undodir
-    set undofile
-endif
-
 let g:undotree_WindowLayout = 3
 let g:undotree_ShortIndicators = 1
 let g:undotree_TreeNodeShape = '・'
 
 nnoremap <F6> :UndotreeToggle<cr>
 
-set noshowmode
 
 "Leaderf -------------------------------------{{{
 let g:Lf_ShortcutF = '<c-p>'
@@ -645,78 +430,67 @@ let g:Lf_PreviewResult = {'Function':0}
 let g:Lf_Ctags= '/usr/bin/ctags' 
 
 let g:Lf_NormalMap = {
-	\ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
-	\ "Buffer": [["<ESC>", ':exec g:Lf_py "bufExplManager.quit()"<CR>']],
-	\ "Mru":    [["<ESC>", ':exec g:Lf_py "mruExplManager.quit()"<CR>']],
-	\ "Tag":    [["<ESC>", ':exec g:Lf_py "tagExplManager.quit()"<CR>']],
-	\ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
-	\ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
-	\ }
+    \ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
+    \ "Buffer": [["<ESC>", ':exec g:Lf_py "bufExplManager.quit()"<CR>']],
+    \ "Mru":    [["<ESC>", ':exec g:Lf_py "mruExplManager.quit()"<CR>']],
+    \ "Tag":    [["<ESC>", ':exec g:Lf_py "tagExplManager.quit()"<CR>']],
+    \ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
+    \ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
+    \ }
 "}}}
 
 "gutentags --------------{{{
 " gutentags 搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
-let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
+"let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
 
-" 所生成的数据文件的名称
-let g:gutentags_ctags_tagfile = '.tags'
+"" 所生成的数据文件的名称
+"let g:gutentags_ctags_tagfile = '.tags'
 
-let g:gutentags_modules = []
-let g:gutentags_define_advanced_commands = 1
+"let g:gutentags_modules = []
+"let g:gutentags_define_advanced_commands = 1
 
 "if executable('ctags')
     "let g:gutentags_modules += ['ctags']
 "endif
 
-" 配置 ctags 的参数
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+"" 配置 ctags 的参数
+"let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+"let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+"let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
-if executable('gtags-cscope') && executable('gtags')
-    let g:gutentags_modules += ['gtags_cscope']
-else
-    echo "no gtags found,I think you reinstalled the system,take care bro.:)"
-endif
+""if executable('gtags-cscope') && executable('gtags')
+    ""let g:gutentags_modules += ['gtags_cscope']
+""else
+    ""echo "no gtags found,I think you reinstalled the system,take care bro.:)"
+""endif
 
-" 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
-let s:vim_tags = expand('~/.cache/tags')
-let g:gutentags_cache_dir = s:vim_tags
+"" 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
+"let s:vim_tags = expand('~/.cache/tags')
+"let g:gutentags_cache_dir = s:vim_tags
 
-
-" 检测 ~/.cache/tags 不存在就新建
-if !isdirectory(s:vim_tags)
-   silent! call mkdir(s:vim_tags, 'p')
-endif
-
-"set global
-"let GtagsCscope_Auto_Load = 1
-"let GtagsCscope_Auto_Map = 1
-"let GtagsCscope_Quiet = 1
+"" 检测 ~/.cache/tags 不存在就新建
+"if !isdirectory(s:vim_tags)
+   "silent! call mkdir(s:vim_tags, 'p')
+"endif
 
 "plus
-let g:gutentags_auto_add_gtags_cscope = 0
-let g:gutentags_plus_nomap = 1
+"let g:gutentags_auto_add_gtags_cscope = 0
+"let g:gutentags_plus_nomap = 1
 
-noremap <silent> <leader><leader>s :GscopeFind s <C-R><C-W><cr>
-noremap <silent> <leader><leader>g :GscopeFind g <C-R><C-W><cr>
-noremap <silent> <leader><leader>c :GscopeFind c <C-R><C-W><cr>
-noremap <silent> <leader><leader>t :GscopeFind t <C-R><C-W><cr>
-noremap <silent> <leader><leader>e :GscopeFind e <C-R><C-W><cr>
-noremap <silent> <leader><leader>f :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
-noremap <silent> <leader><leader>i :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
-noremap <silent> <leader><leader>d :GscopeFind d <C-R><C-W><cr>
-noremap <silent> <leader><leader>a :GscopeFind a <C-R><C-W><cr>
+"noremap <silent> <leader><leader>s :GscopeFind s <C-R><C-W><cr>
+"noremap <silent> <leader><leader>g :GscopeFind g <C-R><C-W><cr>
+"noremap <silent> <leader><leader>c :GscopeFind c <C-R><C-W><cr>
+"noremap <silent> <leader><leader>t :GscopeFind t <C-R><C-W><cr>
+"noremap <silent> <leader><leader>e :GscopeFind e <C-R><C-W><cr>
+"noremap <silent> <leader><leader>f :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+"noremap <silent> <leader><leader>i :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+"noremap <silent> <leader><leader>d :GscopeFind d <C-R><C-W><cr>
+"noremap <silent> <leader><leader>a :GscopeFind a <C-R><C-W><cr>
 
 "}}}
 
 "delimitmate
-let delimitMate_expand_cr = 1
-
-augroup delimit_pair
-    autocmd!
-    autocmd FileType cpp let b:delimitMate_matchpairs = "(:),[:],{:}"
-augroup END
+let g:delimitMate_expand_cr = 1
 
 nnoremap gw :InteractiveWindow<CR>
 
@@ -734,24 +508,24 @@ let g:sendtorepl_invoke_key = "<leader>o"
 let g:repl_position = 3
 let g:repl_width = 50
 let g:repl_program = {
-			\	"python": "python3",
-			\	"default": "bash",
+            \	"python": "python3",
+            \	"default": "bash",
             \   "javascript": "node",
             \   "cpp": "cling",
-			\	}
+            \	}
 let g:repl_input_symbols = {
             \   'python': ['>>>', '>>>>', 'ipdb>', 'pdb', '...'],
             \   'javascript': ['>', '...'],
             \   'cpp':['[cling]$','[cling]$ ?'],
             \   }
 let g:repl_exit_commands = {
-			\	"python": "quit()",
+            \	"python": "quit()",
             \   "node":'.exit',
             \   "cling":".q",
-			\	"bash": "exit",
-			\	"zsh": "exit",
-			\	"default": "exit",
-			\	}
+            \	"bash": "exit",
+            \	"zsh": "exit",
+            \	"default": "exit",
+            \	}
 
 " quick-scope
 let g:qs_max_chars=80
@@ -759,10 +533,6 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 "}}}
 
-" Own Advanced Setting-----------------{{{
+runtime thirdparty.vim
 
-" grep operator
-nmap gs <plug>GrepOperatorNormal
-vmap gs <plug>GrepOperatorVisual
-
-" }}}
+nohlsearch

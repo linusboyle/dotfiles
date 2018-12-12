@@ -41,3 +41,4 @@ alias gr='. gr.sh'
 # untar, for most of the time
 alias untar='tar -zxvf '
 alias r='ranger'
+alias logremote='ssh ubuntu@148.70.71.100'
