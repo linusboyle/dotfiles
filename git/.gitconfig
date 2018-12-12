@@ -1,12 +1,15 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = Linus Boyle
+	name = Zhilei Han
 	email = linusboyle@gmail.com
 [color]
     ui = true
 [core]
     whitespace = trailing-space,space-before-tab
     pager = less -iFRXS -x4
+	excludesfile = /home/linusboyle/.gitignore
 [merge]
     tool = vimdiff
+[init]
+	templateDir = ~/.git_template
