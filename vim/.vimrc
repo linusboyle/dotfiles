@@ -203,6 +203,7 @@ endif
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-,g-,f-
 set cscopeprg=gtags-cscope
+set cscopetag
     
 let g:todo_pattern = '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|BUG\|HACK\)'
 let g:debug_pattern = '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)'

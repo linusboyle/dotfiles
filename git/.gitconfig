@@ -13,3 +13,5 @@
     tool = vimdiff
 [init]
 	templateDir = ~/.git_template
+[diff]
+	submodule = log

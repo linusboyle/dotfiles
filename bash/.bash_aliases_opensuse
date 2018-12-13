@@ -42,3 +42,11 @@ alias gr='. gr.sh'
 alias untar='tar -zxvf '
 alias r='ranger'
 alias logremote='ssh ubuntu@148.70.71.100'
+
+# git
+
+alias gcommit='git commit'
+alias gpush='git push'
+alias gblame='git blame'
+alias gstatus='git status'
+alias glog='git log'
