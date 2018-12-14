@@ -1,3 +1,4 @@
 [submodule "vim/Viminal"]
 	path = vim/Viminal
 	url = git@github.com:linusboyle/Viminal.git
+    branch = myconf
