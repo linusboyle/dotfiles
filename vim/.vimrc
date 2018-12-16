@@ -493,7 +493,7 @@ let g:Lf_NormalMap = {
 "delimitmate
 let g:delimitMate_expand_cr = 1
 
-nnoremap gw :InteractiveWindow<CR>
+nmap gw <plug>(InteractiveWindow)
 
 "header
 let g:header_field_author = 'Linus Boyle'
