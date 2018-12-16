@@ -64,9 +64,7 @@ if has('virtualedit')
 endif
 
 if has('linebreak')
-    set breakindent
     set linebreak " break lines after words
-    set showbreak=...
 endif
 
 if has('folding')
