@@ -63,9 +63,9 @@ if has('virtualedit')
     set virtualedit+=block
 endif
 
-if has('linebreak')
-    set linebreak " break lines after words
-endif
+"if has('linebreak')
+    "set linebreak " break lines after words
+"endif
 
 if has('folding')
   set foldenable
@@ -108,7 +108,7 @@ set shortmess=atI
 let $BASH_ENV = "~/.bash_aliases"
 
 " esckey
-set timeoutlen=200
+set timeoutlen=300
 
 " pop prompt on failed operation
 set confirm
@@ -222,6 +222,9 @@ nmap <leader><leader>f <plug>gtagsfind_f
 nmap <leader><leader>i <plug>gtagsfind_i
 nmap <leader><leader>d <plug>gtagsfind_d
 nmap <leader><leader>a <plug>gtagsfind_a
+
+" syn group
+nmap <leader>s <plug>(showSynGroup)
 
 "Fundamental Mapping---------------{{{
 
