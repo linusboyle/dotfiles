@@ -9,7 +9,7 @@ REMOVE_LOG="/tmp/undoclean-log"
 
 E_WRONGARGS=65
 printhelp() {
-    echo "Usage: `basename $0` [THRESHOLD] [PATH]"
+    echo "Usage: $(basename "$0") [THRESHOLD] [PATH]"
     exit $E_WRONGARGS
 }
 
@@ -21,7 +21,7 @@ esac
 
 if [ -n "$2" ]
 then
-    if [ -d "$2"]
+    if [ -d "$2" ]
     then
         UNDO_PATH=$2
     else
