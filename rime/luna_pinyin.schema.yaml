@@ -14,8 +14,6 @@ schema:
       * Android open source project
       * Chewing - 新酷音
       * opencc - 開放中文轉換
-  dependencies:
-      - emoji
 
 switches:
   - name: ascii_mode
@@ -86,12 +84,7 @@ custom_phrase:
   enable_sentence: false
   initial_quality: 1
 
-reverse_lookup:
-  dictionary: emoji
-  enable_completion: true
-  prefix: "`"
 # suffix: "'"
-  tips: 〔表情〕
 # preedit_format:
 #  - xlit/hspnz/一丨丿丶乙/
 # comment_format:
