@@ -40,7 +40,7 @@ font pango:Source Code Pro SemiBold 8
 floating_modifier $mod
 
 # 浮动窗口最大大小
-floating_maximum_size 1200 x 650
+floating_maximum_size 1200 x 700
 
 # 为应用指定工作区
 assign [class="pr"] $WS4

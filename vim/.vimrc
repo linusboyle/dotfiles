@@ -107,7 +107,7 @@ set shortmess=atI
 " use bash aliases
 let $BASH_ENV = "~/.bash_aliases"
 
-" esckey
+" timeout
 set timeoutlen=300
 
 " pop prompt on failed operation
@@ -159,6 +159,7 @@ set nocursorline
 set laststatus=1 " default
 set noshowmode " don't show mode
 
+set display=lastline
 " Allow buffers to have changes without being displayed
 set hidden
 
@@ -225,6 +226,8 @@ nmap <leader><leader>a <plug>gtagsfind_a
 
 " syn group
 nmap <leader>s <plug>(showSynGroup)
+
+inoremap <C-U> <C-G>u<C-U>
 
 "Fundamental Mapping---------------{{{
 
