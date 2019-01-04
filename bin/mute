@@ -4,13 +4,9 @@
 amixer -q set Master toggle 
 
 stat=$(amixer get Master |egrep -o '\[(on|off)\]'|head -1) 
-#off=$(amixer get Master |egrep -o '\[off\]'|head -1) 
 
-#printf "$on"
-#printf "$off"
 if test $stat = "[on]" ; then
     notify-send -i audio-ready -t 3000 "Audio Now On"
-#elif test $off = "[off]" ; then
 else
     notify-send -i audio-off -t 3000 "Audio Now Off"
 fi

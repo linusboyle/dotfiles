@@ -12,9 +12,7 @@ URxvt.terminalName:rxvt-unicode-256color
 URxvt.borderless: true
 URxvt.urgentOnBell: false
 
-
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0000/c800
 urxvt*background: [90]#000000
 URxvt*fading: 20
 URxvt.shading: 20
@@ -40,77 +38,66 @@ URxvt.scrollBar_floating:False
 URxvt.mouseWheelScrollPage:True
 URxvt.cursorBlink:True
 
-!URxvt.transparent: false
-!URxvt.depth: 32
-
-#define term_background		#000000
-#define term_foreground		#dfdfdf
-
-#define term_dark_black		#000000
-#define term_dark_red		#cd0000
-#define term_dark_green		#00cd00
-#define term_dark_yellow	#cdcd00
-#define term_dark_blue		#0000cd
-#define term_dark_magenta	#cd00cd
-#define term_dark_cyan		#00cdcd
-#define term_dark_white		#e5e5e5
-#define term_light_black	#4d4d4d
-#define term_light_red		#ff0000
-#define term_light_green	#00ff00
-#define term_light_yellow	#ffff00
-#define term_light_blue		#0000ff
-#define term_light_magenta	#ff00ff
-#define term_light_cyan		#00ffff
-#define term_light_white #ffffff
-
-
-*background:              term_background
-*foreground:              term_foreground
-
-! URxvt*highlightTextColor:      term_dark_black
-! URxvt*highlightColor:          term_light_white
-
-! Sixteen colors for terminals.
-*color0:                  term_dark_black
-*color1:                  term_dark_red
-*color2:                  term_dark_green
-*color3:                  term_dark_yellow
-*color4:                  term_dark_blue
-*color5:                  term_dark_magenta
-*color6:                  term_dark_cyan
-*color7:                  term_dark_white
-*color8:                  term_light_black
-*color9:                  term_light_red
-*color10:                 term_light_green
-*color11:                 term_light_yellow
-*color12:                 term_light_blue
-*color13:                 term_light_magenta
-*color14:                 term_light_cyan
-*color15:                 term_light_white
-
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 URxvt.letterSpace: -1
 
-!URxvt.perl-ext-common: ...,keyboard-select
-!URxvt.keysym.M-w: perl:keyboard-select:activate
-!URxvt.keysym.M-s: perl:keyboard-select:search
-!URxvt.keyboard-select.clipboard: true
 
-!!!!!rofi!!!!!!
-!rofi.color-window: argb:dd2d303b, #7c8389, #1d1f21
-!rofi.color-normal: argb:2c1d1f21, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
-!rofi.color-urgent: argb:2c1d1f21, #cc6666, argb:e54b5160, #a54242, #f9f9f9
-!rofi.color-active: argb:2c1d1f21, #65acff, argb:e44b5160, #4491ed, #f9f9f9
 
-!rofi.width: 100
-!rofi.lines: 5
-!rofi.columns: 3
-!rofi.font: Source Code Pro 13
-!rofi.bw: 0
-!rofi.padding: 300
-!rofi.eh: 1
-!!rofi.fullscreen: true
-!!rofi.separator-style: solid
-!rofi.hide-scrollbar: true
-!!rofi.location: 1
+
+
+
+
+#define base00 #262626
+#define base01 #96e931
+#define base02 #e89e0f
+#define base03 #555f69
+#define base04 #4083cd
+#define base05 #a3a3a3
+#define base06 #d358d5
+#define base07 #dfdfdf
+#define base08 #cb4674
+#define base09 #fc4474
+#define base0A #a18417
+#define base0B #74d55c
+#define base0C #af87d7
+#define base0D #627ad2
+#define base0E #91429d
+#define base0F #22abbb
+
+! Set the colours from the colour definitions
+*.foreground:  base05
+#ifdef background_opacity
+*.background:  [background_opacity]base00
+#else
+*.background:  base00
+#endif
+*.cursorColor: base05
+
+! Dark colours
+*.color0:  base00
+*.color1:  base08
+*.color2:  base0B
+*.color3:  base0A
+*.color4:  base0D
+*.color5:  base0E
+*.color6:  base0C
+*.color7:  base05
+
+! Light colours
+*.color8:  base03
+*.color9:  base09
+*.color10: base01
+*.color11: base02
+*.color12: base04
+*.color13: base06
+*.color14: base0F
+*.color15: base07
+
+! Additional colours (may not be displayed in some terminals)
+*.color16: base09
+*.color17: base0F
+*.color18: base01
+*.color19: base02
+*.color20: base04
+*.color21: base06

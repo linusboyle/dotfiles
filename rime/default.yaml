@@ -10,7 +10,7 @@ schema_list:
 switcher:
   caption: 〔狷墨的输入法〕
   hotkeys:
-    - Control+grave
+    - Alt+grave
   save_options:
     - full_shape
     - ascii_punct

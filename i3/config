@@ -22,7 +22,7 @@ set $WS9  9:
 set $WS0 10:
 
 set $terminal konsole
-set $filemanager polo-gtk
+set $filemanager dolphin
 set $browser firefox
 
 # i3-gap only
@@ -46,7 +46,7 @@ floating_maximum_size 1200 x 700
 assign [class="pr"] $WS4
 assign [class="tm"] $WS4
 
-set $enablefloat border normal, floating enable
+set $enablefloat floating enable
 # 指定浮动的窗口
 for_window [class="ksysguard"] $enablefloat
 for_window [class="Gitk"] $enablefloat
@@ -59,23 +59,30 @@ for_window [class="GoldenDict"] $enablefloat
 # 标题居中
 title_align center
 
-set $purple #bf40bf
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $grey #a89984
+set $darkgrey #1d2021
+
 set $white #ffffff
 set $black #000000
-set $darkblue #9933ff
-set $grey #333333
 
 # 颜色
-client.focused              $purple $purple $white
-client.focused_inactive 	$darkblue $darkblue $white #484e50 $grey
-client.unfocused           	$grey $grey $white
-client.urgent               #CD5C5C #CD5C5C $white
+client.focused          $bg $bg $yellow $purple $bg
+client.focused_inactive $bg $bg $aqua $purple $bg
+client.unfocused        $bg $bg $white $purple $bg
+client.urgent           $red $red $white $red $red
 
-client.background       #ffffff
+client.background   $bg
 
 # 边界
 hide_edge_borders smart
-default_border pixel
+default_border normal
 default_floating_border normal
 
 # 全屏模式下弹出窗口，退出全屏
@@ -129,8 +136,8 @@ $super+f fullscreen toggle
 $super+x layout toggle all
 
 # 切换浮动/平铺
-#$super+Shift+space floating enable, border normal
-bindsym $mod+Shift+space "mark --add _; [con_mark=floating] floating disable, border pixel, mark --add --toggle _; [con_mark=_] floating enable, border normal; mark --add --toggle floating;"
+$super+Shift+space floating enable
+#bindsym $mod+Shift+space "mark --add _; [con_mark=floating] floating disable, border pixel, mark --add --toggle _; [con_mark=_] floating enable, border normal; mark --add --toggle floating;"
 
 show_marks yes
 
@@ -138,7 +145,7 @@ show_marks yes
 $super+space focus mode_toggle
 
 # 隐藏窗口 
-$super+Shift+minus border normal, move scratchpad
+$super+Shift+minus move scratchpad
 
 # 恢复窗口
 $super+minus scratchpad show
@@ -186,7 +193,7 @@ $super+Shift+r restart
 
 # 状态栏
 bar {
-        status_command /usr/bin/bumblebee-status -m time mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" -t greyish-powerline
+        status_command /home/linusboyle/app/bumblebee-status/bumblebee-status -m nic mpd datetime amixer battery cpu memory -t gruvbox-powerline
         #status_command $HOME/src/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink pasource -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized-powerline
 
         #position top
@@ -203,11 +210,18 @@ bar {
         #separator_symbol ""
 
         colors {
-            background #101010
-            statusline #FFFFFF
+            background $bg
+            statusline $yellow
             separator  #3399FF
+
             # 工作区颜色         边框    背景    文字
-            #focused_workspace  #3297FD #11111100 #FFFFFF
+            focused_workspace    $aqua $aqua $darkgrey
+            inactive_workspace   $darkgrey $darkgrey $yellow
+            active_workspace     $darkgrey $darkgrey $yellow
+            urgent_workspace     $red $red $bg
+            binding_mode         $darkgrey $darkgrey $yellow
+
+            #focused_workspace  #689d68 #689d68 #FFFFFF
             #active_workspace   #FFFFFF #FFFFFF00 #FFFFFF
             #inactive_workspace #111111 #11111100 #FFFFFF
             #urgent_workspace   #990000 #11111100 #FFFFFF
@@ -291,11 +305,11 @@ bindsym XF86AudioMute $exe mute
 # >>>自动启动<<<
 
 #背景图片
-$exe feh --bg-fill "/home/linusboyle/pix/bg2.jpg"
+#$exe feh --bg-fill "/home/linusboyle/pix/bg2.jpg"
 #$exe get-wallpaper
 
 #合成器
-$exe compton -b
+#$exe compton -b
 
 #通知服务
 #exec --no-startup-id killall deepin-notifications
