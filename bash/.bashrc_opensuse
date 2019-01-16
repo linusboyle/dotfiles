@@ -38,7 +38,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+    . "$HOME/.bash_aliases"
 fi
 
 eval "$(dircolors)"
@@ -62,5 +62,6 @@ printf "\e[0m"
 
 export EDITOR=vim
 export GTAGSLABEL=native-pygments
+export NNN_COPIER=copyit
 
 . tmux_color.sh

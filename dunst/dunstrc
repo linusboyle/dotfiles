@@ -9,7 +9,7 @@
     show_age_threshold = 60
     word_wrap = yes
     ignore_newline = no
-    geometry = "250x5-6+30"
+    geometry = "240x5-6-30"
     transparency = 0
     idle_threshold = 360
     monitor = 0
@@ -24,7 +24,7 @@
     frame_width = 2
     frame_color = "#f5b041"
     icon_position = left
-    icon_path = /usr/share/icons/Papirus/16x16/status:/usr/share/icons/Papirus/16x16/devices:/usr/share/icons/Papirus/16x16/actions:/usr/share/icons/Papirus/16x16/mimetypes
+    icon_path = /usr/share/icons/Papirus/16x16/status:/usr/share/icons/Papirus/16x16/devices:/usr/share/icons/Papirus/16x16/actions:/usr/share/icons/Papirus/16x16/mimetypes:/usr/share/icons/Papirus/16x16/panel
 
 [shortcuts]
     close = ctrl+space

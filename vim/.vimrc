@@ -159,7 +159,12 @@ set nocursorcolumn
 set nocursorline
 
 " status line display
-set laststatus=1 " default
+if has('statusline')
+    set laststatus=2
+    set statusline=%f\ \|\ %l:%c\ %p%%\ \|\ %B
+    "right aligned
+    set statusline+=%=%m%r%y
+endif
 set noshowmode " don't show mode
 
 set display=lastline
@@ -207,6 +212,7 @@ else
     endif
 endif
 
+" cscope interface
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-,g-,f-
 set cscopeprg=gtags-cscope
 set cscopetag

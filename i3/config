@@ -21,6 +21,18 @@ set $WS8  8:
 set $WS9  9:
 set $WS0 10:
 
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $grey #a89984
+set $darkgrey #1d2021
+set $white #ffffff
+set $black #000000
+
 set $terminal konsole
 set $filemanager dolphin
 set $browser firefox
@@ -32,7 +44,7 @@ set $browser firefox
 smart_borders on
 
 # >>>字体<<<
-font pango:Source Code Pro SemiBold 8
+font pango:Source Code Pro Bold 9
 
 # >>>窗口<<<
 
@@ -55,30 +67,18 @@ for_window [class="Electron"] $enablefloat
 for_window [class="Gitg"] $enablefloat
 for_window [class="Zathura"] $enablefloat
 for_window [class="GoldenDict"] $enablefloat
+for_window [class="netease-cloud-music"] $enablefloat
+for_window [class="qutebrowser"] border pixel
 
 # 标题居中
 title_align center
-
-set $bg #282828
-set $red #cc241d
-set $green #98971a
-set $yellow #d79921
-set $blue #458588
-set $purple #b16286
-set $aqua #689d68
-set $grey #a89984
-set $darkgrey #1d2021
-
-set $white #ffffff
-set $black #000000
 
 # 颜色
 client.focused          $bg $bg $yellow $purple $bg
 client.focused_inactive $bg $bg $aqua $purple $bg
 client.unfocused        $bg $bg $white $purple $bg
 client.urgent           $red $red $white $red $red
-
-client.background   $bg
+client.background       $bg
 
 # 边界
 hide_edge_borders smart
@@ -136,7 +136,7 @@ $super+f fullscreen toggle
 $super+x layout toggle all
 
 # 切换浮动/平铺
-$super+Shift+space floating enable
+$super+Shift+space floating toggle
 #bindsym $mod+Shift+space "mark --add _; [con_mark=floating] floating disable, border pixel, mark --add --toggle _; [con_mark=_] floating enable, border normal; mark --add --toggle floating;"
 
 show_marks yes
@@ -201,7 +201,7 @@ bar {
         #hidden_state hide
         #modifier Mod1
 
-        font pango:Source Code Pro SemiBold 9
+        font pango:Source Code Pro Bold 9
         
         #bindsym button1 nop
 
@@ -305,21 +305,23 @@ bindsym XF86AudioMute $exe mute
 # >>>自动启动<<<
 
 #背景图片
-#$exe feh --bg-fill "/home/linusboyle/pix/bg2.jpg"
+$exe feh --bg-fill "/home/linusboyle/pix/bg.jpg"
 #$exe get-wallpaper
 
 #合成器
 #$exe compton -b
 
 #通知服务
-#exec --no-startup-id killall deepin-notifications
 $exe dunst
 
 #禁用主板鸣笛
 $exe xset b off
 
 #mpd server
-$exe mpd
+$exe pgrep mpd || mpd
+
+#redshift
+$exe redshift-gtk
 
 #load the xresources
 exec_always --no-startup-id xrdb ~/.Xresources
