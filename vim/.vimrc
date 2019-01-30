@@ -25,13 +25,9 @@
 " with referrence to a great many others' files
 " this configuration file is folded in the method "marker"
 
-if v:progname ==? "evim"
-    finish
-endif
-
 set nocp
 
-" syntax highlight
+" syntax highlighting
 if has('syntax')
     syntax enable
     syntax on
@@ -50,11 +46,11 @@ if has('diff') && v:version > 800
 endif
 
 " indent
-set autoindent          " Use indent of previous line on new lines
+set autoindent
 set smartindent
-set tabstop=4           " Tab键的宽度
-set shiftwidth=4        " 缩进对应的空格数
-set softtabstop=4       " Tab缩进
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set smarttab
 set shiftround
@@ -67,6 +63,9 @@ endif
 "if has('linebreak')
     "set linebreak " break lines after words
 "endif
+
+"let ftplugins set it
+set path-=/usr/include
 
 " fold
 if has('folding')
@@ -95,6 +94,8 @@ set relativenumber
 " complete
 if exists('+completeopt')
     set completeopt=menu,menuone
+    set complete-=u
+    set complete-=b
 endif
 
 " case setting
@@ -161,12 +162,16 @@ set nocursorline
 " status line display
 if has('statusline')
     set laststatus=2
-    set statusline=%f\ \|\ %l:%c\ %p%%\ \|\ %B
+    set statusline=%#Directory#
+    set statusline+=%f\ %r%m
+    set statusline+=%#MoreMsg#
+    set statusline+=\ %B
     "right aligned
-    set statusline+=%=%m%r%y
+    set statusline+=%#Conceal#
+    set statusline+=%=%l:%c\ %p%%\ %y
 endif
-set noshowmode " don't show mode
 
+set noshowmode " don't show mode
 set display=lastline
 " Allow buffers to have changes without being displayed
 set hidden
@@ -182,7 +187,8 @@ set noshowmatch
 
 " wildmenu settings
 set wildmenu
-set wildmode=list,full
+set wildmode=full
+set wildcharm=<C-z>
 
 " encodings
 "
@@ -191,7 +197,7 @@ if has('multi_byte') && !exists('$LANG') && &encoding ==# 'latin1'
   set encoding=utf-8
 endif
 
-set fileencodings=utf-8,ucs-bom,gb18030,big5,cp936,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,ucs-bom,gb18030,big5,latin1
 set helplang=cn
 set termencoding=utf-8
 

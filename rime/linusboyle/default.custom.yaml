@@ -1,0 +1,7 @@
+patch:
+    "menu/page_size": 8
+    "schema_list":
+        - schema: luna_pinyin
+    "switcher/caption": 〔狷墨的输入法〕
+    "switcher/hotkeys":
+        - Alt+grave
