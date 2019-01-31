@@ -1,0 +1,4 @@
+patch:
+    "switches/@last":
+        name: ascii_input
+        states: [ 句读, 标点 ]
