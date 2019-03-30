@@ -30,14 +30,12 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 # for usual use of pandoc
-alias pan='pandoc --pdf-engine=xelatex -V CJKmainfont="Noto Serif SC" -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"'
+alias pan='pandoc --pdf-engine=xelatex -V CJKmainfont="Noto Sans SC" -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"'
 
 alias gr='. gr.sh'
 
 # untar, for most of the time
 alias untar='tar -zxvf '
-alias r='ranger'
-alias logremote='ssh ubuntu@148.70.71.100'
 
 # git
 

@@ -1,5 +1,5 @@
 [global]
-    font = "Source Code Pro SemiBold 10"
+    font = "Hack 10"
     markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
@@ -19,10 +19,12 @@
     separator_height = 2
     padding = 8
     horizontal_padding = 8
-    separator_color = "#f8c471"
     startup_notification = false
+
     frame_width = 2
-    frame_color = "#f5b041"
+    frame_color = "#959DCB"
+    separator_color = "#959DCB"
+
     icon_position = left
     icon_path = /usr/share/icons/Papirus/16x16/status:/usr/share/icons/Papirus/16x16/devices:/usr/share/icons/Papirus/16x16/actions:/usr/share/icons/Papirus/16x16/mimetypes:/usr/share/icons/Papirus/16x16/panel
 
@@ -32,17 +34,17 @@
     history = ctrl+grave
     context = ctrl+shift+period
 
-[urgency_low]
-    background = "#282828"
-    foreground = "#ebdbb2"
-    timeout = 5
+[base16_low]
+    msg_urgency = low
+    background = "#444267"
+    foreground = "#676E95"
 
-[urgency_normal]
-    background = "#282828"
-    foreground = "#ebdbb2"
-    timeout = 10
+[base16_normal]
+    msg_urgency = normal
+    background = "#32374D"
+    foreground = "#959DCB"
 
-[urgency_critical]
-    background = "#282828"
-    foreground = "#ebdbb2"
-    timeout = 0
+[base16_critical]
+    msg_urgency = critical
+    background = "#F07178"
+    foreground = "#959DCB"

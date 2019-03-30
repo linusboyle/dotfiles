@@ -22,7 +22,7 @@
 " SOFTWARE.
 
 " vim configuration file of Linus Boyle
-" with referrence to a great many others' files
+" with reference to a great many others' files
 " this configuration file is folded in the method "marker"
 
 set nocp
@@ -159,18 +159,6 @@ set magic
 set nocursorcolumn
 set nocursorline
 
-" status line display
-if has('statusline')
-    set laststatus=2
-    set statusline=%#Directory#
-    set statusline+=%f\ %r%m
-    set statusline+=%#MoreMsg#
-    set statusline+=\ %B
-    "right aligned
-    set statusline+=%#Conceal#
-    set statusline+=%=%l:%c\ %p%%\ %y
-endif
-
 set noshowmode " don't show mode
 set display=lastline
 " Allow buffers to have changes without being displayed
@@ -203,25 +191,44 @@ set termencoding=utf-8
 
 " colorscheme and gui setting
 if has('gui_running')
-    set guifont=Source\ Code\ Pro\ SemiBold\ 12
+    set guifont=Hack\ 13
     set guioptions-=T
     set guioptions-=e
     set guioptions-=r
     set guioptions-=m
     set guioptions-=L
-    colorscheme space-vim-dark
-else
-    if &t_Co >= 256
-        colorscheme gruvbox 
-    else
-        colorscheme eldar
-    endif
+    "colorscheme space-vim-dark
+"else
+    "colorscheme eldar
+endif
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
+" status line display
+if has('statusline')
+    set laststatus=2
+    set statusline=%#Directory#
+    set statusline+=%f\ %r%m
+    set statusline+=%#MoreMsg#
+    set statusline+=\ %B
+    "right aligned
+    set statusline+=%#ModeMsg#
+    set statusline+=%=%l:%c\ %p%%\ %y
 endif
 
 " cscope interface
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-,g-,f-
 set cscopeprg=gtags-cscope
 set cscopetag
+
+" thesaurus
+set thesaurus+=$HOME/.vim/thesaurus/mthesaur.txt
+
+" dictionary
+set dictionary+=$HOME/.vim/dictionary/english.txt 
     
 let g:todo_pattern = '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|BUG\|HACK\)'
 let g:debug_pattern = '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)'

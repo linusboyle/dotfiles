@@ -56,12 +56,25 @@ fi
 
 #ulimit -c unlimited
 
-printf "\e[36m"
-figlet "Welcome, Linus!" -f future
-printf "\e[0m" 
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+#printf "\e[36m"
+#figlet "Welcome, Linus!" -f future
+#printf "\e[0m" 
 
 export EDITOR=vim
 export GTAGSLABEL=native-pygments
 export NNN_COPIER=copyit
+export ENHANCD_FILTER=fzy
 
-. tmux_color.sh
+source tmux_color.sh
+source "$HOME/app/enhancd/init.sh"
+
+# added by travis gem
+[ -f /home/linusboyle/.travis/travis.sh ] && source /home/linusboyle/.travis/travis.sh
+
+export QSYS_ROOTDIR="/home/linusboyle/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
+
+export TEXMACS_PATH="$HOME/app/TeXmacs"
+export PATH="$TEXMACS_PATH/bin:$PATH"
