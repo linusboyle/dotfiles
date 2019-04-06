@@ -8,7 +8,7 @@
 [core]
     whitespace = trailing-space,space-before-tab
     pager = less -iFRXS -x4
-	excludesfile = /home/linusboyle/.gitignore
+	excludesfile = /home/linusboyle/.gitignore.global
 [merge]
     tool = vimdiff
 [init]
