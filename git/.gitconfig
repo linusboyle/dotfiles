@@ -11,5 +11,7 @@
 	excludesfile = /home/linusboyle/.gitignore.global
 [merge]
     tool = vimdiff
+    keepBackup = false
+    prompt = true
 [init]
 	templateDir = ~/.git_template

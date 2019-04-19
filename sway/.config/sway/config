@@ -1,0 +1,322 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Your preferred terminal emulator
+set $term urxvt-256color
+# Your preferred application launcher
+set $menu rofi_run
+# graphical file manager
+set $filemanager dolphin
+# web browser
+set $browser firefox
+set $super bindsym Mod4
+
+set $WS1  1:
+set $WS2  2:
+set $WS3  3:
+set $WS4  4:
+set $WS5  5:
+set $WS6  6:
+set $WS7  7:
+set $WS8  8:
+set $WS9  9:
+set $WS0 10:
+
+# COLORS
+set $base00 #292D3E
+set $base01 #444267
+set $base02 #32374D
+set $base03 #676E95
+set $base04 #8796B0
+set $base05 #959DCB
+set $base06 #959DCB
+set $base07 #FFFFFF
+set $base08 #F07178
+set $base09 #F78C6C
+set $base0A #FFCB6B
+set $base0B #C3E88D
+set $base0C #89DDFF
+set $base0D #82AAFF
+set $base0E #C792EA
+set $base0F #FF5370
+
+client.focused          $base05 $base0D $base00 $base0D $base0D
+client.focused_inactive $base01 $base01 $base05 $base03 $base01
+client.unfocused        $base01 $base00 $base05 $base01 $base01
+client.urgent           $base08 $base08 $base00 $base08 $base08
+client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.background       $base07
+
+# Font
+font pango:Hack Bold 10
+
+### Output configuration
+#
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg /home/linusboyle/pix/trianglify.png fill
+#
+# Example configuration:
+#
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+### Input configuration
+#
+# Example configuration:
+#
+#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
+
+### Key bindings
+#
+# Basics:
+#
+    # start a terminal
+    bindsym $mod+Return exec $term
+
+    # kill focused window
+    bindsym $mod+q kill
+
+    # start your launcher
+    bindsym $mod+r exec $menu
+
+    # start your filemanager
+    bindsym $mod+e exec $filemanager
+
+    # start your browser
+    bindsym $mod+c exec $browser
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # restart the configuration file
+    bindsym $mod+Shift+r restart
+
+    # exit sway (logs you out of your wayland session)
+    bindsym $mod+Shift+e exit
+
+    hide_edge_borders smart
+    default_border none
+    default_floating_border none
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # _move_ the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    # ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Workspaces:
+#
+    # switch to workspace
+    $super+1 workspace $WS1
+    $super+2 workspace $WS2
+    $super+3 workspace $WS3
+    $super+4 workspace $WS4
+    $super+5 workspace $WS5
+    $super+6 workspace $WS6
+    $super+7 workspace $WS7
+    $super+8 workspace $WS8
+    $super+9 workspace $WS9
+    $super+0 workspace $WS0
+
+    $super+Tab workspace next
+    $super+Escape workspace prev
+
+    # move focused container to workspace
+    $super+Shift+1 move container to workspace $WS1
+    $super+Shift+2 move container to workspace $WS2
+    $super+Shift+3 move container to workspace $WS3
+    $super+Shift+4 move container to workspace $WS4
+    $super+Shift+5 move container to workspace $WS5
+    $super+Shift+6 move container to workspace $WS6
+    $super+Shift+7 move container to workspace $WS7
+    $super+Shift+8 move container to workspace $WS8
+    $super+Shift+9 move container to workspace $WS9
+    $super+Shift+0 move container to workspace $WS0
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+v, for horizontal and vertical splits
+    bindsym $mod+v split toggle
+
+    # Switch the current container between different layout styles
+    bindsym $mod+x layout toggle all
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # move focus to the parent container
+    bindsym $mod+a focus parent
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+minus scratchpad show
+
+#
+# Function Key
+#
+    bindsym XF86AudioRaiseVolume exec volraise
+    bindsym XF86AudioLowerVolume exec voldown
+    bindsym XF86AudioMute exec mute 
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10 px or 10 ppt
+    bindsym $down resize grow height 10 px or 10 ppt
+    bindsym $up resize shrink height 10 px or 10 ppt
+    bindsym $right resize grow width 10 px or 10 ppt
+
+    # ditto, with arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym Mod1+r mode "resize"
+
+# System Control
+set $Locker swaylock
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (p) poweroff
+mode "$mode_system" {
+	bindsym l exec $Locker, mode "default"
+	bindsym e exec swaymsg exit, mode "default"
+	bindsym s exec $Locker && systemctl suspend, mode "default"
+	bindsym r exec systemctl reboot, mode "default"
+	bindsym p exec systemctl poweroff -i, mode "default"
+
+	#back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+$super+Delete mode "$mode_system"
+
+# MPD Control
+set $mpc MPD Control (s) Stop (t) Toggle (n) Next (r) Previous
+
+mode "$mpc" {
+    bindsym s exec mpc stop, mode "default"
+    bindsym t exec mpc toggle, mode "default"
+    bindsym n exec mpc next, mode "default"
+    bindsym r exec mpc previous, mode "default"
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+$super+o mode "$mpc"
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    #swaybar_command waybar
+    status_command /home/linusboyle/app/bumblebee-status/bumblebee-status -m nic datetime amixer brightness battery cpu memory -t iceberg-powerline
+    #status_command i3status
+    position top
+    font pango:Hack Bold 10 
+
+    mode hide
+    modifier Mod1
+
+    colors {
+        background $base00
+        separator  $base01
+        statusline $base04
+
+        # State             Border  BG      Text
+        focused_workspace   $base05 $base0D $base00
+        active_workspace    $base05 $base03 $base00
+        inactive_workspace  $base03 $base01 $base05
+        urgent_workspace    $base08 $base08 $base00
+        binding_mode        $base00 $base0A $base00
+    }
+}
+
+gaps inner 5
+gaps outer 5
+smart_gaps on
+smart_borders on
+
+# Auto Start
+exec mako
+$super+grave exec makoctl dismiss
+
+exec fcitx
+
+exec pgrep mpd || mpd
+#exec redshift-gtk
+exec_always --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id ~/bin/inactive-windows-transparency.py
+
+include /etc/sway/config.d/*

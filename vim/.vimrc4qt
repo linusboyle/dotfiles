@@ -1,0 +1,13 @@
+noremap H ^
+noremap L $
+
+noremap gk k
+noremap gj j
+
+noremap <C-j> <C-W>j
+noremap <C-k> <C-W>k
+noremap <C-h> <C-W>h
+noremap <C-l> <C-W>l
+
+nnoremap \q :q<CR>
+nnoremap \w :w<CR>
