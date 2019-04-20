@@ -23499,3 +23499,277 @@ git push origin master
 ..
 rm -r fcitx_toggle.vim/
 rm -rf fcitx_toggle.vim/
+cd
+cd .vim/
+ls
+git status 
+git diff
+git branch 
+git commit -a
+l
+ls
+vim pack/filetype/start/vim-vue/ftplugin/vue.vim
+ls
+ls dictionary/
+ls thesaurus/
+ls
+ls autoload/
+ls plugin/
+vim keymap.vim 
+s
+vim plugin/gtags.vim 
+ls
+cd p
+cd pack/
+ls
+git submodule update --remote 
+..
+vim plugin/fcitx.vim 
+git status 
+cd pack/
+git status 
+cd colors/start/base16-vim/
+git status 
+git log
+git branch 
+git checkout dictfix 
+git log
+git fetch dict_fix 
+git log --all
+..
+.
+..
+git status 
+cd complete/opt/YouCompleteMe/
+git status 
+ls
+gr
+cd pack/
+git commit -a
+git push origin master 
+gr
+git commit -a
+ls
+git status 
+cd pack/
+git status 
+git commit -a
+cd complete/opt/YouCompleteMe/
+git status 
+git commit -a
+gr
+ls
+git status 
+git commit -a
+ls
+git push origin master 
+cd
+git status 
+it add .
+git commit
+git add .
+git commit
+git push origin master 
+vim
+cd
+git status 
+git diff
+git commit -a --amend 
+ls
+git checkout -b path_tracing
+ls
+cd doc/
+ls
+cd 
+ls
+cd
+cd /dev/
+ls
+cd
+ls
+cd bin/
+ls
+bat ~/.vimrc_background 
+vim 
+base16_material-palenight 
+base16-shell-preview 
+base16-shell-preview 
+vim .vimrc
+vim .vimrc_background 
+vim .vim/pack/colors/start/base16-vim/colors/base16-material-palenight.vim 
+ls
+base16-shell-preview 
+tmux
+ls
+tmux attacj
+tmux attach
+ls
+vim
+base16-shell-preview 
+ls
+vim 
+ls
+cd bin/
+ls
+vim gr
+vim gr.sh 
+ls
+vim .vimrc
+base16_google-dark 
+vim .vimrc
+base16_paraiso 
+vim .vimrc
+base16_material-vivid 
+vim .vimrc
+base16_material-palenight 
+vim .vimrc
+base16_material-darker 
+vim .vimrc
+vim .Xresources 
+vim .vimrc
+base16_material-lighter 
+base16_material-darker 
+base16_icy 
+
+base16_grayscale-light 
+vim .vimrc
+base16_grayscale-dark 
+vim .vimrc
+base16_greenscreen 
+
+base16_black-metal
+vim .vimrc
+base16_materia
+vim .vimrc
+fc-list 
+fc-list |grep Source
+cd
+ls
+vim .gitconfig 
+ls
+vim .globalrc 
+ls dfile/global/
+ls dfile/global/ a
+ls dfile/global/ -a
+ls
+cd dev/program/graph/graphics/
+ls
+cd .git/
+ls
+ls hooks/
+rm hooks/*
+ls
+..
+ls
+vim src/scene.cpp 
+vim --version
+vim --version|pbcopy 
+vim src/scene.cpp 
+vim src/plane.cpp 
+..
+ls
+cd hw1/
+ls
+vim fill.cpp 
+cd
+cd pack/util/start/LeaderF/
+cd doc/
+ls
+vim tags 
+ls
+git checkout -b fix_doc
+ls
+git remote add fork git@github.com:linusboyle/LeaderF.git
+vim leaderf.txt 
+..
+ag Gtagslabel
+ag Gtagslable
+vim autoload/leaderf/python/leaderf/gtagsExpl.py 
+vim doc/leaderf.txt 
+git diff
+git commit -a
+ls
+git push origin fo
+git push origin for
+git push origin fork
+git push fork fix_doc 
+ag Symlink
+vim autoload/leaderf/python/leaderf/gtagsExpl.py 
+ls
+cd .vim/
+ls -a
+cd cache/.LfCache/gtags/%home%linusboyle%dev%program%graph%graphics/
+ls
+ls -h
+ls -hl
+ping net.tsinghua.edu.cn
+ping auth4.tsinghua.edu.cn
+cd
+ls
+git status 
+git checkout master 
+git pull
+git log
+ls
+gr
+..
+gr
+ls
+cd pack/
+git status 
+git submodule update --remote 
+cd colors/start/base16-vim/
+git checkout dict
+git checkout dictfix 
+gr
+cd p
+cd pack/
+git commit -a
+ls
+cd complete/opt/YouCompleteMe/
+ls
+git commit -a
+cd third_party/ycmd/
+git status 
+gr
+ls
+vim keymap.vim 
+ls
+ls cache/
+ls cache/.LfCache/gtags/
+cd cache/.LfCache/gtags/
+ls
+cd %home%linusboyle%.vim
+ls
+ls -lh
+gr
+ls
+vim keymap.vim 
+ssh ai9@arena.net9.org
+scp dwn/gotify-linux-amd64.zip ubuntu@148.70.71.100:~
+cd dwn/
+ls
+unzip -l go
+mv gotify-cli-linux-amd64 ~/bin/
+cd
+file bin/gotify-cli-linux-amd64 
+mv bin/gotify-cli-linux-amd64 bin/gotify
+ls
+ls bin/
+chmod +x bin/gotify 
+gotify init
+ls
+vim cli.json 
+gotify push hello
+gotify push -t title sa
+ls
+cd doc/
+gotify push -t title sa
+cd
+ls
+gotify push -t title sa
+goldendict -v
+goldendict hellp
+goldendict -h
+goldendict --help
+vim /usr/share/applications/goldendict.desktop 

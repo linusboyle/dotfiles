@@ -191,7 +191,7 @@ set termencoding=utf-8
 
 " colorscheme and gui setting
 if has('gui_running')
-    set guifont=Hack\ 13
+    set guifont=Source\ Code\ Pro\ SemiBold\ 14
     set guioptions-=T
     set guioptions-=e
     set guioptions-=r
