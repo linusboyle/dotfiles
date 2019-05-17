@@ -1,5 +1,0 @@
-#!/bin/bash
-#plain alias
-
-flatpak run org.deepin.flatdeb.deepin-screen-recorder >/dev/null 2>&1
-exit 0

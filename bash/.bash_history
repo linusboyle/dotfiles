@@ -23773,3 +23773,2182 @@ goldendict hellp
 goldendict -h
 goldendict --help
 vim /usr/share/applications/goldendict.desktop 
+vim /usr/share/applications/goldendict.desktop 
+cd
+vim .gitmodules 
+ls
+cd vim/
+ls
+ls -a
+vim .vimrc4qt 
+..
+ls
+vim vimrc_qt 
+ls
+git log
+ls
+ls read
+ls readline/
+ls readline/ -a
+ls ranger/
+ls ranger/ -a
+ls
+git status 
+git commit -a
+vim vim/.vimrc
+git diff vim/.vimrc
+git commit -a
+ls
+cd vim/
+ls
+ls -a
+ls .vim
+ls
+rm .ycm_extra_conf.py
+ls
+mv .vimrc4qt ..
+..
+ls
+rm vimrc_qt
+git add .
+git commit 
+cd vim/
+ls
+ls -a
+ls
+cd
+git clone https://github.com/easeflyer/gd_plugin.git
+ls
+rm easyloggingpp-9.96.7
+rm easyloggingpp-9.96.7.tar.gz
+ls
+ssh ai9@arena.net9.org
+cd 
+git clone --depth=1 https://github.com/kwin-scripts/kwin-tiling
+ls
+cd kwin-tiling/
+ls
+plasmapkg2 --type kwinscript -i .
+vim .vimrc
+vim .vim/thirdparty.vim 
+cd
+cd build/
+make
+make rt_test
+make test
+cd
+make
+make rt_test
+make test
+man erand48
+make
+..
+ag config
+ag config.hpp
+ag config
+cd build/
+make
+make rt_test
+make
+cmake ..
+make
+make rt_test
+make test
+make 
+make test
+make
+make rt_test
+make test
+make
+make test
+make rt_test
+make test
+..
+ls
+vim main.cpp
+g++ main.cpp -std=c++17 -c
+g++ main.cpp -std=c++17 -c -Iinclude
+g++ main.cpp -std=c++17 -c -Iinclude -Ibuid
+g++ main.cpp -std=c++17 -c -Iinclude -Ibuild
+ls
+g++ main.o build/src/libgraphics.a -o main
+g++ main.o build/src/libgraphics.a -fopenmp -o main
+g++ main.o build/src/libgraphics.a -fopenmp -o `pkg-config --libs opencv2` main
+g++ main.o build/src/libgraphics.a -fopenmp -o `pkg-config --libs opencv` main
+pkg-config --libs opencv 
+g++ main.o build/src/libgraphics.a -fopenmp -o `pkg-config --libs opencv` -o main
+./main 
+cd
+ls
+g++ smallpt.cpp -fopenmp -O2 -o smallpt
+./smallpt 
+ls
+vim smallpt
+vim smallpt.cpp 
+./smallpt 
+factor 513
+factor 257
+man facor
+man factor
+zypper source-download -h
+zypper source-install -h
+zypper source-download coreutils
+zypper source-install -h
+sudo zypper source-install --download-only coreutils
+zypper repos 
+zypper repos -h
+zypper addrepo -h
+sudo zypper source-install --download-only coreutils
+ls
+sudo zypper source-install coreutils
+ls /usr/src/packages/
+ls /usr/src/packages/SOURCES/
+ls /usr/src/packages/BUILD
+ls /usr/src/packages/BUILDROOT/
+ls /usr/src/packages/RPMS/
+ls /usr/src/packages/RPMS/x86_64/
+ls /usr/src/packages/SPECS/
+ls /usr/src/packages/SRPMS/
+cp /usr/src/packages/SOURCES/coreutils-8.31.tar.xz .
+ls
+mv coreutils-8.31.tar.xz dev/src/
+cd dev/src/
+ls
+mkdir coreutil
+mv coreutils-8.31.tar.xz coreutil
+cd coreutil/
+untar coreutils-8.31.tar.xz 
+tar -xzf coreutils-8.31.tat.xz
+ls
+tar -xzf coreutils-8.31.tar.xz
+tar -xf coreutils-8.31.tar.xz
+ls
+cd coreutils-8.31/
+ls
+vim README 
+ls
+cd src/
+ls
+vim factor.c 
+gotify push "hello night"
+ls
+tlogin
+ls
+tlogin
+ping auth4.tsinghua.edu.cn
+ping net.tsinghua.edu.cn
+ssh ai9@arena.net9.org
+cd 
+ls
+mv Game/ Game_bak
+ls
+yarn run dev
+cd
+ls
+ls Game/Doto_1.0.0.
+cd Game
+bat Doto_1.0.0.progress 
+ls
+rm Doto_1.0.0.*
+ls
+rm Doto_1.0.0.*
+ls
+bat Doto_1.0.0.progress 
+ls Doto_1.0.0.
+ls Doto_1.0.0.data
+ls Doto_1.0.0.data -l
+fd plasma
+ls /usr/share/plasma/plasmoids/
+cd /usr/share/plasma/plasmoids/
+ls
+cd ls
+ls
+fd dic
+cd org.kde.plasma_applet_dict/
+ls
+vim metadata.json 
+ls
+vim metadata.desktop 
+ls
+cd contents/
+ls
+ls config/
+tree
+vim config/config.qml 
+ls
+cd ui/
+ls
+vim ConfigDictionaries.qml 
+im main.qml 
+vim main.qml 
+ls
+..
+ls
+..
+cd org.kde.plasma.private.grouping/
+ls
+vim metadata.json 
+..
+ls
+sudo zypper install appmenu-gtk3-module 
+sudo zypper install appmenu-qt 
+sudo zypper install libdbusmenu-glib4 
+sudo zypper install libdbusmenu-qt5-2
+ls
+cd
+./node_modules/electron/dist/electron .
+ssh ai9@arena.net9.org
+cd
+ls
+git status 
+mv Game_bak/ Game
+ls
+git status 
+git diff
+ls
+git commit -a
+ls
+git checkout production 
+git merge dev 
+git mergetool 
+ls
+git status 
+git commit 
+ls
+git status 
+rm package.json.orig
+ls
+yarn
+vim package.json 
+git status 
+yarn run build:dir
+cp build/linux-unpacked/resources/app.asar ~/dev/arena9/Launcher/arena9/arena9-linux-x64/Main/local.as 
+cd
+./node_modules/electron/dist/electron .
+cd -
+ls
+yarn version
+git status 
+git log
+yarn run build:dir
+ls
+ag isDirectory
+vim src/main/game/download.js 
+cp build/linux-unpacked/resources/app.asar ~/dev/arena9/Launcher/arena9/arena9-linux-x64/Main/local.as 
+scp build/linux-unpacked/resources/app.asar ai9@arena.net9.org:~
+ssh ai9@arena.net9.org
+vim src/main/game/download.js 
+git checkout dev 
+ls
+yarn run dev
+git status 
+yarn run dev
+ls
+vim package.json 
+yarn
+git status 
+yarn run dev
+ls
+git status 
+vim package.json 
+ls
+vim .electron-vue/dev-
+vim .electron-vue/dev-runner.js 
+ls
+git diff enable_hall 
+cd
+git branch 
+git log
+git diff HEAD^
+git branch 
+insight 
+df -h
+ncdu
+df -h
+tlogin
+ping net.tsinghua.edu.cn
+ping github.com
+ping net.tsinghua.edu.cn
+plasmashell -h
+plasmashell --replace
+plasmashell &
+ls
+firefox 
+ls
+ssh ai9@arena.net9.org
+mpd
+ls
+com.github.jmoerman.go-for-it 
+xhost +
+com.github.jmoerman.go-for-it 
+vim Sync/todo.txt
+cd dev/src/
+l
+ls
+cd Todour/
+ls
+./build/Todour 
+cd
+ls
+zathura 蒙特卡洛博弈方法.pdf 
+zathura 人工智能（上）1-100.pdf 
+cd
+cd doc/
+ls
+zathura 编程/Languages/CPP/meta.pdf 
+ls
+http -h
+man http
+lsmod |grep ath
+man lsmod
+firefox
+ping github.com
+ping baidu.com
+w3m baidu.com,
+w3m baidu.com
+ls
+cd .cache/
+ls
+ncdu
+firefox
+firefox -h
+firefox --new-instance
+ls
+firefox --headless
+firefox --help
+firefox --version
+sudo zypper refresh
+sudo zypper list-updates |grep Fire
+ls
+base16-shell-preview 
+ls
+sudo zypper update MozillaFirefox
+zypper ps -s
+zypper ps -h
+zypper ps
+sudo zypper ps
+man haveged 
+ls
+firefox 
+mpd
+gvim
+vim
+ping auth4.tsinghua.edu.cn
+ls
+w3m auth4.tsinghua.edu.cn
+tlogin
+ping auth4.tsinghua.edu.cn
+ping net.tsinghua.edu.cn
+ping baidu.com
+cd bin/
+vim lock 
+vim tlog
+vim tlogin 
+tlogin
+ping baidu.com
+ls
+cp tlogin authlog
+cp tlogout authquit
+vim authquit 
+authquit 
+authlog 
+ls
+vim tlogin 
+mv tlogin netlog
+mv tlogout netquit
+netcat -h
+man netcat
+ping baidu.com
+authlog
+ping baidu.com
+firefox
+firefox -h
+firefox --safe-mode
+cd 
+cd .mozilla/
+ls
+ls extensions/
+ls extensions/ -a
+ls firefox/
+cd firefox/
+ls
+ls Crash\ Reports/
+ls Pending\ Pings/
+rm -rf Crash\ Reports/
+rm -rf Pending\ Pings/
+vim profiles.ini 
+firefox 
+ls
+ls Crash\ Reports/
+ls Pending\ Pings/
+ls
+ls auxsy3mf.default/
+cd auxsy3mf.default/
+ls
+ncdu
+ls
+..
+ls
+vim profiles.ini 
+firefox 
+ls 
+ls Pending\ Pings/
+ls Crash\ Reports/
+sudo zypper dup
+mpd
+gvim
+xhost +
+ls
+vim
+lxappearance 
+uname -a
+ls
+sudo zypper install libgtk-4-0
+sudo zypper info libgtk-4-0
+com.github.jmoerman.go-for-it 
+cd
+ls
+git log
+ls
+cd build/
+la
+ls
+make clean
+make
+ls
+ls data/
+ls cmake
+ls executable/
+./executable/com.github.jmoerman.go-for-it 
+vim executable/go-for-it.c 
+gdb executable/com.github.jmoerman.go-for-it 
+sudo zypper info appmenu-gtk3-module 
+sudo zypper info appmenu-gtk2-module 
+sudo zypper install appmenu-gtk3-module 
+sudo zypper install appmenu-gtk2-module 
+./executable/com.github.jmoerman.go-for-it 
+gb
+gdb executable/com.github.jmoerman.go-for-it 
+lxappearance 
+sudo zypper remove appmenu-gtk2-module 
+sudo zypper remove appmenu-gtk3-module 
+sudo zypper remove libappmenu-gtk*
+lxappearance 
+ls
+./executable/com.github.jmoerman.go-for-it 
+ls
+authlog 
+cd
+vim profiles.ini 
+cd file:///home/linusboyle/dev/fpga/digit-life
+cd /home/linusboyle/dev/fpga/digit-life
+ls
+..
+ls
+cd -
+cd digit-life
+ls
+cd 
+ls
+./bin/quartus
+gotify push "hello ?"
+gotify push "hello2?"
+autoq
+authquit 
+man git-submodule 
+man git-subtree 
+ls
+cd .vim/
+ls
+vim readme.md 
+git commit -a
+ls
+git status 
+cd pack/
+git status 
+cd util/start/echodoc.vim/
+ls
+gstatus 
+git log
+..
+ls
+gr
+cd p
+cd pack/
+gstatus 
+..
+git add pack/
+git commit 
+git sta
+git status 
+git commit -a
+gstatus 
+..
+ls
+cd
+./bin/quartus
+texmacs -v
+texmacs
+cd
+ls
+ls Game/
+cd Game/
+ls
+rm Doto_1.0.0.*
+mv Game_bak/* .
+ls
+rmdir Game_bak/
+cd
+git status 
+git diff
+yarn run dev
+netlog 
+zypper info freetype
+zypper info freetype2-devel
+ls
+cd intelFPGA_lite/18.1/modelsim_ase/
+ls
+vim vco 
+ls
+ls lib
+ls lib -a
+./bin/vsim 
+fd vsim
+fd linux_rd60
+fd linux_rh60
+..
+fd linux_rh60
+cd -
+ls
+./vco 
+s
+ls
+cd bin/
+ls
+./vsim
+..
+ls
+vim re
+vim readme.txt 
+ls
+ls examples/
+./vco 
+ls
+vim vco 
+cd
+texmacs
+zathura 北理工生权工作介绍.pdf 
+rm 北理工生权工作介绍.pdf
+ls
+cd
+./bin/quartus
+cd
+cd dev/fpga/adder4way/
+ls
+vim half_adder.vhd
+vim
+xset b off
+netquit 
+cd
+ls
+scp -P 19917 smallpt 2017011442@166.111.227.244:~
+cd
+ls
+./smallpt 1
+ls
+
+./smallpt 4
+feh image.ppm 
+vim smallpt.cpp 
+ssh ai9@arena.net9.org
+ping baidu.com
+ip address
+man gcc
+cd
+cd build/
+make test
+make
+make rt_test
+cmake ..
+make
+make rt_test
+cd ma
+make clean
+make
+make rt_test
+ls
+make test
+ls
+feh cornell.png 
+ls
+make
+make rt_test
+make test
+make
+make test
+cd test
+ls
+./rt_test 
+man valgrind
+valgrind --tool=callgrind ./rt_test 
+ls
+rm callgrind.out.26729
+ls
+..
+ls
+cp main.cpp test/
+cd test/
+ls
+vim CMakeLists.txt 
+mkdir unit
+ls
+mv *_test.cpp unit/
+ls
+cp CMakeLists.txt unit/
+vim CMakeLists.txt 
+ls
+vim main.cpp 
+ls
+vim unit/CMakeLists.txt 
+cd
+cd -
+cd
+vim CMakeLists.txt
+cd build/
+cmake .
+cmake ..
+vim ../test/CMakeLists.txt 
+cmake ..
+make
+make clean
+make
+vim ../cmake
+vim ../CMakeLists.txt
+cmake ..
+make
+cmake ..
+make
+..
+ls
+rm main*
+ls
+rm cornell.png
+ls
+vim test/CMakeLists.txt 
+vim test/unit/CMakeLists.txt 
+cd test/unit/
+vim trace_test.cpp 
+ls
+rm trace_test.cpp
+gr
+ls
+git status 
+ls
+vim test/main.cpp 
+cd build/
+cmake ..
+make
+ls
+rm feh_02600
+rm feh_02600*
+ls
+rm cornell.png rendered.png
+ls
+ls Testing/
+rm blackbg.png
+rm blackbg.ppm
+ls
+./src/m
+rm test/rt_test
+ls
+ls test/unit/
+./test/main 
+vim ../test/main.cpp 
+make
+vim ../test/main.cpp 
+make
+vim ../test/main.cpp 
+make
+vim ../test/main.cpp 
+make
+./test/main 
+valgrind --tool=callgrind ./test/main 
+ls
+rm callgrind.out.28944
+vim ../test/main.cpp 
+make
+./test/main 
+valgrind --tool=callgrind ./test/main 
+ls
+kcachegrind callgrind.out.29058 
+cd
+ls
+mkdir freetype
+mv freetype-2.4.12.tar.bz2 freetype
+cd freetype/
+ls
+untar freetype-2.4.12.tar.bz2 
+tar -xf freetype-2.4.12.tar.bz2 
+ls
+cd freetype-2.4.12/
+ls
+./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
+sudo zypper install gcc-32bit 
+./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
+ls
+make -j4
+ls
+ls objs/
+ls objs/.libs/
+sudo zypper install latte-dock
+cd
+cd bin/
+ls
+..
+ls
+cd linux64/
+ls
+..
+fd vsim
+..
+ls
+cd modelsim_ase/
+ls
+cd bin/
+./vsim 
+vim vsim 
+ls
+vim vsim 
+./vsim 
+ls
+..
+ls
+cd li
+cd lib
+ls
+ls -a
+..
+mkdir lib32
+cp ~/dev/src/freetype/freetype-2.4.12/objs/.libs/libfreetype.so* lib32/
+cd lib32/
+ls
+..
+ls
+vim bin/vsim 
+./bin/vsim 
+sudo zypper install libfontconfig1-32bit 
+cd 
+./bin/quartus
+ls
+cd post/
+s
+ls
+cd 2019/
+ls
+mkdir 04
+ls
+cp 03/2019-03-18-zhanchengnan.md 04/
+cd 04
+vidir
+vim 2019-04-26-the-hidden-poem.md 
+g
+gr
+bundler.ruby2.6 exec jekyll s
+c
+cd post/
+ge
+gr
+ls
+cd _sass/
+ls
+vim global.scss 
+vim vno.scss 
+ls
+vim vno.scss 
+gr
+vim _posts/2019/04/2019-04-26-the-hidden-poem.md 
+git status 
+git add 
+git checkout -- _sass/v
+git checkout -- _sass/vno.scss
+git status 
+git add _posts/2019/04/2019-04-26-the-hidden-poem.html 
+git commit -a
+git push origin master 
+cd
+ls
+./bin/quartus
+gc
+gc -h
+gc -v
+man gc
+ls
+cd
+ls
+cd build/
+ls
+gwenview cornell.png 
+man xdg-open 
+xdg-open cornell.png 
+vim ~/.bash_aliases 
+xhost +
+. ~/.bashrc
+xo cornell.png 
+cmake .
+cmake ..
+make
+ls
+./test/main 
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+./test/main 
+xo cornell.png 
+xo ~/dev/src/smallpt/image.ppm 
+xo ~/dev/src/smallpt/result_25k.png 
+make
+./test/main 
+xo cornell.png 
+ssh ubuntu@148.70.71.100 
+scp ./test/main ubuntu@148.70.71.100:~
+ssh ubuntu@148.70.71.100 
+xo ~/dev/src/smallpt/result_25k.png 
+make
+./test/main 
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+vim ~/dev/src/smallpt/smallpt.cpp 
+make
+./test/main 
+xo cornell.png 
+make
+./test/main 
+make
+./test/main 
+xo cornell.png 
+make
+./test/main 
+make
+./test/main 
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+cd
+mae
+make
+./test/main 
+xo cornell.png 
+make
+xo cornell.png 
+./test/main 
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+vim ~/dev/src/smallpt/smallpt.cpp 
+make
+./test/main 
+xo cornell.png 
+vim ~/dev/src/smallpt/smallpt.cpp 
+make
+./test/main 
+ls
+xo cornell.png 
+make
+./test/main 
+xo cornell.png 
+exit
+cd
+cd MainServer/
+ls
+ag userProfile
+vim src/modules/account.ts 
+cd
+yarn run dev
+cd
+ls
+l
+l node_modules/electron
+l node_modules/electron/dist/
+cd
+ls
+git remote 
+git remote -a
+git remote -v
+ls
+git log
+git pull
+git log
+ls
+cd build/
+ls
+cmake ..
+make
+ls
+cd
+gstatus 
+git log
+gitk
+git push origin path_tracing 
+cnf hub
+cnf vnote
+sudo zypper info vnote 
+ls
+gr
+cd
+ls
+ls app/
+ls
+ncdu
+cd /tmp/
+ls
+ncdu
+netlog
+ssh ai9@arena.net9.org
+netquit
+mpd
+krunner -h
+xhost +
+netlog 
+man dropbox 
+dropbox status
+man dropbox 
+dropbox start
+dropbox start -i
+which dropbox 
+vim /usr/bin/dropbox 
+ls
+py -v
+py --version
+vim /usr/bin/dropbox 
+py3 /usr/bin/dropbox 
+zypper info python2-requests
+sudo zypper search pyopenssl
+dropbox start -i
+lspci
+sudo lspci
+cd
+cd dev/chess/
+s
+git init
+xset b off
+ls
+cd
+ls
+ls -a
+git status 
+gvim node.h
+ls
+gvim node.hpp 
+man gtags
+man global
+ls ~/.vim/cache/.LfCache/gtags/
+ls ~/.vim/cache/.LfCache/gtags/%home%linusboyle%dev%chess/
+ls ~/.vim/cache/.LfCache/gtags/%home%linusboyle%dev%chess/ -l
+ls ~/.vim/cache/.LfCache/gtags/%home%linusboyle%dev%chess/ -lh
+ls
+d
+cd
+cd 
+ls
+vim src/plane.cpp 
+man gtags
+cd
+ls
+gags
+gtags
+ls
+ls -lh
+rm G*
+ls
+rm ~/.vim/cache/.LfCache/gtags/%home%linusboyle%dev%chess/G*
+ls ~/.vim/cache/.LfCache/gtags/%home%linusboyle%dev%chess/ -lh
+sudo zypper install telegram-desktop 
+ping baidu.com
+dig baidu.com
+nmcli device status 
+nmcli wifi list
+nmcli device wifi list
+nmcli connection up Tsinghua-5G 
+journalctl -xe NM_CONNECTION=b70f7101-8190-4f14-8477-cb944435a857 + NM_DEVICE=wlp5s0
+sudo journalctl -xe NM_CONNECTION=b70f7101-8190-4f14-8477-cb944435a857 + NM_DEVICE=wlp5s0
+nmcli device status 
+sudo systemctl restart NetworkManager.service 
+ping net.tsinghua.edu.cn
+cd
+ls
+cp 2019-04-26-the-hidden-poem.html 2019-04-30-never-head-back.html 
+vim 2019-04-30-never-head-back.html 
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+cd assets/
+ls
+cd images/
+ls
+ge
+gr
+ls
+mv favicon.png assets/images
+ls assets/images/
+ls
+git status 
+git add favicon.png 
+git add assets/images/fac
+git add assets/images/favicon.png 
+git commit 
+ls
+vim projects.html 
+ls
+cd
+ls
+vim 2019-04-30-never-head-back.html 
+gr
+bundler.ruby2.6 exec jekyll s
+git add _posts/2019/04/2019-04-30-never-head-back.html 
+git commit -a
+git push origin master 
+ls
+netlog
+cd post/
+git push o
+git push origin master 
+netquit
+netlog
+xset b off
+cd
+ks
+ls
+g++ *.cpp -o main
+ls
+g++ *.cpp -o main
+gcc -v
+g++ *.cpp -o main
+ls
+ls -l
+ls
+chmod -x *
+ls
+g++ *.cpp -o main
+ls
+./main 
+ls
+g++ *.cpp -o main -g
+ls
+gdb mai
+xset b off
+cd
+vim /usr/include/boost/timer.hpp 
+gcc *.cpp -o main
+g++ *.cpp -o main
+ls
+./main 
+g++ *.cpp -o main -g
+./main 
+gdb main
+g++ *.cpp -o main -g
+./main 
+g++ *.cpp -o main -g
+g++ *.cpp -o main
+./main 
+ls
+g++ *.cpp -o main -g
+lls
+s
+ls
+valgrind --tool=callgrind ./main 
+ls
+kcachegrind callgrind.out.26329 
+cd
+ls
+file Judge.j
+file Judge.h
+enca *
+enconv *
+enca *
+dos2unix *
+enca *
+ls
+vim UCT.cpp 
+ls
+cd
+ls
+./main 
+ls
+time ls
+time ./main 
+ls
+cppcheck -h
+ls
+cppcheck config.cpp 
+cppcheck *.cpp
+vim node.cpp 
+cppcheck --enable=all *.cpp
+vim UCT.hpp 
+vim timer.hpp 
+vim UCT.cpp 
+cppcheck --check-config *.cpp
+ls
+g++ *.cpp -o main
+vim UCT.cpp 
+ls
+g++ *.cpp -o main
+vim UCT.cpp 
+g++ *.cpp -o main
+ls
+./main 
+vim node.hpp 
+g++ *.cpp -o main -g
+gdb main
+vim main.cpp 
+g++ *.cpp -o main -g
+vim main.cpp 
+g++ *.cpp -o main -g
+ls
+./main 
+ls
+time ./main 
+list
+cp ~/dev/program/dsa/pa3/hack/hack.cpp .
+vim hack.cpp 
+ls
+cd ~/dev/program/dsa/
+ag Mem
+vim pa2/circuit/new.cpp 
+cp ~/dev/program/dsa/pa2/circuit/new.cpp .
+ls
+rm new.cpp
+cd -
+cp ~/dev/program/dsa/pa2/circuit/new.cpp .
+ls
+rm hack.cpp
+ls
+vim new.cpp 
+c
+dcd
+cd
+ls
+g++ *.cpp -o main
+ls
+rm new.cpp
+ls
+g++ *.cpp -o main
+ls
+./main 
+time ./main 
+ls
+cd
+ls
+cd AI_Project/
+ls
+cd AI_Project/AI_project_win/
+ls
+cd Connect4/
+ls
+cd UI/
+ag clear
+vim Strategy.cs 
+mpd
+cd
+gr
+ls
+bundler.ruby2.6 exec jekyll s
+cd post/
+g
+gr
+bundler.ruby2.6 exec jekyll s
+ag icon
+vim _includes/head.html 
+ls
+xhost +
+ls
+bundler.ruby2.6 exec jekyll s
+ag ico
+ag favicon.ico
+ls
+cp ~/bitbug_favicon.ico favicon.ico
+ls
+mv favicon.ico assets/images/
+ls
+vim _includes/head.html 
+bundler.ruby2.6 exec jekyll s
+ls
+cd assets/
+ls
+cd images/
+ls
+rm favicon.jpg
+rm favicon.png
+ls
+git status 
+ls
+rm background-cover-old.jpg
+ls
+ls 2019/
+ls
+ls 201
+ls 2018/
+ls
+..
+ls
+ls papers/
+cd images/
+ls
+imgv avatar.jpg 
+ls
+..
+ag avatar
+rm assets/images/avatar.png
+bundler.ruby2.6 exec jekyll s
+git add _posts/2019/05/2019-05-04-self-criticism.md 
+git commit 
+git add .
+git commit 
+ls
+bundler.ruby2.6 exec jekyll s
+git push origin master 
+cd
+./node_modules/electron/dist/electron .
+netquit
+cd
+cd post/
+gr
+cd _s
+cd _sass/
+ls
+ag background
+ag wrapper
+vim media-queries.scss 
+vim global.scss 
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+ls assets/images/
+file assets/images/favicon.ico 
+ls
+git commit -a
+git push origin master 
+ls
+cd
+cd 
+ls
+cd 西方艺术考：圣经神话与传统/
+ls
+mkdir hw
+cd hw/
+ls
+mkdir psalm
+cd psalm/
+ls
+vim 136.pandoc
+killall wget 
+killall -9 wget 
+cd
+cd doc
+fd pandoc
+fd pandoc|xargs bat
+cd
+texmacs
+ls
+rm bi
+rm bitbug_favicon.ico
+ls
+tex
+texmacs
+cd file:///run/media/linusboyle/新加卷/AI_Project/AI_Project/AI_project_win/Connect4/Strategy
+cd /run/media/linusboyle/新加卷/AI_Project/AI_Project/AI_project_win/Connect4/Strategy
+ls
+ls -l
+file UCT..
+file UCT.cpp 
+file Strategy.cpp 
+ls
+vim main.cpp 
+git status 
+git add .
+git commit 
+ls
+vim main.cpp 
+ls
+gvim UCT.hpp 
+cd
+ls
+gstatus 
+git add judge.cpp 
+git commit -a
+git commit -a --amend 
+gsat
+gstatus 
+ls
+vim UCT.cpp 
+ls
+ls -l
+ls
+mpd
+netquit
+netlog
+sudo zypper info spotify-installer 
+sudo zypper install spotify-installer 
+install-spotify 
+sudo zypper install libgcrypt20
+ls
+ls rpmbuild/
+ls rpmbuild/BUILDROOT/
+ls rpmbuild/RPMS/
+ls rpmbuild/RPMS/x86_64/
+ls
+ls /usr/lib64/
+ls /usr/lib64/libgcrypt.so.20
+ls
+snapd
+cnf snapd
+snapctl 
+snap
+snapd
+cnf snapd
+snap find spotify
+ssh ai9@arena.net9.org
+cd
+cd dev/arena9/
+ls
+cd MainServer/
+ag apply
+vim src/modules/account.ts 
+ls
+..
+ls
+ssh ai9@arena.net9.org
+cd
+ag userProfile
+vim src/modules/account.ts 
+ls
+xhost +
+cd
+ls
+cd src/renderer/
+ls
+vim components/Profile/profileeditor_impl.js 
+git status 
+git diff
+vim components/Profile
+vim components/Profile.vue 
+yarn run dev
+cd
+ag apply
+vim src/modules/account.ts 
+cd
+vim components/Profile/profileeditor_impl.js 
+ls
+snapd
+lspci
+man snapd
+systemctl enable --now snapd.service 
+snap
+snap find spotify
+ssh ai9@arena.net9.org
+cd
+ls
+git status 
+git push origin path_tracing 
+git log
+ls
+cd
+cd /run/media/linusboyle/新加卷/AI_Project/AI_Project/AI_project_win/Connect4/
+ls
+git status 
+git ls-files
+ls
+vim .gitignore 
+ls
+git log
+git remote 
+git remote add origin git@github.com:linusboyle/connect-four-ai.git
+git push origin master 
+git log
+git diff
+ls
+git commit -a
+ls
+snap find spotify
+snap install spotify
+ls
+which spotify
+spotify
+snap
+snap list
+snap get spotify
+snap run spotify
+man snap
+snap run spotify
+ls
+cd
+ls
+./node_modules/electron/dist/electron .
+cd
+cd src/modules/
+ls
+vim account.ts 
+ssh ai9@arena.net9.org
+cd
+git status 
+git commit -a
+ls
+git checkout production 
+git merge dev 
+yarn version
+yarn run build:dir
+cp build/linux-unpacked/resources/app.asar ~/dev/arena9/Launcher/arena9/arena9-linux-x64/Main/local.as 
+scp build/linux-unpacked/resources/app.asar ai9@arena.net9.org:~
+cd
+yarn run dev
+netlog
+yarn run dev
+ls
+ssh ai9@arena.net9.org
+cd
+ls
+cd src/
+ls
+ag CSV
+ag csv
+vim modules/account.ts 
+vim models/user.ts 
+cd
+./node_modules/electron/dist/electron .
+netlog
+cd
+./node_modules/electron/dist/electron .
+cd
+gr
+..
+./node_modules/electron/dist/electron .
+cd
+yarn run dev
+ls
+git status 
+git reset --mixed HEAD^
+ls
+git status 
+git log
+git checkout dev 
+git commit -a
+yarn run dev
+ls
+snap run spotify
+netlog
+netquit
+mv dwn/fontconfig-2.12.0.tar.gz dev/src/
+cd
+ls
+mkdir fontconfig
+mv fontconfig-2.12.0.tar.gz fontconfig
+cd fontconfig/
+ls
+untar fontconfig-2.12.0.tar.gz 
+ls
+cd fontconfig-2.12.0/
+ls
+vim install
+vim INSTALL
+$ ./configure --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man
+./configure --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man
+ls
+make
+ls
+rm src/fcobjshash.h
+./configure --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man
+make
+gperf
+cnf gperf
+sudo zypper install gperf
+make
+cd
+ls
+mv fontconfig-32bit-2.12.6-lp150.2.5.x86_64.rpm ~/dev/src/
+cd -
+..
+ls
+mv fontconfig-32bit-2.12.6-lp150.2.5.x86_64.rpm fontconfig
+cd fontconfig/
+ls
+rpm2cpio fontconfig-32bit-2.12.6-lp150.2.5.x86_64.rpm |cpio -div
+ls
+cd usr/
+l
+scd lib/
+cd lib/
+s
+ls
+ls -l
+ls
+mv * ~/intelFPGA_lite/18.1/modelsim_ase/lib32/
+cd ~/intelFPGA_lite/18.1/modelsim_ase/lib32/
+ls
+ls -l
+..
+ls
+./bin/vsim 
+cd
+ls
+.
+..
+ls
+./modelsim_ase/bin/vco
+./modelsim_ase/bin/vcom
+ls
+cd modelsim_ase/
+ls
+./vco 
+ls
+./bin/vsim 
+ls
+vim linux/vish 
+vim linux/vsim
+file linux/vsim
+ls
+ldd linux/vsim
+ldd linux/vish
+./bin/vsim 
+vim vco 
+./vco 
+ls /usr/lib64/libfont
+ls /usr/lib64/libfontconfig.so
+netlog
+cd
+./bin/vsim 
+cd
+./bin/qu
+./bin/quartus
+snap run spotify
+netquit
+netlog
+snap run spotify
+netquit 
+authlog
+ls
+desktop-
+dmesg 
+cd qu
+..
+./bin/quartus
+cd 
+./bin/quartus
+netquit 
+ls 
+cd
+ls
+..
+ls
+cd modelsim_ase/
+ls
+./bin/vsim 
+cd 
+./bin/quartus
+ls
+..
+;s
+ls
+cd modelsim_ase/
+ls
+ls counter/
+fd quit
+cd 
+cd
+cd dev/fpga/
+s
+ls
+cd counter/
+ls
+vim counter4bit10.vhd 
+cp counter.vhd counter_manual.vhd
+vim counter_manual.vhd 
+ls
+cd
+./bin/quartus
+netlog
+cd
+..
+cd modelsim_ase/
+ls
+./bin/vsim 
+netlog
+snap run spotify
+snap run spotify
+netlog
+ls
+texmacs
+mpd
+netlog
+ping net.tsinghua.edu.cn
+ping baidu.com
+ls
+p
+ping baidu.com
+ls
+ping baidu.com
+netlog
+ssh ai9@arena.net9.org
+mpd
+ls
+cd
+netlog
+ks
+ls
+./node_modules/electron/dist/electron .
+xhost +
+python
+ls
+texmacs
+enconv *
+enca *
+dos2unix *
+enca *
+exit
+cmatrix
+cnf cmatrix
+matrix
+cnf matrix
+ls
+cd
+./node_modules/electron/dist/electron .
+latte-dock -v
+cd dev/arena9/
+ls
+scp ai9@arena.net9.org:~/sample_agent.zip .
+scp -P 9922 ai9@101.6.5.200:~/sample_agent.zip .
+ls
+rm sample_ai.zip
+ls
+unzip -l sample_agent.zip 
+ls
+cd
+./node_modules/electron/dist/electron .
+notify-send s -i audio-off
+dmesg 
+spotify 
+dmesg 
+systemctl status snapd.s
+systemctl status snapd.se
+systemctl status snapd.service 
+systemctl status snapd.socket 
+systemctl status snapd.apparmor.service 
+spotify 
+which spotify 
+vim /snap/bin/spotify 
+snap run spotify
+ls
+ls /snap/
+mpd
+vim
+base16-shell-preview 
+ls
+vim cli.json 
+xhost +
+vim dev/256colors2.pl 
+base16-shell-preview 
+xprop 
+ls
+tmux
+snap run spotify
+man snap
+man snap/spotify/
+man snap/spotify
+ls
+echo $PATH
+ls
+snapctl 
+snap
+snapctl -h
+snapctl get
+snapctl services
+snapctl services -h
+snapctl restart
+sudo snapctl restart
+ls
+snap 
+snap list 
+snap refresh 
+snap interface
+ls
+snap interface
+snap run spotify
+snap get spotify 
+systemctl status snapd.s
+systemctl status snapd.service 
+sudo systemctl status snapd.service 
+sudo zypper search apparmor
+man apparmor_parser 
+ls /var/lib/snapd/apparmor/
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+snap run spotify
+cd
+ls
+vim 2019-04-30-never-head-back.html 
+vim 2019-05-11-fix-snapd-with-apparmor.md 
+vim /var/lib/snapd/apparmor/profiles/snap-update-ns.spotify 
+cd
+cd post/
+ls
+cd 201
+cd 2019/
+ls
+cd 05/
+s
+ls
+cp 2019-05-04-self-criticism.md 2019-05-11-fix-snapd-with-apparmor.md
+vim 2019-05-11-fix-snapd-with-apparmor.md 
+ls
+gr
+bundler.ruby2.6 exec jekyll s
+git add .
+git commit 
+git push origin master 
+cd
+cd /run/media/
+ls
+cd
+ls
+cd
+ls
+vim .bashrc 
+ls
+la
+vim .y2log 
+vim .vim/init.vim 
+ls
+ls dev/
+ls
+vim .vim/init.vim 
+ls
+vim .vim/init.vim 
+ls
+ls doc/
+ls doc
+ls d
+ls dw
+ls dwn/n
+ls dwn/
+ls
+vim cli.json 
+xset b off
+vim cli.json 
+man xterm
+ls
+alacritty 
+xter
+xterm
+ls
+tset -q
+echo $TER
+echo $TERM
+xset -q
+tset -q
+ls doc/
+ls doc
+ls
+tset -q
+echo $TERM
+ls
+vim .bashrc 
+vim .Xresources 
+xrdb .Xresources 
+vim .Xresources 
+xrdb .Xresources 
+ls
+rm xterm.2019.05.12.00.17.53.svg
+ls
+ls doc/
+vim .Xresources 
+ls
+zypper info terminus
+vim .base16_theme 
+vim .vimrc_background 
+sudo zypper install alacritty
+alacritty 
+ls
+cd .config/alacritty/
+ls
+vim alacritty.yml 
+ls GP
+fc-match mono
+cd
+color17:      base0F
+urxvt*color18:      base01
+urxvt*color19:      base02
+ls
+vim .Xresources 
+xterm -fn
+xterm -fn Hack
+xterm -fn Hack:size=10
+man xter
+man xterm
+xterm -fa Hack
+xterm -fa Hack:size=12
+ls
+vim .Xresources 
+xrdb .Xresources 
+vim .Xresources 
+xrdb .Xresources 
+vim .Xresources 
+xrdb .Xresources 
+cd dwn/
+s
+ls
+vim words_alpha.txt 
+ls
+tset -q
+ls
+netlog
+ls
+zip -r Pysc2_Replay_win.zip package.json Pysc2_Replay.exe 
+file Pysc2_Replay
+chmod +x Pysc2_Replay
+./Pysc2_Replay
+./Pysc2_Replay --replay package.json 
+ls
+git status 
+git commit -a
+git add .
+enconv .
+enconv *
+ls
+cd Strategy/
+enconv *
+..
+cd Strategy/
+ls
+enconv *
+ls
+dos2unix *
+ls
+..
+git status 
+git add .
+git status 
+git commit 
+git push origin master 
+netlog
+ls
+cd doc/
+ls
+..
+ls
+cd
+vim
+netquit 
+etlog
+netlog
+cd
+l
+ls
+g++ semaphore_msg.cpp -o main
+gcc semaphore_msg.c -o main
+gcc semaphore_msg.c -o main -lpthread
+./main 
+netlog
+netquit 
+netlog
+man pthread_join 
+man pthread_create 
+ls
+texmacs
+ls
+cd doc/
+ls
+cd
+;s
+ls
+cdc dev/
+cd dev/
+ls
+ls pinyin
+ls
+mv tlpi-dist/ src/
+ls
+ls program/
+ls
+ls cppstdlib/
+vim cppstdlib/re
+vim cppstdlib/README 
+mv src/tlpi-dist/ .
+ls
+mkdir demo
+mv cppstdlib/ demo/
+mv tlpi-dist/ demo/
+ls
+ls src/
+ls
+rm pinyin_1.zip
+ls
+ls game/
+ls game/gametest/
+rm -rf game/
+ls
+ls fpga/
+ls
+ls arena9/
+ls gridsometest/
+ls
+ls mydic/
+ls
+ls program/
+ls program/tlpi_mine/
+ls
+ls program/
+mv mpi/ program/
+ls
+mv pinyin/ program/
+ls
+mkdir project
+ls
+ls python/
+mv python/ ..
+rmdir python
+ls
+..
+ls
+mv python/ dev/
+cd dev/
+ls
+mv python/astpp.py ..
+rmdir python/
+ls
+rm -rf python/
+ls
+mv ../astpp.py .
+ls
+file astpp.py 
+ls
+ls src/
+ls
+ls src/
+ls pro
+mv program/graph/ project/
+mv program/pinyin/ project/
+ls
+ls arena9/
+ls src/
+ls
+cd program/
+mkdir pthread
+cd pthread/
+ls
+vim semaphore_msg.c
+ls
+rm main
+ls
+vim pthread_startup.c 
+ls
+cp pthread_startup.c semaphore_msg.c
+vim semaphore_msg.c 
+vim pthread_startup.c 
+man semaphore.h 
+vim semaphore_msg.c 
+cp semaphore_msg.c mutex_msg_2.c
+mv mutex_msg_2.c 
+vim mutex_msg_2.c 
+ls
+cp mutex_msg_2.c mutex_msg.c
+vim mutex_msg.c 
+cp mutex_msg.c mutex_msg_double.c
+vim mutex_msg_double.c 
+ls
+..
+ls
+vim mpi/prog3.1_histo_dist.c 
+netquot
+netquit
+ls
+cd pthread/
+ls
+cp pthread_startup.c pthread_fib.c
+vim pthread_li
+vim pthread_fib.c 
+cd
+ls
+gcc semaphore_msg.c -o main
+gcc semaphore_msg.c -o main -lpthread
+ls
+./main 
+ls
+rm main
+ls
+gcc mutex_msg_2.c -o main
+gcc mutex_msg_2.c -o main -lpthread
+./main 
+time ./main 
+gcc mutex_msg.c -o main
+gcc mutex_msg.c -o main -lpthread
+./main 
+gcc mutex_msg.c -o main -lpthread -DTHREAD_CNT=16
+./main 
+netquit
+gcc mutex_msg_double.c -o main
+gcc mutex_msg_double.c -o main -lpthread
+./main 
+gcc mutex_msg_double.c -o main -lpthread -DTHREAD_CNT=16
+./main 
+ls
+rm main
+ls
+mv mutex_msg_2.c mutex_msg_2thread.c
+ls
+vim semaphore_msg.c 
+..
+cd openmp/
+g++ histro.c -o main
+./main 
+g++ histro.c -o main
+gcc histro.c -o main
+gcc histro.c -o main -fopenmp
+./main 
+ls
+rm main
+ls
+..
+cd pthread/
+ls
+gcc pthread_fib.c -o main
+gcc pthread_fib.c -o main -lpthread
+./main 
+gcc pthread_fib.c -o main -lpthread -g
+gdb main
+gcc pthread_fib.c -o main -lpthread
+./main 
+gcc pthread_fib.c -o main -lpthread
+./main 
+./main 19
+showpower 
+netlog
+cd
+ls
+vim lock/lock.vhd
+dmesg 
+cd 
+./bin/vsim 
+./bin/quartus
+xset -q
+xset b off
+./bin/quartus
+cd
+ls
+cp lock/lock.vhd lock/new.vhd
+vim lock/new.vhd 
+dmesg 
+cd
+./bin/quartus
+mpd
+cd
+./bin/quartus
+cd
+ls
+vim lock/new.vhd 
+netquit
+ls
+cd
+ls
+./bin/quartus
+xhost +
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+sudo zypper search mind
+cd dwn/
+ls
+rpm -i XMind-ZEN-for-Linux-64bit.rpm 
+man rpm
+rpm --query
+rpm --query XMind
+rpm --query libapparmor1 
+sudo zypper install libappindicator3-devel 
+man rpm
+rpm -q Xmind
+ls
+rpm -q libappindicator3-1 
+sudo zypper refresh
+ping baidu.com
+netlog
+sudo zypper refresh
+ping baidu.com
+ping net.tsinghua.edu.cn
+cd
+ls
+rm main
+ls
+vim mutex_msg.c 
+cd
+gcc mutex_msg.c -o main -lpthread -DTHREAD_CNT=16
+ls
+./main 
+gcc mutex_msg.c -o main -lpthread -DTHREAD_CNT=16
+./main 
+gcc mutex_msg_double.c -o main -lpthread -DTHREAD_CNT=16
+./main 
+gcc mutex_msg_double.c -o main -lpthread
+./main 
+texmacs
+sudo zypper search seafile
+vim .bumblebee-status.conf 
+xset b off
+vim .bumblebee-status.conf 
+ls
+cd dfile/
+ls
+cd i3/
+ls
+ls -a
+mv ~/.bumblebee-status.conf .
+ls
+ls -a
+..
+stow i3
+cd
+ls .bumblebee-status.conf
+ls .bumblebee-status.conf -l
+ls
+ls fontconfig/
+ls fontconfig/ -l
+cd fontconfig/
+vidir
+cd
+gcc mutex_msg_double.c -o main -lpthread
+./main 
+gcc mutex_msg_double.c -o main -lpthread -DTHREAD_CNT=16
+./main 
+texmacs
+ls
+rm -rf fontconfig/
+cd
+tem
+texmacs
+ls
+cd
+ls
+./bin/quartus
+texmacs
+netlog
+ls
+ls -l .bashrc
+cd
+ls
+ncdu
+ls
+cd
+ls
+vim mutex_msg_double.c 
+cd
+./bin/quartus
+netlog
+sudo zypper refresh
+sudo zypper dup 
+cd
+./bin/quartus

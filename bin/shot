@@ -1,4 +1,0 @@
-#!/bin/bash
-
-flatpak run org.deepin.flatdeb.deepin-screenshot >/dev/null 2>&1
-exit 0
