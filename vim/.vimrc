@@ -95,7 +95,7 @@ set relativenumber
 if exists('+completeopt')
     set completeopt=menu,menuone
     set complete-=u
-    set complete-=b
+    set complete-=i
 endif
 
 " case setting
@@ -201,11 +201,12 @@ if has('gui_running')
 "else
     "colorscheme eldar
 endif
+colorscheme monokai
 
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+"if filereadable(expand("~/.vimrc_background"))
+  "let base16colorspace=256
+  "source ~/.vimrc_background
+"endif
 
 " status line display
 if has('statusline')
