@@ -25952,3 +25952,2816 @@ sudo zypper refresh
 sudo zypper dup 
 cd
 ./bin/quartus
+ls
+cd
+cd .vim/
+ls
+cd
+cd dfile/vim/
+ls
+man git-submodule 
+git submodule add -b master (I)~$cd
+(I)~$cd .vim/
+(I)~/.vim$ls
+after     command.vim  ftplugin    pack       template
+autoload  compiler     init.vim    plugin     thesaurus
+cache     dictionary   keymap.vim  readme.md  thirdparty.vim
+colors    doc          LICENSE     scripts    UltiSnips
+(I)~/.vim$cd
+(I)~$cd dfile/vim/
+(I)~/dfile/vim$ls
+(I)~/dfile/vim$man git-sub
+...module  ...tree    
+(I)~/dfile/vim$man git-submodule 
+git submodule add git@github.com:linusboyle/Viminal.git
+ls
+ls -a
+ls
+git commit -a
+git rm .vim
+git commit -a
+git submodule add git@github.com:linusboyle/Viminal.git .vim
+git submodule add git@github.com:linusboyle/Viminal.git --depth=1 .vim
+ls
+ls -a
+git submodule add --depth 1 git@github.com:linusboyle/Viminal.git
+git submodule add --depth 1 git@github.com:linusboyle/Viminal.git .vim
+vim ../.git,
+vim ../.gitmodules 
+ls
+cp -r ~/.vim .
+ls
+ls -a
+ls .vim
+cd .vim/
+cd .gi
+vim .git
+git status 
+ls
+git status 
+..
+git status 
+rm -rf .vim
+ls
+netkig
+netlog
+exit
+netlog
+pydoc np
+pydoc gzip 
+pydoc cPickle 
+pydoc pickle
+xset b off
+ls
+vim dev/256colors2.pl 
+base16-shell-preview 
+pydoc3 theano.tensor.grad
+pydoc3 zip
+ls
+python
+py3
+pydoc xrange
+pydoc ranger
+pydoc range
+pydoc numpy
+pydoc numpy.prod
+ls
+base16-shell-preview 
+tmux
+ls
+sudo zypper search theano
+sudo zypper install python3-Theano 
+pydoc3 Theano
+pydoc3 numpy
+pydoc3 theano
+sudo zypper install python3-numpy-devel 
+pydoc3 theano
+pydoc3 theano.tensor
+pydoc3 theano.tensor.matrix
+pydoc3 theano.tensor.ivector
+ls
+cd dev/
+ls
+vim network3.py 
+ls ..
+vim network3.py 
+cd dev/
+ls
+py3
+pydoc3 cPickle
+py
+ls
+netqut
+netquit
+netlog
+cd dev/src/
+git clone https://github.com/MichalDanielDobrzanski/DeepLearningPython35
+ls
+cd DeepLearningPython35/
+ls
+ls -a
+ls -l
+ls
+py3 test.py 
+ls
+ag My
+ls
+vim expand_mnist.py 
+ls .
+ls ..
+ls
+py3 expand_mnist.py 
+ls
+pydoc3 pickle
+ls
+vim mnist_average_darkness.py 
+vim mnist_loader.py 
+ag load_data
+ls
+ag bias
+ls
+vim MyNetwork 
+ls
+vim network3.py 
+zip -l mnist.pkl.gz 
+gzip -l 
+gzip -l mnist.pkl.gz 
+ls
+vim mnist.pkl.gz 
+gzip --decompress mnist.pkl.gz 
+ls
+file mnist.pkl 
+vim mnist.pkl 
+rm mnist.pkl
+ls
+vim network3.py 
+vim test.py 
+vim network3.py 
+vim test.py 
+cd
+ls
+cd
+ls
+file sinanews.demo 
+dos2unix *
+ls
+cd /home/linusboyle/doc/人工智能导论/情感分析作业/实验数据/sina/
+ls
+node
+cd
+ls
+py3
+netlog
+cd
+cd post/
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+cd assets/
+ls
+mv bg.gif images/
+ls
+cd images/
+ls
+mv background-cover.jpg background-cover.jpg.bak
+mv bg.gif background-cover.jpg
+ls
+file background-cover.jpg
+mv background-cover.jpg background-cover.gif
+ls
+cd
+cd post/
+gr
+cd _sass/
+ag panel-inver
+vim components/_panels.scss 
+ls
+cd post/
+ls
+cd 201
+ls
+cd 05/
+ls
+vim 2019-05-20-a-poem.md
+gr
+vim _config.yml 
+ag background-image
+ag background-image.jpg
+ag 'background-image.jpg'
+ag 'background-cover.jpg'
+vim _includes/side-panel.html 
+bundler.ruby2.6 exec jekyll s
+ls
+git status 
+git add .
+git commit 
+git push origin master 
+cd
+vim 2019-05-20-a-poem.md
+gr
+bundler.ruby2.6 exec jekyll s
+git add _posts/2019/05/2019-05-20-a-poem.md 
+git commit 
+git push origin master 
+wget https://giant.gfycat.com/HoarseAcidicEwe.webm
+ls
+rm HoarseAcidicEwe.webm
+cd pix/
+wget https://giant.gfycat.com/BasicActiveAmazontreeboa.webm
+netquit
+netlog
+netquit
+mpd
+dropbox -h
+dropbox autostart off
+dropbox autostart n
+ls .local/share/autocorrect/
+ls .local/share/applications/
+ls /usr/share/autostart/
+ls /usr/share/autostart/panel.desktop
+authlog
+cd
+ls
+gcc pthread_fib.c 
+gcc pthread_fib.c -lpthread
+ls
+./a.out 
+./a.out
+cd 
+ls
+./BaiduPCS-Go 
+cd
+ls
+cd
+ls
+cd DeepLearningPython35/
+ls
+ls ..
+..
+fd pkl
+cd -
+ls
+py3 test.py 
+ls
+cd 
+fd pkl
+ls
+cd -
+ls
+vim test.py 
+git status 
+git checkout -- .
+git status 
+ls
+gzip -x mnist_
+gzip --decompress mnist.pkl.gz 
+ls
+file mnist.pkl
+vim mnist.pkl 
+ls
+py3
+py
+ls
+vim network3.py 
+ls
+git status 
+git checkout -- mnist.pkl.gz
+git status 
+vim network3.py 
+ls
+vim test
+xxd test
+df -h
+cd
+ls
+vim sinanews.train
+vim sinanews.train.data 
+xhost +
+file sinanews.train.data 
+ls
+vim gen_data.py 
+cd
+ls
+ls -lh
+py3
+cd
+ls
+py3
+ls
+py3
+ls
+cd
+ls
+./gen_data.py 
+ls
+./gen_data.py 
+ls
+py3
+ls
+ls -l
+ls -lh
+file sinanews.demo.data.pkl 
+vim sinanews.demo.data.pkl 
+./gen_data.py 
+df -h
+ls -l
+ls -lh
+vim sinanews.demo.data.pkl 
+ls
+man gzip
+ls
+gzip -c sinanews.demo.data.pkl > sinanews.demo.gz
+ls
+file sinanews.demo.gz 
+vim sinanews.demo.gz 
+ls -lh
+gzip -c sinanews.test.data.pkl > sinanews.test.pkl.gz
+ls -lh
+gzip -c sinanews.train.data.pkl > sinanews.train.pkl.gz
+ls -lh
+py3
+ls
+ls -lh
+rm sinanews.train.pkl.gz
+ls
+gzip -c sinanews.train.data.pkl > sinanews.train.pkl.gz
+py3
+ls
+cd
+ls
+vim test
+vim test.py 
+authquit
+netlog
+ls
+nmcli device status 
+ping net.tsinghua.edu.cn
+netquit
+cd
+ls
+vim pthread_fib.c 
+ls
+killall seafile-applet 
+killall seaf-daemon 
+netlog
+netqit
+netquit
+netlog
+py3
+netquit
+enca 摩尔斯-参考代码vhdl-gbk.vhd 
+enconv 摩尔斯-参考代码vhdl-gbk.vhd 
+dos2unix 摩尔斯-参考代码vhdl-gbk.vhd 
+enca 摩尔斯-参考代码vhdl-gbk.vhd 
+cd
+./bin/quartus
+netlog
+cd
+ls
+file mnist.pkl
+ls -lh
+vim network3.py 
+ls
+cd
+ls
+py3 test.py 
+py3
+py3 test.py 
+py3
+vim main.py 
+vim wordlist 
+vim main.py 
+bc
+factor 60744
+bc
+ls
+cd
+ls
+py3 main.py 
+bc
+pydoc3 open
+py3 gen_data.py 
+ls
+ls -lh
+py3 
+pydoc3 gzip.open
+py3 gen_data.py 
+ls
+ls -lh
+rm sinanews.demo.gz
+ls
+py3 gen_data.py 
+cd
+ls
+factor 60745
+factor 60744
+cd
+py3
+cd
+py3
+./gen_data.py 
+py3
+cd
+ls
+py3
+ls
+netlog
+xset b off
+wpp 
+vim /usr/bin/wpp 
+wpp --sync
+fd 党建
+cd /usr/
+fd 党建
+cd /opt/
+ls
+cd kingsoft/wps-office/
+ls
+cd templates/
+ls
+..
+ls office6/
+ls
+cd
+ls
+vim network3.py 
+cd
+ls
+py3 test.py 
+bat network3.py 
+ls
+py3
+netlog
+cd
+ls
+./gen_data.py 
+ls
+./gen_data.py 
+ls -lh
+vim sinanews.demo.data.pkl 
+./gen_data.py 
+py3
+ls
+py3
+ls
+./gen_data.py 
+ls
+rm sinanews.demo.data.pkl.gz
+rm sinanews.demo.data.pkl
+ls
+rm sinanews.test.data.pkl
+ls
+rm sinanews.train.data.pkl
+ls
+ls -lh
+py3
+./gen_data.py 
+py3
+py3 main.py 
+ls
+ls -lh
+./gen_data.py 
+py3 main.py 
+factor 1263
+py3 main.py 
+ls
+scp -P 9922 data.pkl.gz ai9@101.6.5.200:~/
+scp -P 9922 network3.py ai9@101.6.5.200:~/
+scp -P 9922 main.py ai9@101.6.5.200:~/
+./gen_data.py 
+py3 main.py 
+./gen_data.py 
+ls -lh
+chmod +x main.py 
+./main.py 
+./gen_data.py 
+./main.py 
+scp -P 9922 data.pkl.gz ai9@101.6.5.200:~/
+scp -P 9922 gen_data.py  ai9@101.6.5.200:~/
+scp -P 9922 sinanews.train ai9@101.6.5.200:~/
+scp -P 9922 sinanews.tes ai9@101.6.5.200:~/
+scp -P 9922 sinanews.test ai9@101.6.5.200:~/
+scp -P 9922 wordlist  ai9@101.6.5.200:~/
+py3
+./gen_data.py 
+ls
+py3
+netquit
+netlog
+df -h
+netlog
+xset b off
+cd
+ls
+./main.py 
+ls
+scp -P 9922 sina.zip  ai9@101.6.5.200:~/
+scp -P 9922 ../sina.zip  ai9@101.6.5.200:~/
+./main.py 
+scp -P 9922 ../sina.zip  ai9@101.6.5.200:~/
+ls ..
+ls ../../../
+ls ../../
+vim ../../sgns.merge.word
+rm ../../sgns.merge.word.bz2
+mv ../../sgns.merge.word .
+ls
+./gen_data.py 
+./main.py 
+cd
+ls
+./main.py 
+./gen_data.py 
+py3
+./main.py 
+./gen_data.py 
+./main.py 
+./gen_data.py 
+./main.py 
+ls
+./main.py 
+ls
+py3
+factor 60744
+bc
+factor 60721
+bc
+./gen_wordlist.py 
+journalctl -xe NM_CONNECTION=b70f7101-8190-4f14-8477-cb944435a857 + NM_DEVICE=wlp5s0
+./gen_wordlist.py 
+./gen_data.py 
+ls
+py3
+./gen_data.py 
+ls
+rm wordlist
+./gen_wordlist.py 
+./gen_data.py 
+
+./gen_data.py 
+py3
+ls
+..
+cd
+scp -P 9922 ../sina.zip  ai9@101.6.5.200:~/
+scp -P 9922 sina.zip  ai9@101.6.5.200:~/
+py3
+cd
+ls
+vim main.py 
+ls
+redshift-gtk 
+ls
+killall redshift 
+ls
+vim .config/i3status/config
+xhost +
+vim .config/sway/config 
+ls
+vim .config/i3/config 
+ls
+vim .config/i3/config 
+base16
+base16-shell-preview 
+./dev/256colors2.pl 
+ls
+base16-shell-preview 
+ls
+vim dev/256colors2.pl 
+vim .config/i3/config 
+xrdb .Xresources 
+vim .Xresources 
+xrdb .Xresources 
+ls
+./dev/256colors2.pl 
+ls
+base16-shell-preview 
+tmux
+ls
+cd kde/
+ls
+cd
+ls
+./dev/256colors2.pl 
+cd dev/src/base16/base16-rofi/
+ls
+cd themes/
+ls
+vim base16-github.config 
+vim base16-github.rasi 
+cp base16-github.rasi ~/.local/share/rofi/themes/
+rofi-theme-selector 
+ls
+xrdb .Xresources 
+cd dev/src/base16/base16-rofi/
+ls
+..
+ls
+cd base16-i3/
+ls
+vim themes/base16-github.config 
+ls
+sudo zypper remove minder
+sudo zypper search --installed-only mind
+netlog
+ssh ai9@101.6.5.200 -p 9922
+netquit
+ls
+cd
+ls
+./main.py 
+ls
+./main.py 
+ssh ai9@101.6.5.200 -p 9922
+base16-shell-preview 
+cd
+ls
+vim network3.py 
+./main.py 
+ls
+ls -lh
+py3
+notify-send s -i audio-off
+notify-send s
+date
+py3
+ls
+base16-shell-preview 
+vim network3.py 
+ls
+cd
+ls
+p
+print
+printf
+printf sa
+printf sa\n
+printf "sa\n"
+printf "sa%s\n"
+printf "sa%s\n" as
+ls
+scp -P 9922 network3.py ai9@101.6.5.200:~/
+ls
+cd
+ls
+openvpn
+sudo openvpn --config vpn9.ovpn 
+ssh ai9@101.6.5.200 -p 9922
+netlog
+authlog
+authquit
+authlog
+nmcli connection up Tsinghua-Secure 
+nmcli connection up --ask Tsinghua-Secure 
+nmcli connection up Tsinghua-IPv4
+authlog
+ssh ai9@101.6.5.200 -p 9922
+cd
+ls
+vim main.py 
+ssh ai9@101.6.5.200 -p 9922
+vim network3.py 
+tmux
+vim network3.py 
+compton
+compton -b
+vim ~/.config/com
+vim ~/.config/compton.conf 
+killall compton 
+scp -P 9922 main.py ai9@101.6.5.200:~/
+ls
+cd
+ls
+vim main.py 
+scp -P 9922 main.py ai9@101.6.5.200:~/
+vim main.py 
+ls
+vim main.py 
+ls
+vim
+ls
+vim main.py 
+bluetoothctl 
+ls
+netlog
+ping net.tsinghua.edu.cn
+ping baidu.com
+nmcli connection up Tsinghua-5G 
+ssh ai9@101.6.5.200 -p 9922
+voldown 
+bluetoothctl 
+texmacs
+cd
+sudo openvpn --config vpn9.ovpn 
+ping baidu.com
+texmacs
+sudo killall openvpn 
+cd dwn/
+sudo openvpn --config vpn9.ovpn 
+ip route
+sudo openvpn --config vpn9.ovpn 
+base16-shell-preview 
+vim network3.py 
+vim ~/dev/256colors2.pl 
+pydoc rm_tags
+pydoc3 rm_tags
+ls
+cd
+ls
+py3
+sudo pip install keras
+ls
+py3
+l
+vim .keras/keras.json 
+py3
+cd
+ls
+py3
+bluetoothctl 
+ping baidu.com
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+ls
+py3
+base16-shell-preview 
+tmux
+ping net.tsinghua.edu.cn
+cd
+ls
+py3
+cd
+ls
+vim gen_data.py 
+./new_data.py 
+vim gen_data.py 
+vim new_data.py 
+py3
+vim new_data.py 
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+netlog
+authquit 
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+netlog
+netquit
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping net.tsinghua.edu.cn
+nmcli device status 
+vim bin/authlog 
+authlog
+nmcli device wifi list 
+vim bin/authlog 
+authlog 
+cd 
+ls
+py3
+cd
+py3
+cd
+py3
+./main_keras.py 
+ls
+file model.h5 
+vim model.h5 
+ls -lh
+./main_keras.py 
+py3
+rm model.h5
+./main
+./main_keras.py 
+./new_data.py 
+py3
+./main_keras.py 
+rm model.h5
+./main_keras.py 
+scp -P 9922 /home/linusboyle/dev/sina.zip ai9@101.6.5.200:~/
+py3
+cd
+ls
+py3
+pydoc3 keras.layers.embeddings
+pydoc3 numpy.random.randint
+pydoc3 max
+pydoc3 argmax
+./new_data.py 
+ls
+py3
+pydoc3 keras.models.Model.compile
+pydoc3 keras.models.Model.fit
+pydoc3 keras.models.Model.compile
+cd
+ls
+./main_keras.py 
+sudo pip install pydot
+ls
+ls -lh
+ls
+rm model.h5
+./main_keras.py 
+rm model.h5
+ls
+scp -P 9922 main_keras.py .py ai9@101.6.5.200:~/
+scp -P 9922 main_keras.py ai9@101.6.5.200:~/
+ssh ai9@101.6.5.200 -p 9922
+nmcli device wifi list 
+dmesg
+ls
+ls d
+ls doc/
+ls /dev/
+ls
+vim dev/256colors2.pl 
+cd
+ls
+vim new_data.py 
+;s
+ls
+..
+ls
+cp -r sina/ ~/dev/
+cd
+cd de
+ls
+cd sina/
+ls
+vim main_keras.py 
+ls
+vim new_data.py 
+./new_data.py 
+vim main_keras.py 
+cd
+ls
+scp -P 9922 /home/linusboyle/dev/sina/x.pkl.gz ai9@101.6.5.200:~/
+ls
+./main_keras.py 
+ls
+rm model.h5
+./main_keras.py 
+./new_data.py 
+ls
+./main_keras.py 
+rm model.h5
+./main_keras.py 
+ls
+vim sinanews.train 
+./new_data.py 
+vim sinanews.train 
+./new_data.py 
+vim sinanews.train 
+ls
+cd
+ls
+py3
+mpd
+authlog
+vim bin/auth
+vim bin/authlog 
+authlog
+ls
+cd bin/
+ls
+cp authlog authlog_ether
+vim authlog_ether 
+xhost +
+ping net.tsinghua.edu.cn
+authquit
+dems
+dmesg 
+netlog
+ssh ai9@101.6.5.200 -p 9922
+ls
+cd 
+cd
+ls
+ls -l
+ls -lh
+scp -P 9922 main_keras.py ai9@101.6.5.200:~/
+scp -P 9922 new_data.py  ai9@101.6.5.200:~/
+ls
+vim main_keras.py 
+scp -P 9922 ai9@101.6.5.200:~/sina/arch.png .
+ls
+imgv arch.png 
+qls
+mv arch.png dev/sina
+ls
+cd 
+ls
+mv arch.png arch_rnn.png
+ls
+..
+ls
+rm sina.zip
+scp -P 9922 ai9@101.6.5.200:~/sina.zip .
+ls
+scp -P 9922 .vimr ai9@101.6.5.200:~/
+scp -P 9922 .vimrc ai9@101.6.5.200:~/
+py3
+cd
+py32
+py3
+sudo pip install sklearn
+sudo zypper install python3-scikit-learn 
+py3
+df -h
+cd doc/
+ncdu
+texmacs
+cd
+vim main.py 
+ag new_data
+ls
+ag main
+py3
+ls
+cd dev/sina/
+ls
+vim m
+vim main.py 
+cd .goldendict/
+ls
+vim favorites 
+ls
+vim history 
+ls
+vim qt-style.css 
+ls
+ls styles/
+ls styles/ -a
+ls index/
+ls index/ -a
+ls index/ -lh
+ls
+vim config 
+cd
+ls
+bundler.ruby2.6 exec jekyll s
+cd post/
+ge
+gr
+ls
+vim _config.yml 
+git commit -a
+git push origin master 
+netlog
+netquit
+authlog
+ping baidu.com
+ping net.tsinghua.edu.cn
+authquit
+ocam
+ocaml
+man ocaml
+ls
+vim .bashrc
+man opam
+netlog
+ls
+cd dev/program/mpi/
+ls
+vim prog3.6.c 
+ls
+cd hw3/
+ls
+cd mat_vect/
+ls
+cd prog3.5/
+ls
+vim prog3.5.c 
+scp -P 19917 prog3.5.c 2017011442@166.111.227.244:~
+netquit
+netlog
+sudo zypper dup
+zypper ps -s
+cd post/
+g
+gr
+git push origin master 
+..
+git clone https://github.com/linusboyle/CompCert
+cd CompCert/
+ls
+vim .git/config 
+git remote add upstream https://github.com/AbsInt/CompCert
+git fetch upstream 
+git rebase upstream/master 
+git log
+git push origin master 
+vim .git/config 
+ls
+vim README.md 
+rlwrap
+sudo zypper install rlwrap
+zypper info rlwrap
+utop
+cnf utop
+htop
+cnf utop
+ocam
+ocaml
+ls
+cd
+ls
+sudo zypper install rlwrap 
+vipe 
+ls |vipe
+ls
+ls |vipe|cat
+ls |vipe|head
+ls
+ls |vipe|head
+ls
+ocaml
+vim test.ml
+netlog
+texmacs
+ls
+cd dev/
+ls
+cd program/
+ls
+cd mpi/
+ls
+..
+ls
+mkdir hw5
+cd hw5/
+ls
+scp -P 19917 2017011442@166.111.227.244:~/result/* .
+ls
+mkdir 3.5
+mv result_* 3.5/
+ls
+mkdir 3.6
+cd 3.6/
+scp -P 19917 2017011442@166.111.227.244:~/result/* .
+mpd
+sudo systemctl enable snapd.apparmor.service 
+vim --version
+sudo zypper remove libqt5-qtdoc-html 
+sudo zypper remove libqt5-qtdoc-qch 
+sudo zypper remove libqt5-qtdoc-html 
+zypper ps -s
+sudo zypper ps -s
+man haveged 
+sudo zypper remove python2
+sudo zypper remove python
+sudo zypper remove python2-numpy 
+man gyp
+zypper info gyp
+ls
+sudo zypper remove gyp
+sudo zypper remove python3
+sudo zypper remove python3-Django 
+sudo zypper ps -s
+sudo zypper remove python3-beautifulsoup4 
+sudo zypper remove python2-*
+sudo zypper remove python-base 
+sudo zypper remove python2
+sudo zypper info dropbox-cli 
+sudo zypper info dropboxs
+sudo zypper info drop
+sudo zypper info drops
+sudo zypper remove dropbox-cli 
+sudo zypper remove syncthing 
+sudo zypper remove python2-rpm 
+sudo zypper remove python2-*
+pygmentize-3.7 
+man pygmentize 
+pygmentize dev/256colors2.pl 
+ls
+py2
+py
+sudo zypper remove python2
+python
+zypper ps -s
+sudo zypper ps -s
+py3
+sudo zypper install python
+py3
+texmacs
+ls
+spotify 
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+spotify 
+xhost +
+spotify 
+netquit
+netlog
+ks
+ls
+./main.py 
+ls
+d -h
+df -h
+cd dev/
+ncdu
+d -h
+df -h
+texmacs
+netquit
+ls
+cd dev/mydic/
+ls
+ls -a
+ncdu
+rm -rf .git
+rm .gitattributes
+ls
+sudo zypper install vnote --
+sudo zypper install vnote
+htop
+ls
+sudo zypper info vnote
+vim /usr/share/applications/vnote.desktop 
+cp /usr/share/applications/vnote.desktop vnote.desktop
+ls
+sudo zypper remove vnote 
+chmod +x ./dwn/VNote-2.6-x86_64.AppImage 
+./dwn/VNote-2.6-x86_64.AppImage 
+ls
+vim vnote.desktop 
+ls
+sudo mv vnote.desktop .local/share/applications/
+ls .local/share/applications/vnote.desktop -l
+ls
+ls app
+mv dwn/VNote-2.6-x86_64.AppImage bin/VNote
+VNote 
+ls
+cd .config/vnote/
+ls
+vim vnote.ini 
+authlog
+vim bin/auth
+vim bin/authlog
+authquit
+authlog
+scp -r -P 19917 2017011442@166.111.227.244:~/hw5/ ./dev/program/
+ls
+cling
+ls
+cd dev/program/hw5/
+ls
+cd pa2/
+ls
+gcc task_queue.c -o task
+ls
+./task 
+ls
+gcc task_queue.c -o task
+./task 
+gcc task_queue.c -o task
+./task 
+enableCoq 
+opam
+opam list
+opam upgrade
+opam update
+opam upgrade
+cd
+ls
+rm task
+ls
+ls ..
+cd
+ls
+cp list.h list.c dev/program/hw5/pa2/
+ls
+cd
+ls
+rm ~/list.*
+ls
+gcc task_queue.c list.c -o task
+gcc task_queue.c -o task
+gcc task_queue.c list.c -o task
+gcc task_queue.c list.c -o task -lpthread
+ls
+./task 
+gcc task_queue.c list.c -o task -lpthread
+./task 
+ls
+./task 4 16
+gcc task_queue.c list.c -o task -lpthread
+./task 4 16
+gcc task_queue.c list.c -o task -lpthread
+./task 4 16
+valgrind --tool=memcheck ./task 4 16
+valgrind -s --tool=memcheck ./task 4 16
+cd -
+ls
+gcc task_queue.c list.c -o task -lpthread
+ls
+./task 4 16
+./task 4 160
+gcc task_queue.c list.c -o task -lpthread
+./task 4 160
+gcc task_queue.c list.c -o task -lpthread
+./task 4 160
+gcc task_queue.c list.c -o task -lpthread
+./task 4 160
+gcc task_queue.c list.c -o task -lpthread
+./task 4 160
+ls
+vim makefile
+rm task
+make
+ls
+make clean 
+ls
+..
+ls
+cd -
+ls
+make
+./task 4 1000
+./task 4 10000
+texmacs
+netlog
+cd dev/program/hw5/pa3/
+ls
+gcc sort.c -o sort
+./sort 
+p
+gcc sort.c -o sort
+./sort 
+./sort 12
+gcc sort.c -o sort
+./sort 12
+gcc sort.c -o sort
+./sort 12
+gcc sort.c -o sort
+./sort 12
+gcc sort.c -o sort
+./sort 12
+gcc sort.c -o sort -fopenmp
+ls
+./sort 12
+gcc sort.c -o sort -fopenmp
+./sort 12
+./sort 13
+./sort 1000
+gcc sort.c -o sort -fopenmp
+./sort 1000
+gcc sort.c -o sort -fopenmp
+gcc sort.c -o sort -fopenmp -std=c99
+gcc sort.c -o sort -fopenmp -std=c1
+gcc sort.c -o sort -fopenmp -std=c11
+gcc sort.c -o sort -fopenmp -std=c99
+gcc sort.c -o sort -fopenmp
+ls
+./sort
+./sort 120
+./sort
+gcc sort.c -o sort -fopenmp
+./sort 120
+./sort 1200
+./sort 120000
+./sort 12000
+./sort 30000
+gcc sort.c -o sort -fopenmp
+./sort 12000
+gcc sort.c -o sort -fopenmp
+./sort 12000
+gcc sort.c -o sort -fopenmp
+./sort 12000
+gcc sort.c -o sort -fopenmp
+./sort 12000
+gcc sort.c -o sort -fopenmp
+./sort 1200
+./sort 3000
+./sort 30000
+ls
+./sort 10
+./sort 100
+gcc sort.c -o sort -fopenmp
+./sort 100
+./sort 1000
+./sort 10000
+gcc sort.c -o sort -fopenmp
+./sort 1000
+ls
+vim result.csv 
+rm result.csv
+./sort 100
+vim result.csv 
+rm result.csv
+./sort 1000
+./sort 2000
+./sort 3000
+./sort 4000
+./sort 5000
+./sort 6000
+./sort 8000
+./sort 10000
+./sort 15000
+vim result.csv 
+gcc sort.c -o sort -fopenmp
+rm result.csv
+./sort 1000
+./sort 2000
+./sort 3000
+./sort 4000
+./sort 5000
+./sort 6000
+./sort 7000
+./sort 8000
+./sort 10000
+./sort 15000
+vim result.csv 
+rm result.
+rm result.csv
+gcc sort.c -o sort -fopenmp
+./sort 8000
+gcc sort.c -o sort -fopenmp
+./sort 1000
+./sort 10000
+rm result.
+rm result.csv
+./sort 1000
+./sort 2000
+./sort 3000
+./sort 4000
+./sort 5000
+./sort 6000
+./sort 7000
+./sort 8000
+./sort 9000
+./sort 1000
+rm result.csv
+./sort 1000
+./sort 2000
+./sort 3000
+./sort 4000
+./sort 5000
+./sort 6000
+./sort 7000
+./sort 8000
+./sort 9000
+./sort 10000
+./sort 15000
+./sort 20000
+vim result.
+vim result.csv 
+ls
+rm sort
+ls
+te
+texmacs
+ping baidu.com
+cd .vim/
+ls
+vim plugin/rename.vim 
+sudo zypper info vnote 
+pper info vnote 
+zypper info vnote 
+vim .local/share/applications/vnote.desktop 
+ls
+cd 
+./main 1000 4
+netlog
+netquit
+netlog
+ping baidu.com
+cd
+cd pa4/
+ls
+gcc main.c -o main
+ls
+./main 
+./main 10 2
+./main 100 2
+./main 1000 2
+./main 2000 2
+sudo zypper remove joe 
+joe
+man joe
+joe main.c 
+nano main.c 
+ls
+gcc main.c -fopenmp -o main
+./main 
+./main 1000 4
+time ./main 1000 4
+time ./main 10000 4
+gcc main.c -fopenmp -o main -DSERIAL
+time ./main 10000 4
+gcc main.c -fopenmp -o main -DSERIAL
+time ./main 10000 4
+gcc main.c -fopenmp -o main
+time ./main 10000 4
+time ./main 100 4
+time ./main 1000 4
+gcc main.c -fopenmp -o main
+time ./main 1000 4
+time ./main 10000 4
+gcc main.c -fopenmp -DSERIAL -o main
+time ./main 10000 4
+gcc main.c -fopenmp -o main
+time ./main 10000 4
+ls
+vim ../pa3/sort.c 
+gcc main.c -fopenmp -o main
+./main 1000 4
+gcc main.c -fopenmp -o main
+./main 1000 4
+gcc main.c -fopenmp -o main
+./main 1000 4
+zypper search prolog
+./main 1000 4
+./main 10000 4
+vim ~/dev/project/graph/graphics/src/scene.cpp 
+gcc main.c -fopenmp -o main
+./main 10000 4
+gcc main.c -fopenmp -o main
+./main 10000 4
+gcc main.c -fopenmp -o main
+./main 10000 4
+./main 100000 4
+./main 20000 4
+ls
+gcc main.c -fopenmp -o main
+./main 20000 4
+ls
+vim result.csv 
+ls
+scp -P 19917 main.c 2017011442@166.111.227.244:~
+ping net.tsinghua.edu.cn
+ls
+rm result.csv
+netlog
+scp -P 19917 main.c 2017011442@166.111.227.244:~
+gcc main.c -fopenmp -o main
+./main 10000 4
+scp -P 19917 main.c 2017011442@166.111.227.244:~
+scp -P 19917 2017011442@166.111.227.244:~/hw5/pa4/result.csv .
+ls
+vim result.csv 
+vim ../pa3/sort.c 
+vim ../pa2/task_queue.c 
+ls
+gcc pthread.c -o pthread -lpthread
+ls
+./pthread 1000 3
+gcc pthread.c -o pthread -lpthread
+gcc pthread.c -o pthread -lpthread -DDEBUG
+./pthread 1000 3
+./main 1000 4
+./main 10 4
+./pthread 100 2
+./pthread 101 2
+gcc pthread.c -o pthread -lpthread
+./pthread 101 2
+gcc pthread.c -o pthread -lpthread
+./pthread 101 2
+./pthread 1000 2
+./pthread 10000 2
+./pthread 10000 4
+./pthread 10000 10
+./pthread 20000 4
+xset b off
+gcc pthread.c -o pthread -lpthread
+./pthread 10000 4
+./pthread 10000 10
+ls
+..
+ls
+mkdir pa1
+mv prog3.* pa1
+ls
+mv pa1_result.* pa1
+ls
+ls pa1/prog3.5/
+ls pa1/prog3.6/
+ls pa2
+cd pa2
+make clean
+ls
+..
+ls
+cd pa3
+ls
+vim sort.c 
+vim makefile
+ls
+make
+ls
+./sort 
+./sort  1000
+./sort  10000
+ls
+make clean
+ls
+..
+ls
+cd pa4/
+ls
+rm main
+rm pthread
+ls
+vim makeile
+vim makefile
+make
+ls
+make clean 
+ls
+..
+ls
+scp -P 19917 hw5.zip 2017011442@166.111.227.244:~
+sudo zypper refresh opensuse_zh
+sudo zypper repos
+sudo zypper refresh opensuse-zh
+sudo zypper info vnote
+uname -a
+sudo zypper dup
+zypper dup
+zypper dup -h
+ping net.tsinghua.edu.cn
+texmacs
+netlog
+dig net.tsinghua.edu.cn
+dig net.tsinghua.edu.cn --trace
+dig net.tsinghua.edu.cn
+dig auth4.tsinghua.edu.cn
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping net.tsinghua.edu.cn
+dig auth4.tsinghua.edu.cn
+authlog
+cd dwn/
+sudo openvpn --config vpn9.ovpn 
+ip route
+ls
+df -h
+ncdu
+enableCoq 
+opam
+opam update
+opam repository
+opam repository --all
+opam 
+opam list
+opam 
+opam config
+opam upgrade
+cd opam-coq.8.9.0/
+ag ocamllibdep
+vim log/coq-20746-d4902a.
+vim log/coq-20746-d4902a.out 
+cd o
+cd ocaml-base-compiler.4.02.3/
+cd .opam-switch/
+cd build/
+ls
+cd coq.8.9.1/
+ls
+ag bin
+ag ocamllibdep
+ls
+ls bin/
+cd
+ls
+make
+texmacs
+ls
+rm -rf fontconfig/
+ls
+cd
+ls
+texmacs
+py
+cd dev/program/hw5/
+ls
+cd pa3/
+ls
+..
+cd pa4/
+ls
+vim ma
+vim main.c 
+netlog
+cd post/
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+git add _posts/2019/06/2019-06-07-daoshuoyishu-season1.md 
+git commit 
+git push origin master 
+cd dev/CompCert/
+ls
+git fetch origin 
+git log
+git fetch upstream 
+git branch 
+git log -a
+git log upstream
+git log upstream/master 
+ls
+vim Makefile
+vim cparser/Bitfields.ml
+sudo zypper install python2-Pygments 
+vim cparser/Bitfields.ml
+ls
+cd
+ls
+cd .vim/cache/.LfCache/
+ls
+ls gtags/
+ls gtags/%home%linusboyle%dev%CompCert/
+ls gtags/%home%linusboyle%dev%CompCert/ -l
+ls gtags/%home%linusboyle%dev%CompCert/ -lh
+cd
+xset b off
+ls
+cd post/
+ls
+gr
+ls
+vim AboutMe.md 
+ls
+git status 
+git checkout -- AboutMe.md
+cd
+ls
+bundler.ruby2.6 exec jekyll s
+netlog
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+snap
+snap refresh 
+sudo snap install mailspring 
+ls /snap/
+ls /snap/bin/
+ls /opt/
+rm .local/share/applications/jetbrains-webstorm.desktop
+sudo rm /opt/WebStorm-183.5912.23/
+sudo rm -r /opt/WebStorm-183.5912.23/
+ls /opt/google/
+ls /opt/electronic-wechat-linux-x64/
+ls .local/share/applications/
+df -h
+ls snap/
+ls snap/mailspring/
+cd snap/
+ncdu
+man pthread_mutex_trylock 
+man pthread_mutex_lock
+opam list -a
+fd 光
+ls
+cd post/
+ls
+gr
+ls
+ls css/
+vim _sass/global.scss 
+vim _sass/vno.scss 
+ls
+bundler.ruby2.6 exec jekyll s
+cd 
+ls
+git commit -a
+ls
+vim AboutMe.md 
+git commit -a
+git push origin master 
+netlog
+git push origin master 
+netquit
+cd
+ls
+vim README.md 
+git commit -a
+netlog
+netquit
+netlog
+netquit
+netlog
+ping net.tsinghua.edu.cn
+netquit 
+authlog
+authquit
+lsusb
+sudo zypper install calibre 
+dig smtp.mails.tsinghua.edu.cn
+dig mails.tsinghua.edu.cn
+mpd
+k2pdfopt -?
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+mailspring 
+xhost +
+mailspring 
+ls
+file k
+file k2pdfopt.exe 
+mv k2pdfopt.exe bin/
+mv bin/k2pdfopt.exe bin/k2pdfopt
+chmod +x bin/k2pdfopt 
+cd
+cd doc/
+ls
+cd 计算机科学/
+cd 语义学/
+ls
+k2pdfopt Programming\ Languages\ and\ Lambda\ Calculi.pdf 
+k2pdfopt -?
+k2pdfopt -device ?
+k2pdfopt The.Formal.Semantics.of.Programming.Languages.An.Introduction,.Winskel,.MIT,.1993.pdf 
+k2pdfopt -?
+k2pdfopt Programming\ Languages\ and\ Lambda\ Calculi.pdf 
+netlog
+sudo zypper install wine
+netquit
+netlog
+netquit
+ls
+cd
+ls
+cd reference/
+ls
+rm icfp11-krishnaswami-benton_k2opt.pdf
+k2pdfopt icfp11-krishnaswami-benton.pdf 
+k2pdfopt thesis.pdf 
+..
+ls
+k2pdfopt lec05-fa07.pdf 
+rm lec05-fa07_k2opt.pdf
+k2pdfopt lec05-fa07.pdf 
+k2pdfopt -?
+netquit
+netlog
+enableCoq 
+coqide
+netlog
+netquit
+netlog
+netquit
+cd post/
+gr
+bundler.ruby2.6 exec jekyll s
+git commit -a
+git add _posts/2019/06/2019-06-14-jihuai.md
+git commit 
+git log
+ls
+netlog
+git push 
+git push origin master 
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netqui
+netquit 
+netquit 
+netlog
+
+netlog
+netquit
+netlog
+cd dwn/
+ls
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+./BaiduPCS-Go 
+ls
+./BaiduPCS-Go 
+netlog
+./BaiduPCS-Go 
+ls
+netquit
+netlog
+netquit
+netlog
+cd
+ls
+./BaiduPCS-Go 
+ls
+cd download/
+ls
+..
+ls
+cd 1042192908_陸慈郎/l
+ls
+unzip zgsh-sxxs21.zip 
+ls
+vim .goldendict/history 
+cd /usr/bin/
+ls
+..
+cd lib64/libreoffice/
+ls
+cd program/
+ls
+file unopkg
+vim unopkg
+./unopkg
+ls
+man unopkg 
+unopkg list
+cd
+./zotero
+ls
+vim zotero.desktop 
+ls
+man readlin
+man readlink
+ls
+..
+ls
+ls ~
+ls ~/app
+mv Zotero_linux-x86_64/ ~/app/
+cd
+cd app/
+ls
+vim Zotero_linux-x86_64/zotero.desktop 
+cp Zotero_linux-x86_64/zotero.desktop 
+cp Zotero_linux-x86_64/zotero.desktop ~/.local/share/applications/
+vim ~/.local/share/applications/zotero.desktop 
+..
+ls
+cd bin/
+ln -s ~/app/Zotero_linux-x86_64/zotero ./zotero
+ls
+ls -l
+zotero 
+zotero -url 
+ls
+vim ~/.local/share/applications/zotero.desktop 
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+zypper info zotero
+zypper search zotero
+netquit
+cd dwn/
+ls
+sudo zypper install Zotero-5.0.67_linux-x86_64.tar.bz2 
+ls
+cd zo
+cd Zotero_linux-x86_64/
+ls
+file zotero.jar 
+file zotero
+./zotero
+cd
+d
+cd
+netlog
+netquit 
+ls
+cd app/
+fd ico
+fd zotero.ico
+ls
+vim Zotero_linux-x86_64/zotero.desktop 
+cd
+cd .local/share/
+ls
+rm -rf godot/
+ls
+ncdu
+sudo zypper remove akregator
+sudo zypper ps -s
+ls
+rm -rf akregator/
+ls
+ls VNote-2.6-x86_64.AppImage/
+ls VNote
+ls
+ls wallpapers/
+ls
+ls zathura/
+ls
+ncdu
+gwenview icons/telegram.png 
+netlog
+ls
+ls Steam/
+ls
+ncdu
+sudo zypper remove kmail
+ls
+sudo zypper remove semantik 
+ls
+ls akonadi
+cd akonadi
+ls
+ncdu
+df -h
+ls
+..
+ls
+..
+cd
+ncdu
+zypper info goldendict 
+sudo zypper refresh
+zypper info goldendict 
+sudo zypper dup
+mpd
+netquit
+netlog
+netquit
+bluetoothctl 
+lspci
+sudo lspci
+sudo lspci|grep blue
+sudo lsusb
+ls
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+cd dwn/
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+./BaiduPCS-Go 
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+netquit
+netlog
+sudo zypper dup
+sudo zypper remove telegram-desktop 
+which vnote
+which VNote
+ls bin/
+vim bin/VNote 
+vim .local/share/applications/vnote.desktop 
+cd .local/share/applications/
+ls
+rm syncthing-start.desktop
+rm syncthing-ui.desktop
+ls
+mv vnote.desktop ..
+ls
+cd
+ls
+ls bin/
+cd bin/
+ls
+rm VNote
+ls
+cd 
+ls
+..
+ls
+rm vnote.desktop
+ls
+ls VNote
+rm -rf VNote*
+ls
+cd
+ls
+youtube-dl -v
+youtube-dl --version
+khugepaged
+cnf khugepaged
+ls
+htop
+top
+pgrep khugepaged 
+sudo killall khugepaged 
+top
+sudo killall -KILL khugepaged 
+top
+netquit
+netlog
+netquit
+netlog
+netquit
+ocaml
+coq
+cnf coq
+ls
+netlog
+cd dwn/
+ls
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+ls
+./BaiduPCS-Go 
+..
+ls
+mv 1042192908_陸慈郎/红楼梦图片.zip ~/sync/misc/
+cd 
+cd sync/misc/
+ls
+netquit
+netlog
+cd
+ls
+mpd
+ls
+vim 
+netquit
+netlog
+ls
+sudo zypper dup
+alacritty 
+sudo zypper remove alacritty
+sudo zypper remove alacritty-*
+ls
+sudo zypper dup
+sudo zypper remove telegram-desktop 
+sudo zypper remove mongodb
+vim --version
+netquit 
+netlog
+enableCoq 
+coqide
+netquit 
+coqide
+netquit 
+ls
+vidir
+ls
+vidir
+cnf convmv
+sudo zypper install convmv 
+ls
+convmv -f gb18030 -t utf-8 *.mp3
+convmv -f GB18030 -t utf-8 *.mp3
+convmv -f GBK -t utf-8 *.mp3
+ls
+convmv -f GBK -t utf-8 *.ape
+ls
+ls *.ape
+ls *.ape|enca
+ls *.ape|enconv 
+sudo systemctl status snapd.apparmor.service 
+sudo zypper dup
+killall wpsoffice 
+sudo reboot 
+netlog
+cd dwn/
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+./BaiduPCS-Go 
+netlog
+bc
+netquit
+netlog
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+mpd
+xset b off
+xhost +
+ls
+netquit
+netlog
+cd 
+ls
+cd linusboyle/
+ls
+cd
+cd .config/fcitx/rime/
+ls
+vim default.custom.yaml 
+texmacs
+netquit
+sudo poweroff 
+cd 
+ls
+git log
+git fetch origin 
+git log origin/m
+git log origin/master 
+git rebase origin/master 
+git log
+ls
+vim README.md 
+cd cmake/
+ls
+cmake ..
+ls
+make
+make install
+ls
+vim ../README.md 
+make
+make install
+ls /usr/bin/
+ls /usr/bin/com*
+ls
+sudo make install
+cd post/
+gr
+ls
+bundler.ruby2.6 exec jekyll s
+git add _posts/2019/07/2019-07-01-june-reading.md 
+git commit 
+git push origin master 
+ls
+cd .goldendict/
+ls
+cd
+bundler.ruby2.6 exec jekyll s
+git add _posts/2019/07/
+git add _posts/2019/07/2019-07-01-
+git add _posts/2019/07/2019-07-01-lambda-calculus.md 
+git commit 
+git push origin master 
+cd
+ls
+bundler.ruby2.6 exec jekyll s
+git commit -a
+git push origin master 
+lspci -vnn | grep '\[030[02]\]'
+sudo lspci -vnn | grep '\[030[02]\]'
+cd /etc/modprobe.d/
+ls
+ag nouveau
+ag nvidia
+ls
+sudo vim 50-blacklist.conf
+ls
+sudo zypper install bbswitch
+n
+sudo zypper dup
+sudo zypper install bbswitch
+..
+cd modules-load.d/
+ls
+vim sg.conf 
+sudo echo "bbswitch" >> /etc/modules-load.d/modules.conf
+ls
+sudo vim modules.conf
+ls
+cat modules.conf 
+lsmod 
+lsmod |grep nou
+sudo echo "options bbswitch load_state=0" > /etc/modprobe.d/50-bbswitch.conf
+cd
+ls
+sudo vim 50-bbswitch.conf 
+ls -l
+ls -l 50-bbswitch.conf
+..
+ls
+sudo vim /etc/modules-load.d/modules.conf 
+man mkinitrd 
+sudo mkinitrd
+bash start_coqide.sh 
+enableCoq 
+bash start_coqide.sh 
+cat /proc/acpi/bbswitch 
+cd dev/
+ls
+git clone git@github.com:linusboyle/goldendict_dark_mode.git 
+cd goldendict_dark_mode/
+ls
+cp ~/.goldendict/qt-style.css .
+cp ~/.goldendict/styles/darkmode/article-style.css .
+ls
+git add *
+git commit 
+git push origin master 
+xset b off
+xhost +
+ls
+vim readme.md
+git add readme.md 
+git commit 
+git push origin master 
+sudo zypper source-download goldendict
+sudo zypper source-install 
+sudo zypper source-install goldendict 
+cd 
+ag GroupComboBox
+vim scanpopup.ui 
+cd dev/src/
+ls
+git clone {
+git clone git@github.com:goldendict/goldendict.git
+git clone --depth=1 git@github.com:goldendict/goldendict.git
+ls
+cd go
+cd goldendict/
+ls
+mkdir ../styles
+cp *.css ../styles/
+..
+ls
+cd styles/
+ls
+ag Group
+vim qt-style
+vim qt-style.css 
+goldendict 
+cp dev/goldendict_dark_mode/qt-style.css .goldendict/
+go
+goldendict 
+ls
+gvim .goldendict/qt-style.css 
+goldendict 
+cd 
+ls
+ag GroupComboBox
+goldendict 
+ag GroupComboBox
+find . -name *.css
+find . -name "css"
+find . -name "*.css"
+find . -name "*.css" -exec grep -i "Group"
+find . -name "*.css" -exec grep -i "Group"
+ls
+..
+cd styles/
+ls
+ag Grop
+ag Gro
+ls
+vim qt-style.css 
+goldendict 
+opam --version
+opam env
+vim .bash_aliases 
+vim .bashrc 
+ls
+rm -rf opam-coq.8.9.0/
+ls
+opam init
+ls
+ocaml --version
+vim .bashrc 
+vim .profile 
+ls
+opam
+opam list
+ls
+ls .opam/
+ls .opam/repo/
+ls .opam/opam-init/
+vim .opam/opam-init/init.sh 
+ls
+opam pin add coq 8.9.1
+ls
+opam list
+opam 
+opam show coq
+opam 
+opam install coqide
+opam env
+eval `opam env`
+coqide
+ls
+vim .profile 
+ls
+cd .vim/
+ls
+vim init.vim 
+ls
+vim command.vim 
+ls
+vim keymap.vim 
+ls
+vim thirdparty.vim 
+ls
+ls doc/
+ls template/
+ls
+ls thesaurus/
+ls
+ls UltiSnips/
+ls
+ls ftplugin/
+vim ftplugin/vue.vim 
+ls
+ls pack/filetype/
+ls pack/filetype/start/
+ls
+ls dictionary/
+ls
+ls co
+ls colors/
+ls pack/
+ls
+cd pack/co
+cd pack/colors/
+ls
+cd opt/
+ls
+..
+ls
+ls start/
+vim
+ls
+ls opt/
+vim
+ls
+vim ~/.bashrc 
+vim ~/.vimrc
+ls
+git rm start/base16-vim/
+git status 
+ls
+ls start/
+rmdir start/
+ls
+ls opt/
+..
+ls
+..
+ls
+cd pack
+ls
+gstatus 
+git commit 
+ls
+cd util/start/echodoc.vim/
+gstatus 
+ls
+gr
+..
+gr
+ls
+cd pack/complete/opt/YouCompleteMe/
+git status 
+..
+ls
+ls complete/
+ls complete/opt/
+ls debug/
+git rm debug/opt/vim-scriptease/
+git commit 
+ls
+rmdir debug/
+rmdir debug/opt/
+rmdir debug/
+ls
+ls filetype/
+ls filetype/start/
+ls
+ls util/
+cd util/start/
+ls
+vim vim-signature/README.md 
+ls
+gr
+ls
+cd pack/
+git push 
+git push origin master 
+git submodule update
+git submodule update --init 
+git submodule update --recursive 
+ls
+git status 
+..
+ls
+vim com
+vim command.vim 
+ls
+vim ../.vimrc
+ls
+ls com
+ls compiler/
+ls
+ls after/
+vim
+git clone https://github.com/whonore/coqtail.git ~/.vim/pack/filetype/start/coqtail
+ls
+gstatus 
+cd pack/
+ls
+gstatus 
+ls filetype/start/
+cd filetype/start/
+ls
+rm -rf coqtail/
+ls
+git submodule add https://github.com/whonore/Coqtail
+ls
+vim Coqtail/LICENSE 
+ls do
+ls Coqtail/doc/
+vim 
+ls
+gr
+ls
+vim init.vim 
+ls
+vim init.vim 
+vim thirdparty.vim 
+cd -
+ls
+vim Coqtail/
+vim Coqtail/LICENSE 
+ls
+vim test.v
+ls
+gr
+ls
+cd
+ls
+echo $BASH_ENV
+cd .vim/
+git sta
+t
+git status 
+git commit -a
+cd p
+cd pack/
+gstatus 
+git commit 
+git push origin master 
+ls
+..
+gstatus 
+git commit 
+git commit -a
+git add autoload/vimbufsync.*
+ls
+gstatus 
+git reset HEAD autoload/vimbufsync.pyc
+gstatus 
+vim .gitignore 
+gstatus 
+git commit 
+git add .gitignore 
+gcommit 
+cd
+vim .vimrc
+vim .vim/init.vim 
+cd 
+ls
+vim Coqtail/autoload/coqtail.vim 
+vim Coqtail/fi
+vim Coqtail/ftplugin/coq.vim 
+coqtop --version
+gvim
+cd .vim/
+ls
+cd after/
+ls
+cd ftplugin/
+ls
+vim coq.vim
+ls
+gvim
+cd
+ls
+vim coq.vim 
+gvim
+cd
+cd dev/coq_learn/lf/
+ls
+make
+ls
+vim Makefile
+vim Makefile.conf 
+make BasicsTest.vo
+cd 
+ls
+cd Coqtail/
+ls
+ag green
+cd syntax/
+ls
+vim coq
+vim coq.vim 
+vim as.v
+cd .vim/
+ls
+vim thi
+vim thirdparty.vim 
+vim ../.vimrc
+gvi
+gvim
+cd
+ls
+make BasicsTest.vo
+gvim
+vim Basics.v
+make Induction.vo 
+ls
+make InductionTest.vn
+make InductionTest.vo
+vim Basics.v
+gvim
+cd 
+ls
+make Induction.vo
+
+make InductionTest.vo
+make Basics.vo
+ls
+gim
+gvim
+vim ~/.config/gtkrc
+vim ~/.config/gtk-3.0/gtk.css 
+cd .vim/
+cd 
+ls
+vim coq.vim 
+ls
+..
+ls
+cd syntax/
+vim coq.vim 
+vim coq.v
+ls
+vim coq.vim 
+gstatus 
+vim coq.vim 
+cd
+gvim
+vim ~/.vim/thirdparty.vim 
+ls
+make ListsTest.vo
+cd
+make PolyTest.vo
+gvim
+vim Lists.v
+coqide
+ping baidu.com
+dig baidu.com
+ping baidu.com
+cd
+ocamlc -w -20 -w -26 -o impdriver imp.mli imp.ml impdriver.ml
+ls
+./impdriver 
+cd
+cd dwn/
+ls
+rpm 
+sudo zypper install TeXmacs-1.99.10.x86_64.rpm 
+pgrep Pa
+pgrep packagekitd 
+killall packagekitd 
+sudo killall packagekitd 
+killall packagekitd 
+pgrep packagekitd 
+sudo killall packagekitd 
+sudo zypper install TeXmacs-1.99.10.x86_64.rpm 
+ls
+cd
+ls
+ls fontconfig/
+ls
+vim .bashrc 
+ls
+texmacs 
+ls
+sudo zypper remove TeXmacs 
+ls
+vim .bas
+vim .bashrc 
+ls
+ls app/TeXmacs/
+ls
+ls app/TeXmacs/
+texmacs
+cd
+ls
+make TacticsTest.vo
+gvim
+make LogicTest.vo
+ls
+vim ~/post/2019/07/2019-07-01-lambda-calculus.md 
+git commit -a
+cd 
+gcommit -a
+gr
+bundler.ruby2.6 exec jekyll s
+git push origin master 
+ls
+cd
+ls
+gvim
+马克
+make IndProp.vo 
+make IndPropTest.vo
+gvim
+make ProofObjectsTest.vo
+ls
+gvim IndPrinciples.v
+make IndPrinciplesTest.vo
+ls
+gvim
+make RelTest.vo
+ls
+gvim 
+gvim
+make ImpTest.vo
+make AutoTest.vo
+ls
+man coqc
+man coqtop
+coqtop
+man coqtop
+gvim
+make ImpCEvalFunTest.vo
+make Extraction.vo
+ls
+vim imp1.ml
+..
+cd plf/
+ls
+gvi,
+gvim
+ls
+vim _CoqProject 
+make
+ls
+make HoareTest.vo
+ls
+..
+ag algorithm
+cd lf
+ag algorithm
+ls
+..
+ls
+gvim
+cd plf/
+gvim
+ls
+gvim
+make Hoare2Test.vo
+ls
+gvim
+make SmallstepTest.vo
+ls
+make Imp.vo 
+ls
+..
+ls
+git init
+git remote add origin git@github.com:linusboyle/sf.git
+git status 
+git add .
+git commit 
+ls
+git push origin master 
+gvimm
+gvim
+cd plf/
+ls
+gvim
+vim Hoare2.v
+vim Smallstep
+vim Smallstep.v
+cd   induction T11 eqn:E.
+cd /run/mount/
+ls
+..
+ls
+cd media/linusboyle/新加卷/
+ls
+cd Baldurs\ Gate\ 
+cd Baldurs\ Gate\ Enhanced\ Edition/
+ls
+vim start.sh 
+vim bg.sh 
+./start.sh 
+./bg.sh 
+cd
+ls
+./bg.sh 
+cd
+ls
+./bg.sh 
+cd
+ls
+./bg.sh 
+cd
+ls
+gvim
+make StlcTest.vo
+ls
+gvim
+ls
+make TypesTest.vo
+make StlcPropTest.vo
+ls
+gvim
+vim ~/.vimrc
+cd
+ls
+make MoreStlcTest.vo
+ls
+gstatus 
+cd
+which bg
+alias 
+bg
+ls
+./bg.sh 
+cd
+./bg.sh 
+cd
+ls
+gvim
+sudo poweroff 
+cd
+cd post/
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+git add _posts/2019/07/2019-07-11-emotion-container.md 
+git commit 
+git add _posts/2019/07/2019-07-15-my-literature-life.md 
+git commit 
+ls
+git push origin master 
+ls
+cd
+ls
+git status 
+ls
+..
+ls
+ls lf/
+ls
+vim .gitignore
+ls
+xhost +
+ls
+gstatus 
+vim .gitignore
+git ls-files
+ls
+gstatus 
+vim .gitignore 
+gstatus 
+vim .gitignore 
+git add .
+git status 
+ls plf/
+ls lf
+ls
+git log
+ls
+gstatus 
+git commit 
+ls
+git ls-file
+git ls-files
+git ls-files|grep vo
+ls
+gstatus 
+ls
+git rm *.vo
+gstatus 
+git commit 
+ls
+gstta
+gstatus 
+ls plf/
+ls plf/ -a
+ls
+vim .gitignore 
+ls
+gstta
+gstatus 
+git rm *.aux
+gcommit 
+ls
+git ls-files
+ls
+ls lf/
+git rm lf/impdriver
+ls
+git rm lf/*.ml
+git rm lf/*.mli
+git rm lf/*.cmo
+git rm lf/*.cmi
+gstatus 
+git commit -a
+vim .gitignore 
+git commit -a --amend 
+gstatus 
+ls
+git push origin master 

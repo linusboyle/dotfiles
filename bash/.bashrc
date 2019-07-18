@@ -79,7 +79,5 @@ export QSYS_ROOTDIR="/home/linusboyle/intelFPGA_lite/18.1/quartus/sopc_builder/b
 export TEXMACS_PATH="$HOME/app/TeXmacs"
 export PATH="$TEXMACS_PATH/bin:$PATH"
 
-function enableCoq() {
-    export OPAMROOT=~/opam-coq.8.9.0
-    eval `opam env`
-}
+test -r /home/linusboyle/.opam/opam-init/init.sh && . /home/linusboyle/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+eval `opam env`
