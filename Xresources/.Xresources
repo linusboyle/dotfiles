@@ -98,11 +98,10 @@ urxvt*color21:      base06
 ! Rofi
 rofi.font:          Hack 18
 
-
 !!!! xterm
 XTerm.termName: xterm-256color
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.saveLines: 4096
-XTerm.vt100.faceName: Hack:size=11:antialias=true
-XTerm.vt100.renderFont: false
+XTerm.vt100.faceName: Hack:size=12:antialias=true
+XTerm.vt100.renderFont: true
 XTerm.vt100.scrollBar: false
