@@ -191,34 +191,28 @@ set termencoding=utf-8
 
 " colorscheme and gui setting
 if has('gui_running')
-    set guifont=Source\ Code\ Pro\ SemiBold\ 14
+    set guifont=Source\ Code\ Pro\ SemiBold\ 12
     set guioptions-=T
     set guioptions-=e
     set guioptions-=r
     set guioptions-=m
     set guioptions-=L
+    colorscheme monokai
     "colorscheme space-vim-dark
 "else
     "colorscheme eldar
 endif
-colorscheme monokai
 
-"if filereadable(expand("~/.vimrc_background"))
-  "let base16colorspace=256
-  "source ~/.vimrc_background
-"endif
-
-" status line display
-if has('statusline')
-    set laststatus=2
-    set statusline=%#Directory#
-    set statusline+=%f\ %r%m
-    set statusline+=%#MoreMsg#
-    set statusline+=\ %B
-    "right aligned
-    set statusline+=%#ModeMsg#
-    set statusline+=%=%l:%c\ %p%%\ %y
-endif
+" statusline/tabline
+set laststatus=2
+set statusline=%#Directory#
+set statusline+=%f\ %r%m
+set statusline+=%#MoreMsg#
+set statusline+=\ %B
+"right aligned
+set statusline+=%#ModeMsg#
+set statusline+=%=%l:%c\ %p%%\ %y
+"set showtabline=2
 
 " cscope interface
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-,g-,f-

@@ -27,7 +27,7 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 shopt -s globstar
 
-PS1='\w\$'
+PS1='\e[0;34m\w\e[m\n\$ '
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -54,30 +54,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#ulimit -c unlimited
-
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-#printf "\e[36m"
-#figlet "Welcome, Linus!" -f future
-#printf "\e[0m" 
-
 export EDITOR=vim
 export GTAGSLABEL=native-pygments
-export NNN_COPIER=copyit
-export ENHANCD_FILTER=fzy
+export TEXMACS_PATH="$HOME/app/TeXmacs"
+export PATH="$TEXMACS_PATH/bin:$PATH"
+export CDPATH=".:$HOME/dev:$HOME/dev/src:$CDPATH"
+export QSYS_ROOTDIR="/home/linusboyle/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
 
 source tmux_color.sh
-source "$HOME/app/enhancd/init.sh"
 
 # added by travis gem
 [ -f /home/linusboyle/.travis/travis.sh ] && source /home/linusboyle/.travis/travis.sh
 
-export QSYS_ROOTDIR="/home/linusboyle/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
-
-export TEXMACS_PATH="$HOME/app/TeXmacs"
-export PATH="$TEXMACS_PATH/bin:$PATH"
-
 test -r /home/linusboyle/.opam/opam-init/init.sh && . /home/linusboyle/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 eval `opam env`
+
+function sym () {
+    test -n "$1" && test -n "$2" && ln -s $(readlink -f "$1") "$2"
+}

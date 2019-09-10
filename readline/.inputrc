@@ -23,7 +23,7 @@ set show-all-if-unmodified on
 # If set to on, words which have more than one possible completion cause the
 # matches to be listed immediately instead of ringing the bell.
 #
-#set show-all-if-ambiguous on
+set show-all-if-ambiguous on
 
 
 set colored-stats on
@@ -32,7 +32,6 @@ set menu-complete-display-prefix On
 set completion-ignore-case on
 set completion-prefix-display-length 3
 set mark-symlinked-directories on
-
 
 set editing-mode vi
 
@@ -55,7 +54,7 @@ $if mode=vi
     "\C-w": backward-kill-word
 
     # <ctrl> gx -- expand without executing
-    "\C-gx": glob-expand-word
+    "\C-x": glob-expand-word
 
     "\C-p":history-search-backward
     "\C-n":history-search-forward
@@ -78,13 +77,15 @@ $if mode=vi
     "\C-w": backward-kill-word
 
     # <ctrl> gx -- glob expand without executing
-    "\C-gx": glob-expand-word
+    "\C-x": glob-expand-word
 
     "\C-p":history-search-backward
     "\C-n":history-search-forward
 $endif
 
-set show-mode-in-prompt on
+set show-mode-in-prompt off
 
-set vi-ins-mode-string "(I)"
-set vi-cmd-mode-string "(N)"
+set vi-ins-mode-string "I"
+set vi-cmd-mode-string "N"
+
+TAB: menu-complete

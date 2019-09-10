@@ -1,12133 +1,3 @@
-cscope -d tags 
-ls
-vim tags 
-..
-vim README.md 
-git status 
-git dif
-git diff
-ls
-cd src/
-ls
-vim index.ejs 
-cd renderer/
-ls
-cd con
-vim config.js 
-ls
-vim mock/index.js 
-..
-ls
-vim src/main/modules/account.js 
-vim src/main/modules/socket.js 
-vim src/main/modules/game.js 
-ls
-cd .git/
-ls
-ag tags 
-vim tags 
-..
-cd polybar/
-ls
-ls src/
-cd src/
-rm G*
-..
-ls
-cd .git/
-ls
-ls hooks/
-vim hooks/ctags 
-..
-rm .git/hooks/ctags
-git init 
-./.git/hooks/ctags 
-cd .git/
-ls
-cscope
-cscope tags 
-man cscope
-ls
-rm cscope.out
-ls
-cd
-cd -
-vim tags 
-..
-cd src/
-ls
-vim icp
-vim ipc.cpp 
-ls
-cd
-cd .vim/
-ls
-vim thirdparty.vim 
-cd -
-cd dev/polybar/
-vim src/m
-vim src/main.cpp 
-..
-vim .vim/plugin/setfilehead.vim 
-vim .vim/thirdparty.vim 
-vim .vimrc
-cd .vim/
-ks
-ls
-cd Plug
-ls
-cd gutentags_plus/
-ls
-vim README.md 
-cd plugin/
-ls
-vim gutentags_plus.vim 
-cd
-vim .vimrc
-cd =
-cd -
-vim gutentags_plus.vim 
-cd
-cd .vim/
-git checkout myconf 
-cd
-vim .vimrc
-vim .git_template/hooks/ctags 
-ls
-cd dev/linusboyle.github.io/
-ls .git
-ls .git/hooks/
-cd
-cd dev/arena9/ClientMain/
-ls
-ls .git
-cd .git/
-rm tags
-rm hooks/ctags
-..
-git init 
-./.git/hooks/ctags 
-cd .git/
-ls
-..
-ls
-vim Dockerfile 
-ls
-cd .git/
-gtags -d
-gtags -d GTAGS 
-cd
-vim /etc/gdbinit
-vim /etc/gdbinit.d/
-vim /etc/gtags.conf 
-date
-ls .vim
-vim .vimrc
-vim --clean .vimrc
-vim .vimrc
-vim --no-plugins .vimrc
-vim --no-plugin .vimrc
-vim -h
-vim --clean .vimrc
-vim .vimrc
-cd dwn/tejr-from-vimrc-to-vim/
-vim ftdetect/perl.vim 
-cd post/2018/12
-vim 2018-12-11-vim-hierarchy.md 
-cd doc/dsa/
-r
-ls
-cd
-cd post/
-ls
-cd 2018/
-cd 12/
-ls
-vim 2018-12-11-vim-hierarchy.md
-gr
-cd
-cd dev/ku
-cd dev/linusboyle.github.io/
-bundler exec jekyll s
-git add .
-git commit 
-git push origin master 
-cling
-cd doc/dsa/
-r
-ls
-nmcli device status
-ls
-cd dfile/
-git status 
-rm vim/thirdparty.vim
-git add .
-git commit 
-ls
-ls git/
-ls git/ -l
-cd git/
-ln ~/.gitconfig .
-ls
-ls -a
-vim .gitconfig 
-ls -ia
-rm .gitconfig
-ln ~/.gitconfig .
-ls
-git status 
-
-git status 
-ls
-git diff
-git commit -a
-..
-ls
-cd git/
-mkdir .git_template
-cd .git_template/
-mkdir hook
-cd hook/
-ln ~/.git_template/hooks/* .
-ls
-gr
-git status 
-git add .
-git commit 
-git push origin master 
-gvedit 
-ls
-l
-l -a
-cd dev/program/
-ls
-cd dsa/
-ls
-cd implementation/
-ls
-vim find1.cpp
-g++ find1.cpp -o count
-./count 1
-./count 121
-vim find1.cpp 
-echo $@
-./count 121
-echo $@
-echo $$
-vim find1.cpp 
-g++ find1.cpp -o count
-./count 121
-./count 1
-./count 2
-./count 3
-ls
-mkdir countone
-mv count countone/
-mv find1.cpp countone/
-cd countone/
-./count 123214
-./count -1
-./count -2
-cd
-cd post/
-vim 2018/12/2018-12-11-vim-hierarchy.md 
-git commit 
-git commit -a
-ls
-man dot
-graph2dot
-man graph2dot
-graph2dot -h
-man graphviz 
-ls
-gnuplot 
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli device status
-cnf vimdot
-man vimdot 
-vimdot
-cnf vimdot
-nmcli device status
-zypper search vimdot
-zypper search graphviz
-sudo zypper in graphviz-gvedit 
-gvedit 
-cd
-ls -i .gitconfig
-ls .gitignore
-bat .gitignore 
-vim .gitconfig 
-ls
-cd dev/program/dsa/pa2/circuit/
-g++ new.cpp -o new
-ls
-./new < input
-./new < input.txt 
-time ./new < input.txt 
-cling
-cd dev/program/dsa/pa2/circuit/
-ls
-vim new.cpp 
-cd dwn/tejr-from-vimrc-to-vim/
-ls
-ls after/syntax/sh.vim
-bat after/syntax/sh.vim
-cd dwn/
-ls
-cd deer/
-./deer 
-ls
-./deer 
-..
-nmcli device status
-cd
-cd dev/
-ls
-vim 256colors2.pl 
-nmcli device status
-cd .vim/
-ls
-vim plugin/gtags.vim 
-git branch 
-git checkout master 
-git commit -a
-git push origin master 
-git checkout mc
-git checkout myconf 
-git rebase master 
-git log
-git push origin myconf 
-git fetch origin 
-git log
-git merge origin/myconf 
-git diff master 
-git push origin myconf 
-vim plugin/gtags.vim 
-ls
-cd autoload/
-vim quickfix.vim
-..
-cd after/
-ls
-cd ft
-cd ftplugin/
-..
-ls ftdetect/
-ls syntax/
-cd ftplugin/
-ls
-vim qf.vim
-ls
-vim cpp.vim 
-ls
-..
-ls
-ls syntax/
-ls ftdetect/
-..
-ls
-bat LICENSE 
-git log
-ls
-vim after/ftplugin/qf.vim 
-ag ftplugin
-vim after/ftplugin/qf.vim 
-vim autoload/quickfix.vim 
-cd .vim/after/ftplugin/
-ls
-vim help.vim
-vim .vimrc
-nmcli device status
-vim
-cd dev/polybar/
-vim src/main.cpp 
-p
-vim src/main.cpp 
-ls
-git status 
-git log
-git reset --hard 3.2.1 
-git log
-ls
-..
-ls
-vim 256colors2.pl 
-cd
-vim .vimrc
-cd dev/polybar/
-ls
-cd src/
-ls
-vim main.cpp 
-cd
-mv dwn/moria.vim ~/.vim/colors/
-vim .vimrc 
-gvim .vimrc
-ls
-vim .vimrc
-cd dev/program/dsa/pa2/money/
-ls
-vim money.cpp 
-cd dev/polybar/
-ls
-vim src/main.cpp 
-h
-cd dwn/
-wget http://nchc.dl.sourceforge.net/sourceforge/stardict/stardict-langdao-ce-gb-2.4.2.tar.bz2
-ls
-cd dev/polybar/
-cd src/
-vim main.cpp 
-cd doc/dsa/
-r
-htop
-cd .vim/
-ls
-vim after/ftplugin/qf.vim 
-cd dev/program/dsa/pa2/money/
-.
-..
-ls
-cd extra/water/
-g++ water.cpp -o water
-vim input1
-./water <input1 
-g++ water.cpp -o water -g
-gdb wa
-g++ water.cpp -o water -g
-./water <input1 
-gdb wa
-g++ water.cpp -o water -g
-./water <input1 
-vim input2
-./water <input2
-g++ water.cpp -o water -g
-./water <input2
-gdb water 
-./water <input1 
-./water <input2
-gdb water 
-g++ water.cpp -o water -g
-./water <input2
-./water <input1 
-g++ water.cpp -o water -g
-./water <input1 
-./water 
-ls
-cd
-ls
-vim .bash_aliases 
-cd -
-./water 
-nmcli device status
-ls
-nmcli device status
-ls
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device status
-nmcli device wifi list 
-nmcli device status
-ls
-git --version
-git help config 
-git help describe 
-man git
-git shortlog 
-man git-sho
-man git-shortlog 
-git log|git shortlog 
-cd
-cd dev/arena9/ClientMain/
-git log|git shortlog 
-cd
-cd dev/git/
-ls
-cd po/
-ls
-git blame zh_CN.po
-cd
-mkdir test
-cd te
-cd test/
-git init 
-git submodule init 
-ls
-l
-l -l
-git submodule init https://github.com/linusboyle/Viminal
-mkdir hi
-
-man git-submodule 
-git submodule add https://github.com/linusboyle/Viminal
-cd Viminal/
-git submodule init 
-..
-git submodule init Viminal/
-man git-submodule 
-git submodule deinit Viminal/
-cd Viminal/
-git status 
-..
-git submodule deinit 
-git submodule deinit Viminal/
-git commit 
-git submodule deinit Viminal/
-git submodule init Viminal/
-cd dev/
-cd arena9/ClientMain/
-ls
-ls test/
-.
-..
-ls
-..
-ls
-ls te
-ls test/
-rm -rf test/
-cd .vim/
-ls
-cd plug
-cd plugin/
-ls
-vim gtags.vim 
-ls
-..
-ls
-git branch 
-git status 
-vim thirdparty.vim 
-ls
-vim plugin/gtags.vim 
-ls
-l
-cd plugin/
-ls
-vim cursor.vim 
-..
-git status 
-git checkout master 
-git commit -a
-git add .
-git commit -a
-git checkout myconf 
-git merge master 
-gitg
-cd
-cd dev/program/dsa/
-ls
-ls implementation/
-cd extra/
-ls
-mkdir water
-cd water/
-vim water.cpp
-vim
-ls
-nmcli device status
-cd
-cd /tmp/
-vim slack1
-vim slack2
-diff slack1 slack2
-cd
-cd dev/
-git clone https://github.com/git/git --depth=1
-ag zh_CN
-cd git/
-cd po/
-ls
-vim vi.po 
-vim zh_CN.po 
-ls
-..
-cd git/
-vim .git/config 
-git pull
-git pull  --depth=1
-ls
-git log
-..
-rm -rf git/
-git clone git@github.com:linusboyle/git.git
-git clone git@github.com:linusboyle/git.git --depth=1
-cd git/po/
-vim zh_CN.po 
-git commit -a
-git commit -s
-git commit -s -a
-git push origin master 
-git log
-git commit --aem
-git commit --amend 
-git push origin master 
-git push -f origin master 
-ls -i .gitconfig
-task
-cd .vim/
-ls
-cd
-cd dfile/vim/
-ls
-git submodule update --remote 
-git submodule update --remote Viminal/
-git status 
-git diff
-git diff --submodule
-git config --global diff.submodule log
-git status 
-cd
-vim .gitconfig 
-cd dfile/
-ls git/
-ls git/ -a
-cd git/.git_template/
-..
-vim .gitconfig 
-ls -i
-ls -ai
-rm .gitconfig
-ln ~/.gitconfig .
-ls
-ls -ai
-git status '
-git status 
-git commit -a
-git push origin master 
-vim .vimrc 
-man global
-cd dev/
-cd git/
-ls
-ls .git
-cd .git
-l
-global -c mai
-global -c main
-global -c log
-global -c g
-global -c gre
-global -c gi
-global -c git
-ls
-cd
-cd .vim/
-ls
-cd Plug
-ls
-vim ne
-ls
-cd
-cd dev/polybar/src/
-vim main.cpp 
-cd -
-cd .vim/Plug/YouCompleteMe/
-ls
-vim install.sh 
-./install.py --clang-completer
-ls
-cd
-cd dev/polybar/src/
-vim m
-vim main.cpp 
-ls
-cd
-cd .vim/Plug
-cd YouCompleteMe/
-ls .gitmodules
-vim .gitmodules 
-ls
-..
-ls
-vim undotree/README.md 
-ls
-vim undotree/README.md 
-ls
-vim undotree/README.md 
-vim -u NONE undotree/README.md 
-vim --noplugin undotree/README.md 
-ls
-vim undotree/README.md 
-ls
-ls vim-vue/
-ls vim-devicons/
-..
-vim thirdparty.vim 
-cd .vim/
-la
-ls
-mkdir pack
-cd pack/
-ls
-mkdir colors
-cd colors/
-ls
-mkdir opt
-cd opt/
-man globa
-man global
-ls
-man git-submodule 
-mv ~/.vim/Plug/dracula/ .
-ls
-ls dracula/
-vim dracula/LICENSE 
-ls
-mv ~/.vim/Plug/gruvbox/ .
-mv ~/.vim/Plug/
-mv ~/.vim/Plug/tender.vim/ .
-mv ~/.vim/Plug/vim-monokai/ .
-ls
-cd tender.vim/
-ls
-..
-ls
-git status 
-..
-git status 
-git commit -a
-git add .
-git status 
-git reset HEAD .
-git status 
-cd -
-ls
-cd opt/
-ls
-c dracula/
-cd dracula/
-ls
-vim .git/config 
-..
-git submodule add dracula/
-git submodule add ./dracula/
-gr
-vim .gitignore 
-git status 
-cd -
-ls
-cd .vim/P
-cd .vim/Plug
-ls
-ls LeaderF/
-cd rename.vim/
-ls
-bat README.mdown 
-cd plugin/
-bat rename.vim 
-cd doc/dsa/
-r
-cd
-cd dfile/vim/
-ls
-git status 
-cd Viminal/
-git status 
-git log
-..
-git submodule update --remote Viminal/
-ls Viminal/
-cd Viminal/
-ls
-git branch 
-..
-man git-submodule 
-man git-subtree 
-man git-submodule 
-..
-vim .gitmodules 
-man git-submodule 
-man gitmodules 
-vim .gitmodules 
-git submodule update --remote 
-cd vim/Viminal/
-ls
-git log
-..
-git status 
-git commit -a
-git push origin master 
-ls
-cd
-ls
-cd dev/
-git clone git@github.com:linusboyle/packages.git
-cd packages/
-ls
-ls -a
-cd .vim/
-ls
-cd pack/
-ls
-ls colors/opt/palenight.vim/
-ls colors/opt/tender.vim/
-ls colors/opt/vim-monokai/
-ls colors/opt/gruvbox/
-ls colors/opt/dracula/
-ls
-vim .gitignore 
-ls
-cd colors/opt/
-ls
-cd dracula/
-vim .git/config 
-man git-submm
-man git-submodule 
-..
-ls
-cd gruvbox/
-ls
-vim .git/config 
-..
-ls
-cd palenight.vim/
-vim .git/config 
-..
-ls
-vim tender.vim/.git/config 
-ls
-vim vim-monokai/.git/config 
-nmcli device status
-ls
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-nmcli device status
-ping www.baidu.com
-..
-cd p
-cd pack/
-ls
-rm -rf colors/
-..
-rmdir pack/
-git submodule add git@github.com:linusboyle/packages.git pack
-ls
-ls pack/
-ls pack/colors/
-ls pack/colors/p
-ls pack/colors/opt/
-ls pack/colors/opt/monokai/
-git status 
-vim .gitignore 
-git status 
-git add pack/
-git status 
-..
-ls
-cd .vim/
-git diff
-ls
-la pack/
-cd pack/
-..
-git rm pack/
-git rm pack/ -r
-cd pack/
-vim .gitmodules 
-..
-rm -rf pack/
-git status 
-git add pack 
-git status 
-git submodule add git@github.com:linusboyle/packages.git pack
-ls
-ls -a
-git status 
-git checkout master 
-git status 
-cd .git/
-ls
-ls modules/
-rm -rf modules/
-ls
-..
-git submodule add git@github.com:linusboyle/packages.git pack
-ls
-git status 
-git commit 
-git commit -a
-git checkout master 
-git status 
-git checkout myconf 
-ls
-ls pack/
-ls pack/colors/opt/
-ls pack/colors/opt/dracula/
-git submodule update --remote 
-git submodule update --remote --recursive 
-cd pack/colors/opt/
-ls monokai/
-git submodule status 
-git submodule update 
-git submodule update --re
-git submodule update --remote 
-git submodule update --remote  *
-git submodule update --init --remote 
-ls
-..
-git status 
-cd pack/
-git status 
-..
-ls
-nmcli device status
-cd .vim/
-ls
-cd 
-cd -
-cd Plug
-ls
-bat rename.vim/plugin/rename.vim 
-ls
-cd
-cd dev/packages/
-ls
-mkdir colors
-mkdir opt
-cd opt/
-git submodule add https://github.com/dracula/vim.git
-ls
-rm -rf vim/
-vim ../.gitmodules 
-git submodule update 
-git submodule update --remote 
-ls
-mkdir dracula
-git submodule update --remote 
-ls
-ls dracula/
-git status 
-git add .
-git status 
-git add ../.gitmodules 
-git status 
-git submodule update --remote 
-ls
-ls dracula/
-cd dracula/
-git submodule init 
-git submodule update 
-ls
-ls -a
-..
-rm ../.gitmodules
-git add ../.
-git status 
-git submodule add https://github.com/dracula/vim.git dracula
-ls
-rm -rf dracula/
-git submodule add https://github.com/dracula/vim.git dracula
-git submodule add https://github.com/morhetz/gruvbox.git
-git submodule add https://github.com/drewtempelmeyer/palenight.vim.git palenight
-ls
-git submodule add https://github.com/jacoborus/tender.vim.git tender
-git submodule add https://github.com/crusoexia/vim-monokai.git monokai
-git commit 
-git push origin master 
-ls
-..
-ls
-git mv opt/ colors/
-git status 
-git commit 
-git push origin master 
-vim 
-vim
-date
-cd .vim/
-ls
-cd Plug
-ls
-ls vim-markdown/
-ls vim-markdown/after/ftplugin/markdown.vim
-ls vim-markdown/ftdetect/
-ls vim-markdown/ftplugin/
-cd vim-markdown/
-ls
-vim ftdetect/markdown.vim 
-ls
-git log
-ls
-vim Makefile 
-ls
-cd syntax/
-ls
-..
-ls
-vim Makefile 
-ls
-gr
-..
-gr
-ls
-vim after/ftplugin/markdown.vim
-vim readme.md 
-cd Plug
-cd vim-markdown/
-vim re
-vim README.md 
-ls
-gr
-..
-gr
-vim after/ftplugin/markdown.vim
-ls
-cd Plug
-ls
-cd winteract.vim/
-ls
-ls plugin/
-bat plugin/window-mode.vim 
-vim plugin/window-mode.vim 
-ls
-git lo
-git log
-gr
-ls
-mv plugin/window-mode.vim ~/.vim/autoload/
-ls
-..
-rm -rf winteract.vim/
-ls
-..
-vim thirdparty.vim 
-ls
-cd autoload/
-ls
-vim window-mode.vim 
-git branch 
-..
-cd after/ftplugin/
-ls
-vim h
-vim help.vim 
-..
-ls
-vim plugin/relative.vim 
-git status 
-git commit -a
-git reset --hard HEAD-1
-git log
-ls
-git checkout e8eb16ebb6b7b1285489d401319b72c1642fddfa
-ls
-git status 
-git checkout myconf 
-ls
-git log
-ls
-git diff 29b7eb853ad9dba297475b423fbe309d077119e2
-git branch 
-git diff HEAD-
-git diff HEAD@
-git diff HEAD!
-git diff HEAD^
-ls
-git format-patch HEAD^
-ls
-vim 0001-fix-relativenumber-showed-even-nonumber-set.patch 
-git reset --hard HEAD^
-ls
-git apply 0001-fix-relativenumber-showed-even-nonumber-set.patch
-ls
-git status 
-rm 0001-fix-relativenumber-showed-even-nonumber-set.patch
-ls
-git status 
-git checkout master 
-git add thirdparty.vim 
-git commit 
-git checkout master 
-git add plugin/relative.vim 
-git commit 
-man git-commit
-ls
-git commit 
-git checkout myconf 
-git merge master 
-git checkout master 
-git commit -a
-git checkout myconf 
-git merge master 
-git status 
-vim autoload/window-mode.vim 
-vim autoload/window.vim 
-ls
-vim autoload/window.vim 
-vim plugin/
-vim plugin/win.vim 
-..
-vim .vimrc 
-vim .vim/autoload/window.vim 
-vim .vimrc 
-vim .vim/autoload/window.vim 
-vim .vimrc 
-ks
-ls
-cd .vim/
-ls
-bat .gitmodules 
-cd pack/
-ls
-ls colors/
-ls opt
-ls
-ls colors/opt/
-ls colors/opt/monokai/
-ls
-..
-ls
-cd doc
-r
-nmcli device status
-nmcli device wifi list 
-ls
-cd
-ls
-cd dwn/
-ls
-unzip 2018年下半年英语六级笔试准考证\(韩志磊\).zip 
-ls
-zathura 2018-ۤ-��-���˴-�+¦--��+++��\(��ͥ++\).pdf 
-nmcli device wifi list 
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device status
-nmcli connection show 
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli connection up  Tsinghua
-nmcli device status
-ping www.baidu.com
-cd dwn/
-vidier
-vidir
-ls
-rm 2018*
-ls
-cd dev/l
-cd dev/
-ls
-cd arena9/
-cd ClientMain/
-ls
-git remote s
-git remote show 
-git remote remove origin 
-git remote add origin git@github.com:linusboyle/ArenaXClientMain.git
-git branch 
-git pull
-git branch -a
-ls
-yarn run dev
-cd
-cd dev/program/dsa/extra/water/
-ls
-sudo zypper ref
-sudo zypper update 
-sudo zypper update vim
-vim --version
-vim
-nmcli device status
-ping www.baidu.com
-nmcli device status
-ping www.baidu.com
-nmcli device status
-cd doc/dsa/
-r
-cd
-cd dev/program/dsa/extra/water/
-..
-cd pa3/notfound/
-bat exinput 
-cd /usr/include/c++/
-cd 8/
-ls
-ag bitset
-vim bitset 
-bc
-cd doc/dsa/
-r
-cd
-cd dev/program/dsa/pa3/notfound/
-g++ notfound.cpp
-voldown 
-g++ notfound.cpp
-vim exinput
-xxd exinput 
-./a.out < exinput 
-g++ notfound.cpp -g
-gdb
-g++ notfound.cpp -g
-./a.out <exinput 
-gdb a.out 
-g++ notfound.cpp -g
-./a.out < exinput 
-gdb a.out 
-g++ notfound.cpp -g
-./a.out < exinput 
-time ./a.out < exinput 
-bc
-cling
-g++ notfound.cpp -g
-./a.out <exinput 
-ls
-vim random.cpp
-g++ random.cpp -o random
-./random 
-ls
-bat input.txt 
-g++ old.cpp -o old
-./old  < input.txt 
-./a.out < input.txt 
-./random 
-./a.out < input.txt 
-./random 
-./a.out < input.txt 
-./old < input.txt 
-vim random.cpp
-g++ random.cpp -o random
-./random 12
-./old < input.txt 
-./a.out < input.txt 
-./random 1000
-./old < input.txt 
-./a.out < input.txt 
-./random 10000
-./old < input.txt 
-./a.out < input.txt 
-bc
-./random 100000
-./a.out < input.txt 
-./old < input.txt 
-./random 100000
-./a.out < input.txt 
-./random 100000
-./a.out < input.txt 
-./random 1000000
-./a.out < input.txt 
-./random 2000000
-./a.out < input.txt 
-./random 200000
-./a.out < input.txt 
-g++ notfound.cpp -g
-./a.out < input.txt 
-./random 2000000
-./a.out < input.txt 
-g++ notfound.cpp -g
-./a.out < input.txt 
-gdb a.out 
-g++ notfound.cpp -g
-./a.out < input.txt 
-time ./a.out < input.txt 
-./random 16777216
-./a.out < input.txt 
-time ./a.out < input.txt 
-q
-cd doc/dsa/
-r
-cd post/
-ls
-cd 2018/12/
-ls
-vim 2018-12-16-counting-bit-ones.md
-gr
-cd
-cd dev/linusboyle.github.io/
-cd
-vim bin/gr
-vim bin/gr.sh 
-cd post/
-gr
-ls
-bundler exec jekyll s
-git add .
-gcommit 
-git push origin master 
-ls
-jekyll --version
-ls
-vim Gemfile
-bundle -h
-bundle update
-ls
-vim Gemfile
-vim Gemfile.lock 
-git commit -a
-git push origin master 
-voldown 
-ls
-git status 
-nmcli device status
-ls
-nmcli device status
-ls
-nmcli device status
-sudo zypper ref
-sudo zypper update 
-vim --version
-ls
-nmcli device status
-cd dev/program/dsa/pa3/
-mkdir notfoun
-mv notfoun/ notfound
-ls
-cd notfound/
-ls
-vim notfound.cpp
-ls
-vim report.md
-volraise 
-ls
-..
-cd implementation/
-ls
-cd countone/
-ls
-vim find1.cpp 
-g++ find1.cpp -o count 
-./count 123241
-./count 1232412412
-date
-ls
-vim find1.cpp 
-rm old.cpp
-vim find1.cpp 
-pwd -o
-pwd -p
-pwd -P
-man pwd
-ls
-cd
-cd post/
-vim 2018/12/2018-12-16-counting-bit-ones.md 
-cd 2018/05/
-ls
-vim 2018-05-13
-vim 2018-05-14-Of-Richard-Wagners-Art.md 
-.
-..
-cd 06/
-ls
-..
-cd 07/
-ls
-vim 2018-07-23-dpointer.md 
-vim 2018-07-13-Vimscript.md 
-vim 2018-07-20-sizeof-for-incomplete-type.md 
-vim 2018-07-22-
-vim 2018-07-22-ALSA-Mute-Script.md 
-mv 2018-07-22-ALSA-Mute-Script.md 2018-07-22-alsa-mute-script.md 
-ls
-..
-vim 04/2018-04-30-Comments-on-MoYunZhanTao-Eposide-123.md 
-vim 07/2018-07-10-Bittersweet-University-Life.md 
-ls
-vim 08/2018-08-17-iost-blockchain.md 
-ag Vim
-cd 12/
-ls
-vim 2018-12-1*
-vim 2018-12-02-clean-vim-undofile-up.md 
-cd
-cd dfile/dunst/
-ls
-git status 
-git commit -a
-..
-ls
-cd bin/
-ls
-ln ~/bin/gr.sh .
-ls
-git add .
-git commit 
-git push origin master 
-cd
-cd .vim/
-git status 
-git branch 
-cd autoload/w
-cd autoload/wi
-cd autoload/
-vim window.vim 
-..
-vim plugin/wi
-vim plugin/win.vim 
-cd plug
-cd plugin/
-mv win.vim window.vim
-gr
-git add .
-git status 
-ls
-git commit 
-git cherry-pick -h
-git log
-git checkout master 
-git status 
-git cherry-pick -x e1c91ab763e9e7e40c770da500809deefcee6b77
-git log
-git push origin master 
-git checkout myconf 
-ls
-gstatus 
-ls
-ls Plug
-cd Plug
-ls
-ls ../pack/
-ls ../pack/colors/
-ls ../pack/colors/opt/
-vim LeaderF/
-..
-ls
-vim readme.md 
-vim Plug/vim-cpp-enhanced-highlight/
-vim Plug/vim-cpp-enhanced-highlight/after/syntax/cpp.vim 
-ls
-cd
-cd dev/packages/
-ls
-mkdir debug
-cd debug/
-mkdir opt
-cd opt/
-git submodule add https://github.com/tpope/vim-scriptease
-ls
-gstatus 
-ls vim-scriptease/
-gr
-gco
-gcommit 
-git push origin master 
-gr
-cd
-cd .vim/
-ls
-git submodule update 
-git submodule update --remote 
-cd pack/
-ls
-ls debug/opt/
-ls debug/opt/vim-scriptease/
-git submodule update --remote 
-ls debug/opt/vim-scriptease/
-git submodule update --remote --init 
-ls
-gr
-ls
-vim thirdparty.vim 
-ls
-cd
-vim .vimrc 
-cd dfile/
-gcommit -a
-git push origin master 
-ls
-cd
-ls
-cd dev/church-cpp/
-ls
-vim church_numerals.h 
-cd
-cd .vim/pack/debug/opt/vim-scriptease/
-cd autoload/
-ls
-vim scriptease.vim 
-..
-vim plugin/scriptease.vim 
-vim autoload/window.vim 
-vim autoload/scriptease.vim 
-gr
-ls
-ls pack/.git
-ls
-cd plugin/
-ls
-vim syngroup.vim
-vim --version
-vim syngroup.vim
-cd
-vim .vimrc
-cd .vim/plugin/
-vim syngroup.vim
-cd
-vim dev/church-cpp/church_numerals.h 
-nmcli device status
-sudo zypper search openvpn
-vpn
-openvpn
-sudo openvpn dwn/vpn9.ovpn 
-man tak
-man task
-cd dev/
-vim doctest.h 
-ls
-vim 256colors2.pl 
-ls
-man i3
-man i3-msg 
-cd doc/
-r
-cd dfile/i3/
-vim config 
-i3-msg floating enable
-i3-msg tiled enable
-i3-msg floating disable
-i3-msg -t get_workspaces
-i3-msg -t get_tree
-ls
-.
-..
-ls
-cd 
-cd dev/arena9/ClientMain/
-ls
-cd src/
-ls
-cd renderer/
-ls
-vim main.js 
-ls
-cd components/
-ls
-ls Main/Widgets/
-cd Main/
-ls
-vim Footer.vue 
-vim ~/.vimrc
-vim Footer.vue 
-git commit -a
-git diff
-gr
-cd src/main/modules/
-vim game.js 
-gcommit -a
-git commit --amend -s
-ls
-man git-commit
-ls
-git push origin ma
-git push origin master 
-git branch 
-git push origin dev
-gr
-ls
-vim .gitlab-ci.yml 
-ls
-vim .travis.yml 
-git commit -a
-git push origin dev 
-ls
-mkdir oldscript
-mv .gitlab-ci.yml oldscript/
-ls
-ls coverage/
-git mv sonar-project.properties oldscript/
-ls oldscript/
-ls oldscript/ -a
-ls
-bat mirrorlist.txt 
-ls
-bat appveyor.yml 
-ls
-git commit -a
-git add .
-git commit
-git push origin dev 
-bc
-man write
-cd dev/program/
-ls
-vim toggle.c
-cd
-cd =
-cd -
-gcc -o i3ipc_hideshow_border toggle.c $(pkg-config --libs --cflags i3ipc-glib-1.0)
-./i3ipc_hideshow_border 
-vim toggle.c
-gcc -o i3ipc_hideshow_border toggle.c $(pkg-config --libs --cflags i3ipc-glib-1.0)
-./i3ipc_hideshow_border 
-vim toggle.c
-gcc -o i3ipc_hideshow_border toggle.c $(pkg-config --libs --cflags i3ipc-glib-1.0)
-vim toggle.c
-./i3ipc_hideshow_border 
-vim toggle.c
-ls
-bc
-factor 90001
-factor 900011
-cing 
-cling
-bc
-cling
-cing
-cling
-bc
-cd dev/p
-cd dev/program/
-ls
-vim open
-vim open.cpp 
-rm open*
-ls
-..
-ls
-..
-ls
-bc
-cd doc/dsa/
-r
-cd
-cd .vim/
-gstatus 
-git difftool 
-ls
-..
-cd dev/polybar/
-gstatus 
-..
-ls
-cling
-bc
-cd
-cd post/
-gr
-bundle update
-bundler exec jekyll s
-cd
-cd dev/program/dsa/pa3/hack/
-ls
-g++ hack.cpp crc.cpp -o main
-ls
-vim test
-./main < test 
-time ./main < test 
-ls
-g++ hack.cpp crc.cpp -o main -O2
-time ./main < test 
-ls
-g++ hack.cpp crc.cpp -o main -O2 -g
-g++ hack.cpp crc.cpp -o main -O3
-time ./main < test 
-g++ hack.cpp crc.cpp -o main -O2
-time ./main < test 
-g++ hack.cpp crc.cpp -o main -O2 -g
-gdb main
-g++ hack.cpp crc.cpp -o main -O2 -g
-gdb main
-g++ hack.cpp crc.cpp -o main -g
-gdb main
-g++ hack.cpp crc.cpp -o main -g
-gdb main
-g++ hack.cpp crc.cpp -o main -g
-./main < test 
-bat test 
-gdb ma
-g++ hack.cpp crc.cpp -o main -g
-./main < test 
-gdb mai
-g++ hack.cpp crc.cpp -o main -g
-./main < test 
-time ./main < test 
-bc
-killall  dunst 
-dunst &
-notify-send s
-cd post/
-cd 1
-cd 12
-cd 2018/12/
-ls
-vim 2018-12-16-counting-bit-ones.md 
-bat 2018-12-11
-bat 2018-12-11-vim-hierarchy.md 
-vim 2018-12-16-counting-bit-ones.md 
-..
-gr
-cd _includes/
-ls
-vim footer.html 
-vim read-more.html 
-vim comments.html 
-git commit -a
-git push origin master 
-htop
-cling
-gr
-cd
-cd dev/program/dsa/pa2/
-ls
-vim money/money.cpp 
-..
-cd pa3/hack/
-vim hack.cpp 
-fcitx
-cd dev/packages/
-cd debug/
-..
-ls
-mv ~/.vim/Plug/vim-header/ .
-ls
-mkdir util
-mkdir util/start
-mv vim-header/ util/start/
-cd util/
-ls
-ls start/
-..
-ls
-ls debug/
-bat util/start/vim-header/plugin/header.vim 
-git status 
-ls
-cd util/
-ls
-cd start/vim-header/
-ls
-..
-vim vim-header/.git/config 
-..
-cd -
-vim vim-header/.git/config 
-git submodule add https://github.com/alpertuna/vim-header.git vim-header/
-git status 
-..
-ls
-git commit -a
-git submodule status 
-git submodule update --recursive 
-git submodule update --recursive --remote 
-gstatus 
-ls
-git push origin master 
-ls
-mv ~/dwn/inkpot.vim ~/.vim/colors/
-ls
-ls ~/.vim/Plug
-mv ~/.vim/Plug/quick-scope/ util/start/
-cd util/start/
-vim quick-scope/.git/config 
-git submodule add https://github.com/unblevable/quick-scope quick-scope/
-git commit 
-mv ~/.vim/Plug/space-vim-dark/ ../../colors/opt/
-..
-vim colors/opt/space-vim-dark/.git/config 
-git submodule add https://github.com/liuchengxu/space-vim-dark.git colors/opt/space-vim-dark/
-git commit 
-git push origin master 
-ls
-ls
-cd dev/program/dsa/pa3/notfound/
-ls
-vim notfound.cpp 
-g++ notfound.cpp -g
-./a.out < exinput 
-./a.out < input.txt 
-time ./a.out < input.txt 
-vim notfound.cpp 
-g++ notfound.cpp -g
-./a.out < input.txt 
-time ~~
-time~~
-time time~~
-time ./a.out <exinput 
-time ./a.out <input.txt 
-vim notfound.cpp 
-man brk
-..
-ls
-mkdir hack
-mv e1aad3816053c18e1c0a23f2b14bd5ba88e23cfb.zip hack/
-cd hack/
-unzip e1aad3816053c18e1c0a23f2b14bd5ba88e23cfb.zip 
-ls
-rm -rf __MACOSX/
-ls
-rm 2
-rm e1aad3816053c18e1c0a23f2b14bd5ba88e23cfb.zip
-ls
-vim crc.h
-vim crc.cpp 
-ls
-vim hack.cpp
-./main <test 
-valgrind --tool=callgrind ./main < test 
-ls
-kcachegrind callgrind.out.13651 
-g++ hack.cpp crc.cpp  -o main 
-./main < test 
-time ./main < test 
-ls
-vim hack.cpp
-g++ hack.cpp crc.cpp  -o main 
-time ./main < test 
-date
-vim report.md
-vim hack.cpp
-cd
-ls
-.vi
-cd .vim/
-ls
-cd Plug
-ls
-vim
-ls
-ls vim-vue/
-cd vim-vi
-cd vim-vue/
-ls
-vim ftdetect/vue.vim 
-vim syntax/vue.vim 
-vim syntax_checkers/vue/eslint.vim 
-vim ftplugin/vue.vim 
-vim indent/vue.vim 
-..
-ls
-cd vim-header/
-ls
-vim plugin/header.vim 
-ls
-vim autoload/header.vim 
-ls
-..
-ls
-..
-ls
-git submodule update --recursive --remote --init 
-ls Plug
-ls pack/
-git submodule update --recursive --remote --init pack/
-ls pack/
-git submodule update --remote --init pack/
-cd p
-cd pack/
-git submodule update --remote --init pack/
-git submodule update --remote --init
-git pull
-..
-git submodule update --remote pack/
-git submodule update --recursive --remote --init pack/
-ls
-git status 
-git commit 
-git commit -a
-git push origin m
-git push origin master 
-git push origin myconf 
-ls
-cd Plug
-ls
-..
-ls plugin/
-cd Plug/rename.vim/
-ls
-vim plugin/rename.vim 
-ls
-mv plugin/rename.vim ../../plugin/
-..
-rm -rf rename.vim/
-..
-ls
-vim plugin/rename.vim 
-gvim plugin/rename.vim 
-gstatus 
-git add plugin/rename.vim 
-git commit -v
-git checkout master 
-git cherry-pick myconf 
-git log
-git reset HEAD --hard HEAD~
-git reset HEAD --hard HEAD^
-git reset --hard HEAD~
-git cherry-pick -h
-git cherry-pick -x myconf 
-git log
-git push origin mas
-git push origin master 
-git checkout myconf 
-git log
-gstatus 
-git add plugin/syngroup.vim 
-git commit 
-ls
-ls plugin/syngroup.vim
-bat plugin/syngroup.vim 
-ls
-ls colors/
-vim colors/juvenile.vim 
-ls
-git status 
-git checkout master 
-ls colors/
-git checkout myconf 
-ls
-git rm colors/moria.vim 
-git rm colors/juvenile.vim 
-git commit 
-git push origin myconf 
-ls
-ls Plug
-cd Plug
-ls
-..
-ls
-git submodule update --recursive --remote --init pack/
-cd dev/packages/
-ls colors/
-ls colors/opt/
-nmcli device status
-nmcli device wifi list 
-nmcli device wifi rescan 
-nmcli device wifi list 
-ls
-nmcli device status
-ping www.baidu.com
-nmcli device status
-cd .vim/
-global  -c i
-cd .git/
-global  -c i
-global  -c u
-global  -c up
-task
-ls
-ls .vim
-ls
-cd .vim/
-ls
-gbr
-ls
-gblame 
-ls
-git status 
-git commit -a
-ls
-vim .gitmodules 
-ls
-git submodule status 
-git submodule status --recursive 
-ls Plug
-cd Plug
-ls
-..
-ls
-cd pack/
-ls
-git status 
-git submodule update 
-git status 
-git log
-git checkout master 
-ls
-git rebase origin/master 
-git log
-ls
-ls debug/opt/vim-scriptease/
-..
-gstatus 
-git diff
-git diff --submodule
-git config --global diff.submodule log
-cd
-vim .gitconfig 
-cd dfile/
-gstatus 
-ls git/
-ls git/ -a
-cd git/
-ls
-rm .gitconfig
-ln ~/.gitconfig .
-ls -a
-gstatus 
-bat .gitconfig 
-..
-gstatus 
-git commit -a
-git status 
-git diff
-git status git/.gitconfig 
-git log
-ls git/
-ls -a
-cd git/
-ls
-git diff HEAD^
-ls
-gr
-.
-..
-cd .vim/
-ls
-cd pack/
-ls
-git status 
-mkdir -p filetype/start
-ls filetype/start/
-mv ../Plug/vim-vue/ filetype/start/
-vim filetype/start/vim-vue/.git/config 
-git submodule add https://github.com/posva/vim-vue.git filetype/start/vim-vue/
-gcommit 
-..
-git status 
-cd pack/
-ls
-mv ../Plug/typescript-vim/ filetype/start/
-vim filetype/start/typescript-vim/.git/config 
-git submodule add https://github.com/leafgarland/typescript-vim.git filetype/start/typescript-vim/
-mv ../Plug/vim-markdown/ filetype/start/
-vim filetype/start/vim-markdown/.git/config 
-git submodule add https://github.com/plasticboy/vim-markdown.git filetype/start/vim-markdown/
-mv ../Plug/vim-cpp-enhanced-highlight/ filetype/start/
-vim filetype/start/vim-cpp-enhanced-highlight/.git/config 
-git submodule add https://github.com/octol/vim-cpp-enhanced-highlight.git filetype/start/vim-cpp-enhanced-highlight/
-git commit 
-..
-git push --recurse-submodules=on-demand origin myconf 
-git commit 
-git commit -a
-git push --recurse-submodules=on-demand origin myconf 
-cd pack/
-git push origin master 
-..
-git push origin myconf 
-ls
-cd
-cd dw
-cd dwn/
-ls
-unzip -l arena.zip 
-lss
-ls
-rm metallic_sky_ttf.zip
-ls
-unzip -l pygments-master.zip 
-unzip pygments-master.zip 
-ls
-cd pygments-master/
-ls
-vim dracula.scss 
-vim dracula.sass 
-vim dracula.css 
-cp dracula.css ~/dev/linusboyle.github.io/css/
-cd 
-cd post/
-gr
-cd css/
-ls
-..
-cd _sass/
-ls
-vim vno.scss 
-gr
-bundler exec jekyll s
-git add .
-git commit 
-git push origin master 
-ls
-vim changelog.md 
-vim README.md 
-git commit -a
-gpush origin master
-vim _config.yml 
-cd
-cd .vim/
-ls
-cd plug
-cd plugin/
-ls
-vim wildignore.vim 
-ls
-vim largefile.vim 
-ls
-vim gtags.vim 
-..
-ls
-ls /gi
-ls .git
-git init 
-ls .git/hooks/
-cd -
-ls
-vim gtags.vim 
-git checkout m
-git checkout master 
-git checkout myconf 
-vim gtags.vim 
-git status 
-git checkout master 
-git commit 
-..
-git add autoload/gtags.vim 
-git commit -a
-git checkout myconf 
-gstatus 
-git merge master 
-git log
-ls
-gstatus 
-ls Plug
-ls
-cd ftplugin/
-ls
-vim vue.vim 
-ls
-git commit -a
-ls
-git log
-ls
-..
-ls
-vim thirdparty.vim 
-git commit -a
-nmcli connection up  Tsinghua
-nmcli device wifi list 
-nmcli connection up  Tsinghua-5G 
-nmcli device status
-bc 
-bc
-cling
-cnf gfortan
-cnf gfortran
-cnf gada
-cnf ada
-ls
-cd dev/program/dsa/pa3/notfound/
-..
-cd kth/
-ls
-g++ kth_lib.cpp get.cpp -o main
-vim exinput
-./main <exinput 
-g++ kth_lib.cpp get.cpp -o main -g
-gdb ma
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-nmcli device status
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-gdb main
-g++ kth_lib.cpp get.cpp -o main -g
-./main <exinput 
-time ./main <exinput 
-cd dev/program/dsa/pa3/kth/
-g++ kth_lib.cpp get.cpp -o main -g
-./main < exinput 
-g++ kth_lib.cpp get.cpp -o main -g
-./main < exinput 
-dte
-date
-cd dev/program/dsa/pa3/kth/
-bat get.cpp 
-for file in *;     echo $file
-for $file in path:;     echo $file
-nmcli device wifi list 
-nmcli connection up DIVI-2
-nmcli device status
-sudo ip link set enp4s0 down 
-nmcli device status
-ls
-nmcli device status
-man pygmentize 
-which pygmentize
-which pygmentize| file
-which pygmentize| xargs file
-
-file /usr/bin/pygmentize-2.7 
-file /usr/bin/pygmentize-3.6 
-zypper search --installed-only pygment
-
-man zypper 
-zypper info --conflicts youtube-dl
-ls
-cd dev/program/dsa/pa3/kth/
-ls
-unzip kth.zip 
-ls
-rm -rf __MACOSX/
-rm kth
-rm kth.zip
-ls
-vim kth.h 
-vim kth_
-vim kth_lib.cpp 
-ls
-vim kth_sample.cpp 
-ls
-vim get.cpp
-vim report.md
-ls
-cd
-cd .vim/
-ls
-ls Plug
-ls
-cd after/ftplugin/
-ls
-vim cpp.vim 
-gr
-vim autoload/gtags.vim 
-ls
-gr
-cd
-cd dev/church-cpp/
-vim church_numerals.h 
-ls
-git init 
-./.git/hooks/ctags 
-vim church_numerals.h 
-ls
-cd .git/
-ls
-global -x foo
-global -x index
-global -c i
-..
-ls
-cd
-cd dev/git/
-ls
-git init 
-./.git/hooks/ctags 
-ls
-vim log-tree.c
-cd
-vim .vim/after/ftplugin/c.vim
-cd -
-vim log-tree.c
-ls
-cd -
-vim .vim/after/ftplugin/c.vim
-cd -
-vim log-tree.c
-..
-ls
-..
-ls
-cd .vim/
-ls
-ls Plug
-mv Plug/vim-fugitive/ pack/util/start/
-cd Plug
-..
-cd pack/
-ls
-..
-ls
-cd pack/
-git submodule add util/start/vim-fugitive/
-vim util/start/vim-fugitive/.git/config 
-git submodule add https://github.com/tpope/vim-fugitive.git util/start/vim-fugitive/
-for directory in ../Plug; echo $directory
-for $directory in ../Plug; echo $directory
-for $directory in ../Plug; echo $directory
-..
-vim bin/cleanUndo 
-vim bin/greeting 
-vim bin/rofi_r
-vim bin/rofi_run 
-vim test.sh
-..
-cd
-cd .vim/Plug
-for repo in *; do echo $repo; done
-..
-cd pack/
-git status 
-git commit 
-ls
-mkdir complete
-mv ../Plug/YouCompleteMe/ complete/
-mv ../Plug/YCM-Generator/ complete/
-cd complete/
-ls
-mkdir start
-mv YCM-Generator/ start/
-mv YouCompleteMe/ start/
-ls
-..
-ls
-cd complete/
-ls
-cd start/
-git remote 
-git remote get-url origin 
-man pushd
-help pushd
-for repo in *; do echo $repo; pushd $repo; url=$(git remote get-url $(git remote)); echo $url; popd; git submodule add $url ./$repo; done
-..
-git status 
-git add .
-git status 
-cd start/Y
-cd start/YouCompleteMe/
-git status 
-cd third_party/ycmd/
-git status 
-ls third_party/gocode/
-..
-ls
-git commit 
-ls
-..
-mv ../Plug/* util/start/
-cd util/start/
-ls
-for repo in *; do echo $repo; pushd $repo; url=$(git remote get-url $(git remote)); echo $url; popd; git submodule add $url ./$repo; done
-git commit 
-ls
-git status 
-cd echodoc.vim/
-git status 
-rm doc/tags
-git status 
-..
-git status 
-git commit 
-ls
-..
-ls
-..
-cd co
-cd complete/
-gr
-cd -
-ls
-gst
-gstatus 
-cd start/YouCompleteMe/
-ls
-git status 
-ls third_party/ycmd/
-cd third_party/ycmd/
-gstatus 
-ls third_party/
-cd third_party/
-git status 
-cd gocode/
-git status 
-ls
-git remote 
-git remote get-url origin 
-..
-ls
-..
-ls
-git pull
-git status 
-..
-gr
-ls
-vim thirdparty.vim 
-git rm thirdparty.vim 
-git rm thirdparty.vim -f
-git status 
-cd pack/
-git status 
-..
-cd pack/
-..
-git commit 
-gstatus 
-git log
-ls
-git status 
-vim after/ftplugin/cpp.vim 
-ls pack/complete/start/YouCompleteMe/
-vim after/ftplugin/c.vim 
-ls
-cd pack/
-ls
-cd complete/
-ls
-mkdir opt
-git mv start/Y* opt/
-git status 
-rmdir stat
-rmdir start/
-ls
-ls opt/
-git commit -a
-ls
-..
-ls
-..
-ls
-gstatus 
-git add after/ftplugin/*
-git commit 
-ls
-git add pack/
-git commit 
-git status 
-cd pack/
-ls
-cd complete/opt/YouCompleteMe/third_party/ycmd/third_party/
-ls
-gstatus 
-git add .
-git status 
-git reset HEAD .
-git status 
-git submodule update 
-git submodule update --re
-git submodule update --remote 
-gstatus 
-ls go
-rm -rf gocode/
-rm -rf godef/
-gstatus 
-gr
-ls
-git status 
-git pull
-git fetch origin 
-git log
-ls
-ls third_party/
-gstatus 
-git commit -a
-git add .
-git commit -a
-cd third_party/ycmd/
-git commit -a
-gr
-gstatus 
-cd -
-git branch 
-git reset --hard HEAD
-git reset --hard HEAD^
-git status 
-..
-git submodule update --recursive 
-git status 
-git submodule update --recursive --remote 
-ls
-..
-ls
-gstatus 
-git branch 
-..
-git push origin master 
-..
-git status 
-git log
-git checkout master 
-git cherry-pick 5fd44b3ff4aaab7d9fdf8cdab755dc4d83929434
-
-git cherry-pick 5fd44b3ff4aaab7d9fdf8cdab755dc4d83929434 -x
-git log
-git push origin master 
-git checkout myconf 
-git commit 
-git push origin master 
-ls
-ls autoload/
-rm autoload/plug.vim
-ls
-vim .gitignore 
-git commit -a
-git push origin master 
-git push origin myconf 
-ls
-cd
-nmcli device status
-cd
-nmcli device status
-
-nmcli device wifi list 
-cd
-ping www.baidu.com
-nmcli connection up  Tsinghua-5G 
-nmcli device status
-ping www.baidu.com
-volraise 
-ls
-nmcli device status
-vim .vim/ftplugin/vue.vim 
-log
-nmcli device status
-vim dfile/i3/config 
-g
-node
-cd dev/arena9/ClientMain/
-cd src/renderer/
-ls
-cd components/
-ls
-vim Main.vue 
-cd dev/arena9/ClientMain/
-ls
-git remote 
-git remote  -a
-git remote =v
-git remote -v
-git log
-ls
-cd src/
-cd renderer/
-ls
-cd components/
-ls
-cd Main/
-ls
-cd Hall/
-ls
-..
-ls
-vim HallPage.vue 
-cd Hall/
-vim RoomList.vue 
-git checkout e812f73a
-git log
-git diff HEAD~
-git checkout dev 
-ls
-vim RoomList.vue 
-git commit -a
-yarn run dev
-ls
-yarn run dev
-nmcli device status
-ping www.baidu.com
-nmcli device status
-nmcli connection up Tsinghua
-nmcli device status
-ping www.baidu.com
-wmctrl -l
-cd dfile/i3/
-vim config 
-cd doc/
-r
-q
-task-web.ruby2.5 
-date 
-cd doc/
-r
-cd dev/program/dsa/pa3/hack/
-g++ hack.cpp crc.cpp  -o main 
-./main <test 
-cd dev/program/dsa/pa3/hack/
-vim test.cpp
-g++ test.cpp crc.cpp
-./a.out 
-vim crc.cpp 
-g++ hack.cpp crc.cpp  -o main 
-./main <test
-cd dev/program/dsa/pa3/kth/
-..
-cd hack/
-vim hack.cpp 
-vim report.md 
-ls
-vim hack.cpp 
-vim report.md 
-.
-..
-cd pa1
-cd multiply/
-ls
-vom new.cpp 
-vim new.cpp 
-ls
-...
-cd pa1/zuma/
-ls
-vim zuma.cpp 
-node
-yarn run lint:fix
-cd dev/
-cd arena9/ClientMain/
-ls
-cd src/renderer/
-ls
-vim store/modules/User.js 
-xhost +
-vim store/modules/User.js 
-vim repo
-vim store/modules/User.js 
-yarn run dev
-gcommit -a
-git push origin dev 
-gr
-vim README.md 
-gcommit -a
-git push origin dev 
-cd dev/arena9/ClientMain/
-cd src/renderer/
-ls
-vim components/Main.vue 
-cd doc/
-r
-nmcli device status
-nmcli connection show 
-nmcli device status
-nmcli device wifi list 
-nmcli device status
-nmcli radio wifi on 
-nmcli device status
-ip link 
-nm-connection-editor 
-sudo ip link set wlp5s0 up 
-nmcli device status
-sudo ip link set wlp5s0 up 
-nmcli device status
-sudo ip link show 
-nmcli device status
-sudo ip link set wlp5s0 up 
-nmcli device status
-cd dev/arena9/ClientMain/
-yarn run dev
-voldown 
-xhost +
-task-web.ruby2.5 
-voldown 
-cd music/
-mkdir 红面传说
-💿
-cd 红面传说
-ls
-youtube-dl https://www.xiami.com/album/gto45fa56?spm=a1z1s.3521865.23309997.33.WWomNH
-vidir
-ls
-tag -l 风火轮\(哪吒\).mp3 
-tag -A 红面传说 *
-tag -l 风火轮\(哪吒\).mp3 
-cd
-cd dev/
-ls
-cd arena9/ClientMain/
-ls
-vim Dockerfile 
-ls
-vim Dockerfile 
-vim appveyor.yml 
-ls
-vim .gitignore 
-ls
-cd src/renderer/
-ls
-cd components/
-ls
-vim Main.vue 
-ls
-gr
-yarn add @sentry/electron@0.14.0
-ls
-cd src/renderer/
-ls
-..
-cd main/
-ls
-..
-ls
-vim index.ejs 
-cd main/
-ls
-vim index.js 
-..
-cd renderer/
-ls
-vim main.js 
-..
-cd main/
-vim index.
-vim index.js 
-gcommit -a
-git push origin dev 
-ls
-nmcli device status
-pushd 
-pushd /
-popd
-ls
-cd bin/
-ls
-vim docx2txt 
-ls
-file docx2txt 
-wc docx2txt 
-wc docx2txt -l
-..
-ls
-nmcli device status
-vim
-ls
-date
-cd .vim/
-ls
-cd
-cd d
-cd dev/
-ls
-rm -rf packages/
-ls
-..
-ls
-vim .git_template/hooks/ctags 
-man gtags
-man global
-vim .git_template/hooks/ctags 
-ls
-cd .vim/autoload/
-git branch 
-ls
-vim textobj.vim
-..
-cd plug
-ls
-ls Plug
-rmdir Plug
-ls
-git status 
-git diff
-gr
-cd
-vim .gitconfig 
-cd -
-ls
-git status 
-ls
-diff
-git diff
-vim plugin/textobj.vim
-ls
-vim ftplugin/vue.vim 
-git checkout mas
-git checkout master 
-git commit -a
-git add autoload/textobj.vim 
-git add plugin/textobj.vim 
-git commit
-ls
-gstatus 
-git checkout myconf 
-git merge master 
-git status 
-git mergetool 
-gcommit 
-gstatus 
-rm ftplugin/vue.vim.orig
-git mergetool --tool=vimdiff 
-ls
-man vimd
-man vimdiff 
-wvim
-vim 
-ls
-cd autoload/
-vim textobj.vim 
-.
-..
-vim plugin/textobj.vim
-ls
-gstatus 
-ls
-logremote 
-task
-ls
-cd after/ftplugin/
-ls
-vim cpp.vim 
-vim c.vim 
-git commit -a
-..
-git add autoload/*
-git add plugin/*
-git commit
-git commit -a
-ls
-git log
-git checkout master 
-git cherry-pick d800271cf7c691f1faf3f774661f9fb46e741d75
-git diff myconf 
-ls
-ls after/ftplugin/
-vim ftplugin/vue.vim 
-git push origin m
-git push origin master 
-git checkout myconf 
-git push origin myconf 
-cd
-cd doc/
-ls
-r
-log
-sudo fdisk -l
-sudo mount /dev/sda3 /mnt/
-cd /mnt/Users/Think/Do
-cd /mnt/Users/Think/Documents/
-ls
-cp simulation.pdf ~/doc
-cd
-cd doc/
-zathura simulation.pdf 
-ls
-r
-ls
-sudo umount /mnt 
-sudo mount /dev/sda4 /mnt/
-cd /mnt/
-ls
-cd Pillars\ of\ Eternity/
-ls
-optirun start.sh 
-optirun start.sh -v
-optirun start.sh --verbose
-optirun -v start.sh 
-cd
-sudo zypper update 
-ls
-htop
-sudo htop
-sudo zypper update 
-cd /usr/src/
-ls -lh
-cd nvidia-410.66/
-ls
-..
-ls
-ls NVIDIA-Linux-x86_64-410.66
-ls
-cd NVIDIA-Linux-x86_64-410.73.new/
-ls
-..
-ls
-ls -lh
-ls packages/
-ls packages/S
-ls packages/SOURCES/
-cd packages/
-tree
-..
-ls
-ls -lh
-ls
-ls -lh
-ls
-l
-cpustat 
-htop
-df -h
-voldown 
-ls /usr/src/
-ls /usr/src/ -l
-ls /usr/src/ -lh
-amixer get Master
-nmcli device status
-cd dwn/
-ls
-md5sum NVIDIA-Linux-x86_64-410.73.run 
-df -h
-sudo cp NVIDIA-Linux-x86_64-410.73.run /usr/src/
-ls /usr/src/
-ls /usr/src/ -h
-ls /usr/src/ -hl
-sudo zypper up
-sudo cp NVIDIA-Linux-x86_64-410.73.run /usr/src/
-sudo zypper up
-youtube-dl -v
-youtube-dl --version
-sudo zypper up vlc
-sudo zypper install vlc-3.0.4-1.3.x86_64
-zypper ps -s
-ls
-cnf lolcat
-cd
-cd video/
-vlc jiaocheng.mp4 
-amixer get Master
-xhost +
-cd video/
-vlc jiaocheng.mp4 
-task-web.ruby2.5 
-nmcli device status
-ping net.tsinghua.edu.cn
-nmcli device status
-nmcli device wifi list 
-ping net.tsinghua.edu.cn
-nmcli device status
-ping net.tsinghua.edu.cn
-ls
-glxgears 
-optirun glxgears
-sudo systemctl start bumblebee
-sudo systemctl start bumblebeed
-sudo systemctl status bumblebeed
-sudo /usr/sbin/bumblebeed 
-sudo modprobe 
-sudo modprobe -h
-sudo modprobe -c
-sudo modprobe -h
-sudo modprobe -D
-ls
-sudo bumblebeed
-cd /etc/modprobe.d/
-ls
-vim 50-bbswitch.conf 
-vim 51-blacklist-nouveau.conf 
-vim 50-blacklist.conf 
-ag nvidia
-vim 51-blacklist-nouveau.conf 
-sudo vim 51-blacklist-nouveau.conf 
-sudo bumblebeed
-..
-ls
-..
-ls
-cd sbin/
-ls
-..
-ls
-xprop 
-ls
-nmcli device status
-ls /usr/lib/nvidia/
-ls /usr/lib64/nvidia/
-ls /usr/lib64/nvidia/xorg/
-ls /usr/lib64/xorg/modules/
-cd /usr/lib64/nvidia/
-ls
-ls xorg/modules/
-cd
-cd /lib/modules/
-ls
-uname -r
-cd 4.19.8-1-default/
-ls
-cd kernel/
-ls
-cd drivers/
-ls
-cd nvdimm/
-ls
-..
-ls
-..
-ls
-find /lib/modules/$(uname -r) -type f -name '*.ko'
-find /lib/modules/$(uname -r) -type f -name '*.ko'|grep nvidia
-..
-ls
-..
-ls
-cd
-cd /usr/lib
-ls
-cd nvidia/
-ls
-..
-cd lib64/
-ls
-cd nvidia/
-ls
-..
-cd 
-lsmod 
-find /lib/modules/$(uname -r) -type f -name '*.ko'|grep nvidia
-cd /lib/modules/4.19.8-1-default/
-ls
-cd kernel/
-ls
-..
-bat  /etc/modprobe.d/51-blacklist-nouveau.conf 
-free -h
-sudo bumblebeed
-cd /etc/
-ls
-ag nvidia
-cd bumblebee/
-ls
-vim bumblebee.conf 
-xhost +
-ls
-lsmod 
-ls
-vim xorg.conf.n
-vim xorg.conf.nvidia 
-ls
-ls 
-ls xorg.conf.
-ls xorg.conf.d
-ls
-cd /usr/src/
-ls
-file NVIDIA-Linux-x86_64-410.73.run 
-cd nvidia-410.73/
-ls
-vim README.txt 
-ls
-cd
-cd dwn/
-ls
-rm pygments-master.zip
-rm -rf pygments-master/
-ls
-l
-l -l
-bash NVIDIA-Linux-x86_64-410.73.run 
-ls
-sudo ls
-sudo bash NVIDIA-Linux-x86_64-410.73.run 
-sudo bumblebeed
-df -h
-sudo mount /dev/sda4 /mnt/
-cd /mnt/
-ls
-cd Baldurs\ Gate\ 2\ Enhanced\ Edition/
-ls
-./start.sh 
-..
-ls
-cd Baldurs\ Gate\ Enhanced\ Edition/
-ls
-./start.sh 
-vim start.sh 
-vim back_start.sh 
-./back_start.sh 
-vim back_start.sh 
-./back_start.sh 
-q
-cd dev/program/dsa/pa3/
-ls
-cd prefix/
-vim prefix.cpp 
-..
-cd pa2/temperature/
-vim report.md 
-ls
-vim range.cpp 
-vim new.cpp 
-volraise 
-task-web.ruby2.5 
-ls
-nmcli device status
-cal
-cd music/
-youtube-dl -x https://www.youtube.com/watch?v=OiO_rS-q1DI&index=81&list=PLI28nKhn3PR03xa2gpLf616vT1WqurShs
-ls
-mplayer 天宇-競月刀烈風焦\(配樂\)-OiO_rS-q1DI.m4a 
-vlc 天宇-競月刀烈風焦\(配樂\)-OiO_rS-q1DI.m4a 
-cvlc 天宇-競月刀烈風焦\(配樂\)-OiO_rS-q1DI.m4a 
-ls
-vidir
-tag -t 有段往事在我心中 竞月刀烈风焦.m4a 
-tag - 竞月刀烈风焦.m4a 
-tag -l 竞月刀烈风焦.m4a 
-ls
-tag -t 牡丹亭组曲 俞逊发\ -\ 牡丹亭组曲.mp3 
-tag -a 俞逊发 俞逊发\ -\ 牡丹亭组曲.mp3 
-tag -l 俞逊发\ -\ 牡丹亭组曲.mp3 
-htop
-ls
-ffmpeg 竞月刀烈风焦.m4a -o 竞月刀烈风焦.mp3
-ffmpeg -i 竞月刀烈风焦.m4a 竞月刀烈风焦.mp3
-ls
-youtube-dl -x https://www.youtube.com/watch?v=OiO_rS-q1DI&index=81&list=PLI28nKhn3PR03xa2gpLf616vT1WqurShs
-mplayer 竞月刀烈风焦.m
-mplayer 竞月刀烈风焦.m4a 
-ls
-rm 竞月刀烈风焦.mp
-rm 竞月刀烈风焦.mp3
-ls
-file 竞月刀烈风焦.m4a 
-ls
-rm 竞月刀烈风焦.m4a
-task
-cd doc/
-r
-nmcli device status
-ping net.tsinghua.edu.cn
-cd music/
-youtube-dl -x https://www.youtube.com/watch?v=OiO_rS-q1DI&index=81&list=PLI28nKhn3PR03xa2gpLf616vT1WqurShs
-fg
-nmcli device status
-nm-connection-editor 
-nmcli connection show Tsinghua-Secure 
-nmcli connection modify Tsinghua-Secure 
-nmcli connection modify Tsinghua-Secure 802-1x.password abc99886abc
-nm-connection-editor 
-nmcli connection up Tsinghua-S
-nmcli connection up Tsinghua-Secure 
-nm-connection-editor 
-cd doc/
-r
-cd doc/
-r
-cd d
-cd doc/
-r
-htop
-file /usr/bin/baloo_file
-balooctl 
-balooctl -v
-balooshow 
-htop
-baloo_file -v
-baloo_file -h
-ls
-zypper if  baloo5-tools
-zypper if  baloo5-tools --provides 
-zypper if --provides baloo5-tools
-ls
-task
-nm-connection-editor 
-nmcli device status
-ping net.tsinghua.edu.cn
-nmcli device status
-ping net.tsinghua.edu.cn
-ls
-ping net.tsinghua.edu.cn
-nmcli connection up Tsinghua
-nmcli device status
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-nmcli device wifi list 
-nmcli connection up Tsinghua
-ls /opt/google/
-ls /opt/google/ -a
-ls
-nmcli connection up Tsinghua
-nmcli device wifi list 
-cd do
-cd doc/
-r
-cd
-cd music/
-youtube-dl -x https://www.youtube.com/watch?v=OiO_rS-q1DI&index=81&list=PLI28nKhn3PR03xa2gpLf616vT1WqurShs
-fg
-man fcitx-remote 
-fcitx-remote 
-fcitx-remote -t
-fcitx-remote 
-man fcitx-remote 
-fcitx-remote -t
-man fcitx-remote 
-fcitx-remote -s
-fcitx-remote -s 中
-fcitx-remote -c
-fcitx-remote -o
-vim
-fcitx
-fcitx-remote 
-fcitx-remote -h
-cd .vim/
-ls
-cd autoload/
-ls
-vim fcitx.vi
-vim fcitx.vim
-vim ../plugin/fcitx.vim 
-vim fcitx.vim
-ls
-vim fcitx.vim
-ls
-..
-ls
-vim plugin/fcitx.vim 
-ls
-vim autoload/fcitx.vim 
-cd .vim/
-cd autoload/
-vim fcitx.vim 
-ls
-vim fcitx.vim 
-..
-git checkout master 
-git checkout myconf 
-git status 
-ls
-cd
-
-git checkout master 
-cd .vim/
-git checkout master 
-git status 
-git add autoload/fcitx.vim 
-git add plugin/fcitx.vim 
-git commit 
-git checkout myconf 
-ls
-git ls-files
-ls
-git merge master 
-cd music/
-youtube-dl -x https://www.youtube.com/watch?v=OiO_rS-q1DI&t=5s
-ls
-mv 天宇-競月刀烈風焦\(配樂\)-OiO_rS-q1DI.m4a 有段往事在我心中.m4a
-mplayer 有段往事在我心中.m4a 
-ls
-tag 有段往事在我心中.m4a 
-ffmpeg -i 有段往事在我心中.m4a 有段往事在我心中.m🍕
-ffmpeg -i 有段往事在我心中.m4a 有段往事在我心中.mp3
-ls
-rm 有段往事在我心中.m4a
-ls
-mplayer 有段往事在我心中.mp3 
-ls
-tag -t
-tag -t 有段往事在我心中 有段往事在我心中.mp3 
-cd .config/fcitx/rime/
-ls
-vim default.yaml 
-vim luna_pinyin.schema.yaml 
-cd music/
-r
-mplayer 张楚\ -\ 书.flac 
-tag 张楚\ -\ 书.flac 
-tag -l 张楚\ -\ 书.flac 
-tag -a 张楚 张楚\ -\ 书.flac 
-tag -t 书 张楚\ -\ 书.flac 
-tag -l 张楚\ -\ 书.flac 
-alias 
-pandoc --help
-pandoc -h
-ls
-cd post/
-cd 2018/12/
-ls
-pan 2018-12-02-clean-vim-undofile-up.md -o test.pdf
-zathura test.pdf 
-
-pan 2018-12-02-clean-vim-undofile-up.md -o test.pdf -c Github.css
-zathura test.pdf 
-vim 2018-12-02-clean-vim-undofile-up.md 
-cd
-cd doc/
-ls
-cd 昆曲艺术与文化传承
-ls
-vim paper.md
-pan paper.md -o paper.pdf
-zathura paper.pdf 
-vim paper.md
-pan paper.md -o paper.pdf
-zathura paper.pdf 
-vim paper.md
-cd music/
-ls
-tag -a 苏文庆 幽冥组曲选录.mp3 
-tag -A 牡丹亭组曲 俞逊发\ -\ 牡丹亭组曲.mp3 
-cd Medicine\ Woman\ 6\:\ Synchronicity/
-ls
-vidir 
-ls
-tag Medwyn\ Goodall\ -\ Holding\ Silence.mp3 
-tag -a 'Medwyn Goodall' *
-tag Medwyn\ Goodall\ -\ Holding\ Silence.mp3 
-tag -A 'Medicine Woman 6: Synchronicity' *
-tag Medwyn\ Goodall\ -\ Holding\ Silence.mp3 
-vidir
-ls
-for file in *; do echo $file|egrep '[^.]*'; done
-vim ~/bin/cleanUndo 
-vim ~/bin/getwclass 
-for file in *; do echo $file|egrep -oP '.*(?=.)'; done
-vim ~/bin/getwclass 
-for file in *; do echo $file|egrep -oP '.*(?=\.)'; done
-vim ~/bin/getwclass 
-for file in *; do echo $file|grep -oP '.*(?=.)'; done
-for file in *; do echo $file|grep -oP '.*(?=\.)'; done
-for file in *; do name=$(echo $file|grep -oP '.*(?=\.)'); tag -t "$name" "$file"; done
-tag Medwyn\ Goodall\ -\ Holding\ Silence.mp3 
-tag Holding\ Silence.mp3 
-date
-ls
-cd dev/
-ls
-wget https://raw.githubusercontent.com/rime/librime/master/tools/rime_api_console.cc
-ls
-vim rime_api_console.cc 
-g++ rime_api_console.cc 
-ls /usr/include/rime_api.h
-pkg-config rime 
-pkg-config --libs rime 
-g++ rime_api_console.cc -lrime
-ls
-./a.out 
-ls
-mv a.out ~/dfile/rime/
-cd ~/dfile/rime/
-./a.out 
-ls
-mv a.out ~/.config/fcitx/rime/
-cd
-cd .config/fcitx/rime/
-./a.out 
-ls
-vim luna_pinyin.schema.yaml 
-vim luna_pinyin.extended.dict.yaml 
-ls
-wget https://raw.githubusercontent.com/rime/rime-luna-pinyin/master/luna_pinyin.dict.yaml
-lsls
-ls
-vim luna_pinyin.dict.yaml 
-ls
-vim luna_pinyin.dict.yaml 
-vim luna_pinyin.extended.dict.yaml 
-ls
-./a.out 
-ls
-ls build/
-ls trash/
-ls luna_pinyin.userdb
-./a.out 
-ls
-ls luna_pinyin.userdb
-ls cangjie5.userdb/
-ls build/
-ncdu
-ls build/
-ls
-vim user.yaml 
-ls
-vim installation.yaml 
-cd
-cd rime/
-ls
-cd linusboyle/
-ls
-l
-date
-vim installation.yaml 
-fcitx
-cd rime/linusboyle/
-ls
-l
-gstat
-gstatus 
-cd
-cd dfile/
-ls
-cp doc/昆曲艺术与文化传承/paper.md post/2018/12/
-cd post/2018/12/
-ls
-rm Github.css/
-rm -rf Github.css/
-ls
-rm test.pdf
-mv paper.md 2018-12-24-kunqu-sifan.md
-vim 2018-12-24-kunqu-sifan.md 
-gr
-bundler exec jekyll s
-cd -
-vim 2018-12-24-kunqu-sifan.md 
-gr
-git add _posts/2018/12/2018-12-24-kunqu-sifan.md 
-git commit 
-git push origin master 
-cd
-ls
-cd .vim/
-ls
-git push origin myconf 
-git checkout master 
-git push origin master 
-git checkout myconf 
-htop
-cd .config/fcitx/rime/
-ls
-ls trash/
-l
-vim luna_pinyin.dict.yaml 
-vim luna_pinyin.extended.dict.yaml 
-ls
-htop
-sudo mount /dev/sda3 /mnt/
-cd /mnt/Users/Think/
-ls
-cd Desktop/
-ls
-cd 新建文件夹/
-Ls
-ls
-vim new\ 2.txt 
-vim 新建文本文档.txt 
-ls
-cp 新建文本文档.txt ~/doc/pupper-prework/
-。。
-..
-cd Documents/
-ls
-cd 布袋戏/
-ls
-cp 布袋戏非原创配乐出处大全.docx ~/doc/pupper-prework/
-cd kde/
-ls
-..
-ls
-cd doc/
-ls
-cd pupper-prework/
-ls
-l
-file curwork.txt 
-ls
-bat tmp
-vim tmp
-ls
-mv 新建文本文档.txt curwork.txt 
-mv 布袋戏非原创配乐出处大全.docx puppet.docx 
-ls
-vim curwork.txt 
-cd
-cd post/
-gr
-ls
-cd _sass/
-ag tags
-..
-ag .tags
-ag \.tags
-ag \.tag
-cd _sass/
-ag tag
-vim global.scss 
-ls
-vim variables.scss 
-vim global.scss 
-gr
-bundler exec jekyll s
-git add .
-git commit 
-git push origin master 
-cd post/
-gr
-cd _sass/
-vim global.scss 
-ls
-bat _base.scss 
-ls
-ls components/
-..
-ls
-cd -
-vim components/_icons.scss 
-ls
-ag fa
-ag fa-
-..
-ag fa-
-ls
-cd _includes/
-ls
-..
-ls
-cd _layouts/
-ls
-vim default.html 
-vim page.html 
-..
-cd _sass/
-ls
-cd components/
-ls
-vim _scroll.scss
-..
-ls
-vim vno.scss 
-ls
-cd
-ls
-cd -
-.
-..
-ls
-cd _layouts/
-ls
-vim post.html 
-vim individual.html 
-vim page.html 
-vim default.html 
-vim post.html 
-ls
-..
-ls
-cd _includes/
-ls
-vim scroll.html
-ls
-..
-cd _layouts/
-ls
-vim default.html 
-ls
-..
-ls
-cd _includes/
-ls
-vim scroll.html 
-ls
-cd
-cd -
-..
-cd _sass/
-s
-ls
-cd components/
-ls
-vim _scroll.scss 
-gr
-cd
-cd music/
-youtube-dl https://www.xiami.com/song/mQQnS4725aa?spm=a1z1s.3521865.23309997.1.MvLdJn
-man you
-you- h
-you
-you -h
-you --help
-you -v
-help you
-which you
-cd music/
-ls
-ls me
-ls meta/
-ls
-vidir
-ls
-ls 椙山浩一\ -\ ガッチャマンの歌-1774409862.mp3
-tag 椙山浩一\ -\ ガッチャマンの歌-1774409862.mp3
-vidir
-ls
-tag -h
-ls
-cd The\ London\ Concert/
-ls
-vidir
-tag Dolphin\ Dance.mp3 
-ls
-tag —T 4 'Circular Signs Suite, Pt. IV： Black Garden View.mp3'
-tag -T 4 'Circular Signs Suite, Pt. IV： Black Garden View.mp3'
-tag --delete-frames=CON *
-tag Dolphin\ Dance.mp3 
-tag --delete-frames=TCON *
-tag Dolphin\ Dance.mp3 
-ls
-..
-ls
-tag 俞逊发\ -\ 牡丹亭组曲.mp3 
-tag -h
-ls
-tag 书
-tag 张楚\ -\ 书.flac 
-ls
-cd Wonders/
-ls
-tag Paul\ Lawler\,Paul\ Speer\ -\ Amazonia.mp3 
-cd
-cd dfile/dunst/
-ls
-vim dunstrc 
-killall  dunst 
-dunst &
-notify-send s
-cd
-cd post/gr
-cd post/
-gr
-ls
-vim _layouts/default.html 
-bundler exec jekyll s
-git commit -a
-git push origin master 
-cd /usr/share/vim/vim81/
-ls
-vim defaults.vim 
-ls
-vim rgb.txt 
-ls
-vim delmenu.vim 
-ls
-ls compiler/
-ls
-vim ftplugin.vim 
-ls
-ls pack/dist/opt/
-ls skeletons/
-ls plugin/
-ls
-vim ftplugof.vim 
-ls autoload/
-ls
-vim filetype.vim 
-ls
-ls
-cd .vim/
-ls
-vim readme.md 
-ls
-git branch 
-ls
-cd after/ftplugin/
-ls
-vim cpp.vim 
-ls
-vim c.vim 
-ls
-vim qf.vim 
-cd
-vim .vimrc 
-cd .vim/
-ls
-ncdu
-cd
-cd dev/program/dsa/pa3/
-ls
-vim max/max.cpp 
-gr
-cd
-ls
-cd .vim/
-ls
-mkdir compiler
-cd compiler/
-vim bash.vim
-cnf shellcheck
-sudo zypper install ShellCheck 
-man shellcj
-man shellcheck 
-ls
-vim shellcheck.vim
-cd
-cd bin/
-ls
-vim bat 
-vim cl
-vim cleanUndo 
-ls
-cd
-cd bin/
-ls
-.
-..
-ls
-cd /usr/share/vim/vim81/
-ls
-cd compiler/
-ls
-vim gcc.vim 
-ls
-cd doc/
-ls
-rm 2018%E5%B9%B4%E7%A7%8B%E5%AD%A3%E5%AD%A6%E6%9C%9F%E9%98%B3%E5%85%89%E9%95%BF%E8%B7%91%E4%BD%93%E8%82%B2%E6%95%99%E5%AD%A6_%E8%AF%BE%E5%A4%96_%E5%AD%A6%E7%94%9F%E6%88%90%E7%BB%A9%E8%A1%A8%E6%A8%A1%E7%89%88.xls
-ls
-cd 昆曲艺术与文化传承/
-ls
-r
-nmcli device wifi list 
-ping www.baidu.com
-nmcli connection up Tsinghua-5G 
-ping www.baidu.com
-nmcli connection up Tsinghua-5G 
-nmcli device status
-ping www.baidu.com
-cd music/u
-cd music/
-ls
-tag Andreas\ Vollenweider\ -\ X.mp3 
-mkdir 'Eine Art Suite in XIII Teilen'
-ls
-mv Andreas\ Vollenweider\ -\ * Eine\ Art\ Suite\ in\ XIII\ Teilen/
-ls
-cd Eine\ Art\ Suite\ in\ XIII\ Teilen/
-ls
-cd
-cd post/
-gr
-ls
-vim AboutMe.md 
-bundler exec jekyll s
-git commit -a
-ls
-cd _layouts/
-ls
-vim individual.html 
-vim post.html 
-bundler exec jekyll s
-vim post.html 
-ls
-..
-bundler exec jekyll s
-ls
-cd _includes/
-vim footer.html 
-ls
-vim scroll.html 
-..
-bundler exec jekyll s
-git commit -a
-git push origin master 
-task
-cd
-cd dev/program/
-ls
-cd pa3
-cd dsa/pa
-cd dsa/pa3/
-ls
-cd hack/
-vim hack.cpp 
-cd du
-cd dfile/dunst/
-ls
-vim dunstrc 
-cd dev/linusboyle.github.io/
-ls
-vim AboutMe.md 
-vim _config.yml 
-git commit -a
-ls
-vim tags.html 
-cd doc/
-ls
-cd dsa/
-r
-cd 
-cd post/
-gr
-vim projects.html 
-git ocmm
-git commit 
-git commit -a
-git push origin master 
-ls
-vim AboutMe.md 
-bundler exec jekyll s
-bundler exec jekyll 
-bundler exec jekyll s
-git status 
-gdiffmk 
-git diff
-git commit -a
-git push origin master 
-cd 
-cd doc/
-cd pupper-prework/
-vim curwork.txt 
-htop
-vim curwork.txt 
-cd
-cd post/
-gstatus 
-task
-cd
-cd dev/arena9/ClientMain/
-vim package.json 
-npm run eslint
-man npm
-man yarn
-yarn -h
-yarn help bin
-yarn help run
-ls
-./node_modules/eslint/bin/eslint.js 
-ls
-cd
-ls
-cd .vim/compiler/
-ls
-vim bash.vim 
-cd
-cd dwn/tejr-from-vimrc-to-vim/
-ls
-cd compiler/
-ls
-vim bash.vim 
-vim vint.vim 
-cnf vint
-..
-ls
-ls after/
-ls after/indent/
-vim after/indent/vim.vim 
-vim after/indent/html.vim 
-vim after/syntax/gitcommit.vim 
-vim after/ftplugin/sh.vim 
-vim after/ftplugin/cpp.vim 
-vim after/ftplugin/gitcommit.vim 
-ls
-ls co
-ls colors/
-cd compiler/
-..
-cd co
-cd colors/
-ls
-vim juvenile.vim 
-vim sahara.vim 
-cd music/
-ls
-youtube-dl -x https://www.youtube.com/watch?v=D7mtKSwxB80
-ls
-youtube-dl https://www.youtube.com/watch?v=4tRaPPlX1Y8
-youtube-dl -x https://www.youtube.com/watch?v=4tRaPPlX1Y8
-ls
-youtube-dl -x https://www.youtube.com/watch?v=4tRaPPlX1Y8
-ls
-cd /usr/include/c++/
-ls
-cd 8/
-ls
-vim vector 
-cd bits/
-vim vector.tcc 
-ls
-vim allocator.h 
-cd doc/dsa/
-r
-ls
-cd .config/fcitx/rime/
-ls
-./a.out 
-ls
-rm a.out
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-传
-ls
-cd
-task
-ls
-cd post/
-g
-gr
-ls
-vim index.html 
-ls
-vim index.html 
-git commit -a
-git push origin master 
-vim _config.yml 
-git commit -a
-git push origin master 
-ls
-bundler exec jekyll s
-htop
-vim index.html 
-ag nav
-vim _config.yml 
-ag site.nav
-vim _includes/side-panel.html 
-which jekyll
-which jekyll | xargs file
-ls /etc/alternatives/
-file /etc/alternatives/java
-g++ -v
-zypper lu
-zypper lu|less
-optirun ls
-sudo bumblebeed
-ls
-zypper se prime
-zypper info  suse-prime 
-ls /etc/X11/x
-ls /etc/X11/
-ls /etc/X11/xorg
-ls /etc/X11/xorg.conf.d/
-cd
-cd /etc/bumblebee/
-ls
-vim ub
-sudo vim bumblebee.conf 
-sudo bumblebeed
-sudo systemctl start bumblebee
-sudo systemctl start bumblebeed
-sudo systemctl status bumblebeed
-optirun glxgears
-optirun -v glxgears
-optirun --status
-ls
-optirun -vv glxgears
-lsmod |grep nou
-lsmod |grep nouveau
-..
-cd mo
-cd mod
-cd modprobe.d/
-ls
-sudo vim 50-blacklist.conf 
-vim 51-blacklist-nouveau.conf 
-sudo rm 51-blacklist-nouveau.conf
-ls
-bat 00-system.conf 
-ls
-bat nvidia.conf 
-ls
-bat 99-local.conf 
-
-sudo rm nvidia.conf
-ls
-lsmod |grep nouveau
-ls
-sudo systemctl enable bumblebeed
-sudo systemctl reboot 
-ls
-cd
-cd /etc/bumblebee/
-ls
-ls xorg.conf.
-..
-ag bbsw
-cd modprobe.d/
-vim 50-bbswitch.conf 
-ls
-ls /usr/src/
-ls /usr/lib64/xorg/modules/drivers/
-ls
-lsmod |grep nouveau
-optirun --status
-optirun -v --status
-optirun -vv --status
-zypper se --installed-only nouveau
-optirun glxgears
-optirun stat
-optirun status
-optirun --status
-journalctl -u bumblebee
-sudo journalctl -u bumblebee
-sudo journalctl -u bumblebeed
-bat /var/log/Xorg.8.log
-ls
-ls /usr/lib64/xorg/modules/drivers/
-cd /usr/lib64/xorg/modules/drivers/
-file nvidia_drv.so 
-ls
-l
-l -h
-..
-cd
-ls
-task
-ls
-cd /etc/X11/
-ls
-cd xorg
-cd xorg.conf.d/
-ls
-bat *
-ag screen
-ag server
-ag device
-systemctl stop bumblebeed.service 
-optirun --status
-sudo zypper remove nvidia-bumblebee
-sudo zypper remove nvidia-bumblebee-32bit 
-man zypper
-zypper addrepo --refresh https://download.nvidia.com/opensuse/tumbleweed NVIDIA
-sudo zypper addrepo --refresh https://download.nvidia.com/opensuse/tumbleweed NVIDIA
-sudo zypper inr -r NVIDIA
-ls
-..
-cd
-ls
-systemctl start bumblebeed.service 
-optirun --status
-optirun glxgears
-optirun --status
-dmesg 
-optirun --status
-journalctl -u bumblebee
-journalctl -u bumblebeed
-sudo journalctl -u bumblebee
-sudo journalctl -u bumblebeed
-ls -i
-cd rime/linusboyle/
-ls
-..
-ls -i
-ls linusboyle/
-cd rime/linusboyle/
-ls -i
-cd rime/
-ls
-cd linusboyle/
-ls
-l
-cd .config/fcitx/rime/
-ls
-l
-ls -i
-ls luna_pinyin.userdb
-l
-l |wc
-cd
-cd rime/
-cd linusboyle/
-l |wc
-l
-ls
-cd .config/
-ls
-vim user-dirs.dirs 
-..
-cd dfile/
-ls
-ln ~/.config/user-dirs.dirs .
-git add user-dirs.dirs 
-git status 
-gcommit 
-git add bin/cleanUndo 
-gcommit 
-git add dunst/dunstrc 
-git add i3/config 
-git add vim/.vimrc 
-gcommit 
-git add git/.git*
-gcommit 
-ls
-gstatus 
-ls rime/
-ls rime/luna_
-ls rime/luna_pinyin.userdb
-file rime/
-ls -i rime/
-ls -i rime
-ls -i
-ls -i ~/.config/fcitx/
-ls -i ~/.config/fcitx/rime/
-gstatus 
-ls
-cd rime/
-ls
-ls build/
-cd build/
-ls
-ls -i
-vim default.yaml 
-..
-rm -rf build/
-s
-ls
-ls luna_pinyin
-ls luna_pinyin.
-ls luna_pinyin.userdb
-ls -i
-rm -rf luna_pinyin.userdb/
-ls
-l
-l |w
-l |wc
-ls
-ln ~/rime/linusboyle/luna_pinyin.dict.yaml .
-gstatus 
-git add .
-gcommit 
-..
-git push origin master 
-nmcli device status
-ls
-cd music/
-ls
-tag 高胜美\ -\ *
-amixer
-cd music/
-ls
-tag 高胜美\ -\ *
-man mid3v2
-cnf exfalso
-zypper search quod
-man mid3v2
-tag -L
-man mid3v2
-ls
-cnf ccd2iso
-zypper search ccd
-zypper search acet
-cd music/
-ls
-wget http://pic.xiami.net/images/album/img30/1130/20347043731434704374.jpg
-ls
-mv 20347043731434704374.jpg cover.jpg
-tag -g
-tag -h
-tag -p cover.jpg 俞逊发\ -\ 牡丹亭组曲.mp3 
-tag -l 俞逊发\ -\ 牡丹亭组曲.mp3 
-rm cover.jpg
-tag -l 俞逊发\ -\ 牡丹亭组曲.mp3 
-vlc 俞逊发\ -\ 牡丹亭组曲.mp3 
-l
-task
-htop
-ls
-ls rime/linusboyle/
-ls
-task
-task-web.ruby2.5 
-cd dev/arena9/ClientMain/
-ls
-yarn run build:dir
-ls
-cd build/linux-unpacked/
-ls
-./arena9 
-xhost +
-./arena9 
-s
-ls
-cd
-cd dev/arena9/ClientMain/
-ls
-cd src/renderer/
-ls
-cd components/
-ls
-ls Main/OfflineHost
-cd Main/OfflineHost/
-vim CommitUpload.vue 
-ls
-..
-ls
-..
-ls
-cd
-cd doc/
-r
-ls
-cd
-cd dwn/
-ls
-cd 1042192908_陸慈郎/
-..
-cd BaiduPCS-Go-v3.5.4-linux-amd64/
-ls
-./BaiduPCS-Go 
-ls
-..
-cd 1
-cd 1042192908_陸慈郎/
-ls
-unrar x 真命天子\ 华义国际.rar 
-ls
-cd EMP/
-ls
-file EMP.
-file EMP.ccd 
-file EMP.img 
-file EMP.sub 
-vim EMP.ccd 
-ls
-vim EMP.ccd 
-ls
-file EMP.iso 
-cd
-ls
-cd vi
-cd virtual-drives/
-ls
-cd 1/
-l
-sls wa
-ls wa
-ls wallpaper/
-cd wa
-cd wallpaper/
-ls
-imgv 640x480_1.bmp 
-ls
-..
-ls
-file uninstall.exe 
-bat autorun.inf 
-ls wa
-ls wav
-cd wav
-ls
-mplayer dead1.wav 
-mplayer a10.wav 
-..
-ls
-ls data/
-file data/ascii.fpt 
-ls
-file autorun.inf 
-ls animation/
-cd animation/
-mplayer hanend.avi 
-ls
-mplayer open.avi 
-..
-ls
-bat hwaei.htm 
-bat setup.exe 
-file setup.exe 
-file uninstall.exe 
-ls
-xxd setup.exe 
-xxd setup.exe |less
-ls
-xxd setup.exe |less
-nmcli device status
-cnf dosbox
-sudo zypper in dosbox 
-ls
-dosbox 
-man dosbox 
-cp ~/.dosbox/dosbox-0.74-2.conf .
-ls
-..
-cd dwn/
-cp ~/.dosbox/dosbox-0.74-2.conf .
-ls
-vim dosbox-0.74-2.conf 
-dosbox --conf ./dosbox-0.74-2.conf 
-man dosbox 
-dosbox -conf ./dosbox-0.74-2.conf 
-vim dosbox-0.74-2.conf 
-dosbox -conf ./dosbox-0.74-2.conf 
-zypper se dosbox
-rm dosbox-0.74-2.conf
-ls
-bat Windows95b.img 
-file Windows95b.img 
-ls
-nmcli device status
-virtfs-proxy-helper -h
-ping www.baidu.com
-zypper search kvm
-cnf insserv
-cnf rclibvirtd
-sudo zypper in libvirt
-ls
-cd doc/
-r
-task-web.ruby2.5 
-lsmod |grep kvm
-cnf setenforce
-sudo zypper install selinux-tools 
-man setenforce 
-cnf virt-manager
-sudo zypper install virt-manager
-sudo zypper install libvirt-client 
-sudo zypper install qemu
-df -h
-cd
-ncdu
-df -h
-ls vi
-d cvirt
-cd virtual-drives/
-ls
-ls 1
-ls 2
-ls 3
-ls dvd/
-cd 1
-ls
-ls wav
-ls
-ls wallpaper/
-cd wallpaper/
-imgv 800x600_5.bmp 
-imgv 800x600_4.bmp 
-imgv 800x600_3.bmp 
-ls
-clear
-task
-virt-manager 
-ls
-df -h
-ls
-..
-du -d 1
-cd -
-cd
-ls
-cd dwn/
-ls
-unrar x DRDOSWindows98SetupDiskwithCDROMsupport.rar 
-ls
-virt-manager 
-xhost +
-virt-manager 
-htop
-systemctl restart libvirtd.service 
-sudo zypper se polkit
-sudo gpasswd -a linusboyle libvirt 
-ls
-nmcli device status
-nmcli device wifi list 
-nmcli connection up DIVI-2
-ls
-nmcli device wifi list 
-nmcli device status
-ls
-ping www.baidu.com
-ls
-rm Microsoft\ Windows\ 98\ Update\ \(FE\ to\ SE\).7z
-rm Microsoft\ Windows\ 98\ Update\ \(FE\ to\ SE\).7z.part
-ls
-cnf aria2c
-sudo zypper install aria2
-man aria2c 
-ls
-aria2c http://ricky.winworldpc.com/Abandonware%20Operating%20Systems/PC/Microsoft%20Windows/Windows%2098-ME/Microsoft%20Windows%2098%20Update%20(FE%20to%20SE).7z
-aria2c 'http://ricky.winworldpc.com/Abandonware%20Operating%20Systems/PC/Microsoft%20Windows/Windows%2098-ME/Microsoft%20Windows%2098%20Update%20(FE%20to%20SE).7z'
-ls
-aria2c 'http://down8.dailyuploads.net:182/d/yycoepw2oghlriinyfd3ugayin57gyvgxpuhqb4uif5vld2r25i2dpox/karanpc.com.Windows.98.ISO.zip'
-ls
-unzip -l karanpc.com.Windows.98.ISO.zip 
-unzip karanpc.com.Windows.98.ISO.zip 
-dls
-ls
-bat KaranPC.com.URL 
-file KaranPC.com.URL 
-ls
-cd Windows.98.ISO/
-ls
-bat k
-bat kEy.txt 
-ls
-bat KaranPC.com.URL 
-ls
-..
-rm KaranPC.com.URL
-ls
-cd Windows.98.ISO/
-ls
-fiel windows98se.iso 
-file windows98se.iso 
-file KaranPC.com.URL 
-ls
-htop
-ls
-htop
-pidof qemu-system-i386 
-htop
-pidof qemu-system-i386 
-man pidof
-ls
-cd dwn/
-ls
-cd Windows.98.ISO/
-ls
-vim kEy.txt 
-cd
-man virsh
-ls
-sudo kill -STOP `pidof qemu-system-i386`
-cd /var/lib/libvirt/
-ls
-cd images/
-ls
-su
-htop
-ls
-htop
-ls
-task
-htop
-su
-nmcli device status
-ping www.baidu.com
-ip link
-ls
-virsh net-list
-man virsh
-virsh list
-virsh net-list
-sudo virsh net-list
-sudo virsh net-destroy default
-sudo virsh net-undefine default
-systemctl restart libvirtd.service 
-nmcli device status
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-nmcli connection up Tsinghua
-ping net.tsinghua.edu.cn
-su
-ls /var/lib/libvirt/
-ls /var/lib/libvirt/images/
-sudo ls /var/lib/libvirt/images/
-su
-ls
-task
-ls
-task
-cd dwn/
-ls
-rm DRDOSWindows98SetupDiskwithCDROMsupport.qcow2
-rm DRDOSWindows98SetupDiskwithCDROMsupport.rar
-ls
-man aria2c 
-aria2c -x 10 https://winworldpc.com/download/c3b3c3a7-7f0d-440c-11c3-a7c29d255254/from/71c2ad43-2482-11e8-a4ce-fa163e9022f0
-ls
-7z x Microsoft\ Windows\ 98\ Second\ Edition\ \(4.10.2222\)\ \[Trad.\ Chinese\]\ \(OEM\)\ \(ISO\).7z 
-ls
-cd Microsoft\ Windows\ 98\ Second\ Edition\ \(4.10.2222\)\ \[Trad.\ Chinese\]\ \(OEM\)\ \(ISO\)/
-ls
-bat serial.txt 
-bat winworldpc.com.txt 
-ls
-file DISK01.ISO 
-..
-ls
-rm Windows95b.img
-ls
-rm -rf deer/
-ls
-rm arena.zip
-ls
-cd Microsoft\ Windows\ 98\ Second\ Edition\ \(4.10.2222\)\ \[Trad.\ Chinese\]\ \(OEM\)\ \(ISO\)/
-ls
-bat serial.txt 
-ls
-md5sum DISK01.ISO 
-man md5sum 
-ls
-qemu-img --version
-qemu-img info
-ls
-man qemu
-ls
-man kvm_stat 
-kvm_stat 
-man virsh 
-man virt-manager 
-man virsh
-virsh help
-ls
-man qemu
-htop
-cd d
-cd dwn/
-ls
-unrar x %E4%B8%89%E5%9B%BD%E8%8B%B1%E6%9D%B0%E4%BC%A0DOS%E7%89%88.rar 
-ls
-rm %E4%B8%89%E5%9B%BD%E8%8B%B1%E6%9D%B0%E4%BC%A0DOS%E7%89%88.rar
-ls
-cd 三国英杰传/
-ls
-bat PLAY.BAT 
-ls Do
-ls Documentation/
-bat Documentation/AUTHORS.txt 
-ls
-file 双击运行游戏.exe 
-ls
-ark 双击运行游戏.exe 
-ls
-ncdu
-dosbox
-dosbox 
-nmcli device status
-man chage 
-ls
-ping net.tsinghua.edu.cn
-log
-nmcli device status
-task
-su
-ls
-cd dwn/
-ls
-unrar x LEGEND.rar 
-cd LEGEND/
-ls
-bat 游戏说明.txt 
-vim 游戏说明.txt 
-ls
-bat README.txt 
-ls
-bat rungame.ini 
-bar INSTALL.txt 
-bat INSTALL.txt 
-ls
-bat dosbox.
-bat dosbox.conf 
-ls
-dosbox 
-vim dosbox.
-vim dosbox.conf 
-dosbox 
-dosbox -v
-dosbox --verbose
-ls
-mv dosbox.conf ad
-bat ad
-dosbox 
-。。
-..
-ls
-rm LEGEND.rar
-ls
-..
-mkdir gmae
-mv gmae/ game
-mv dwn/LEGEND/ game/
-ls
-cd gaa
-cd game/
-cd LEGEND/
-mv ad dosbox.conf
-vim dosbox.
-vim dosbox.conf 
-ls
-rm 962乐游网.url
-ls
-vidir
-ls
-vidir
-ls capture/
-rm -rf capture/
-rm -rf zmbv/
-ls
-dosbox 
-cd
-ls
-cd doc/
-cd 马原/
-ls
-vim paper.md
-ls
-pan paper.md -o paper.pdf
-zathura paper.pdf 
-vim paper.md
-pan paper.md -o paper.pdf
-zathura paper.pdf 
-vim paper.md
-pan paper.md -o paper.pdf
-zathura paper.pdf 
-cd
-cd dwn/
-ls
-unrar x 轩辕剑1.rar 
-ls
-cd 轩辕剑1/
-ls
-cd 轩辕剑1/
-ls
-bat Play
-bat Play.bat 
-bat Play1.bat 
-ls
-dosbox 
-cd game/
-ls
-..
-mv dwn/三国英杰传/ game/
-ls dwn/
-cd dwn/
-ls
-vidir
-ls
-cd wa
-cd w
-cd what/
-ls
-bat dosbox.conf 
-ls
-..
-ls
-..
-ls
-cd game/
-ls
-vidir
-cd sanguo/
-ls
-bat DOSBox\ 0.74\ Options.bat 
-ls
-..
-ls
-cd sanguo/
-ls
-bat PLAY.BAT 
-dosbox
-ls
-cp ~/.dosbox/dosbox-0.74-2.conf .
-vim do
-rm DOSBox\ 0.74\ *
-ls
-rm -rf Documentation/
-;s
-ls
-rm 双击运行游戏.exe
-ls
-file  ZIKU.16P 
-ls Video\ Codec/
-vim dosbox-0.74-2.conf 
-dosbox 
-ls
-mv dosbox-0.74-2.conf dosbox.conf
-dosbox 
-nmcli device status
-nmcli connection up Tsinghua-IPv6
-nmcli device status
-nmcli connection up Tsinghua-IPv4
-ls
-vim
-ls
-l
-ls
-cd music/
-ls
-..
-ls
-cd dwn/
-..
-cd dwn/
-./2
-ls
-..
-cd dev/
-./256colors2.pl 
-echo $TERM
-ls
-vim
-vim .Xresources 
-ls
-cd music/
-ls
-..
-./dev/256colors2.pl 
-l
-ls
-ls video/
-ls
-cd dwn/
-ls
-..
-ls
-ls dev/
-ls dwn/
-ls game/
-ls game/LEGEND/
-ls dwn/1042192908_陸慈郎/
-..
-ls
-cd
-ls
-ls mnu
-ls music/
-vi
-xrdb .Xresources
-cd dwn/
-ls
-cd
-ls music/
-vi
-ls
-cd .config/kde.org/
-ls
-..
-find . -name *dracula* -print
-ls
-..
-ls
-l
-cd doc/
-ls
-cd 马原
-ls
-zathura paper.pdf 
-vim paper.md
-pan paper.md -o paper.pdf
-zathura paper.pdf 
-ls
-date
-cal
-cal 2018
-cal 2019
-man cal
-cal 1 2019
-vim
-cd
-cd .vim/pack/colors/opt/space-vim-dark/
-ls
-ls iterm2/
-bat README.md 
-ls
-ls terminal/
-cd terminal/
-vim space-vim-dark.
-vim space-vim-dark.xresources 
-..
-ls
-vim colors/space-vim-dark.vim 
-echo $TERM
-vim
-exit
-ls
-echo $TERM
-ls
-vim
-ls
-tmux
-vim
-exit
-ls
-ls video
-ls game
-ls dwn
-./dev/256colors2.pl 
-fbterm
-exit
-htop
-cd dwn/SWDA/
-bat PLAY.BAT 
-ls
-bat JOYMOUSE.CFG 
-vim JOYMOUSE.CFG 
-cd d
-cd dwn/
-ls
-mv %E3%80%8A%E8%BD%A9%E8%BE%95%E5%89%91%E5%A4%96%E4%BC%A0+-+%E6%9E%AB%E4%B9%8B%E8%88%9E%E3%80%8B%E5%85%A8%E6%99%AF%E6%94%BB%E7%95%A5.zip pix.zip
-unzip -l pix.zip 
-mkdir gonglue
-mv pix.zip gonglue/
-cd gonglue/
-ls
-unzip pix.zip 
-ls
-rm pix.zip
-bat Readme.txt 
-vim Readme.txt 
-ls
-..
-mv gonglue/ ~/game/
-cd
-cd game/
-ls
-nmcli connection up Tsinghua-IPv6
-nmcli device wifi list 
-nmcli device status
-nmcli device wifi list 
-nmcli connection up Tsinghua-IPv6
-cd doc/
-r
-task
-cd
-cddw
-cd dwn/
-ls
-rm Microsoft\ Windows\ 98\ Second\ Edition\ \(4.10.2222\)\ \[Trad.\ Chinese\]\ \(OEM\)\ \(ISO\).7z
-ls
-rm 轩辕剑1.rar
-ls
-mv 轩辕剑1/ ~/game/xuanyuan
-ls
-ls Windows.98.ISO/
-ls
-ls wah
-rm -rf what/
-ls
-rm karanpc.com.Windows.98.ISO.zip
-ls
-mv %E8%BD%A9%E8%BE%95%E5%89%91%E5%A4%96%E4%BC%A0%E6%9E%AB%E4%B9%8B%E8%88%9EDOS%E7%89%88.rar game.rar
-ls
-ls Microsoft\ Windows\ 98\ Second\ Edition\ \(4.10.2222\)\ \[Trad.\ Chinese\]\ \(OEM\)\ \(ISO\)/
-ls
-ls slack/
-rm -rf slack/
-ls
-mv tejr-from-vimrc-to-vim/ ~/doc/
-ls
-unzip -l Fd.zip 
-unzip Fd.zip 
-ls
-cd FD/
-ls
-bat INSTALL1.BAT 
-ls
-find . -name *.BAT
-find . -name "*.BAT"
-bat inst.bat 
-ls
-dosbox 
-。。
-..
-mv FD ~/game/
-ls
-unrar x game.rar 
-ls
-bat 3DMGAME.TXT 
-rm 3DMGAME.TXT
-ls
-file 轩辕剑外传枫之舞.EXE 
-dosbox 
-mv 轩辕剑外传枫之舞.EXE a.exe
-dosbox 
-ls
-rm a.exe
-rm game.rar
-rm Fd.zip
-ls
-unzip -l SWDA.zip 
-unzip SWDA.zip 
-ls
-bat readme.txt 
-rm readme.txt
-ls
-cd SWDA/
-ls
-dosbox 
-ls
-..
-mv SWDA ~/game/
-ls
-cd
-cd game/
-ls
-cd LEGEND/
-ls
-..
-ls
-cd SWDA/
-ls
-dosbox 
-ls
-nmcli device wifi list 
-nmcli device status
-ls
-ls .config/bumblebee-status/
-cd .config/bumblebee-status/
-ls
-ls -a
-ls .tas
-cd
-vim .taskrc 
-nmcli device status
-ls
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device wifi list 
-nmcli device status
-vim .vim
-vim .vimrc 
-
-vim .bashrc 
-ls
-cd /usr/share/bumblebee-status/
-ls
-cd themes/
-ls
-vim greyish-powerline.json 
-ls
-vim solarized-powerline.json 
-vim solarized.json 
-..
-ls
-vim bumblebee
-vim bumblebee-status 
-ls
-cd bumblebee/
-ls
-vim theme.py 
-ls
-cd modules/
-ls
-vim taskwarrior.py 
-ls
-vim mpd.py 
-ls
-..
-ls
-cd
-vim dfile/i3/config 
-ls
-vim dfile/i3/config 
-nmcli connection up Tsinghua-IPv6
-nmcli device wifi list 
-nmcli connection up Tsinghua
-ls
-nmcli device wifi list 
-nmcli device status
-nmcli device wifi list 
-nmcli device status
-nmcli device wifi list 
-nmcli device status
-nmcli connection up Tsinghua-5G 5
-nmcli device status
-nmcli device wifi list 
-nmcli device wifi rescan 
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-nmcli connection up Tsinghua
-nmcli device wifi list 
-nmcli connection up Tsinghua
-nmcli device status
-nmcli device wifi list 
-cd doc/
-r
-cd
-cd /usr/share/bumblebee-status/
-ls
-cd bumblebee/
-ls
-cd modules/
-ls
-vim datetime.py 
-ls
-vim datetime.py 
-ls
-vim kernel.py 
-vim ~/.vim/after/ftplugin/python.vim 
-ls
-vim hipchat.py 
-ls
-vim mpd.py 
-ls
-vim shortcut.py 
-ls
-vim traffic.py 
-ls
-vim todo.py 
-ls
-vim p
-vim ping.py 
-ls
-vim xrandr.py 
-ls
-nmcli device status
-nmcli device wifi list 
-nmcli connection up Tsinghua
-nmcli device wifi list 
-ls /sys/class/backlight/intel_backlight/
-ls
-nmcli device wifi list 
-nmcli device status
-cd
-cd /usr/share/bumblebee-status/
-ls
-cd themes/
-ls
-ls icons/
-cd icons/
-vim awesome-fonts.json 
-ls
-xhost +
-ls
-sudo zypper update bumblebee-status
-..
-sudo wget https://raw.githubusercontent.com/tobi-wan-kenobi/bumblebee-status/master/themes/iceberg-rainbow.json
-vim iceberg-rainbow.json 
-sudo wget https://raw.githubusercontent.com/tobi-wan-kenobi/bumblebee-status/master/themes/iceberg-powerline.json
-ls
-..
-ls
-cd
-cd app/
-ls
-git clone git://github.com/tobi-wan-kenobi/bumblebee-status
-ls
-cd bumblebee-status/
-ls
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-ls
-sudo zypper install psutils 
-./bumblebee-status 
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery-p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-ls
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-vim bumblebee/modules/cpu.py
-vim /usr/share/bumblebee-status/bumblebee/modules/cpu.py 
-/usr/bin/bumblebee-status -m datetime mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-ls
-sudo zypper install python2-psutil 
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m datetime mpd amixer battery cpu memory -p amixer.left-click="mute" cpu.left-click="ksysguard" memory.left-click="ksysguard" memory.format="{used}" mpd.format="{title} {position}/{duration}" -t greyish-powerline
-ls
-cd
-vim bin/mute 
-ls
-sudo zypper remove bumblebee-status
-sudo zypper remove bumblebee-status-module-mpd 
-ls /usr/share/bumblebee-status/
-ls /usr/share/bumblebee-status/bumblebee/
-ls /usr/share/bumblebee-status/bumblebee/modules/
-ls /usr/share/bumblebee-status/themes/
-sudo rm /usr/share/bumblebee-status/
-sudo rm -r /usr/share/bumblebee-status/
-ls
-cd
-cd bin/
-vim volraise 
-cd
-vim .bumblebee-status.conf 
-kcalc 
-ls
-htop
-cd app/bumblebee-status/bumblebee/modules/o
-cd app/bumblebee-status/bumblebee/modules/
-ls
-vim brightness.py
-ls
-l
-ls -a
-vim brightness.py
-ls
-cd
-cd /etc/X11/
-ls
-cd xorg
-cd xorg.conf.d/
-ls
-vim 50-screen.conf 
-vim 50-monitor.conf 
-ls
-vim 50-device.conf 
-sudo vim 50-device.conf 
-lsmod |grep intelj
-vim dfile/i3/config 
-xhost +
-ls
-vim dfile/i3/config 
-ls .bundle/
-ls .bundle/c
-ls .bundle/cache/
-vim .bumblebee-status.conf
-vim dfile/i3/config 
-cnf ligh
-cnf light
-cnf xbacklight
-man xbacklight 
-xrandr 
-xbacklight -get
-xrandr --verbose
-ls /sys/class/backlight/
-lsmod |grep intel
-vim dfile/i3/config 
-ls
-ls
-vim dfile/i3/config 
-cd app/bumblebee-status/bumblebee/modules/
-ls
-vim deadbeef.py
-ls
-vim error.py
-vim gpmdp.py
-vim indicator.py
-vim layout.py
-vim load.py
-vim caffeine.py
-vim progress.py
-cnf progress
-ping www.baidu.com
-htop
-sudo zypper install progress 
-man progr
-man progress 
-progress 
-ls
-bat mocp.py
-ls
-head nic.py
-..
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m nic datetime amixer battery cpu memory -t greyish-powerline
-sudo zypper install python2-netifaces 
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m nic datetime amixer battery cpu memory -t greyish-powerline
-cd -
-vim nic.py
-ls
-vim ~/.bumblebee-status.conf 
-/home/linusboyle/app/bumblebee-status/bumblebee-status -m nic datetime amixer battery cpu memory -t greyish-powerline
-vim nic.py
-vim ~/.bumblebee-status.conf 
-ls
-bat notmuch_count.py
-ls
-head redshift.py
-cnf redshift
-head rotation.py
-ls
-head sensors.py
-head shortcut.py
-vim shortcut.py
-bat test.py
-ls
-bat xkcd.py
-bat title.py
-cd
-vim .bash
-vim .bashrc 
-task-web.ruby2.5 
-ls
-man tag
-man mid3v2
-cd doc/
-ls
-cd
-cd music/
-ls
-map
-man
-man mid3v2
-tag -l T
-tag -l Temple\ of\ the\ King\ Instrumental
-tag -l Temple\ of\ the\ King\ Instrumental.opus 
-tag 俞逊发\ -\ 牡丹亭组曲.mp3 
-tag Temple\ of\ the\ King\ Instrumental
-tag Temple\ of\ the\ King\ Instrumental2.opus 
-tag -g 流行 'Temple of the King Instrumental2.opus' 
-tag Temple\ of\ the\ King\ Instrumental2.opus 
-tag -g 流行 'Temple of the King Instrumental.opus' 
-tag Temple\ of\ the\ King\ Instrumental2.opus 
-tag -g 器乐 'Temple of the King Instrumental.opus' 
-tag Temple\ of\ the\ King\ Instrumental2.opus 
-tag Temple\ of\ the\ King\ Instrumental.opus 
-tag -g '器乐 / 流行' 'Temple of the King Instrumental.opus' 
-tag Temple\ of\ the\ King\ Instrumental.opus 
-tag Temple\ of\ the\ King\ Instrumental2.opus 
-tag Medicine\ Woman\ 6\:\ Synchronicity/Second\ Chances.mp3 
-tag -g '流行,器乐' 'Temple of the King Instrumental.opus' 
-tag -g '流行' 'Temple of the King Instrumental.opus' 
-ls
-vidir
-ls
-man mid3v2
-tag -p 5761161359539675.jpg 青蛇与白蛇/*
-cd 青蛇与白蛇/
-tag 周思贤\ -\ 人间仙境-1771648795.mp3 
-ls
-..
-ls
-tag 寒香村.opus 
-cd
-cd .config/
-cd cantata/
-ls
-vim cantata.conf 
-cd 
-cd .cache/
-ls
-cd cantata/
-ls
-cd covers
-ls
-ls 群星/
-cd
-cd music/
-ls
-tag -p 4717341385380227.jpg 寒香村.opus 
-ls ~/.cache/cantata/covers
-ls ~/.cache/cantata/covers/未知/
-htop
-task
-cd
-ls
-cd doc/
-r
-htop
-ls
-cd .cache/
-ls
-cd cantata/
-ls
-rm -r covers/*
-cd covers
-ls
-cd
-cd music/
-ls
-tag 寒香村.opus 
-vlc 寒香村.opus 
-imgv 5761161359539675.jpg 
-rm 5761161359539675.jpg
-ls
-vlc 青蛇与白蛇/周思贤\ -\ 俏皮的音乐-1771648800.mp3 
-ls
-vlc 寒香村.opus 
-ls
-tag -p 4717341385380227.jpg 寒香村.opus 
-tag 寒香村.opus 
-vlc 寒香村.opus 
-ls
-ffmpeg -i 寒香村.opus 寒香村.mp3
-ls
-mplayer 寒香村.mp3 
-tag 寒香村.mp3 
-rm 寒香村.opus
-tag -p 4717341385380227.jpg 寒香村.mp3 
-ls
-cd 红面传说/
-tag **
-tag 风火轮\(哪吒\).mp3 
-wget https://pic.xiami.net/images/album/img69/7169/5039021333085870.jpg
-ls
-tag -p 5039021333085870.jpg *.mp3
-tag 风火轮\(哪吒\).mp3 
-rm 5039021333085870.jpg
-htop
-task
-nmcli connection up Tsinghua-5G 
-nmcli device wifi list 
-nmcli device status
-ping www.baidu.com
-htop
-ls
-cd
-cd doc/pupper-prework/
-vim curwork.txt 
-cd
-cd game/
-ls
-unzip Tk.zip 
-ls
-bat readme.txt 
-vim readme.txt 
-rm readme.txt
-ls
-cd TK/
-ls
-dosbox 
-ls
-cd
-ls
-htop
-ls
-ping www.baidu.com
-cd music/
-ls
-tag -p 6340893031434089303.jpg ガッチャマンの歌.mp3 
-cd
-cd .config/fcitx/rime/
-ls
-vim default.yaml 
-cd
-cd music/
-rm 6340893031434089303.jpg
-tag -p C2UE00219FW_8363_340x340.jpg 幽冥组曲选录.mp3 
-tag ガッチャマンの歌.mp3 
-cd
-cd game/
-ls
-cd LEGEND/
-ls
-ls LEGEND/
-cd do
-cd LEGEND/
-ls
-mplayer E00.WAV 
-ls
-..
-ls
-..
-ls
-cd FD/
-ls
-..
-ls
-ls xuanyuan/
-mv xuanyuan/ xuanyuan1
-ls
-ls SWDA/
-..
-ls
-cd game/
-ls
-rm Tk.zip
-cd TK/
-ls
-dosbox 
-ls
-..
-ls
-unzip ed1.zip 
-ls
-rm readme.txt
-ls
-unzip ed1.zip 
-ls
-bat readme.txt 
-vim readme.txt 
-rm readme.txt
-ls
-cd ed1/
-ls
-dosbox 
-ls
-..
-ls
-rm ed1.zip
-ls
-unzip JXQY.zip 
-bat JXQY
-vim readme.txt 
-rm readme.txt
-cd JXQY/
-dosbox 
-ls
-bat PLA
-bat PLAY.BAT 
-dosbox 
-ls
-..
-ls
-unzip clxcq.zip 
-bat readme.txt 
-vim readme.txt 
-rm readme.txt
-ls
-rm JXQY.zip
-cd clxcq/
-ls
-dosbox 
-bat PLAY.BAT 
-..
-ls
-unzip ED4.zip 
-vim readme.txt 
-cd ED4/
-ls
-dosbox 
-ls
-bat PLAY.BAT 
-dosbox 
-..
-ls
-rm clxcq.zip
-rm ED4.zip
-ls
-rm readme.txt
-ls
-unzip Ang1.zip 
-vim readme.txt 
-rm readme.txt
-ls
-cd ANG1/
-ls
-dosbox 
-htop
-nmcli device status
-ls
-cd app/bumblebee-status/
-ls
-cd bumblebee/modules/
-ls
-vim mpd.py
-ls
-bat stock.py
-ls
-head spaceapi.py
-head sensors2.py
-head sensors.py
-ls
-head weather.py
-head disk.py
-head __init__.py
-head shortcut.py
-vim shortcut.py
-vim ~/dfile/i3/config 
-vim shortcut.py
-vim ~/dfile/i3/config 
-ls
-nmcli device status
-ping www.baidu.com
-ls
-nmcli connection up Tsinghua-5G 
-nmcli connection up Tsinghua
-ping www.baidu.com
-cd dev/src/cantata/
-ls
-ag lrelease
-cd
-vim .bash_aliases 
-man ln
-sudo ln -s /usr/bin/lrelease-qt5 /usr/bin/lrelease
-sudo ln -s /usr/bin/lupdate-qt5 /usr/bin/lupdate
-cd -
-ls
-cd translations/
-ls
-vim CMakeLists.txt 
-ls
-vim update.sh 
-man lupdate
-lupdate -h
-ls
-..
-s
-ls
-ls build/
-ls build/CMakeFiles/
-ls build/CMakeFiles/cantata.dir/
-cd dev/src/cantata/
-cd translations/
-ls
-lrelease -h
-lupdate -h
-ls
-linguist-qt5 cantata_zh_CN.ts 
-ls
-vim cantata_zh_CN.ts 
-linguist-qt5 cantata_zh_CN.ts 
-cd doc/pupper-prework/
-vim curwork.txt 
-sudo zypper lu
-sudo zypper update
-sudo zypper dup
-zypper info nvidia-computeG05
-ls
-optirun --status
-optirun glxgears
-ls /dev/dri/card0
-ls /dev/dri/card1
-file /dev/dri/card0
-file /dev/dri/card1
-cd
-cd /etc/bumblebee/
-ls
-vim xorg.conf.nouveau 
-ls
-cd
-sudo zypper remove bumblebee 
-sudo zypper remove --clean-deps bumblebee 
-sudo zypper remove --clean-deps bbswitch
-sudo zypper remove --clean-deps bbswitch-kmp-default 
-ls
-cd dev/
-ls
-bat installation.yaml 
-rm rime_api_console.cc
-ls
-ls -l installation.yaml
-cd
-cd dfile/
-ls
-cd rime/
-ls
-bat installation.yaml 
-cd
-cd dev/
-ls
-rm installation.yaml
-ls
-ls build/
-rm -rf build/
-ls
-mkdir src
-ls
-mv git/ src/
-ls
-mv polybar/ src/
-ls
-ls i3
-rm -rf i3
-ls
-ls qt
-ls
-mv twmn/ src/
-ls
-ls mydic/
-ls
-cd src/
-git clone https://github.com/CDrummond/cantata
-htop
-ls
-cd
-cd game/
-ls
-rm ANG1
-rm Ang1.zip
-ls
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-nmcli device wifi list 
-ping www.baidu.com
-ls
-ping www.baidu.com
-ls
-cd SWDA/
-dosbox 
-df -h
-htop
-cd doc/
-ls
-r
-ls
-sudo vim /etc/X11/xorg.conf.d/50-device.conf 
-journalctl 
-sudo journalctl 
-sudo vim /etc/X11/xorg.conf.d/50-device.conf 
-xrandr --verbose |less
-ls
-sudo vim /etc/X11/xorg.conf.d/50-device.conf 
-systemctl start sddm.service 
-cd dev/src/cantata/
-cd translations/
-linguist-qt5 cantata_zh_CN.ts 
-cd doc/pupper-prework/
-vim curwork.txt 
-htop
-cd doc/dsa/
-r
-nmcli device status
-ping www.baidu.com
-nmcli connection up Tsinghua-5G 
-cd
-cd music/
-youtube-dl -x https://www.youtube.com/watch?v=w67k0-D9ePQ&feature=youtu.be
-ls
-rm C2UE00219FW_8363_340x340.jpg
-ls
-youtube-dl -x https://www.youtube.com/watch?v=C-uy6i7NTYw&index=2&list=PL46079D49BE8F4051
-ls
-fg
-ls
-vidir
-ls
-xhost +
-ls
-youtube-dl -x https://www.youtube.com/playlist?list=PL46079D49BE8F4051
-fg
-youtube-dl -x https://www.youtube.com/playlist?list=PL46079D49BE8F4051
-ls
-youtube-dl -x https://www.youtube.com/watch?v=L10idLz4n5Y&t=0s&list=PL46079D49BE8F4051&index=5
-fg
-ls
-youtube-dl -x https://www.youtube.com/watch?v=-lx6gO5Dlek&list=PL46079D49BE8F4051&index=5
-fg
-youtube-dl -x https://www.youtube.com/watch?v=-lx6gO5Dlek&list=PL46079D49BE8F4051&index=5
-youtube-dl -x https://www.youtube.com/watch?v=DZ6oPSOT4Vo&index=6&list=PL46079D49BE8F4051
-youtube-dl -x https://www.youtube.com/watch?v=Zjp2P_P6OBI&index=7&list=PL46079D49BE8F4051
-fg
-youtube-dl -x https://www.youtube.com/watch?v=Zjp2P_P6OBI&index=7&list=PL46079D49BE8F4051
-youtube-dl -x https://www.youtube.com/watch?v=fYZxKyAMh9Y&list=PL46079D49BE8F4051&index=8
-youtube-dl -x https://www.youtube.com/watch?v=wGBIRZtOivQ&list=PL46079D49BE8F4051&index=9
-fg
-youtube-dl -x https://www.youtube.com/watch?v=wGBIRZtOivQ&list=PL46079D49BE8F4051&index=9
-youtube-dl -x https://www.youtube.com/watch?v=u1yXjJRCjSY&list=PL46079D49BE8F4051&index=10
-ls
-mkdir 'Battle Arena Toshinden Retake & Remix'
-mv Battle\ Arena\ Toshinden\ Retake\ \&\ Remix\ OST\ Theme\ of\ * Battle\ Arena\ Toshinden\ Retake\ \&\ Remix/
-ls
-cd Battle\ Arena\ Toshinden\ Retake\ \&\ Remix/
-ls
-ls |w
-ls |wc
-rm Battle\ Arena\ Toshinden\ Retake\ \&\ Remix\ OST\ Theme\ of\ Ellis.opus
-ls
-vidir
-ls
-tag -A 'Toshinden Retake & Remix' *
-tag -a 'Yasuhiro Nakano, Makoto Mukai' *
-tag Battle\ Arena\ Toshinden\ Retake\ \&\ Remix\ OST\ Theme\ of\ Ellis.opus 
-ls
-vidir
-ls
-cd music/
-ls
-l
-ls
-l
-ls
-l
-ls
-cd music/
-ls
-ip link
-ls
-cd  Battle\ Arena\ Toshinden\ Retake\ \&\ Remix/
-ls
-for file in *; do echo $file; done
-for file in *; do echo $file|egrep -n '[^.]+'; done
-for file in *; do echo $file|egrep -n '[^\.]+'; done
-for file in *; do echo $file|egrep -n '[^.](m4a|ogg|opus)'; done
-bat ~/bin/mute 
-for file in *; do echo $file|egrep -n '[^.].(m4a|ogg|opus)'; done
-for file in *; do echo $file|egrep -n '[^.]\.(m4a|ogg|opus)'; done
-for file in *; do echo $file|egrep -n '[^.]*\.(m4a|ogg|opus)'; done
-bat ~/bin/cleanUndo 
-bat ~/bin/getwclass 
-for file in *; do echo $file|egrep -o '[^.]*\.(m4a|ogg|opus)'; done
-for file in *; do echo $file|egrep -o '[^.]+(?=.)'; done
-for file in *; do echo $file|egrep -o '[^.]+(?=\.)'; done
-for file in *; do echo $file|egrep -o '[^.](?=s)'; done
-for file in *; do echo $file|egrep -o '[^.](?=o)'; done
-for file in *; do echo $file|egrep -o '[^.]*(?=.)'; done
-for file in *; do echo $file|egrep -o '[^.]*'; done
-for file in *; do echo $file|egrep -o '[^\.]*'; done
-for file in *; do echo $file|grep -oP '[^\.]*(?=.)'; done
-for file in *; do echo $file|grep -oP '[^\.]*(?=\.)'; done
-for file in *; do name=$(echo $file|grep -oP '[^\.]*(?=\.)');echo $name; done
-for file in *; do name=$(echo $file|grep -oP '[^\.]*(?=\.)');tag -t "$name" "$file"; done
-tag Battle\ Arena\ Toshinden\ Retake\ \&\ Remix\ OST\ Theme\ of\ Ellis.opus 
-tag Theme\ of\ Ellis.opus 
-ls
-..
-ls
-mv 1986-1370793704.jpg Battle\ Arena\ Toshinden\ Retake\ \&\ Remix/
-cd -
-ls
-tag -p 1986-1370793704.jpg Theme\ of\ *
-tag Theme\ of\ Ellis.opus 
-imgv 1986-1370793704.jpg 
-ls
-rm 1986-1370793704.jpg
-ls
-tag Theme\ of\ Ellis.opus 
-ls
-tag -g 游戏音乐 *
-tag Theme\ of\ Ellis.opus 
-mpd
-cd
-cd dev/
-ls
-cd src/cantata/
-ls
-ls translations/
-git status 
-vim .gitignore 
-ls build/
-cdb u
-cd build/
-ls
-cd translations/
-ls
-..
-ls
-cmake ..
-make
-ls
-./cantata
-ls
-..
-ls
-cd translations/
-ls
-linguist-qt5 cantata_zh_CN.ts 
-菜单
-cd
-cd music/
-ls
-cd Battle\ Arena\ Toshinden\ Retake\ \&\ Remix/
-vlc Theme\ of\ Duke.m4a 
-tag Theme\ of\ Duke.m4a 
-tag Theme\ of\ Ellis.opus 
-ls
-ffmpeg Theme\ of\ Duke.m4a -o Theme\ of\ Duke.mp3
-ls
-ffmpeg -i Theme\ of\ Duke.m4a Theme\ of\ Duke.mp3
-ls
-rm Theme\ of\ Duke.mp3
-ls
-vlc Theme\ of\ Duke.m4a 
-mplayer Theme\ of\ Duke.m4a 
-ls
-vlc Theme\ of\ Duke.m4a 
-ls
-ffmpeg -i Theme\ of\ Duke.m4a  a.mp3
-ls
-rm a.mp3
-ls
-youtube-dl -x https://www.youtube.com/watch?v=Fhjt2udsERc
-ls
-ffmpeg -i Battle\ Arena\ Toshinden\ Retake\ \&\ Remix\ OST\ Theme\ of\ Duke-Fhjt2udsERc.m4a duke.mp3
-ls
-rm Battle\ Arena\ Toshinden\ Retake\ \&\ Remix\ OST\ Theme\ of\ Duke-Fhjt2udsERc.m4a
-ls
-mv duke.mp3 Theme\ of\ Duke.mp3
-ls
-rm Theme\ of\ Duke.m4a
-ls
-tag Theme\ of\ Duke.mp3 
-tag -A 'Toshinden Retake & Remix' Theme\ of\ Duke.mp3 
-tag -a 'Yasuhiro Nakano, Makoto Mukai' Theme\ of\ Duke.mp3 
-tag -t 'Theme of Duke' Theme\ of\ Duke.mp3 
-tag Theme\ of\ Duke.mp3 
-ls
-killall  dosbox 
-killall  -9 dosbox 
-htop
-nmcli device status
-ping www.baidu.com
-nmcli device wifi list 
-nmcli connection up Tsinghua 
-ping www.baidu.com
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-ping www.baidu.com
-task-web.ruby2.5 
-cd game/
-ls
-ls LEGEND/
-ls
-cd clxcq/
-ls
-dosbox 
-bat PLAY
-bat PLAY.BAT 
-vim PLAY
-vim PLAY.BAT 
-cd
-cd game/
-cd ED4/
-ls
-dosbox 
-..
-ls
-unzip KH.zip 
-lsls
-bat readme.txt 
-vim readme.txt 
-rm readme.txt
-cd KH/
-ls
-dosbox 
-ls
-..
-ls
-unzip Hanlau.zip 
-ls
-vim readme.txt 
-rm readme.txt
-cd HANLAU/
-ls
-dosbox 
-telnet bbs.nsysu.edu.tw
-ls
-cnf luit
-sudo zypper install luit
-man luit 
-luit -encoding gbk telnet bbs.nsysu.edu.tw
-ls
-luit -encoding big5 telnet bbs.nsysu.edu.tw
-cd dev/src/cantata/translations/
-ls
-git remote 
-git remote -a
-git remote -v
-ls
-linguist-qt5 cantata_zh_CN.ts 
-ping www.baidu.com
-cd dev/
-ls
-cd
-cd =-
-cd -
-cd src/cantata/
-ls
-cd build/
-cmake ..
-make
-./cantata
-ping www.baidu.com
-nmcli connection up Tsinghua-5G 
-nmcli device status
-ping www.baidu.com
-nmcli connection up Tsinghua 
-nmcli device status
-nmcli device wifi list 
-htop
-nmcli device status
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-ls
-cd dev/src/cantata/
-ls
-git remote add fork git@github.com:linusboyle/cantata.git
-git commit -a
-git push origin master 
-git push fork master 
-git branch 
-ls
-cd
-ls
-cd dwn/
-ls
-rpm -i exfalso-4.2.0-1.1.noarch.rpm 
-sudo zypper install python3-feedparser 
-sudo zypper install python3-musicbrainzngs 
-rpm -i exfalso-4.2.0-1.1.noarch.rpm 
-sudo rpm -i exfalso-4.2.0-1.1.noarch.rpm 
-exfalso 
-exfalso -h
-sudo zypper install python3-beautifulsoup4
-sudo zypper se soup
-sudo zypper se gir
-man rpm
-sudo rpm -e exfalso 
-exf
-ls
-rm exfalso-4.2.0-1.1.noarch.rpm
-ls /etc/X11/
-cd /etc/X11/
-ls
-l -a
-vim Xresources 
-ls
-cd xorg.conf.d/
-ag device
-ls
-cd
-ls /usr/sf
-ls /usr/src/
-ls /lib/modules/4.19.8-1-default/
-ls /lib/modules/4.19.8-1-default/kernel/
-ls /lib/modules/4.19.8-1-default/kernel/drivers/
-ls /lib/modules/4.19.8-1-default/kernel/drivers/gp
-ls /lib/modules/4.19.8-1-default/kernel/drivers/gpu/
-ls /lib/modules/4.19.8-1-default/kernel/drivers/gpu/drm/
-ls /lib/modules/4.19.8-1-default/kernel/drivers/
-cd dev/
-sudo zypper inr  -r nvidia
-sudo zypper repos
-sudo zypper inr  -r NVIDIA
-sudo zypper install suse-prime 
-sudo which prime-select 
-bat /usr/sbin/prime-select 
-ls /etc/X11/
-ls /etc/X11/xorg
-ls /etc/X11/xorg.conf.d/
-nvidia-xconfig 
-sudo prime-select intel
-ls /etc/X11/xorg.conf.d/
-ls /etc/X11/
-bat /etc/X11/xorg.conf.d/90-intel.conf 
-cd /etc/modules-load.d/
-ls
-vim modules.conf 
-bat sg.conf 
-xhost +
-sudo rm modules.conf
-glxgears 
-ls
-glxgears 
-ls
-systemctl status systemd-modules-load.service 
-dmesg 
-journalctl 
-sudo journalctl 
-systemctl status systemd-modules-load.service 
-vim /usr/lib/systemd/systemd-modules-load 
-/usr/lib/systemd/systemd-modules-load -h
-man systemd-modules-load
-man modules-load.d 
-ls
-sudo prime-select nvidia
-glxgears 
-sudo prime-select intel
-cd dev/src/cantata/
-cd build/
-cmake ..
-sudo zypper search taglib
-sudo zypper in taglib
-cd build/
-cmake ..
-make
-cmake ..
-sudo zypper in taglib-extras-devel 
-taglib-extras-config 
-tagmedia 
-tagreader
-tagreader -h
-tagreader -hasf
-tagwriter 
-tagwriter -h
-ls
-sudo zypper in libtag-devel 
-cmake ..
-sudo zypper in libmtp-devel 
-cmake ..
-sudo zypper in libmtp-udev 
-cmake ..
-bat CMakeFiles/CMakeOutput.log 
-
-sudo zypper in libcdio_paranoia2
-sudo zypper in libcdio-devel 
-sudo zypper in libcdio-paranoia-devel 
-cmake ..
-sudo zypper in udev
-man udev
-sudo zypper in libudev-devel
-cmake ..
-man udev
-make
-./cantata
-..
-cd translations/
-ls
-linguist-qt5 cantata_zh_CN.ts 
-ls
-man pulseaudio 
-man  java
-man java-java-10-openjdk 
-man jade 
-ls
-man sg
-ls
-man mid3p
-man mid3cp
-ls
-man aaa
-nmcli device status
-cd doc/dsa/
-ls
-cd
-ls
-cd dev/arena9/ClientMain/
-ls
-cd src/renderer/components/
-ls
-cd Main/
-ls
-vim OfflineHost
-.
-vim OfflineHost.vue 
-ls
-ls OfflineHost
-cd
-cd dev/program/dsa/
-ls
-cd pa3/
-ls
-cd max/
-ls
-vim max.cpp 
-ls
-cd
-cd doc/dsa/
-ls
-cd dsa@fall2018/
-ls
-r
-cd dev/src/cantata/
-ls
-cd build/
-ls
-./cantata
-ls
-make
-./cantata
-ping 240C::6644
-dig 240C::6644
-cd doc/dsa/dsa@fall2018/
-r
-ping 240C::6644
-nmcli device status
-ip link
-ip addr
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device status
-nmcli device wifi list 
-nmcli device wifi rescan 
-nmcli device wifi list 
-nmcli device status
-ip addr
-nmcli device status
-dig 240C::6644
-ping 240C::6644
-ping google.com
-ping google.com.hk
-nmcli device status
-ping google.com.hk
-nmcli device status
-ping google.com.hk
-nmcli device status
-ping google.com.hk
-ping 240C::6644
-ls
-ping 240C::6644
-ping google.com.hk
-nmcli device status
-ping 64:ff9b::/96
-ping 2001:4860:4860::6464
-dig @2001:4860:4860::6464 www.baidu.com
-dig @2001:4860:4860::6464 -6 www.baidu.com
-man dig
-dig @2001:4860:4860::6464 www.baidu.com aaaa
-man dig
-dig @2001:4860:4860::6464 www.baidu.com AAAA
-ping google.com.hk
-nmcli device status
-nmcli connection up Tsinghua 
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device status
-ip addr
-man luit
-luit -encoding big5 telnet bbs.nsysu.edu.tw
-nmcli device status
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-nmcli device status
-ls
-nmcli device status
-cd app/bumblebee-status/bumblebee/modules/
-vim nic.py
-ls
-cd
-nmcli device status
-ls
-ip link
-ip address 
-ping net.tsinghua.edu.cn
-nmcli device status
-ping net.tsinghua.edu.cn
-ls
-nmcli device status
-nmcli connection up Tsinghua 
-ping net.tsinghua.edu.cn
-zypper clean
-sudo zypper clean
-zypper repos 
-sudo zypper packages --unneeded 
-sudo zypper packages --orphaned 
-cd
-nmcli device status
-nmcli connection up Tsinghua-5G 
-ping net.tsinghua.edu.cn
-ls
-ls template/
-ls
-cd doc/dsa/
-ls
-cd dsa@fall2018/
-r
-nmcli device status
-nm-connection-editor 
-nmcli device status
-ip link
-ip addr
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-nmcli device status
-ping 240C::6644
-man dig
-dig @240C::6644 www.baidu.com
-dig @240C::6644 www.baidu.com -6
-man di
-dig -6 @240C::6644 www.baidu.com
-dig @240C::6644 www.baidu.com -6
-nm-connection-editor 
-nmcli connection up Tsinghua 
-nmcli connection up Tsinghua-5G 
-nmcli device status
-ping 240C::6644
-dig 6plat.org
-dig -6 6plat.org
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-r
-ls
-task-web.ruby2.5 
-ls
-r
-ping www.baidu.com
-ping xiami.com
-ping bilibili.com
-ping music.163.com
-ping www.baidu.com
-dig baidu.com
-dig -6 www.baidu.com
-ping www.baidu.com
-ping xiami.com
-ping bilibili.com
-ping music.163.com
-ping bilibili.com
-dig bilibili.com
-dig -6 bilibili.com
-dig -6 xiami.com
-ping xiami.com
-dig bilibili.com
-ping 240C::6644
-nm-connection-editor 
-cd 
-cd doc/
-ks
-ls
-zathura ddd.pdf 
-ls
-cd
-cd post/
-ls
-cd 2018/
-..
-ls
-mkdir 2019
-ls
-cd 201
-cd 2019/
-ls
-mkdir 1
-rmdir 1/
-mkdir -1
-mkdir 01
-cd 01/
-ls
-htop
-ls
-cd .config/ranger/
-ls
-vim rc.conf 
-vim scope.sh 
-ls
-man ranger
-g++ segment.cpp -o seg
-g++ -std=c++17 segment.cpp -o seg
-./seg 
-g++ -std=c++17 segment.cpp -o seg
-./seg 
-exit
-cd ls
-cd dev/
-ls
-cd program/dsa/
-l
-scd implementation/
-s
-ls
-cd implementation/
-l
-sls
-mkdir segment
-cd 
-cd -
-cd segment/
-ls
-vim segment.cpp
-cd post/2019/01/
-ls
-vim 2019-01-03-segment-tree.md
-gr
-bundler exec jekyll s
-git add .
-git commit 
-git push origin master 
-git pull
-ping github.com
-dig github.com
-ping github.com
-git push origin master 
-git remote 
-
-git remote -a
-git remote -v
-git push origin master 
-ping 240C::6644
-ping xiami.com
-dig bilibili.com
-dig baidu.com
-ls
-ping bilibili.com
-git push origin master 
-cd post/
-git push origin master 
-dig github.com
-git push origin master 
-nmcli device status
-cd dev/program/dsa/
-cd 
-cd post/
-git push origin master 
-ping bilibili.com
-ls
-ping google.com.hk
-ping www.baidu.com
-dig www.baidu.com
-ping 119.75.217.109
-man ping
-ping www.baidu.com
-vim /etc/resolv.conf 
-vim /etc/nsswitch.conf
-sudo vim /etc/nsswitch.conf
-ping www.baidu.com
-dig www.baidu.com
-ping www.baidu.com
-ping 119.75.217.109
-sudo vim /etc/nsswitch.conf
-nmcli device status
-graphml2gv 
-dot
-vim a.dot
-dot a.dot 
-vim a.dot
-dot a.dot 
-man dot
-dot a.dot -Tjpg
-dot a.dot -Tjpg > a.jpg
-imgv a.jpg 
-ls
-vim a.dot 
-dot a.dot -Tjpg > a.jpg
-imgv a.jpg 
-rm a.dot
-rm a.jpg
-ls
-nmcli device wifi list 
-nmcli connection up DIVI-2 
-ls
-cd doc/
-ls
-cd dsa/
-r
-ls
-cd dsa@fall2018/
-ls
-r
-man ranger
-cnf ranger
-r'
-r
-cd doc/dsa/
-ls
-r
-cd doc/dsa/
-l
-cd dsa@fall2018/
-r
-which polo-gtk
-polo-disk 
-sudo polo-uninstall 
-polo-gtk3-helper 
-polo-gtk3-helper -h
-polo-disk 
-which polo
-which polo-dish
-which polo-disk
-which polo-disk |xargs file
-cd /usr/share/applications/
-ls
-sudo rm polo-gtk.desktop
-ls
-cd
-vim dfile/i3/config 
-zypper info konqueror
-nmcli device wifi list 
-nmcli connection up DIVI-2 
-nmcli device status
-killall compton 
-vim dfile/i3/config 
-killall compton 
-nmcli device status
-nmcli connection up Tsinghua-5G 
-nmcli device status
-nmcli device wifi list 
-nmcli connection up Tsinghua
-nmcli device wifi list 
-nmcli device status
-nmcli connection up Tsinghua
-nmcli device status
-date
-cd /usr/lib/module-init-tools/
-..
-cd modules-load.d/
-ls
-vim multipath.conf 
-dmesg 
-sudo journalctl 
-ls
-man systemd-modules-load
-vim /etc/modules-load.d/
-xhost +
-vim /etc/modules-load.d/sg.conf 
-man systemd-modules-load
-man 
-man modules-load.d 
-man mkinitrd 
-man dracut
-ls
-cd post/
-ls
-ping 119.75.217.109
-ping www.baidu.com
-cd 
-cd post/
-git push origin master 
-htop
-cd
-cd dev/program/dsa/pa2/money/
-ls
-vim money.cpp 
-cd
-cd doc/dsa/
-r
-mute
-cd doc/dsa/
-re
-cd dsa@fall2018/
-r
-nmcli device status
-dig www.baidu.com
-ls
-nmcli 
-wls
-ls
-task
-ls
-cd dev/
-ls
-..
-ls
-cd doc/dsa/dsa@fall2018/
-ls
-cd 0
-r
-cd dfile/dunst/
-ls
-vim dunstrc 
-killall dunst 
-dunst &
-killall dunst 
-vim dunstrc 
-dunst &
-notify-send asd
-man noti
-man notifier 
-notify-send -h
-notify-send --help
-notify-send asd -u critical
-notify-send asd -u=critical
-notify-send asd -u low
-notify-send -u low asf1 21 
-notify-send -u critical 12 as
-vim dunstrc 
-ls
-vim dunstrc 
-notify-send -u critical 12 as
-vim dfile/i3/config 
-ping www.baidu.com
-nm
-nmcli 
-nmcli device status
-ping www.baidu.com
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-ping www.baidu.com
-cd doc/dsa/dsa@fall2018/
-r
-cd dev/program/dsa/pa2/money/
-ls
-vim money.cpp 
-vim dfile/i3/config 
-cd post/
-gr
-cd _sass/
-ls
-..
-cd css/
-ls
-wget https://raw.githubusercontent.com/daveyarwood/gruvbox-pygments/master/gruvbox.css
-lls
-ls
-..
-cd _s
-cd _sass/
-ls
-vim vno.scss 
-gr
-bundler exec jekyll s
-git add 
-git add .
-git commit 
-git commit -s
-ls
-vim changelog.md 
-ls
-git commit --amend 
-git add .
-git commit --amend 
-git status 
-git push origin master 
-killall dunst & dunst &
-notify-send s
-killall dunst & dunst &
-notify-send s
-notify-send hello world
-killall dunst & dunst &
-notify-send hello world
-cd
-cd dfile/
-vim dunst/dunstrc 
-ls
-\
-vim dfile/i3/config 
-cd
-cd .vim/pack/colors/opt/gruvbox/
-ls
-./gruvbox_256palette.sh 
-ls
-bat gruvbox_256palette.sh 
-~/dev/256colors2.pl 
-ls
-;
-l
-cd
-l
-ls
-cd -
-ls
-./gruvbox_256palette.sh 
-cd
-vim dfile/i3/config 
-ls
-rofi-theme-selector 
-cd .local/share/konsole/
-ls
-vim One\ Dark.colorscheme 
-cd
-cd doc/dsa/
-cd dsa@fall2018/
-d
-r
-notify-send s
-notify-send s -i audio-on
-notify-send s -i audio-off
-notify-send s -i cpp
-ls /usr/share/icons/Papirus
-cd /usr/share/icons/Papirus
-r
-ls
-find . -name "*cpp*"
-find . -name "*c++*"
-notify-send s -i cpp
-notify-send s -i text-x-c++hdr
-notify-send s -i text-x-c++src
-notify-send s -i application-x-java
-cd
-cd dfile/
-vim i3/config 
-cd
-sudo zypper refresh
-ls
-vim
-ls
-vim
-ls
-cd dfile/i3/
-vim con
-vim config 
-ls
-cd pix/
-ls
-..
-ls
-dev/256colors2.pl 
-ls
-cd rime/
-ls
-cd linusboyle/
-ls
-l
-cd
-ls
-cd /usr/
-ls
-cd lib
-ls
-cd
-cd pix/
-ls
-vim ~/.vimrc
-cd
-cd .vimrc
-vim .vimrc
-ls
-cd .vim/
-ls
-vim keymap.vim 
-ls
-cd pack/colors/opt/gruvbox/
-ls
-bat package.json 
-ls
-cd colors/
-ls
-vim gruvbox.vim 
-ls
-cd
-vim .vimrc
-ls
-cd dfile/
-gstatus 
-git commit -a -s
-git push origin master 
-ls
-git alias
-git --help
-ls
-git log
-gitg
-ls
-vim dfile/i3/config 
-nmcli device wifi list 
-ping www.baidu.com
-ls
-ls .vim
-ls
-ls .vim
-ls
-cd .vim/
-ls
-gstatus 
-git add after/ftplugin/python.vim 
-gstatus 
-git reset HEAD .
-git checkout master 
-git add after/ftplugin/python.vim 
-git commit 
-gstatus 
-ls compiler/
-git add compiler/*
-git commit -s
-git add colors/inkpot.vim 
-git commit -s
-git checkout myconf 
-git merge master 
-ls
-gstatus 
-git add thirdparty.vim 
-gstatus 
-git commit -s
-ls
-gitg
-ls
-cd
-cd dev/gtk/example-3/
-ls
-vim myappwindow.
-c
-vim myappwindow.c
-ls
-vim main.c 
-vim myapp.c 
-ls
-vim myapp.c 
-ls
-echo $TERM
-echo $TERM_ITALICS
-cd
-cd .vim/
-ls
-gstatus 
-git add init.vim keymap.vim 
-git commit -s
-ls
-git commit -a -s
-git checkout master 
-git cherry-pick -x da2ea3f
-git log
-git checkout myconf 
-vim 
-vim dfile/dunst/dunstrc 
-killall dunst & dunst &
-ls
-cd doc/dsa/
-r
-ls
-ping www.baidu.com
-nmcli device wifi list 
-nmcli
-ping 119.75.217.109
-ping www.baidu.com
-vim dfile/dunst/dunstrc 
-vim dfile/i3/config 
-ls
-cd post/
-gr
-vim AboutMe.md 
-vim _includes/
-vim _config.yml 
-vim AboutMe.md 
-git commit -a -s
-git push origin master 
-git checkout coding
-git merge master 
-git mergetool 
-git status 
-rm index.html.orig
-git commit -s
-git push coding master 
-git pull coding 
-git fetch coding 
-git branch 
-git push coding HEAD:master 
-git checkout master 
-nmcli device wifi list 
-ls
-cd doc/dsa/
-cd dsa@fall2018/
-r
-t
-cd doc/dsa/
-r
-ls
-dc 
-cd dsa@fall2018/
-ls
-r
-ls
-s
-cd
-find . -name '*joplin*'
-cd .config/joplin-desktop/
-ls
-cd resources/
-ls
-.
-..
-ls
-ls tmp
-..
-cd
-ls
-cd .local/share/
-ls
-cd app
-cd applications/
-ls
-bat appimagekit-joplin.desktop 
-cd
-cd .local/share/icons/
-ls
-imgv telegram.png 
-ls
-cd hicolor/
-ls
-cd 16x16/
-ls
-cd apps/
-ls
-cd
-ls
-cd app/
-ls
-cd
-ls
-cd dwn/
-ls
-rm ssw
-rm SWDA.zip
-ls
-./TIM-x86_64.AppImage 
-./QQ-20171129-x86_64.AppImage 
-ls
-sudo zypper ref
-zypper lu
-sudo zypper update
-cd /usr/lib/sddm/
-ls
-cd sddm.conf.d/
-ls
-vim 00-general.conf 
-ls
-xhost +
-ls
-vim 10-theme.conf 
-cd
-cd /usr/share/sddm
-ls
-cd themes/
-ls
-cd breeze-openSUSE/
-ls
-imgv preview.png 
-ls
-..
-ls
-cd breeze
-ls
-imgv preview.png 
-..
-ls
-cd elarun/
-ls
-imgv angle-down.png 
-imgv elarun.jpg 
-..
-ls
-cd ma
-cd maldives/
-ls
-imgv maldives.jpg 
-..
-ls
-cd ma
-cd maya/
-ls
-imgv screenshots/hi_IN.png 
-cd
-cd /usr/share/sddm
-ls
-ls scripts/
-ls translations/
-ls flags/
-ls 
-ls faces/
-cd dwn/
-ls
-sudo tar -xzvf sddm-sugar-dark-1.0.tar.gz -C /usr/share/sddm/themes/
-cd /usr/share/sddm/themes/
-ls
-..
-cd sddm-kcm/
-ls
-..
-cd sddm
-ls
-cd themes/
-ls
-sudo mv sddm-sugar-dark-1.0/ suger-dark
-sudo mv suger-dark/ sugar-dark/
-ls
-cd sugar-dark/
-ls
-imgv Background.jpg 
-ls
-cd
-ls
-cd /etc/
-vim sddm.conf
-cd /usr/lib
-ls
-cd sddm/
-ls
-cd sddm.conf.d/
-ls
-vim 10-theme.conf 
-sudo vim 10-theme.conf 
-ls
-sudo vim 10-theme.conf 
-cd /etc/sddm.conf.d/
-ls
-ls -a
-..
-cd
-man sddm
-man sddm.conf 
-cd /usr/lib/sddm/sddm.conf.d/
-ls
-..
-cd
-cd /usr/share/sddm/themes/
-ls
-cd sugar-dark/
-vim theme.conf 
-sudo vim theme.conf 
-cd /usr/share/sddm/themes/
-cd sugar-dark/
-ls
-sudo vim theme.conf 
-sddm-greeter --test --theme sugar-dark
-man sddm-greeter 
-sddm-greeter --test-mode --theme sugar-dark
-sddm-greeter --test-mode
-sddm-greeter --test-mode --theme 
-sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-dark/
-cd
-cd dev/src/
-ls
-git clone https://github.com/Match-Yang/sddm-deepin
-cd sddm-deepin/
-ls
-cd deepin/
-ls
-..
-ls
-sddm-greeter --test-mode --theme deepin/
-cd
-ls
-cd /usr/lib/sddm/
-ls
-cd sddm.conf.d/
-ls
-vim 00-general.conf 
-sudo vim 00-general.conf 
-ls
-cd /usr/share/sddm/themes/
-cd sugar-dark/
-sudo vim theme.conf 
-sddm-greeter --test-mode
-sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-dark/
-ls
-cd
-vim dfile/i3/config 
-cd pix/
-ls
-r
-ls
-mv newbg.jpg bg.jpg
-ls Wallpapers/
-cd Wallpapers/
-r
-cd
-ls
-vim dfile/i3/config 
-ls
-task
-ls
-htop
-pgrep mpd
-echo $$
-echo $_
-ls
-pgrep mpd
-echo $_
-echo $$
-echo $_
-man $_
-ls
-pgrep mpd && echo yes
-pgrep mpd || mpd
-ls
-vim dfile/i3/config 
-nnn
-nnn
-vim
-cd .v
-cd .vim/
-ls
-cd p
-cd pack/
-ls
-ls filetype/
-ls filetype/start/
-ls debug/
-ls complete/
-ls co
-ls util/
-ls util/s
-ls util/start/
-cd util/start/
-ls vim-s
-ls vim-signature/
-bat vim-signature/README.md 
-ls
-nnn
-vim
-ls
-man git-submodule 
-ls
-cd .vim/
-ls
-vim thirdparty.vim 
-vim init.vim 
-vim command.vim
-vim init.vim 
-vim command.vim
-vim ~/.vimrc
-vim init.vim 
-cd dwn/
-ls
-rm cecutil.vba.gz
-..
-ls
-ls /var/lib/libvirt/images/
-sudo ls /var/lib/libvirt/images/
-sudo rm /var/lib/libvirt/images/w98.cow
-df -h
-man aria2c 
-task-web.ruby2.5 
-xsel
-man xsel
-alias 
-ls
-cd doc/
-r
-cd 复变函数/
-vidir
-r
-ls
-r
-man wordfree 
-ls
-vim
-r
-ls
-vi
-cnf wordgrinder
-cnf nnn
-sudo zypper install nnn
-nnn
-ls
-cd
-man nnn
-nnn -v
-nnn
-cd dwn/
-ls
-vim cecutil.vba.gz 
-vi
-cd
-cd .vim/plugin/
-ls
-wget https://raw.githubusercontent.com/vim-scripts/bufkill.vim/master/plugin/bufkill.vim
-lls
-ls
-vim bufkill.vim 
-ls
-..
-cd pack/util/start/vim-unimpaired/
-ls
-vim plugin/unimpaired.vim 
-ls
-cd doc/
-ls
-vim tags 
-..
-ls
-vim README.markdown 
-ls
-vim tags 
-vim plugin/unimpaired.vim 
-vim
-cd
-vim .vimrc 
-cd doc/
-nnn
-cd
-cd dev/program/dsa/pa3/prefix/
-ls
-vim prefix.cpp 
-nnn
-vim prefix.cpp 
-nnn
-man nnn
-bat ~/.nnncp
-cd
-vim bin/copyit
-man nnn
-vim .bashrc 
-nnn
-pbpaste 
-nnn
-mute
-voldown 
-volraise 
-mute
-ls dwn/
-cd kw
-cd dwn/
-ls
-l
-wget https://pan.linuxgame.cn/index.php/s/myjDy4WMsAdxpxz/download
-ls
-rm download
-ls
-man aria2c 
-aria2c -x 16 -k 1M https://pan.linuxgame.cn/index.php/s/myjDy4WMsAdxpxz/download
-aria2c -c -x 16 -k 1M https://pan.linuxgame.cn/index.php/s/myjDy4WMsAdxpxz/download
-ls
-bat KOTOR2_i386.tar.gz.aria2 
-ping www.baidu.com
-aria2c -c -x 16 -k 1M https://pan.linuxgame.cn/index.php/s/myjDy4WMsAdxpxz/download
-ls
-ls KOTOR2_i386.tar.gz
-ls KOTOR2_i386.tar.gz|xargs unrar 
-ls
-ls KOTOR2_i386.tar.gz|xargs untar
-alias 
-tar -zxvf KOTOR2_i386.tar.gz 
-ls
-ls mnt/
-ls
-df -h
-cd Knights\ of\ the\ Old\ Republic\ II/
-ls
-./KOTOR2 
-ls
-ldd KOTOR2 
-sudo zypper install libopenal1
-sudo zypper install libopenal1-32bit 
-ldd KOTOR2 
-ls /usr/lib64/libopenal.so.1
-ls
-sudo zypper se libglu
-sudo zypper install libGLU1-32bit 
-ldd KOTOR2 
-./KOTOR2 
-ls
-ls steamassets/
-ls
-bat activated.ini 
-ls
-ls resources/
-l
-./KOTOR2 
-vim activated.ini 
-ls
-./KOTOR2 
-LD_LIBRARY_PATH=. ./KOTOR2 
-LD_LIBRARY_PATH=/home/linusboyle/dwn/Knights\ of\ the\ Old\ Republic\ II/ ./KOTOR2 
-dev/256colors2.pl 
-nnn
-~/dev/256colors2.pl 
-ls
-cd
-cd .vim/pack/
-mmnm
-cd colors/opt/gruvbox/
-vim colors/gruvbox.vim 
-ag user
-vim colors/gruvbox.vim 
-ls
-cd
-cd .vim/co
-cd .vim/colors/
-ls
-vim sahara.vim 
-ls
-..
-ls
-vim com
-vim command.vim 
-ls
-vim init.vim 
-ls
-cd pack/
-ls
-cd util/
-ls
-cd start/
-git status 
-cd delimitMate/
-git status 
-git ls-files
-..
-ls
-cd vim-devicons/
-ls
-..
-git rm vim-devicons/
-gstatus 
-git commit 
-ls
-vim ../../../thirdparty.vim 
-gr
-ls
-gstatus 
-git diff master 
-ls
-gitg
-ls
-git commit -a
-git add command.vim 
-git commit -s
-git checkout master 
-git add plugin/bufkill.vim 
-git commit -s
-git checkout myconf 
-git merge master 
-ls
-git checkout master 
-gitg
-git checkout myconf 
-ls
-vim .gitmodules 
-git push origin myconf 
-git checkout master 
-git push origin master 
-git checkout myconf 
-cd pack/
-gstatus 
-git push origin master 
-..
-nmcli device status
-nmcli connection up Tsinghua-5G 
-ping www.baidu.com
-cd
-cd bin/
-vim copyit 
-chmod +x copyit 
-vim copyit 
-copyit afsadfsf
-vim copyit 
-nnn
-vim dfile/i3/config 
-bluetooth
-bluetoothctl 
-cd dwn/
-ls
-rm KOTOR2_i386.tar.gz
-ls
-aria2c -x 16 -k 1M http://kdl.cc.ksosoft.com/wps-community/download/6757/wps-office-10.1.0.6757-1.x86_64.rpm
-ls
-rpm -i wps-office-10.1.0.6757-1.x86_64.rpm 
-sudo rpm -i wps-office-10.1.0.6757-1.x86_64.rpm 
-ls
-wps -h
-man dunst 
-killall dunst & dunst &
-notify-send s
-htop
-cd doc/
-nnn
-sudo rpm -e softmaker-freeoffice-2018 
-free
-cd
-cd /usr/share/icons/Papirus
-ls
-cd 16x16
-ls
-find . -name '*clip*'
-imgv panel/clipboard.svg 
-ls
-find . -name '*clip*'
-notify-send -i clipboard s
-ls panel/
-vim ~/dfile/dunst/dunstrc 
-killall dunst & dunst &
-notify-send -i clipboard s
-ls
-ls pen
-ls panel/
-notify-send -i clipman s
-vim ~/dfile/dunst/dunstrc 
-killall dunst & dunst &
-notify-send -i clipboard s
-cd
-vim bin/copyit 
-nnn
-man nnn
-nnn
-redshift
-redshift-gtk 
-redshift
-redshift-gtk 
-man red
-ed
-ls
-man redrawwin 
-ls
-sudo zypper install redshift
-sudo zypper info reds
-sudo zypper info redshift
-sudo zypper info redshift-gtk 
-sudo zypper install redshift
-sudo zypper install redshift-gtk 
-redshift-gtk 
-redshift
-sudo zypper install geoclue2
-sudo redshift
-sudo redshift-gtk 
-ls
-sudo redshift
-man redshift
-redshift -l manual:help
-echo $XDG_CONFIG_DIRS 
-cd .config/
-mkdir redshift
-cd redshift/
-vim redshift/conf
-vim redshift.conf
-redshift
-ls
-vim redshift.conf
-redshift
-vim redshift.conf
-redshift-gtk 
-ls
-vim redshift.conf
-redshift-gtk &
-cd .mozilla/
-ls
-cd firefox/
-ls
-vim profiles.ini 
-cd auxsy3mf.default/
-ls
-find . -name "*.css"
-cd
-cd ddw
-cd d
-ls dwn/
-ls
-cd dwn/
-ls
-rm wps-office-10.1.0.6757-1.x86_64.rpm
-ls
-git clone https://github.com/johnfocker/Gruvbox-Dark-Yellow
-cd g
-cd Gruvbox-Dark-Yellow/
-ls
-vim index.theme 
-..
-sudo cp -r Gruvbox-Dark-Yellow/ /usr/share/themes/
-cd
-cd doc/
-nnn
-redshift-gtk &
-vim dfile/i3/config 
-vim .config/redshift/redshift.conf 
-redshift-gtk -l 40:100
-ls
-vim
-exit
-sudo zypper remove --clean-deps telegram 
-ls
-qtconfig 
-ls
-pgrep mpd 
-killall mpd 
-pgrep mpd 
-mpd
-volraise 
-sudo zypper install konqueror
-volraise 
-voldown 
-sudo zypper install konqueror
-konqueror 
-pgrep konqueror 
-killall konqueror 
-pgrep konqueror 
-killall konqueror 
-pgrep konqueror 
-htop
-konqueror 
-killall konqueror 
-cnf kfind
-sudo zypper info kfind
-sudo zypper in kfind
-kfind -h
-man kfind 
-bluetoothctl 
-exit
-vim
-vim
-cd .vim/pack/util/
-ls
-cd start/
-ls
-git submodule add https://github.com/tpope/vim-dispatch
-gstatus 
-ls
-cd
-vim .bashr
-vim .bashrc
-cd dev/src/
-ls
-cd
-cd doc/tejr-from-vimrc-to-vim/
-ls
-vim compiler/bash.vim 
-ls
-cd compiler/
-ls
-vim sh
-vim sh.vim 
-vim ksh.vim 
-vim vint.vim 
-man clang
-sudo zypper install konqueror-plugins 
-vim
-tmux
-cd .vim/compiler/
-gstatus 
-git commit -a
-cd ..
-cd pack/
-gst
-gstatus 
-git commit 
-ls
-cd util/
-ls
-cd start/
-ls
-git rm vim-dispatch/
-git status 
-git rm -f vim-dispatch/
-git status 
-gr
-ls
-cd -
-cd
-cd .vim/
-cd oc
-cd compiler/
-ls
-vim bash.vim 
-vim --clean bash.vim 
-vim bash.vim 
-vim
-ls
-cd
-cd dev/program/dsa/pa3/
-ls
-vim notfound/notfound.cpp 
-vim /usr/share/vim/vim81/compiler/gcc.vim 
-cd
-vim /usr/share/vim/vim81/compiler/gcc.vim 
-cd dev/program/dsa/pa3/
-vim notfound/notfound.cpp 
-ls
-cd 
-cd dev/src/cantata/
-ls
-cd windows/
-.
-..
-ls tags/
-vim windows/thumbnailtoolbar.
-vim windows/thumbnailtoolbar.cpp 
-vim --clean windows/thumbnailtoolbar.
-gstatus 
-vim --clean windows/thumbnailtoolbar.cpp 
-gst
-gsta
-gstatus 
-gr
-ls
-cd playlists/
-ls
-vim rulesplaylists.cpp 
-gr
-..
-cd church-cpp/
-ls
-vim church_numerals.h 
-ls
-cd .vim/compiler/
-ls
-vim gcc.vim
-ls
-vim gnu 
-vim gnu.vim 
-..
-ls
-git status 
-cd autoload/qu
-cd ftplugin/qu
-cd ftplugin/
-..
-cd after/ftplugin/
-vim qf.vim 
-..
-cd autoload/
-ls
-vim quickfix.vim 
-gr
-ls
-cd compiler/
-ls
-vim clang.vim
-git checkout master 
-git add .
-git commit 
-git commit -s
-git push origin master 
-git checkout myconf 
-git merge master 
-git checkout master 
-vim clang*
-ls
-vim clang
-vim clang.vim 
-bat clang
-bat clang.vim 
-nano
-nano clang
-nano clang.vim 
-ls
-vim --clean clang
-vim --clean clang++.vim 
-vim --clean g++.vim 
-git commit -a -s
-git push origin master 
-git checkout myconf 
-git merge master 
-git push origin myconf 
-vim
-ls
-..
-ls
-killall konqueror 
-cd music/
-ls
-mkdir Mythodea
-cd Mythodea/
-youtube-dl https://www.xiami.com/album/Clyh4632e?spm=a1z1s.3521865.23309997.3.JiMvYm
-ls
-tag Vangelis\ -\ Movement\ X-1382125.mp3 
-cd
-vim dfile/i3/config 
-df -h
-cd dwn/
-ls
-rm -rf Gruvbox-Dark-Yellow/
-ls
-cnf qutebrowser
-zypper info qutebrowser 
-sudo zypper rm falkon
-ls
-sudo zypper install qutebrowser 
-qutebrowser 
-cd doc/
-nnn
-ping www.baidu.com
-ping youku.com
-ping -4 youku.com
-dig youku.com
-dig -6 youku.com
-ping youku.com
-log
-nmcli device status
-ping net.tsinghua.edu.cn
-nmcli device status
-nmcli
-nmcli connection up Tsinghua
-ping net.tsinghua.edu.cn
-log
-ls
-cd doc/
-ls
-nnn
-ls
-gr
-..
-ls
-ls video/
-ls video/ -l
-ls video/ -
-ls video/ -lh
-ls
-sudo prime-select nvidia
-xpor
-xprop 
-cnf feedreader
-logremote 
-flatpak
-flatpak list 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak remote-l
-flatpak remote-list 
-sudo flatpak install flathub org.gnome.FeedReader
-ping net.tsinghua.edu.cn
-nmcli device status
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-nmcli connection up Tsinghua
-nmcli device status
-ping net.tsinghua.edu.cn
-ls
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-mysql
-zypper se mysql
-cnf mysql
-zypper info mariadb-client 
-mysqld
-systemctl status mysql.service 
-service
-ls
-ping www.baidu.com
-glxgears 
-cd dwn/
-s
-ls
-cd Knights\ of\ the\ Old\ Republic\ II/
-./KOTOR2 
-ls
-bat activated.ini 
-ls
-ls steamassets/
-./KOTOR2 
-ls
-vim activated.ini 
-./KOTOR2 
-ls
-..
-mv Knights\ of\ the\ Old\ Republic\ II/ kotor
-ls
-cd kotor/
-./KOTOR2 
-ls
-vim ac
-vim activated.ini 
-ls
-vim activated.ini 
-./KOTOR2 
-ls
-..
-ls
-cd 
-cd music/
-youtube-dl -x https://www.youtube.com/watch?v=BW6mKR4UxkI
-task
-task-web.ruby2.5 
-nmcli device status
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-ls
-vidir
-ls
-cd
-nnn
-logremote 
-cd doc/
-vim wallabag.json 
-cd doc/
-vim wallabsag.json 
-vim wallabag.json 
-rm wallab*
-ls
-rm bookmarks-2019-01-11.json
-ls
-cnf mysql
-zypper info mariadb-client 
-mysqld
-systemctl status mysql.service 
-service
-ls
-ping www.baidu.com
-If you want to use SQLite to store your data, please put %kernel.root_dir%/../data/db/wallabag.sqlite for the database_path parameter during installation.
-If you want to use SQLite to store your data, please put %kernel.root_dir%/../data/db/wallabag.sqlite for the database_path parameter during installation.
-%kernel.root_dir%/../data/db/wallabag.sqlite
-echo '%kernel.root_dir%/../data/db/wallabag.sqlite'
-echo '%kernel.root_dir%/../data/db/wallabag.sqlite'|pbcopy 
-ls
-nnn
-cnf http
-sudo zypper install python3-httpie 
-man http
-http POST http://v2.wallabag.org/oauth/v2/token     grant_type=password     client_id=12_5um6nz50ceg4088c0840wwc0kgg44g00kk84og044ggkscso0k     client_secret=3qd12zpeaxes8cwg8c0404g888co4wo8kc4gcw0occww8cgw4k     username=yourUsername     password=yourPassw0rd
-http POST http://v2.wallabag.org/oauth/v2/token     grant_type=password     client_id=12_5um6nz50ceg4088c0840wwc0kgg44g00kk84og044ggkscso0k     client_secret=3qd12zpeaxes8cwg8c0404g888co4wo8kc4gcw0occww8cgw4k     username=yourUsername     password=yourPassw0rd
-http POST http://v2.wallabag.org/oauth/v2/token     grant_type=password     client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40     client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s     username=linusboyle     password=abc99886abc
-http POST http://v2.wallabag.org/oauth/v2/token     grant_type=password     client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40     client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s     username=linusboyle     password=abc99886abc
-http 'POST http://v2.wallabag.org/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc'
-http POST 'http://v2.wallabag.org/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc'
-http POST http://v2.wallabag.org/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc
-http POST http://app.wallabag.it/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc
-http POST https://app.wallabag.it/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc
-http POST https://app.wallabag.it/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc
-http POST https://app.wallabag.it/api/entries.json "Authorization:Bearer MTMyZTc1MTQ2M2U4OWI1ZjljMmRlNzI2MjgwNmIyMDAzOTg2MzIxODQ1NTA0ZWM3NzFiNmViMzcwNDQ5YmQ5Nw"
-http POST https://app.wallabag.it/api/entries/8194769 "Authorization:Bearer MTMyZTc1MTQ2M2U4OWI1ZjljMmRlNzI2MjgwNmIyMDAzOTg2MzIxODQ1NTA0ZWM3NzFiNmViMzcwNDQ5YmQ5Nw"
-http POST http://localhost:8000/api/entries.json "Authorization:Bearer ZGJmNTA2MDdmYTdmNWFiZjcxOWY3MWYyYzkyZDdlNWIzOTU4NWY3NTU1MDFjOTdhMTk2MGI3YjY1ZmI2NzM5MA" url="http://www.numerama.com/tech/160115-le-pocket-libre-wallabag-fait-le-plein-de-fonctionnalites.html"
-http POST https://app.wallabag.it/api/entries.json "Authorization:Bearer MTMyZTc1MTQ2M2U4OWI1ZjljMmRlNzI2MjgwNmIyMDAzOTg2MzIxODQ1NTA0ZWM3NzFiNmViMzcwNDQ5YmQ5Nw" url="http://www.numerama.com/tech/160115-le-pocket-libre-wallabag-fait-le-plein-de-fonctionnalites.html"; 
-vim dfile/i3/config 
-ls
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-nmcli connection up Tsinghua-5G 
-nmcli device status
-ping net.tsinghua.edu.cn
-nmcli 
-nmcli networking connectivity 
-nmcli radio help 
-nmcli connection up Tsinghua-5G 
-nmcli connection up Tsinghua
-ls
-cd doc/
-nnn
-log
-bluetoothctl 
-exit
-ping net.tsinghua.edu.cn
-nmcli radio help 
-nmcli device status
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-ls
-nmcli device status
-nmcli 
-cd music/
-ls
-cd 征天风舞传/
-ls
-mplayer 忆与悟.mp3 
-vlc 忆与悟.mp3 
-ping www.baidu.com
-nmcli connection up Tsinghua-
-nmcli connection up Tsinghua-5G 
-nnnm
-nnn
-ls
-man ato
-man atool
-sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-dark/
-ls
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-killall konqueror 
-cd music/
-mkdir 古筝雷鬼
-cd 古筝雷鬼/
-youtube-dl https://www.xiami.com/album/4TlM3a45e?spm=0.0.0.0.IUMCsU
-ls
-vidir
-ls
-tag *
-tag -a 谢天笑 亲我一口\ 咬我一口.mp3 
-tag *
-tag -t '亲我一口 咬我一口' 亲我一口\ 咬我一口.mp3 
-tag *
-他国
-tag -A 古筝雷鬼 *
-tag *
-sudo zypper install kmix
-pgrep packagekitd 
-pgrep packagekitd |kill
-pgrep packagekitd |xargs kill
-systemctl stop packagekit.service 
-pgrep packagekitd 
-systemctl status packagekit
-systemctl status packagekit.service 
-systemctl stop packagekit.service 
-systemctl status packagekit.service 
-zypper info kid3
-sudo zypper install kid3
-sudo systemctl stop packagekit.service 
-sudo zypper install kid3
-cd .config/
-find . -name '*cantata*'
-cd cantata/
-vim cantata.conf 
-..
-cd .cache/
-ls
-cd cantata/
-ls
-cd music/Mythodea/
-vidir 
-ls
-mplayer Vangelis\ -\ Movement\ VI-1382121.mp3 
-ls
-vidir
-ls
-vidir
-ls
-man http
-ls
-http POST https://app.wallabag.it/api/entries.json "Authorization:Bearer MTMyZTc1MTQ2M2U4OWI1ZjljMmRlNzI2MjgwNmIyMDAzOTg2MzIxODQ1NTA0ZWM3NzFiNmViMzcwNDQ5YmQ5Nw" url="https://linusboyle.cn/2018/12/kunqu-sifan/"
-http POST https://app.wallabag.it/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc
-http POST https://app.wallabag.it/api/entries.json "Authorization:Bearer MTMyZTc1MTQ2M2U4OWI1ZjljMmRlNzI2MjgwNmIyMDAzOTg2MzIxODQ1NTA0ZWM3NzFiNmViMzcwNDQ5Ym" url="https://linusboyle.cn/2018/12/kunqu-sifan/"
-http POST https://app.wallabag.it/api/entries.json "Authorization:Bearer NjA3NjI1YzUyMDI1NGViYzdhNDllMWQ4ZTViN2RlMjVkZWQ4OGIwN2E3NTUzMTdlYzlhYzQ5MzczNzdjODBiZA" url="https://linusboyle.cn/2018/12/kunqu-sifan/"
-http POST https://app.wallabag.it/oauth/v2/token grant_type=refresh_token client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s refresh_token=MjU5NjlkNTBlOWM3ZWFkNWU3ODQzNTBlNjFkNTVmYjc5MDljYzc3ZjFmOWE2M2IwYWYxYTg5Njk0ZmY1OGRhNQ
-http POST https://app.wallabag.it/oauth/v2/token grant_type=password client_id=5491_10z2zg7y9neo4owc4so08gsggwg4kko8kk8084wc4c84og8k40 client_secret=j0i2l33gybcwookk00c8ogow0ow8wk8w84ksc8wc80k8gcw4s username=linusboyle password=abc99886abc
-ls
-man http
-log
-ping www.baidu.com
-ping net.tsinghua.edu.cn
-log
-ls /etc/X11/1
-ls /etc/X11/x
-ls /etc/X11/
-ls /etc/X11/xorg.conf.d/
-glxgears 
-ls
-cd dev/program/dsa/pa3/prefix/
-ls
-vim report.md 
-vim prefix.cpp 
-ls
-..
-ls
-vim kth/get.cpp 
-ls
-vim notfound/notfound.cpp 
-ls
-vim hack/hack.cpp 
-ls
-cd post/2019/
-cd 01/
-ls
-vi 2019-01-03-segment-tree.md 
-git commit -as
-git push origin master 
-task
-cd doc/dsa/
-ls
-mkdir 期末
-cd 期末/
-ls
-vim note
-vim note.md
-ls
-cd dwn/
-ls
-cd .local/share/Trash/
-ls
-cd files/
-ls
-rm 新剑侠情缘/
-rm -rf 新剑侠情缘/
-ncdu
-df -h
-./citiesskylines_1.7.0-f5_amd64.appimage 
-./start.sh 
-./dosee_2.0.119.430_amd64.appimage 
-ls
-./dosee_2.0.119.430_amd64.appimage 
-ping net.tsinghua.edu.cn
-cd .vim/
-gst
-a
-gsta
-gstatus 
-ls
-..
-cd dfile/
-gstatus 
-git commit -as
-git push origin master 
-ls
-..
-ls
-vim
-cd .vim/plugin/
-ls
-wget https://raw.githubusercontent.com/romainl/vim-cool/master/plugin/cool.vim
-ls
-vi cool.vim 
-ls
-vi cool.vim 
-ls
-..
-vim ma
-vim keymap.vim 
-cd plugin/
-ls
-vim smartcase.vim 
-vim keymap.vim 
-..
-vim keymap.vim 
-ls
-vim
-ls
-cd pack/
-ls
-cd util/
-ls
-..
-ls
-..
-vim --clean
-mv pack/util/start/nerdtree/ .
-ls
-vim init.vim 
-ls
-vim init.vim 
-ls
-vim tweak.vim
-vim init.vim 
-vim tweak.vim
-ls
-git stat
-git status 
-mv nerdtree/ pack/util/start/
-git status 
-vim .netrwhist 
-ls
-vim keymap.vim 
-cd pack/
-ls
-git rm util/start/nerdtree/
-git commit -s
-..
-git status 
-git add pack/
-git commit -s
-cd pack/
-git push origin master 
-ls
-..
-ls
-git status 
-gitg
-git add tweak.vim 
-git commit -s
-git commit -as
-ls
-vim keymap.vim 
-vim thirdparty.vim 
-ls
-git commit -a
-git checkout master 
-git add plugin/cool.vim 
-git commit -as
-git checkout myconf 
-git merge master 
-ls
-git add .netrwhist 
-git commit 
-ls
-git push origin master 
-git push origin myconf 
-vim
-ls
-vim
-ls
-vim plugin/smarttab.vim 
-rm plugin/smarttab.vim 
-ls
-vim keymap.vim 
-ls
-vim
-ls
-gstatus 
-git add keymap.vim 
-git commit 
-ls
-git checkout master 
-git merge myconf 
-ls
-git branch 
-git diff myconf 
-git branch -D myconf 
-ls
-ls pack/
-vim .gitmodules 
-ls
-git push origin master 
-git remote -h
-git push origin :myconf 
-ls
-vim readme.md 
-git clone -h
-vim readme.md 
-git commit -as
-git push origin master 
-git rm .netrwhist 
-vim .gitignore 
-git commit -as
-git push origin master 
-vim
-vim keymap.vim 
-fg
-ls
-gstatus 
-ls .netrwhist
-bat .netrwhist 
-ls
-vim
-cd plugin/
-wget https://raw.githubusercontent.com/romainl/vim-qlist/master/plugin/qlist.vim
-ls /usr/include/
-ls /usr/include/c++/
-cd /usr/include/c++/
-ls
-ls 8
-ls v1
-vim v1/cstdi
-vim v1/cstdio
-vim 8/fu
-vim 8/functional 
-cd
-cd dev/program/dsa/
-ls
-vim extra/water/water.cpp 
-ls
-vim extra/water/water.cpp 
-ls
-vim extra/water/water.cpp 
-ls
-cd dwn/
-ls
-cd
-cd dev/
-ls
-git clone --depth=1 https://github.com/BlindMindStudios/StarRuler2-Source
-ls
-..
-cd dwn/
-ls
-aria2c -x 16 -k 1M https://codeload.github.com/BlindMindStudios/StarRuler2-Source/zip/master
-ls
-rm StarRuler2-Source-master.zip
-ls
-cd post/
-ls
-cd 2019/01/
-vim 2019-01-03-segment-tree.md 
-git commit -as
-git commit -as --amend 
-git push origin master 
-ls
-..
-ls
-..
-cd 2018/
-ls
-tree
-tree|less
-vim 11/2018-11-28-quicksort-optimization.md 
-ls
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-ping github.com
-dig github.com
-ping -6 github.com 
-ping github.com
-vim
-c
-cd
-cd .vim/
-ag statusline
-ag 'set statusline'
-vim pack/util/start/vim-fugitive/doc/fugitive.txt 
-..
-vim .vimrc 
-vim
-ls
-cd .vi
-cd .vim/
-ls
-mkdir skeleton
-cd skeleton/
-ls
-..
-mv skeleton/ template
-cd template/
-vim skeleton.sh
-ls
-env bash
-man env
-env python
-vim skeleton.py
-ls
-..
-s
-ls
-vim thirdparty.vim 
-..
-vim vimrc
-vim .vimrc 
-cd .vim/
-ag py
-ls
-vim init.vim 
-cd plugin/
-s
-ls
-vim setfilehead.vim 
-vim a.sh
-vim setfilehead.vim 
-vim a.sh
-ls
-cd
-ls
-cd Larian\ Studios/
-ls
-ls Divinity\ Original\ Sin\ Enhanced\ Edition/
-cd
-cd dwn/
-ls
-./dosee_2.0.119.430_amd64.appimage 
-vim _layouts/post.html 
-vim _layouts/page.html 
-vim _layouts/individual.html 
-vim _layouts/post.html 
-ls
-vim _includes/footer.html 
-ls
-cd post/
-ls
-cd 2019/01/
-vim 2019-01-03-segment-tree.md 
-gr
-ls
-vim _layouts/post.html 
-vim _includes/music.html 
-vim _layouts/post.html 
-cd _includes/
-ls
-vim pagination.html 
-vim scroll.html 
-ls
-vim external.html 
-ls
-..
-vim _includes/de
-vim _layouts/default.html 
-vim _layouts/post.html 
-cd _includes/
-vim copyright.html
-firefox copyright.html 
-ls
-vim copyright.html
-..
-bundler exec jekyll s
-git commit -as
-git add _includes/copyright.html 
-git commit -as
-vim COMMIT 
-vim changelog.md 
-git commit -as
-git push origin master 
-ls
-cd
-cd post/
-ls
-cd 2019/
-ls
-cd 01/
-vim 2019-01-17-linear-select.md
-..
-vim 2018/11/2018-11-28-quicksort-optimization.md
-vim 2018/09/2018-09-18-church-numerals-in-cpp.md 
-vim 2018/07/2018-07-04-C++-Object-Model.md 
-vim 2018/07/2018-07-07-Memorization-Template.md 
-vim 2018/07/2018-07-08-Source-Of-Puppetry.md
-vim 2018/07/2018-07-16-About-PalmarDrama.md 
-vim 2018/05/2018-05-29-
-vim 2018/05/2018-05-29-Ideal-States.md 
-vim 2018/09/2018-09-15-writing-my-own-tee.md 
-vim 2018/09/2018-09-02-magic-number-of-reboot.md 
-vim 2018/07/2018-07-10-Bittersweet-University-Life.md 
-vim 2018/07/2018-07-21-linux-macro-min-max.md 
-vim 2018/07/2018-07-30-singleton.md 
-vim 2018/07/2018-07-03-Print-Tuple.md 
-vim 2018/07/2018-07-15-Vim1-mkdir.md 
-vim 2018/07/2018-07-20-sizeof-for-incomplete-type.md 
-vim 2018/07/2018-07-22-a
-vim 2018/07/2018-07-22-ag-operator-in-vim.md 
-vim 2018/07/2018-07-22-bash_alias_in_vim.md 
-vim 2018/06/2018-06-06-Assembly\ Language.md 
-vim 2018/05/2018-05-28-MachineCode.md 
-..
-cd -
-gr
-git add .
-git commit -s
-git push origin master 
-gr
-bundler exec jekyll s
-cnf rdmd
-cnf dmd
-cd post/2019/01/
-vim 2019-01-17-linear-select.md 
-git commit -as
-git push origin master 
-sudo zypper install libpng16-
-
-sudo zypper install zlib-devel
-cd dwn/
-cd
-cd dwn/
-cd 
-cd dw
-cd dev/
-git clone --depth=1 https://github.com/BlindMindStudios/StarRuler2-Source
-ls
-cd StarRuler2-Source/
-ls
-vim README.md 
-make -f source/linux/Makefile compile
-vim README.md 
-make -f source/linux/Makefile compile
-ls /usr/lib64/libopenal.so.1
-ls /usr/lib64/libopenal.so
-make -f source/linux/Makefile compile
-ls
-vim StarRuler2.sh 
-ls
-chmod +x StarRuler2.sh 
-./StarRuler2.sh 
-vim
-vim /usr/include/c++/8/vector 
-cd .vim/
-gstatus 
-git diff keymap.vim
-git add keymap.vim 
-gcommit -as
-gcommit -s
-gstatus 
-git diff after/ftplugin/cpp.vim
-git add after/ftplugin/*
-gcommit -s
-gstatus 
-git add template/skeleton.*
-git add plugin/setfilehead.vim 
-gcommit -s
-git add plugin/qlist.vim 
-gcommit -s
-gstatus 
-git add after/ftdetect/cpp.vim 
-gcommit -s
-git push origin master 
-htop
-cd dev/arena9/ClientMain/
-ls
-git remote 
-git remote -v
-l
-ls
-cd post/2019/01/
-vim 2019-01-17-linear-select.md 
-git commit -as
-git push origin master 
-vim 2019-01-17-linear-select.md 
-git commit -as
-git push origin master 
-bundler exec jekyll s
-ls
-rm -rf _site/
-gr
-ls
-bundler exec jekyll s
-cd dwn/
-ls
-./dosee_2.0.119.430_amd64.appimage 
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-sudo zypper list-updates 
-sudo zypper list-updates |less
-cd dev/
-ls
-cd program/
-ls
-mkdir snippet
-cd snippet/
-ls
-vim vector.cpp
-ls
-vim vector.cpp
-cd
-ls
-cd dev/
-ls
-git clone https://github.com/zenorogue/hyperrogue
-ls
-sudo zypper install libSDL-devel
-sudo zypper install libSDL_ttf-devel
-sudo zypper install libSDL_gfx-devel
-sudo zypper install libSDL_mixer-devel
-ls
-untar hyperrogue105d-src.tgz 
-ls
-cd hyperrogue105d-src/
-ls
-make
-sudo zypper install libSDL2-devel
-make
-sudo zypper install libSDL2-2_0-0
-sudo zypper install libSDL-devel
-pkg-config --cflags SDL_gfx 
-sudo zypper install libSDL-1_2-0
-ls /usr/include/SDL2/SDL.h
-ls
-make
-vim Makefile 
-make
-ls
-vim Makefile 
-make
-pkg-config --cflags SDL_gfx 
-vim Makefile 
-make
-vim Makefile 
-man gcc
-vim Makefile 
-make -j4
-ls
-./hyperrogue 
-fc-match DejaVu
-fc-match DejaVuSans
-fc-match DejaVuSans-Bold
-./hyperrogue 
-..
-rm -rf hyperrogue105d-src
-rm hyperrogue105d-src.tgz
-ls
-cd dev/arena9/
-ls
-cd ClientMain/
-ls
-mkdir doc
-cd doc/
-ls
-cd
-cd dev/
-alias 
-man make
-info make
-cd dev/
-vim test.pandoc
-sudo zypper install pandoc-pdf 
-pandoc test.pandoc --highlight-style kate --filter pandoc-citeproc -o test.pdf
-cnf pandoc-citeproc
-sudo zypper install ghc-pandoc-citeproc
-sudo zypper info ghc
-sudo zypper info ghc-pandoc
-sudo zypper info ghc-pandoc-citeproc
-pandoc test.pandoc --highlight-style kate -o test.pdf
-zathura test.pdf 
-vim test.pandoc
-zathura test.pdf 
-vim test.pandoc
-git clone https://github.com/mpark/wg21
-cd wg21/
-ls
-make N3887.pdf
-vim Makefile 
-make N3887.pdf
-vim Makefile 
-..
-ls
-vim test.p
-vim test.pandoc 
-pandoc test.pandoc --highlight-style kate -o test.pdf
-zathura test.pdf 
-vim test.pandoc 
-pandoc test.pandoc --highlight-style kate -o test.pdf
-zathura test.pdf 
-vim test.pandoc 
-pandoc --pdf-engine=xlatex test.pandoc --highlight-style kate -o test.pdf
-pandoc --pdf-engine=xelatex test.pandoc --highlight-style kate -o test.pdf
-zathura test.pdf 
-rm test.pdf
-cd arena9/ClientMain/
-ls
-cd
-cd dev/
-vim test.pandoc 
-pandoc --pdf-engine=xelatex test.pandoc --highlight-style kate -o test.pdf
-zathura test.pdf 
-ls
-cd arena9/ClientMain/
-ls
-cd doc/
-ls
-sudo zypper se uml
-ls
-vim offlinehost.pandoc
-pandoc --pdf-engine=xelatex offlinehost.pandoc -o test.pdf
-zathura test.pdf 
-rm test.pdf
-alias 
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-ls
-vim offlinehost.pandoc
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-imgv yongli.png 
-gwenview yongli.png 
-vim offlinehost.pandoc
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-pandoc offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-vim offlinehost.pandoc
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-vim offlinehost.pandoc
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-vim offlinehost.pandoc
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-ls
-zathura test.pdf 
-vim offlinehost.pandoc
-mkdir offlinehost
-ls
-rm test.pdf
-mv offlinehost.pandoc offlinehost
-mv *.png offlinehost/
-ls
-cd offlinehost/
-ls
-pandoc --pdf-engine=xelatex offlinehost.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-..
-ls
-mkdir hall
-cp offlinehost/offlinehost.pandoc hall/hall.pandoc
-cd hall/
-vim hall.pandoc 
-pandoc --pdf-engine=xelatex hall.pandoc -V CJKmainfont="Noto Serif SC" -o test.pdf
-zathura test.pdf 
-vim hall.pandoc 
-ls
-..
-ls
-mv offlinehost/test.pdf offlinehost/offlinehost.pdf
-mv hall/test.pdf hall/hall.pdf
-zathura hall/hall.pdf 
-ls
-..
-ls
-cd src/
-ls
-cd renderer/
-ls
-cd components/
-ls
-cd Main/
-ls
-vim OfflineHost
-vim OfflineHost.vue 
-cd OfflineHost/
-ls
-vim CommitUpload.vue 
-..
-ls
-vim HallPage.vue 
-cd Hall/
-ls
-vim RoomList.vue 
-ls
-..
-ls
-vim Room/PlayerProfile.vue 
-vim RoomInside.vue 
-cd game/
-ls
-ls clxcq/
-ls
-rm -rf ed1
-rm -rf ED4/
-ls
-cd FD/
-ls
-..
-ls
-rm Hanlau.zip
-rm KH.zip
-ls kh
-ls KH/
-ls
-ls TK/
-cd JXQY/
-ls
-..
-ls
-cd sanguo/
-ls
-dosbox 
-ls
-..
-ls
-cd TK/
-ls
-dosbox 
-..
-ls
-ls LEGEND/
-ls kh
-ls KH/
-ls fd
-ls FD/
-cd FD/
-dosbox 
-..
-ls
-cd KH/
-ls
-dosbox 
-..
-s
-ls
-unzip Gin3SP.zip 
-ls
-bat readme.txt 
-vim readme.txt 
-rm readme.txt
-rm Gin3SP.zip
-cd GIN3/
-ls
-dosbox 
-..
-unzip EMPERORX.zip 
-rm readme.txt
-cd EMPERORX/
-dosbox 
-..
-rm -rf EMPERORX
-unzip EMPERORX.zip 
-vim readme.txt 
-cd EMPERORX/
-dosbox 
-vim PLAY.BAT 
-dosbox &
-..
-wget https://raw.githubusercontent.com/rwv/chinese-dos-games/master/download_data.py
-py download_data.py 
-ls
-rm download_data.py
-rm EMPERORX.zip
-rm -rf EMPERORX/
-ls
-unzip 皇帝.zip 
-ls
-vidir
-ls
-rm dosbox.conf
-mkdir emperor
-mv 皇帝.zip emperor/emperor.zip
-cd emperor/
-unzip emperor.zip 
-ls
-vim dos
-vim dosbox.conf 
-dosbox 
-ls
-..
-ls
-cd dwn/
-ls
-./BaiduPCS-Go-v3.5.4-linux-amd64/BaiduPCS-Go 
-cd dev/program/
-l
-cd snippet/
-ls
-vim static_const.cpp
-ls
-vim static_const.cpp
-log
-nmcli 
-cd game/
-l
-smkdir hlm
-mkdir hlm'
-mkdir hlm
-mv 红楼梦之十二金钗.zip hlm/hlm.zip
-cd hlm/
-unzip hlm.zip 
-ls
-dosbox 
-ls
-dosbox 
-cd game/hlm/
-dosbox 
-ls
-file HLM.cue 
-file HLM.bin 
-dosbox 
-..
-dosbox 
-cd dev/program/snippet/
-ls
-vim const.cpp
-cd
-cd dev/arena9/ClientMain/
-git add .
-git commit -as
-git push origin master 
-git status 
-git push origin dev 
-vim
-cd
-cd dev/
-ls
-cd StarRuler2-Source/
-ls
-cd source/
-ls
-vim util/source/image.cpp 
-..
-ls
-cd
-cd dev/
-ls
-cd
-cd dwn/
-ls
-cd
-cd dwn/
-cd
-cd dev/
-ls
-ls wg21/
-rm -rf wg21/
-ls
-ls tlpi-dist/
-ls
-htop
-ls
-cd
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-uptime 
-iostate
-iostat
-cnf opstat
-cnf iostat
-cd dwn/
-BaiduPCS-Go-v3.5.4-linux-amd64/BaiduPCS-Go 
-ls
-cd 1042192908_陸慈郎/
-ls
-mkdir pix
-mv 红楼梦图片.zip pix/hlm.zip
-cd pix/
-unzip hlm.zip 
-ls
-cd -�+���/
-vidir
-tree
-vidir
-ls
-cd 1
-ls
-vim Thumbs.db 
-file Thumbs.db 
-cd dev/program/snippet/
-vim const.cpp 
-ls
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-ls
-cd post/
-ls
-cd 201
-cd 2019/01/
-ls
-vim 2019-01-24-daoshuoyishu-01.md
-./dwn/dosee_2.0.119.430_amd64.appimage 
-ls
-cd post/2019/01/
-ls
-vim 2019-01-24-daoshuoyishu-01.md
-ls
-cd dwn/
-cd
-cd post/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-gr
-bundler exec jekyll s
-cd dwn/
-./dosee_2.0.119.430_amd64.appimage 
-cd post/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-gr
-bundler exec jekyll s
-ls
-./dwn/dosee_2.0.119.430_amd64.appimage 
-cd _posts/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-..
-ls
-ls css/
-vim css/main.scss 
-vim css/animate.css 
-ls
-cd _sass/
-ls
-vim vno.scss 
-ls
-vim sections/_post.scss 
-ls
-ag p
-ag span
-vim reset.scss 
-ls
-vim global.scss 
-ls
-vim _base.scss 
-vim vno.scss 
-vim global.scss 
-ag base
-ag blockquote
-vim global.scss 
-vim _base.scss 
-gr
-cd _posts/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-ls
-cd post/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-gr
-bundler exec jekyll s
-git add _sass/_base.scss 
-git add _sass/_base.scss 
-git add _sass/global.scss 
-git commit -s
-git add .sass-cache/5d6b17349388c745cda3cfe7899e3ea7cdd32d6d/
-git commit -s
-ls
-vim COMMIT 
-vim changelog.md 
-git add changelog.md 
-git commit -s
-git add _posts/2019/01/
-git add _posts/2019/01/2019-01-
-git commit -s
-git push origin master 
-cd post/
-gr
-ag content-wrapper
-vim _sass/global.scss 
-bundler exec jekyll s
-git add .
-git commit 
-git commit -s
-git push origin master 
-ping net.tsinghua.edu.cn
-ping github.com
-ping net.tsinghua.edu.cn
-gcc --version
-clang --version
-vim
-cd post/
-cd
-cd post/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-zypper lu
-man virsh 
-man vipe
-zypper lu | vipe |cat
-sudo zypper dup
-cd post/2019/01/
-vim 2019-01-24-daoshuoyishu-01.md
-git commit -as
-git push origin master 
-ls
-ls vi
-ls virtual-drives/
-ls virtual-drives/1/
-ls
-ls /etc/X11/
-ls /etc/X11/xorg.conf.d/
-vim --version
-vim 
-ls
-ls logs/
-htop
-ls
-nmcli connection up Tsinghua-5G 
-nmcli connection up Tsinghua
-nmcli device wifi list 
-nmcli device wifi rescan 
-nmcli device wifi list 
-nmcli connection up Tsinghua
-nmcli device wifi list 
-nmcli device status
-nmcli connection up Tsinghua-5G 
-systemctl status display-manager.service 
-systemctl start sddm.service 
-dmesg 
-journalctl 
-sudo journalctl 
-ls /usr/share/sddm/themes/
-ls /usr/share/sddm/themes/sugar-dark/
-ls /etc/sddm.conf.d/
-vi /etc/sddm.conf
-ls
-vi /etc/sddm.conf.d/
-ls
-man sddm
-vim /usr/lib/sddm/sddm.conf.d/10-theme.conf 
-vim /usr/lib/sddm/sddm.conf.d/00-general.conf 
-vim /usr/lib/sddm/sddm.conf.d/10-theme.conf 
-man sddm.conf 
-ls /usr/share/sddm/themes/
-sudo journalctl 
-sudo prime-select intel
-systemctl start sddm.service 
-g++ type_descriptor.cpp -o type
-./type 
-g++ type_descriptor.cpp -o type
-./type 
-g++ type_descriptor.cpp -o type
-./type 
-g++ type_descriptor.cpp -o type
-./type 
-ls /usr/include/boost/
-ls /usr/include/boost/mpl/
-ls /usr/include/boost/hana
-cd dev/program/
-ls
-cd snippet/
-ls
-vim binary.cpp
-clang --version 
-sudo zypper install clang7
-sudo zypper remove clang6 
-sudo zypper install clang7
-clang --version
-ls
-g++ --version
-g++ binary.cpp -o binary
-./binary 
-vim binary.cpp
-xhost +
-ls /usr/include/boost/type_traits
-cd
-cd /usr/include/boost/type_traits/
-vim is_same.hpp 
-vim is_reference.hpp 
-vim integral_constant.hpp 
-vim is_reference.hpp 
-vim is_lvalue_reference.hpp 
-vim is_rvalue_reference.hpp 
-vim is_array.hpp 
-vim is_function.hpp 
-vim is_empty.hpp 
-vim is_polymorphic.hpp 
-vim is_lvalue_reference.hpp 
-..
-ls yap/
-zypper se --installed-only boost
-cd
-cd dev/program/
-ls
-cd snippet/
-ls
-rm binary
-ls
-vim add_const_ref.cpp
-ls /usr/include/boost/convert
-cd
-cd /usr/include/boost/
-ag polymorphic_downcast
-vim polymorphic_cast.hpp 
-cd
-cd dev/program/snippet/
-ls
-vim type_descriptor.cpp
-ls
-vim type_descriptor.cpp
-cnf cdecl
-zypper info cdecl
-ls
-rm type
-ls
-vim mpl_vector.cpp
-nmcli device wifi list 
-nmcli device wifi connect hanjiaWiFi 
-sudo nmcli device wifi connect hanjiaWiFi 
-sudo nmcli device wifi connect -h
-sudo nmcli device wifi -h
-sudo nmcli device wifi connect hanjiaWiFi password 13688023176
-ls
-cd .goldendict/
-ls
-ncdu
-cd dev/mydic/
-gstatus 
-ls .directory
-ls .directory/
-bat .directory 
-ls
-nnn
-ls
-git add .
-git status 
-git log
-git push origin master 
-cnf git-lfs
-git lfs
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
-cd
-cd dwn/
-wget https://github.com/git-lfs/git-lfs/releases/download/v2.6.1/git-lfs-linux-amd64-v2.6.1.tar.gz
-ls
-rm git-lfs-linux-amd64-v2.6.1.tar.gz
-ls
-cd
-aria2c -x 16 https://github.com/git-lfs/git-lfs/releases/download/v2.6.1/git-lfs-linux-arm64-v2.6.1.tar.gz
-ls
-rm git-lfs-linux-arm64-v2.6.1.tar.gz*
-ls
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.node.sh | bash
-ls
-rm .npmrc
-ls
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
-cd dwn/
-man rpm
-sudo rpm -i git-lfs-2.6.1-1.el7.x86_64.rpm 
-ls
-git lfs
-cd
-cd dev/mydic/
-ls
-git lfs track *.mdx
-git lfs track *.mdd
-git lfs track *.bgl
-git lfs track *.png
-ls stardict-ghycyzzd-2.4.2/
-git lfs track *.dz
-git lfs track *.idx
-git lfs track *.ifo
-vim .gitattributes 
-xhost +
-git status 
-git add .
-git commit 
-git push origin master 
-git status 
-git log
-git push -f origin master 
-ls
-vim .gitattributes 
-git remote remove origin 
-git remote add origin git@github.com:linusboyle/dict_files.git
-git push origin master 
-git log
-git ls-files
-.di
-bat .directory 
-rm .directory
-nnn
-ls
-rm .gitattributes
-rm -rf .git/
-nnn
-git init 
-git lfs *.mdx
-git lfs track *.mdx
-git lfs track *.bgl
-git lfs track *.png
-git status 
-git add .
-git commit 
-git remote add origin git@github.com:linusboyle/dict_files.git
-git push origin master 
-date
-ls
-cd dev/src/MedianOfNinthers/
-ls
-cd src/
-ls
-g++ main.cpp bfprt_baseline.cpp -o test
-ls
-./test 
-echo @@
-echo $1
-ls
-rm test
-ls
-date
-htop
-youtube-dl https://www.bilibili.com/bangumi/play/ep261031
-youtube-dl https://www.bilibili.com/video/av41459361
-cnf obs
-sudo zypper install obs-studio
-cd dev/
-ls
-cd src/
-ls
-..
-ls
-rm test.p
-rm test.pandoc
-rm test.pdf
-ls
-..
-ls
-ls dwn/
-cd dwn/
-rm git-lfs-2.6.1-1.el7.x86_64.rpm
-ls
-..
-mv dwn/cppstdlib-code.tgz dev/
-ls
-cd dev/
-ls
-mkdir cppstdlb
-mv cppstdlib-code.tgz cppstdlb/
-mv cppstdlb/ cppstdlib
-cd cppstdlib/
-untar cppstdlib-code.tgz 
-ls
-rm cppstdlib-code.tgz
-ls
-vim re
-vim README 
-ls
-ls string/
-vim algo/accumulate1.cpp 
-ls
-..
-cd src/
-l
-ls
-git clone https://github.com/andralex/MedianOfNinthers
-ls
-cd MedianOfNinthers/
-ls
-vim README.md 
-ls
-cd src/
-ls
-vim main.cpp 
-ls
-vim common.h 
-vim bfprt_baseline.cpp 
-ls
-cd
-cd post/
-ls
-cd 2019/01/
-ls
-mv 2019-01-24-daoshuoyishu-01.md 2019-01-30-daoshuoyishu-02.md
-vim 2019-01-30-daoshuoyishu-02.md 
-ls
-vim 2019-01-30-daoshuoyishu-02.md 
-ls
-cp 2019-01-30-daoshuoyishu-02.md 2019-01-24-daoshuoyishu-01.md
-ls
-vim 2019-01-24-daoshuoyishu-01.md 
-vim 2019-01-30-daoshuoyishu-02.md 
-ls
-gr
-bundler exec jekyll s
-ls
-bundler exec jekyll s
-bundle install
-ls
-vim Gemfile
-vim Gemfile.lock 
-bundler exec jekyll s
-git add _posts/2019/01/2019-01-30-daoshuoyishu-02.md 
-git commit -s
-git push origin master 
-diff /usr/share/rime-data/default.yaml .config/fcitx/rime/default.yaml 
-task-web.ruby2.5 
-cd dfile/
-gsat
-gstatus 
-..
-cd .vim/
-gstatus 
-ls
-git submodule update --recursive --remote 
-cd pack/complete/opt/YCM-Generator/
-ls
-git status 
-..
-vim .gitmodules 
-man git-submodule 
-ls
-cd complete/opt/YCM-Generator/
-..
-git rm YCM-Generator/
-git submodule add -b stable https://github.com/rdnetto/YCM-Generator
-ls
-..
-vim .gitmodules 
-git status 
-..
-git submodule add https://github.com/tpope/vim-dispatch
-ls
-git submodule update --recursive --remote 
-ls
-vim
-cd pack/complete/opt/YouCompleteMe/
-ls
-vim install.sh 
-./install.py --clang-completer
-git status 
-ls third_party/requests_deps/
-ls third_party/requests_deps/urllib3/
-cd third_party/ycmd/
-gstatus 
-ls
-..
-ls
-..
-ls
-..
-git rm YouCompleteMe/
-ls
-git rm YouCompleteMe/ -f
-git submodule add https://github.com/Valloric/YouCompleteMe
-cd YouCompleteMe/
-git submodule update --init --recursive 
-ls
-./install.py --clang-completer
-vim install.py 
-cd
-cd dev/src/MedianOfNinthers/
-ls
-cd src/
-ls
-vim main.cpp 
-cd
-cd rime/
-ls
-cd linusboyle/
-ls
-l
-cd
-cd .config/fcitx/rime/
-l
-s..
-ls
-..
-ls
-cd rime/
-ls
-vim luna_pinyin.computer.dict.yaml 
-ls
-ls build/
-ls ~/rime/linusboyle/
-ls
-vim ~/rime/linusboyle/installation.yaml 
-ls
-ls trash/
-ls
-vim default.yaml 
-ls
-bat default.custom.yaml 
-ls
-vim default.custom.yaml 
-vim default.yaml 
-ls
-rm default.yaml
-cp /usr/share/rime-data/default.yaml .
-ls
-vim default.yaml 
-ls
-vim default.custom.yaml 
-ls
-vim easy_en.dict.yaml 
-vim easy_en.schema.yaml 
-ls
-ag emoji
-ls /usr/share/rime-data/
-ls
-vim /usr/share/rime-data/essay.txt 
-ls
-rm easy_en.dict.yaml
-rm easy_en.schema.yaml
-rm -r easy_en.userdb/
-ls
-vim greek.dict.yaml 
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-rm default.yaml
-ls
-ls ~/rime/linusboyle/
-vils
-ls
-ls build/
-ls
-rm emoji.schema.yaml
-l
-ag emoji
-vim luna_pinyin.schema.custom.yaml 
-ls
-rm luna_pinyin.schema.custom.yaml
-vidir
-ls
-ls cangjie5.userdb/
-rm cangjie5.schema.yaml
-rm -rf cangjie5.userdb/
-ls
-fc-match 宋体
-fc-match 思源宋体
-ls
-man fc-match 
-ls
-vim luna_pinyin.schema.yaml 
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-ls
-ls ~/rime/linusboyle/
-ls
-ls ~/rime/linusboyle/
-cd .config/fcitx/rime/
-ls
-ls /usr/share/rime-data/
-ls
-rm luna_pinyin_tw.schema.yaml
-rm luna_pinyin_simp.schema.yaml
-
-rm luna_pinyin_fluency.schema.yaml
-ls
-rm stroke.schema.yaml
-ls
-rm luna_quanpin.schema.yaml
-ls
-ls *.schema.yaml
-ls
-vimdiff .config/fcitx/rime/luna_pinyin.schema.yaml /usr/share/rime-data/luna_pinyin.schema.yaml 
-ls
-cd rime/linusboyle/
-vim default.
-vim default.yaml 
-vimdiff .config/fcitx/rime/luna_pinyin.schema.yaml /usr/share/rime-data/luna_pinyin.schema.yaml 
-cd
-vimdiff .config/fcitx/rime/luna_pinyin.schema.yaml /usr/share/rime-data/luna_pinyin.schema.yaml 
-cd dfile/rime/linusboyle/
-ls
-vim luna_pinyin.schema.yaml 
-rm luna_pinyin.schema.yaml 
-ls
-vim luna_pinyin.schema.yaml 
-ls
-vim luna_pinyin.dict.yaml 
-ls
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-ls
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-ks
-ls
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-ls
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-vim luna_pinyin.schema.custom.yaml 
-vim luna_pinyin.extended.dict.yaml 
-ls
-vim luna_pinyin.dict.yaml 
-ls
-ls /usr/share/rime-data/
-ls
-rm luna_pinyin.dict.yaml
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-vim luna_pinyin.userdb.txt 
-ls
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-cd rime/linusboyle/
-ls
-vim banlam.dict.yaml 
-rm banlam.dict.yaml
-ls
-vim blg_ha.schema.yaml 
-rm blg_ha.schema.yaml
-rm blg_tai.schema.yaml
-rm blg_ts*
-ls
-vim bopomofo.schema.yaml 
-rm bopomofo.schema.yaml
-cd
-cd .config/fcitx/rime/
-ls
-vim default.custom.yaml 
-ls
-cd -
-cd rime/linusboyle/
-ls
-rm cangjie5.schema.yaml
-vim cangjie5.userdb.txt 
-rm cangjie5.userdb.txt
-ls
-rm easy_en.*
-ls
-rm emoji.schema.yaml
-ls
-l
-ls
-l |wc
-ls
-rm luna_pinyin_tw.schema.yaml
-rm luna_pinyin_simp.schema.yaml
-ls
-l
-ls
-ls *.schema.yaml
-rm luna_pinyin_fluency.schema.yaml
-rm luna_quanpin.schema.yaml
-rm stroke.schema.yaml
-ls
-vim luna_pinyin.ext
-vim luna_pinyin.extra_hanzi.dict.yaml 
-ls
-gstatus 
-cd
-cd dfile/
-ls
-cd rime/
-ls
-gstatus 
-..
-ls
-rm -rf rime/
-mkdir rim
-mv rim/ rime
-cd rime/
-ls
-cd
-cd .config/fcitx/rime/
-vim installation.yaml 
-ls
-cd
-cd dfile/rime/
-l
-sls
-ls
-cd linusboyle/
-ls
-vim user.yaml 
-cd
-rm -r rime/
-ls
-cd dfile/rime/linusboyle/
-ls
-vim user.yaml 
-..
-gstatus 
-git add .
-git commit 
-git push origin ams
-git push origin master 
-ls
-cd
-cd .config/p
-cd .config/fcitx/rime/
-ls
-vim luna_pinyin.schema.custom.yaml
-ls
-rm luna_pinyin.schema.yaml
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-cd build/
-ls
-..
-vim luna_pinyin.schema.custom.yaml 
-rm luna_pinyin.dict.yaml
-ls
-vim luna_pinyin.extended.dict.yaml 
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-ls build/
-ls
-ls luna_pinyin.userdb.old/
-rm -rf build/
-ls
-ls build/
-vim luna_pinyin.schema.custom.yaml 
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-vim luna_pinyin.schema.custom.yaml 
-ls
-vim default.custom.yaml 
-ls
-vim default.custom.yaml 
-vim luna_pinyin.custom.yaml 
-rm luna_pinyin.schema.custom.yaml
-ls
-vim luna_pinyin.custom.yaml 
-ls
-vim mydict.dict.yaml
-ls
-vim luna_pinyin.extended.dict.yaml 
-vim luna_pinyin.hanyu.dict.yaml 
-ls
-vim luna_pinyin.ext
-vim luna_pinyin.extended.dict.yaml 
-ls
-l
-vim luna_pinyin.hanyu.dict.yaml 
-vim luna_pinyin.custom.yaml 
-ls
-ls build/
-ls
-ls build/
-cd dfile/rime/linusboyle/
-ls
-vim hzl_pinyin.userdb.txt 
-vim luna_pinyin.userdb.txt 
-cd dfile/rime/linusboyle/
-ls
-vim hzl_pinyin.userdb.txt 
-cd post/2019/01/
-vim 2019-01-30-daoshuoyishu-02.md 
-ls
-cd
-cd dfile/rime/linusboyle/
-ls
-vim luna_pinyin.userdb.txt 
-cd
-cd .config/fcitx/rime/
-ls
-ls luna_pinyin.userdb
-ls hzl_pinyin.
-ls hzl_pinyin.userdb/
-ls
-cp ~/dfile/rime/linusboyle/luna_pinyin.userdb.txt /
-cp ~/dfile/rime/linusboyle/luna_pinyin.userdb.txt .
-ls
-cd hzl_pinyin.userdb/
-ls
-bat 000008.log 
-bat CURRENT 
-l
-..
-ls
-rm luna_pinyin.userdb.txt
-ls
-vim luna_pinyin.custom.yaml 
-ls
-ls hzl_pinyin.userdb/
-cd
-cd post/
-cd postcd
-cd
-cd post/2019/01/
-vim 2019-01-30-daoshuoyishu-02.md 
-git commit -as
-git push origin 
-git push origin master 
-vim 2019-01-30-daoshuoyishu-02.md 
-cd .config/fcitx/rime/
-vim luna_pinyin.custom.yaml 
-ls
-vim hzl_pinyin.dict.yaml 
-ls
-vim luna_pinyin.computer.dict.yaml 
-vim luna_pinyin.sgmain.dict.yaml 
-ls
-vim user.yaml 
-ls
-vim luna_pinyin.extra_hanzi.dict.yaml 
-ls
-vim luna_pinyin.comprehensive.dict.yaml 
-ls
-ls ~/dfile/rime/linusboyle/
-ls
-vim math.dict.yaml 
-vim name.dict.yaml 
-vim hzl_pinyin.
-vim hzl_pinyin.dict.yaml 
-vim luna_pinyin.sgplus2.dict.yaml 
-ls
-vim symbols.yaml 
-ag symbols
-vim /usr/share/rime-data/luna_pinyin.schema.yaml 
-ls
-vim symbols.yaml 
-rm symbols.yaml
-ls
-ag import
-ls
-vim /usr/share/rime-data/symbols.yaml 
-ls
-vim /usr/share/rime-data/default.yaml 
-ls
-cd
-cd dev/src/
-ls
-git clone git@github.com:mrzzcn/RIME-Extend-Dict.git
-ls
-cd RIME-Extend-Dict/
-ls
-vim README.md 
-ls
-ls luna_pinyin.extended
-cd luna_pinyin.extended/
-ls
-..
-ls
-vim luna_pinyin.extended
-vim luna_pinyin.extended.dict.yaml 
-l
-ls
-cd tools/
-ls
-vim baiduspider.py 
-ls
-ls IME/
-vim rime_dict_tool.py 
-ponysay asf
-cd dfile/rime/linusboyle/
-ls
-rm symbols.yaml
-ls
-gstatus 
-git add .
-git commit -as
-ls
-gstatus 
-git push origin master 
-cd
-ls
-cnf ponysay
-cd dev/src/
-git clone https://github.com/erkin/ponysay
-cd ponysay/
-ls
-./setup.py 
-./setup.py --version
-./setup.py --help
-./setup.py --freedom=partial install
-./dependency-test.sh 
-cnf makeinfo
-sudo zypper install makeinfo
-man makein
-man makeinfo 
-./setup.py --freedom=partial install
-./dependency-test.sh 
-cnf ponytool
-./setup.py --freedom=partial install
-sudo ./setup.py --freedom=partial install
-ls /usr/share/licenses/
-ponysay saf
-man ponysay
-ponysay -F sas
-man ponysay
-fortune |ponysay
-fortune |ponysay -F
-fortune |ponysay
-fortune |ponythink 
-cd dev/
-ls
-cd src/MedianOfNinthers/src/
-vim bfprt_baseline.cpp 
-cd dev/src/MedianOfNinthers/
-vim src/timer.h 
-cd /usr/include/boost/
-ls
-cd hana/
-ls
-vim any.hpp 
-d dev/program/snippet/
-ls
-cd dev/program/snippet/
-ls
-vim friend.cpp
-g++ friend.cpp 
-./a.out 
-vim friend.cpp
-cd
-cd dev/arena9/ClientMain/
-ls
-yarn run dev
-cd
-cd dev/src/
-ls
-..
-ls
-ls program/
-cd cppstdlib/
-ls
-..
-ls
-..
-ls
-ls game/
-ls dwn/
-cd d
-cd dwn/
-ls
-ls JB51\(jb51.net\)/
-rmdir JB51\(jb51.net\)/
-ls
-..
-ls
-ls logs/
-ls
-vim .vim/keymap.vim 
-vim .vimrc 
-cnf meredo
-cnf mredo
-cnf merdo
-ls
-cd dev/src/
-cd MedianOfNinthers/
-cd src/
-ls
-vim median_of_ninthers.cpp 
-zypper se --installed-only opengl
-ponysay haha
-ls
-vim instrumented_double.h 
-cd
-q
-ls
-cd pix/
-ls
-imgv resized.png 
-ls
-imgv bg.jpg 
-imgv bg2.jpg 
-cd
-ls
-cd dev/src/
-ls
-..
-cd program/
-ls
-mkdir graph
-cd graph/
-ls
-wget https://raw.githubusercontent.com/miloyip/svpng/master/svpng.inc
-ls
-vim svpng.inc 
-ls
-vim test.c
-g++ test.c -o test
-./test 
-ls
-bat rgb.png 
-imgv rgb.png 
-file rgb.png 
-ls
-cd dev/program/ge
-cd dev/program/graph/
-ls
-g++ line_bresenham.c -o line
-./line 
-ls
-imgv line_bresenham.png 
-imgv rgb.png 
-ls
-xxd line_bresenham.
-xxd line_bresenham.png 
-ls
-vim
-g++ line_bresenham.c -o line
-./line 
-imgv line_bresenham.png 
-ls
-rm test
-ls
-rm line
-ls
-devhelp 
-g++ bresenham.cpp -o bresenham
-./bresenham 
-ls
-imgv line.png 
-ls
-g++ bresenham.cpp -o bresenham
-./bresenham 0 0 510 510
-g++ bresenham.cpp -o bresenham
-./bresenham 0 0 510 510
-./bresenham 10 10 500 500
-./bresenham 500 0 0 500
-./bresenham 500 10 20 400
-cd
-cd /usr/include/boost/gil/
-ls
-vim gil_all.hpp 
-ag rgb8
-ls
-cd -
-cd dev/program/graph/
-ls
-cd -
-cd /usr/include/boost/gil/
-ag jpeg_write_view
-ag write_view
-ls
-ag tiff_tag
-ag png_tag
-ls
-cd io/
-ls
-vim io.hpp 
-ag png
-vim device.hpp 
-..
-cd extension/io/
-ls
-vim png.hpp 
-vim png/write.hpp 
-ag png_tags
-ag png_tag
-vim tiff.hpp 
-..
-cd io/
-ls
-vim write_view.hpp 
-cd
-cd .vim/
-ls
-cd after/ftplugin/
-ls
-vim cpp.vim 
-vim ~/bin/bat 
-vim ~/bin/3dcat 
-vim sh.vim
-ls
-cd
-cd dev/program/graph/
-ls
-g++ bresenham.cpp -o bresenham
-ls
-g++ bresenham.cpp -o bresenham
-cd
-cd post/
-cd 2019/01/
-..
-mkdir 02
-ls
-cd 0
-cd 02
-ls
-vim 2018-02-01-bresenham-algorithm.md
-vim 2019-02-01-bresenham-algorithm.md
-git add 2019-02-01-bresenham-algorithm.md 
-gr
-git add 2019-02-01-bresenham-
-gr
-bundler exec jekyll s
-git add assets/*
-git commit -s
-git push origin master 
-c
-cd
-cd /usr/include/boost/mas
-cd /usr/include/boost/math/
-ls
-vim common_factor.hpp 
-..
-ls
-cd integer/
-ls
-vim common_factor.hpp 
-cd dev/program/graph/
-wget https://raw.githubusercontent.com/miloyip/line/master/line_bresenham.c
-vim line_bresenham.c 
-vim bresenham.cpp 
-ls
-vim gil_test.cpp
-ls
-rm gil_test.cpp
-ls
-vim bresenham.cpp 
-cmake -v
-cmake --version
-ccmake
-ls
-cd dev/program/graph/
-g++ bresenham.cpp -o bresenham
-./bresenham 500 10 20 400
-imgv line.png 
-imgv line_bresenham.png 
-ls
-cd dev/program/graph/
-ls
-./bresenham 0 0 500 500
-g++ bresenham.cpp -o bresenham
-./bresenham 0 0 500 500
-g++ bresenham_circle.cpp -o circle
-./circle 
-g++ bresenham_circle.cpp -o circle
-./circle 
-g++ bresenham_circle.cpp -o circle
-./circle 
-file bresenham_circle.cpp 
-file circle
-gdb circle 
-ls
-lld circle
-ldd circle
-file circle.png 
-ls
-nmcli device wifi list 
-nmcli device wifi rescan 
-nmcli device wifi list 
-cd
-cd dev/program/graph/
-ls
-vim bresenham.cpp 
-cnf compdef
-compdef
-ls app/enhancd/
-cd 
-echo $ENHANCD_FILTER 
-cd dev
-..
-ls
-..
-cd src
-..
-ls
-cd src
-cd
-cd -
-cd
-builtin cd ..
-ls
-cd
-cd are
-cd
-ls
-zathura doc.pdf 
-cd
-cd d/a
-cd dev/arena9/
-cd
-cd dev/aer
-cd dev/are
-cd are
-cd
-cd 9
-cd clien
-cd
-ls
-cd dev/program/graph/
-ls
-bat test.c 
-mv test.c rgb.c
-ls
-vim rgb.c
-vim bresenham.cpp 
-ls
-cnf fzf
-cnf fzy
-sudo zypper install fzy
-cd 
-cd .vim/
-ls
-vim tweak.vim 
-vim thirdparty.vim 
-find . -type f | fzy
-man fzy
-ls |fzy
-cd
-ls
-cd dev/linusboyle.github.io/
-..
-cd arena9/ClientMain/
-ls
-vim Dockerfile 
-ls
-cd
-cd .vim/pack/util/lea
-cd .vim/pack/util/start/LeaderF/
-ls
-./install.sh 
-ls
-ls autoload/
-ls plugin/
-ls autoload/
-ls autoload/l
-ls autoload/leaderf
-ls autoload/leaderf/fuzzyMatch_C/
-cd
-cd dev/
-ls
-cd src/
-https://github.com/b4b4r07/enhancd
-git clone https://github.com/b4b4r07/enhancd
-cd enhancd/
-ls
-vim init.sh 
-ls
-cd
-vim .bashrc 
-cd -
-ls
-..
-cd
-mv dev/src/enhancd/ app/
-vim .bashrc 
-cd template
-cd
-cd ftpl
-cd text
-cd txt
-cd ftplugin
-cd .vim/ftplugin/
-..
-cd ftp
-cd com
-cd -
-cd dev/program/graph/
-vim bresenham
-vim bresenham.cpp 
-cd dev/program/graph/
-vim bresenham.cpp 
-mkdir test
-cd te
-cd test/
-mkdir text
-mkdir txt
-cd text
-..
-cd txt
-cd
-rm -r test/
-man fzy
-ls
-cd bi
-cd
-man find
-find . -type d |fzy
-ls
-cnf fd
-sudo zypper install fd
-man fd
-cd .vim/
-fd -e vim
-fd -e vim|fzy
-ls
-.
-..
-fd -e py
-ls
-cd .vim/
-ls
-
-ls | fzy | cd -
-ls
-ls | fzy
-cd after
-..
-ls
-cd plugin/
-ls
-vim textobj.vim 
-ls
-vim simple_highlight.vim 
-ls
-vim wi
-vim window.vim 
-ls
-vim cool.vim 
-ls
-vim initCursor.vim 
-ls
-vim abbreviation.vim 
-ls
-vim shebang_create_exec.vim 
-ls quickfix/
-vim quickfix/quickfix_auto_open.vim 
-vim quickfix/quickfix_exit.vim 
-ls
-cd
-ls
-git clone https://github.com/romainl/vim-qlist
-mv vim-qlist/doc/qlist.txt .vim
-mv vim-qlist/plugin/qlist.vim .vim/plugin/
-cd .vim/
-ls
-mkdir doc
-mv qlist.txt doc/
-ls
-ls plugin/
-vim command.vim 
-cd
-cd graph/
-ls
-vim bresenham_circle.cpp 
-cd
-cd .vim/
-ls
-ag copen
-vim autoload/window.vim 
-vim plugin/qlist.vim 
-cd
-cd -
-vim after/ftplugin/qf.vim 
-git status 
-cd pack/
-gstatus 
-git commit -a
-git push origin master 
-.
-..
-gstatus 
-git add pack/
-git commit 
-git add after/ftplugin/*
-git commit 
-gstatus 
-ls plugin/
-git log
-ls
-ls plugin/
-vim qli
-vim plugin/qlist.vim 
-ls
-gstatus 
-git add doc/
-git commit 
-git commit -as
-git push origin master 
-cd
-ls
-cd .vim/pack/util/start/LeaderF/
-..
-ls
-git submodule add https://github.com/skywind3000/asyncrun.vim
-cd
-vim .vim/thirdparty.vim 
-ls
-vim .vim/keymap.vim 
-vim .vim/thirdparty.vim 
-vim .vim/pack/util/start/asyncrun.vim/plugin/asyncrun.vim 
-vim .vim/keymap.vim 
-vim .vim/thirdparty.vim 
-cd .vim/plugin/
-ls
-mv qlist.vim quickfix/
-ls
-cd quickfix/
-
-vim quickfix_auto_open.vim 
-ls
-cd .vim/pack/util/start/LeaderF/
-ag set
-ag filetype
-vim CHANGELOG.md 
-ls plugin/
-ls autoload/leaderf
-ls
-vim CHANGELOG.md 
-cnf rg
-sudo zypper install ripgrep
-man rg
-rg doc
-ag doc
-time ag doc
-time rg doc
-cd
-ls
-vim initCursor.vim 
-cd post/
-ls
-cd
-ls
-vim
-cd -
-vim
-cd
-cd .vim/autoload/
-ls
-vim ..
-..
-ls
-ls after/
-ls plugin/
-ag grepper
-cd plugin/
-ag grepper
-vim grepOperator.vim 
-cd .vim/pack/util/start/LeaderF/
-..
-cd echodoc.vim/
-s
-ls
-vim plugin/echodoc.vim 
-cd autoload/
-ls
-vim echodoc.vim 
-ls
-vim echo
-vim echodoc.vim 
-ls
-cd
-cd dev/
-ls
-fd 2
-fd 256
-man fd
-man mmap
-ls
-man fd
-fd -e cpp
-ls
-ls cppstdlib/
-ls
-vim doctest.h 
-ls
-ls program/
-ls python/
-ls ls
-ls
-cd
-ls
-cd .vim/pack/
-gsta
-gstatus 
-cd util/start/echodoc.vim/
-gstatus 
-ls doc/tags
-bat doc/tags 
-ls
-gstatus 
-ls doc/
-rm doc/tags
-ls
-..
-ls
-gstatus 
-git submodule add https://github.com/sirver/ultisnips
-ls
-cd ultisnips/
-ls
-vim README.md 
-ls
-ls doc
-vim doc/UltiSnips.txt 
-ls
-vim README.md 
-vim doc/UltiSnips.txt 
-ls
-ls UltiSnips/
-c
-cd
-mkdir UltiSnips
-cd UltiSnips/
-wget https://raw.githubusercontent.com/honza/vim-snippets/master/UltiSnips/c.snippets
-vim a.c
-wget https://raw.githubusercontent.com/honza/vim-snippets/master/UltiSnips/cpp.snippets
-ls
-vim cpp.snippets 
-ls
-..
-ls
-cd 
-ls
-vim doc/UltiSnips.txt 
-vim ~/.vim/thirdparty.vim 
-vim a.cpp
-cd dev/program/graph/
-g++ ellipse.cpp -o ellipse
-./ellipse 
-g++ ellipse.cpp -o ellipse
-./ellipse 
-g++ ellipse.cpp -o ellipse
-./ellipse 
-g++ ellipse_fill.cpp -o ellipse_fill
-./ellipse_fill 
-g++ ellipse_fill.cpp -o ellipse_fill
-./ellipse_fill 
-ls
-vim
-cd .vim/
-mkdir thesaurus
-cd thesaurus/
-wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
-wget https://raw.githubusercontent.com/saliola/vim-conf/ec3e36b0893328d971dc4f09098c7bd7ed2aa463/thesaurus/mthesaur.txt
-ls
-vim mthesaur.txt 
-cd
-vim .vimrc
-ls
-cd dev/program/graph/
-ls
-vim base.h 
-ls
-vim base_v2.h
-ls
-vim ellipse_bf.cpp
-zypper se insight
-ls
-cd dev/program/graph/
-ls
-vim ellipse_fill.
-vim ellipse_fill.cpp 
-g++ ellipse_fill.cpp -o ellipse_fill
-./ellipse_fill 
-g++ ellipse_fill.cpp -o ellipse_fill
-vim ellipse_fill.cpp 
-ls
-zypper search meredo
-zypper search me
-cnf miredo
-sudo zypper install miredo-client 
-cd
-cd dwn/
-wget https://github-production-release-asset-2e65be.s3.amazonaws.com/29290473/ffab8580-044b-11e9-9718-9ad0ca28656c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190205T065620Z&X-Amz-Expires=300&X-Amz-Signature=a363f940a0da355c1e537cc376828577d945c38c91ec744bd5ffd636c660a8dc&X-Amz-SignedHeaders=host&actor_id=33540801&response-content-disposition=attachment%3B%20filename%3DXX-Net-3.13.1.7z&response-content-type=application%2Foctet-stream
-ls
-rm wget-log
-wget 'https://github-production-release-asset-2e65be.s3.amazonaws.com/29290473/ffab8580-044b-11e9-9718-9ad0ca28656c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190205T065620Z&X-Amz-Expires=300&X-Amz-Signature=a363f940a0da355c1e537cc376828577d945c38c91ec744bd5ffd636c660a8dc&X-Amz-SignedHeaders=host&actor_id=33540801&response-content-disposition=attachment%3B%20filename%3DXX-Net-3.13.1.7z&response-content-type=application%2Foctet-stream'
-ping github.com
-ping www.baidu.com
-sudo miredo 
-nmcli device status 
-cd XX-Net-3.13.1/
-ls
-chmod +x xx_net.sh 
-bat start
-bat start.bat 
-chmod +x start
-./start 
-cd dev/program/graph/
-ls
-g++ ellipse_fill.cpp -o ellipse_fill -g
-cd dwn/
-chmod +x Insight-continuous-x86_64.AppImage 
-ls
-./Insight-continuous-x86_64.AppImage 
-rime_dict_manager -h
-rime_dict_manager --version
-rime_dict_manager -v
-cd dev/program/dsa/implementation/
-ls
-cd min-max-heap/
-ls
-g++ mmheap.cpp -o mmheap
-./mmheap 
-g++ mmheap.cpp -o mmheap -g
-gdb mmheap 
-g++ mmheap.cpp -o mmheap -g
-./mmheap 
-~/dwn/Insight-continuous-x86_64.AppImage 
-g++ mmheap.cpp -o mmheap -g
-cd dwn/
-ls
-mkdir insight
-mv Insight-continuous-x86_64.AppImage insight
-ls
-cd insight/
-ls
-./Insight-continuous-x86_64.AppImage --version
-./Insight-continuous-x86_64.AppImage -h
-file Insight-continuous-x86_64.AppImage 
-appimagetool --help
-appimagetool -l Insight-continuous-x86_64.AppImage 
-./Insight-continuous-x86_64.AppImage 
-vim ~/.bashrc 
-vim /etc/bash.bashrc 
-echo $PATH
-echo $PATH:ha
-./Insight-continuous-x86_64.AppImage --appimage-extract
-ls
-cd squashfs-root/
-ls
-vim usr/bin/insight-wrapper 
-file usr/bin/insight
-file usr/bin/insight-wrapper 
-ls
-vim AppRun 
-file AppRun 
-./AppRun 
-ls
-..
-appimagetool squashfs-root/
-ls
-./Insight-x86_64.AppImage 
-git clone git://sourceware.org/git/insight.git
-ls
-cd insight/
-ls
-git log
-ls
-vim README 
-ls
-..
-ls
-mv Insight-x86_64.AppImage ~/app/
-ls
-cd
-ls
-ls app/
-ls
-ln -s app/Insight-x86_64.AppImage bin/insight
-cd bin/
-ls
-ls insight
-l
-rm insight
-..
-ls
-ln -s ~/app/Insight-x86_64.AppImage ~/bin/insight
-ls bin/
-insight 
-cd dev/program/dsa/
-ls
-cd implementation/
-ls
-mkdir min-max-heap
-cd min-max-heap/
-ls
-vim mmheap.cpp
-nmcli device status 
-ping www.baidu.com
-cnf tclsh
-cnf wish
-man tclsh
-ls /usr/share/tcl/
-ls /usr/lib64/tcl/
-vim mmheap.cpp
-cnf kdevelop
-sudo zypper install kdevelop5
-clang --version
-okteta --help
-man okteta
-okteta 
-okteta .vimrc 
-ls
-rm -rf projects/
-ls
-ls vim-qlist/
-rm -rf vim-qlist/
-vim
-zypper se godot
-cd dwn/XX-Net-3.13.1/
-./start 
-cd _posts/2019/02/
-ls
-vim 2019-02-07-daoshuoyishu-03.md 
-git add 2019-02-07-daoshuoyishu-03.md 
-git commit 
-..
-cd post/2019/02/
-ls
-cp ../01/2019-01-24-daoshuoyishu-01.md 2019-02-07-daoshuoyishu-03.md
-vim 2019-02-07-daoshuoyishu-03.md 
-gr
-bundler exec jekyll s
-ls
-gstatus 
-git push origin master 
-cd
-cd dev/src/
-git clone https://github.com/arialdomartini/oh-my-git
-cd oh-my-git/
-ls
-source prompt.sh 
-ls
-gstatus 
-cd
-cd dev/arena9/
-cd ClientMain/
-s
-ls
-cd 
-..
-rm -r oh-my-git/
-rm -rf oh-my-git/
-cd dev/
-wget https://raw.githubusercontent.com/riobard/bash-powerline/master/bash-powerline.sh
-source  bash-powerline.sh 
-ls
-cd arena9/ClientMain/
-ls
-cd 
-ls
-echo $TERM
-vim
-figlet saf
-y
-yes
-ls
-ls Larian\ Studios/
-man alacritty 
-ls
-ls-l
-vim post/2019/01/2019-01-17-linear-select.md 
-cd dev/
-ls
-vim doctest.h 
-ls
-sudo zypper install alacritty
-alacritty 
-cd dwn/
-cd XX-Net-3.13.1/
-./start 
-vim
-cd dev/
-ls
-vim bash-powerline.sh 
-cd
-cd .vim/
-vim th
-vim thirdparty.vim 
-cd pack/util/start/LeaderF/
-ls
-ls plugin/leaderf.vim
-ls autoload/leaderf/colorscheme
-cd autoload/leaderf/colorscheme/
-ls
-vim default.vim 
-cd dwn/
-ls
-./TIM-x86_64.AppImage 
-ls
-l
-l -h
-echo $LANG
-LANG=zh_CN ./TIM-x86_64.AppImage 
-./QQ-20171129-x86_64.AppImage 
-vim
-cling
-dwn/QQ-20171129-x86_64.AppImage 
-date
-ls /etc/X11/
-ls /etc/X11/xorg.conf.d/
-cd dwn/
-ls
-ls 1042192908_陸慈郎/
-ls 1042192908_陸慈郎/apps/baidu_shurufa/
-ls
-cd BaiduPCS-Go-v3.5.4-linux-amd64/
-ls
-./BaiduPCS-Go 
-vcmiclient --version
-ls /usr/bin/vcmiclient
-ls /usr/bin/vcmiclient|xargs ldd
-ls /usr/bin/vcmiclient|xargs ldd|grep not
-cd dev/src/
-ls
-git clone -b develop --depth 1 --recursive https://github.com/vcmi/vcmi.git
-l
-scd vcmi/
-cd vcmi/l
-cd vcmi/
-ls
-mkdir build
-cd build/
-ls
-cmake ../vcmi
-cmake ../vcmi/
-ls ../vcmi
-..
-ls
-cd build/
-cmake ..
-c++ --version
-man c++
-file $(which c++)
-cmake ..
-vidir
-man luit
-luit --encoding gbk ls
-luit -encoding gbk ls
-man unlink
-ls
-cd dev/src/vcmi/
-ls
-cd build/
-ls
-vim Makefile 
-cmake --build . -- -j4
-cmake --build . --
-ls /usr/include/ffmpeg/libavformat/
-ls
-cmake --build . --
-ls
-vim Makefile 
-ls
-..
-ls
-vim CMakeLists.txt 
-ls
-cd -
-ls
-man make
-ls
-sudo ln -s /usr/include/ffmpeg/libavformat/ /usr/include/libavformat
-ls /usr/include/
-cmake --build . --
-sudo ln -s /usr/include/ffmpeg/libavcodec /usr/include/
-ls /usr/include/
-cmake --build . --
-sudo ln -s /usr/include/ffmpeg/libavutil/ /usr/include/
-cmake --build . --
-sudo ln -s /usr/include/ffmpeg/libswscale /usr/include/
-cmake --build . --
-ls
-ls bin/
-vim Makefile 
-sudo make install
-vim Makefile 
-sudo make list_install_components
-vim Makefile 
-ls
-vcmiclient 
-ls lib/
-ls bin/
-ls
-ls /usr/local/bin/
-ls /usr/local/lib64/
-ls /usr/local/lib64/vcmi/
-ldd /usr/local/bin/vcmiclient 
-ldd /usr/local/bin/vcmiclient |grep not
-echo $LD_LIBRARY_PATH
-LD_LIBRARY_PATH=/usr/local/lib64/vcmi/ vcmiclient 
-LD_LIBRARY_PATH=/usr/local/lib64/vcmi/ vcmibuilder --gog /home/linusboyle/game/英雄无敌3白金版/setup_homm3_complete_2.0.0.16.exe 
-cd ~
-cd .local/share/vcmi/
-ls
-cd Data/
-ls
-l
-..
-ls
-ls Maps/
-ls
-ls Mp3/
-ls
-ls Saves/
-LD_LIBRARY_PATH=/usr/local/lib64/vcmi/ vcmilauncher 
-LD_LIBRARY_PATH=/usr/local/lib64/vcmi/ vcmilauncher 
-cd bin/
-ls
-LD_LIBRARY_PATH=/usr/local/lib64/vcmi/ vcmilauncher 
-ls
-vim vcmi
-ls
-chmod +x vcmi 
-ls
-vcmi
-ls
-vcmi
-cd dev/src/
-ls
-df -g
-df -h
-ls
-..
-ncdu
-ls
-mv StarRuler2-Source/ src/
-ls
-cd src/
-git clone https://github.com/lua/lua
-ls
-cd lua/
-ls
-ls all
-file all
-make
-sudo zypper install readline-devel
-sudo unlink /usr/include/libavcodec/
-sudo unlink /usr/include/libavcodec
-sudo unlink /usr/include/libavformat
-sudo unlink /usr/include/libavutil
-ls /usr/include/ffmpeg/
-ls /usr/include/ffmpeg/libavf
-ls /usr/include/ffmpeg/libavformat/
-ls /usr/include/readline/
-make
-ls
-vim all
-man gcc
-ls
-vim lua
-file lua
-vim lua
-ls
-man gcc
-man ld
-ls
-..
-lua
-man lua
-man luac
-man lua
-ls
-cd lua/
-ls
-./lua 
-ls
-vim lua.h
-ls
-sudo vim /sys/class/backlight/intel_backlight/brightness 
-ls
-sudo vim /sys/class/backlight/intel_backlight/brightness 
-bat /sys/class/backlight/intel_backlight/brightness 
-bat /sys/class/backlight/intel_backlight/max_brightness 
-sudo vim /sys/class/backlight/intel_backlight/brightness 
-ls
-nmcli device status 
-sudo miredo
-ls
-sudo systemctl restart miredo-client.service 
-systemctl status miredo-client.service 
-nmcli device status 
-cd dwn/
-./XX-Net-3.13.1/start 
-cd dwn/BaiduPCS-Go-v3.5.4-linux-amd64/
-./BaiduPCS-Go 
-cd dwn/BaiduPCS-Go-v3.5.4-linux-amd64/
-./BaiduPCS-Go 
-vcmi
-ls .local/share/vcmi/
-ls
-ls .local/share/vcmi/Mods/
-ls .local/share/vcmi/Saves/
-ls .local/share/vcmi/Data/
-ls .local/share/vcmi/Maps/
-vcmi
-ls
-vcmi
-ls
-cd dwn/
-cd XX-Net-3.13.1/
-./start 
-cling
-cd dev/program/graph/
-ls
-mkdir ray
-cd ray/
-ls
-vim vector.hpp
-gvim vector.
-gvim vector.cpp 
-ls
-cd post/
-ge
-g
-gr
-ls
-git rm CNAME 
-git commit 
-git push origin master 
-ls
-logremote 
-s
-ping www.baidu.com
-sudo zypper remove alacritty
-sudo zypper remove alacritty-*
-man ppm
-ls
-cd dev/
-ls
-cd gr
-cd program/graph/
-ls
-man ppm
-man pnm
-man pbm
-man pgm
-man libnetpbm_dir 
-man pam
-vim test.ppm
-vim test2.ppm
-vim test3.ppm
-man ppm
-sudo zypper refresh
-g++ main.cpp 
-g++ main.cpp vector.cpp 
-ls
-./a.out 
-g++ main.cpp vector.cpp 
-./a.out 
-g++ main.cpp vector.cpp 
-./a.out 
-g++ main.cpp vector.cpp 
-./a.out 
-~/dev/256colors2.pl 
-sudo zypper install telegram-desktop 
-valgrind --version
-valgrind
-ruby -v
-cd dwn/XX-Net-3.13.1/
-./start 
-python
-g++ main.cpp vector.cpp 
-./a.out 
-g++ main.cpp vector.cpp 
-./a.out 
-g++ main.cpp vector.cpp 
-./a.out 
-ping www.baidu.com
-g++ main.cpp vector.cpp 
-g++ main.cpp vector.cpp image.cpp 
-./a.out 
-ls
-g++ main.cpp vector.cpp image.cpp 
-ls
-./a.out 
-ls
-cd dev/program/graph/
-ls
-feh test2.ppm 
-cd ray/
-ls
-vim main.cpp
-ls
-vim main.cpp 
-ls
-vcmi
-cd dfile/git/
-ls
-ls -l
-ls -a
-ls .git_template/
-vim .gitconfig 
-cd
-ls
-cp svpng.inc render/
-ls render/
-ls
-mv svpng.inc ray/
-ls
-cd ray/
-git init
-ls
-git remote add origin git@github.com:linusboyle/miniRay.git
-gstatus 
-rm a.out
-ls
-vim .gitignore
-ls
-gstatus 
-ls
-ls .git
-git add .
-git commit 
-ls
-ls .git
-vim .git/hooks/ctags 
-ls
-cd
-cd ray/
-ls
-g++ main.cpp -o test
-g++ main.cpp -std=c++17 -o test
-g++ main.cpp surface.cpp vector.cpp -std=c++17 -o test
-g++ main.cpp surface.cpp vector.cpp image.cpp -std=c++17 -o test
-ls
-./test 
-g++ main.cpp surface.cpp vector.cpp image.cpp -std=c++17 -o test -g
-insight test 
-insight
-gdb test
-ls
-g++ main.cpp surface.cpp vector.cpp image.cpp -std=c++17 -o test -g
-./test 
-g++ main.cpp surface.cpp vector.cpp image.cpp -std=c++17 -o test -g
-./test 
-cd dev/program/graph/
-ls
-cd r
-cd ray/
-ls
-vim main.cpp 
-cd
-ls
-g++ main.cpp surface.cpp vector.cpp image.cpp -std=c++17 -o test
-./test 
-g++ main.cpp surface.cpp vector.cpp image.cpp -std=c++17 -o test
-g++ main.cpp surface.cpp vector.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-ls
-./test 
-ls
-gstatus 
-git commit -a
-git push origin master 
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-git add main.cpp 
-git commit 
-git push origin master 
-cd
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-cd
-cd -
-g++ main.cpp sphere..cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-imgv Sphere.png 
-cd 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-imgv Sphere.png 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test -g
-gdb te
-gdb test
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test -g
-./test 
-ls
-ls /
-ls ~
-cd
-cd -
-ls
-ls -a
-rm -rf fugitive\:/
-ls
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-ls
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test -g
-gdb test
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-cd
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test
-./test 
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test -g
-gdb test
-g++ main.cpp sphere.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp shading.cpp plane.cpp -std=c++17 -o test -g
-./test 
-ls -l
-cal
-ls
-cd 
-ls
-gstatus 
-ls
-vim .gitignore 
-ls
-gstatus 
-l
-l -h
-ls
-ldd test 
-readelf test 
-readelf -s test 
-c++filt _Z5svpngP8_IO_FILEjjPKhi
-c++filt __cxa_pure_virtual@@CXXAB
-c++filt _ZN9__gnu_cxx13new_alloca
-c++filt _ZNSt13move_iteratorIPPN8
-c++filt _ZNSt12_Vector_baseIPN8gr
-c++filt _ZN8graphics3RayC1ERKNS_1
-c++filt _ZN8graphics6Camera12setV
-man c++filt 
-ls
-imgv Sphere.png 
-vim main.cpp 
-g++ main.cpp surface.cpp vector.cpp color.cpp image.cpp camera.cpp scene.cpp -std=c++17 -o test
-./test 
-imgv Sphere.png 
-ls
-vim scene.cpp 
-vcmi
-ls
-cd 
-cd build/
-cmake ..
-make
-cd 
-gstatus 
-git commit  -a
-git push origin master 
-cmake --version
-ls
-vim CMakeLists.txt
-ls
-mkdir include
-mkdir src
-ls
-mv *.hpp include/
-ls
-mv *.cpp src/
-ls
-mkdir build
-cd build/
-ls
-cmake ..
-ls
-vim Makefile 
-ls
-ls CMakeFiles/
-make
-ls
-..
-ls
-mv svpng.inc include/
-ls
-rm test
-ls
-cd build/
-ls
-make
-vim ../CMakeLists.txt 
-cmake ..
-make
-ls
-./render 
-ls
-imgv render.png 
-ls
-rm render
-rm render.png
-ls
-make
-ls
-ls CMakeFiles/
-ls CMakeFiles/render.dir/
-ls CMakeFiles/render.dir/src/
-..
-ls
-cd src/
-ls
-..
-ls
-gstatus 
-git add .
-gstatus 
-git commit 
-ls
-mv src/main.cpp .
-ls
-vim CMakeLists.txt 
-ls
-ls src/
-ls
-cd build/
-ls
-cmake ..
-make
-ls CMakeFiles/
-ls
-ls src/CMakeFiles/
-ls
-./render 
-ls
-imgv render.png 
-ls
-rm render.png
-ls
-gstatus 
-..
-git add .
-git commit 
-ls
-git ls-files
-ls
-vim Readme.md
-mv Readme.md readme.md
-git add readme.md 
-git commit 
-git push origin master 
-ls
-c
-cd
-cd dwn/XX-Net-3.13.1/
-l
-s
-./start 
-zypper se clementine
-sudo zypper install clementine 
-sudo zypper remove clementine 
-ls
-xhost +
-vcmi
-ls
-vcmi
-task-web.ruby2.5 
-cd post/
-ls
-cd 2019/
-ls
-cd 02/
-l
-s
-ls
-vim 2019-02-17-daoshuoyishu-04.md
-gr
-bundler exec jekyll s
-ls
-cd -
-ls
-vim 2019-02-17-daoshuoyishu-04.md
-cd doc/
-fd *.pandoc
-fd pandoc
-cd
-ls
-fd pandoc
-vim dev/arena9/ClientMain/doc/hall/hall.pandoc 
-cd 
-ls
-pan gaogeng.pandoc -o test.pdf 
-zathura test.pdf 
-pan gaogeng.pandoc -o test.pdf 
-zathura test.pdf 
-cd doc/实践/
-ls
-vim gaogeng.md
-ls
-vim gaogeng.pandoc
-ls
-pan gaogeng.pandoc -o test.pdf
-zathura test.pdf 
-vim gaogeng.pandoc
-nmcli device status 
-sudo systemctl start miredo-client.service 
-nmcli device status 
-cd
-cd dwn/XX-Net-3.13.1/
-./start 
-cd doc/
-cd
-ls
-vim dev/arena9/ClientMain/doc/hall/hall.pandoc 
-vim gaogeng.pandoc 
-pan gaogeng.pandoc -o test.pdf 
-zathura test.pdf 
-vim gaogeng.pandoc 
-zathura test.pdf 
-pan gaogeng.pandoc -o test.pdf 
-zathura test.pdf 
-vcmi
-cd dwn/XX-Net-3.13.1/
-ls
-./start 
-cd dwn/XX-Net-3.13.1/
-./start 
-nmcli device status 
-sudo systemctl restart miredo-client.service 
-nmcli device status 
-go
-cnf go
-sudo zypper install gcc-go
-sudo zypper install go1.11
-sudo zypper info go1.11
-sudo zypper info gcc-go
-sudo zypper install gcc-go
-go 
-go get github.com/claudiodangelis/qr-filetransfer
-ls
-cd dev/src/
-git clone https://github.com/claudiodangelis/qr-filetransfer
-ls
-cd
-go get github.com/claudiodangelis/qr-filetransfer
-ls
-ls go
-rm -rf go
-ls
-cd dwn/XX-Net-3.13.1/
-ls
-./start 
-pip3 install qr-filetransfer
-sudo pip3 install qr-filetransfer
-man qr
-ls
-cd dfile/
-ls
-cd
-ls
-cd dev/
-ls
-cd
-ls
-fd rss
-qr-filetransfer rss 
-ls
-man pip3
-man pip
-pip -h
-sudo pip3 uninstall qr-filetransfer
-cd dwn/
-ls
-wget https://github.com/syncthing/syncthing/releases/download/v1.0.1/syncthing-linux-amd64-v1.0.1.tar.gz
-cd dwn/XX-Net-3.13.1/
-ls
-./start 
-cd dev/arena9/ClientMain/
-ls
-nnn
-cd dwn/
-wget https://f-droid.org/repo/com.nutomic.syncthingandroid_4155.apk
-ls
-cd syncthing-linux-amd64-v1.1.0-rc.1/
-ls
-./syncthing 
-ls
-cd extra/
-los
-ls
-cd
-ls
-cd etc/
-ls
-cd linux-systemd/
-ls
-vim README.md 
-ls
-vim system/syncthing-resume.service 
-vim system/syncthing@.service 
-ls
-..
-ls
-cd linux-desktop/
-ls
-vim syncthing-start.desktop 
-vim syncthing-ui.desktop 
-ls
-vim README.md 
-ls
-sudo cp syncthing-* /usr/local/share/applications/
-vim README.md 
-ls
-..
-ls
-..
-ls
-sudo cp syncthing /usr/bin/
-ping travis.com
-ping travis-ci.com
-cd
-./start 
-cd 
-yarn run dev
-cd 
-ls
-ls build/
-vim .gitignore 
-ls
-ls Game/
-ls
-bat appveyor.yml 
-ls
-vim .travis.yml 
-git commit -a
-git push origin master 
-git push origin dev 
-ls
-ls oldscript/
-ls oldscript/ -a
-ls
-mv appveyor.yml oldscript/
-ls
-vim DEADJOE 
-ls
-gstatus 
-rm DEADJOE
-ls
-git add .
-git commit 
-ls
-ls -a
-vim .#appveyor.yml 
-rm .#appveyor.yml
-ls
-ls -a
-gstatus 
-git add .
-git commit 
-ls
-ls coverage/
-ls
-ls dist/
-ls dist/electron/
-ls dist/web/
-ls
-ls dist/
-cd doc/
-ls
-cd
-ls
-cd dwn/
-ls
-cd
-ls
-vim mirrorlist.txt 
-ls
-git mv mirrorlist.txt oldscript/
-ls
-ls static/
-ls
-ls node_modules/
-vim package.json 
-ls
-cd src/
-ls
-vim index.ejs 
-ls
-cd main/
-ls
-bat config.js 
-ping arena.net9.org
-ping arena.net9.org:8086
-ls
-ls game/
-ls
-ls modules/
-ls windows/
-bat index.
-bat index.js 
-ls
-man yarn
-yarn --help
-yarn run dev
-ls
-bat index.dev.js 
-ls
-bat index.
-bat index.j
-bat index.js 
-ls
-ls windows/
-ls
-cd windows/
-ls
-vim login.js 
-../..
-cd ..
-ls
-ls renderer/
-bat renderer/main.js 
-bat renderer/components/Loading.vue 
-bat renderer/components/mask.js 
-bat renderer/components/util.js 
-ls
-ls renderer/
-ls
-ls main/
-ls main/modules/
-ls main/windows/
-ls main/game/
-ls renderer/
-bat renderer/config.js 
-bat renderer/App.vue 
-bat renderer/router/
-bat renderer/router/index.js 
-vim main/windows/challenge.js 
-ls
-ls main/
-ls main/windows/
-bat main/windows/profile.js 
-..
-ls
-cd src/renderer/
-ls
-bat plugin.js 
-bat main.js 
-ag CONFIG
-ls
-cd mock/
-ls
-..
-ls
-cd mock/
-ls
-vim readme.md
-ls
-bat re
-bat readme.md 
-..
-ls
-git add mock/readme.md 
-gstatus 
-gcommit 
-ls
-ls router/
-ls components/
-ls components/ma
-ls components/Ma
-ls components/Main
-bat components/Main/ro
-bat components/Main/routes.js 
-ls
-ls store/
-ls
-ls assets/
-ls assets/css/
-ls assets/img/
-ls assets/img/widget/
-ls
-cd components/
-ls
-vim Login.vue 
-ls
-cd dev/program/graph/
-s
-ls
-mkdir base
-cd base/
-ls
-vim matrix.hpp
-ruby
-man ruby
-ls
-cd dev/
-ls
-vim test.rb
-ruby test.rb 
-vim test.rb
-ruby test.rb 
-rm test.rb
-ls
-ls /etc/sddm.conf.d/
-ls /etc/sddm.conf.d/ -a
-ls /usr/share/sddm
-ls /usr/share/sddm/themes/
-sudo rm -r /usr/share/sddm/themes/sugar-dark/
-ls
-task-web.ruby2.5 
-killall konq
-htop
-ls
-sudo zypper refresh
-zypper list-patches 
-zypper repos 
-zypper repos -h
-zypper addrepo -h
-zypper addrepo https://mirrors.tuna.tsinghua.edu.cn/packman/suse/openSUSE_Tumbleweed/ packman-tuna
-sudo zypper addrepo https://mirrors.tuna.tsinghua.edu.cn/packman/suse/openSUSE_Tumbleweed/ packman-tuna
-ls
-man zypper
-sudo zypper modifyrepo --disable packman.inode.at-openSUSE_Tumbleweed 
-zypper repos 
-sudo zypper modifyrepo --disable packman.inode.at-openSUSE_Tumbleweed 
-sudo zypper update
-sudo zypper info cantata
-zypper repos 
-sudo zypper modifyrepo --disable 6
-sudo zypper modifyrepo --disable 8
-sudo zypper repos 
-sudo zypper update 
-sudo zypper info grub2-i386-pc 
-sudo zypper info qutebrowser 
-sudo zypper se qutebrowser
-cnf intltool
-sudo zypper install vala
-sudo zypper install intltool 
-sudo zypper info intltool 
-sudo zypper install glib2-devel
-cd dev/src/
-ls
-git clone https://github.com/mank319/Go-For-It
-cd Go-For-It/
-ls
-mkdir build
-cd build/
-ls
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-sudo zypper install libnotify-devel
-sudo zypper install gtk3-devel
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-make
-ls
-ls src/
-sudo make install
-com.github.jmoerman.go-for-it 
-ls
-cd
-which task-web.ruby2.5 
-man gem
-gem -h
-sudo gem remove taskwarrior-web
-sudo gem uninstall taskwarrior-web
-ls /usr/bin/task-web.ruby2.5
-bat /usr/bin/task-web.ruby2.5 
-
-man gem
-gem -h
-gem list 
-sudo gem list 
-gem -h
-gem help list
-gem list -i
-gem list * -i
-gem list 
-gem list -l
-gem list -r
-cd /usr/
-fd task
-fd taskwarrior
-gem -v
-ls /usr/lib64/ruby/
-ls /usr/lib64/ruby/2.6.0/
-ls /usr/lib64/ruby/2.5.0/
-ls /usr/lib64/ruby/gems/
-ls /usr/lib64/ruby/gems/2.5.0/
-ls
-bundle -h
-bundler -h
-which bundler
-which bundle
-file /usr/bin/bundle
-file /usr/bin/bundler
-ruby -v
-zypper info ruby
-ruby -v
-which ruby
-file /usr/bin/ruby
-ls
-sudo zypper remove ruby*
-sudo zypper update ruby
-sudo zypper remove ruby2.5
-ruby -v
-sudo zypper info ruby2.5
-sudo zypper info ruby2.6
-sudo zypper info ruby2.5-rubygem-*
-sudo zypper remove ruby2.5-rubygem-*
-sudo zypper remove ruby2.5-rubygem-jekyll
-sudo zypper remove ruby2.5-rubygem-liquid 
-sudo zypper remove ruby2.5-rubygem-kramdown 
-sudo zypper remove --clean-deps ruby2.5-rubygem-jekyll
-sudo zypper remove --clean-deps ruby2.5-rubygem-jekyll*
-ls
-file bin/jekyll
-sudo zypper remove ruby2.5-rubygem-jekyll*
-sudo zypper remove ruby2.5-rubygem-liquid 
-sudo zypper remove ruby2.5-rubygem-kramdown 
-sudo zypper remove ruby2.5-rubygem-sass
-sudo zypper remove ruby2.5-rubygem-sass-listen 
-cd
-gr
-bundler exec jekyll s
-ls
-cd -
-ls
-cd lib64/
-ls
-cd ruby/
-ls
-ls 2.5.0/
-sudo zypper remove ruby2.5-devel 
-sudo zypper remove ruby2.5-rubygem-bundler 
-sudo zypper remove ruby2.5-rubygem-gem2rpm 
-sudo zypper remove ruby2.5-rubygem-cfa
-sudo zypper remove ruby2.5-rubygem-mercenary 
-sudo zypper remove ruby2.5-rubygem-unf
-sudo zypper remove ruby2.5-rubygem-safe_yaml 
-sudo zypper remove ruby2.5-rubygem-eventmachine 
-ls
-cd 2.5.0/
-ls
-..
-ls
-cd
-bat bin/task-web.ruby2.5 
-ls
-fd task-web
-ls
-sudo zypper install powertop
-powerstatus 
-man powertop 
-ls
-powertop
-sudo powertop 
-ls
-cd
-powerto
-sudo powertop 
-devhelp 
-cd 
-ls
-cd base/
-ls
-vim matrix.hpp 
-xhost +
-cd 
-ls
-cd base/
-g++ m_test.cpp -std=c++17 -o test
-./test 
-g++ m_test.cpp -std=c++17 -o test
-./test 
-g++ m_test.cpp -std=c++17 -o test -g
-gdb te
-g++ m_test.cpp -std=c++17 -o test
-./test 
-g++ m_test.cpp -std=c++17 -o test
-./test 
-ls
-cling
-cd 
-g++ m_test.cpp -std=c++17 -o test
-./test 
-cd
-xxd  done.txt
-xxd todo.
-xxd todo.txt
-log
-cd 
-ls
-cd build/
-cmake ..
-make
-cmake ..
-make
-vim ../CMakeLists.txt 
-cmake ..
-make
-
-make
-ls
-make
-ls
-./rt_test 
-vim ../CMakeLists.txt 
-cmake ..
-make
-gdb rt_test 
-ma
-make
-./rt_test 
-ls
-imgv render.png 
-cd
-fd syncthing
-cd -
-make
-./rt_test 
-imgv render.png 
-make
-./rt_test 
-make
-./rt_test 
-imgv render.png 
-node
-ls
-cd Login/
-node
-cd 
-cd
-yarn run dev
-cd
-ls
-vim matrix.hpp 
-ls
-vim m_test.cpp 
-ls
-vim matrix.hpp 
-ls
-rm test
-rm m_test.cpp
-ls
-..
-ls
-l ray/
-l ray/src/
-ls
-ls render/
-cd ray/src/
-ls
-..
-ls
-..
-ls
-rm base_v2.h
-ls
-mkdir graphics
-cp -r ray/ graphics/
-cd graphics/
-ls
-mv ray/* 
-mv ray/* .
-ls
-ls ray/
-rmdir ray/
-..
-rm -rf graphics/
-ls
-ls ray/
-mkdir graphics
-mv ray/ graphics/
-cd graphics/
-ls
-cd ray/
-ls
-rm *.png
-ls
-..
-ls
-..
-mv graphics/ray/ .
-ls
-rmdir graphics/
-mv ray/ graphics
-ls
-cd graphics/
-ls
-cp ../base/matrix.hpp include/
-ls
-ls build/
-vim CMakeLists.txt 
-cd src/
-ls
-vim CMakeLists.txt 
-ls
-..
-cd build/
-cmake ..
-ls
-rm -rf *
-ls
-cmake ..
-ls
-make
-ls
-..
-ls
-ls build/
-ls build/src/
-ls
-cd include/
-ls
-vim svpng.inc 
-ls
-mv svpng.inc svpng.hpp
-mv svpng.hpp svpng.h
-ls
-vim image.hpp 
-..
-vim src/image.cpp 
-cd build/ && make
-cd ..
-ls
-git remote remove origin 
-ls
-git status 
-ls
-vim include/
-cd include/
-ls
-vim matrix.hpp 
-ls
-ag vector.hpp
-vim shading.hpp 
-vim surface.hpp 
-cd
-ls
-ag vector.hpp
-vim vector.cpp 
-ls
-ls -a
-cp .ycm_extra_conf.py ..
-..
-vim main.cpp 
-gstatus 
-git commit -a
-ls
-cd
-ls
-cd src/renderer/
-ls
-cd components/
-ls
-vim Login
-vim Login.vue 
-ls
-cd
-ls
-git submodule update 
-git submodule update --remote 
-cd complete/opt/YouCompleteMe/
-ls
-./install.py --clang-completer --ts-completer
-cd
-vim .vimrc 
-cd .vim/
-ls
-vim thirdparty.vim 
-cd 
-ls
-cd renderer/components/
-ls
-gr
-ls
-vim jsconfig.json
-vim ~/.vim/thirdparty.vim 
-vim jsconfig.json
-ls
-vcd
-cd
-ls
-vim config.js 
-ag svg
-..
-gr
-ag svg
-ls
-vim jsconfig.json 
-cd src/
-ls
-ag server
-..
-ls
-vim jsconfig.json 
-cd -
-ls
-vim Login/login_impl.js 
-vim ~/.vim/thirdparty.vim 
-gstatus 
-git add .
-gr
-git add .
-git commit 
-cd 
-ls
-gstatus 
-glo
-git log
-ls
-ls Login
-vim Login.vue 
-ls
-vim Login/ProfileListInput.vue 
-ls
-vim Main.vue 
-gstatus 
-git add .
-git commit -s
-git push origin dev 
-cd
-ls
-git pull
-git remote 
-git remote remove origin 
-git remote add origin https://github.com/JMoerman/Go-For-It
-git fetch origin 
-git pull
-git branch --set-upstream-to=origin/master master 
-git pull
-ls
-cd build/
-ls
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-make
-sudo make install
-git log
-ls
-cd
-ls
-cd renderer/
-ls
-cd components/
-ls
-cd Main/
-ks
-ls
-..
-ag mask
-cp mask.js Profile
-ls
-cd Profile/
-ls
-vim *.js
-ls
-ag mask
-..
-ls
-ag ..
-ag '\.\.'
-ag '\.\./'
-ls
-cd Main/
-ls
-ag util
-ls
-..
-ls
-ls Profile
-rm mas
-rm mask.js
-ls
-ls Profile
-vim Profile.vue 
-ls
-bat util.js 
-ag util
-vim Profile/profileeditor
-vim Profile/profileeditor_impl.js 
-ls
-ag util
-vim Main/HallPage.vue 
-gcommit  -a
-git add 
-git add .
-git commit 
-ls
-cd Main/
-ls
-vim Footer.vue 
-ls Widgets/
-vim Footer.vue 
-ls
-gstatus 
-gr
-git add .
-gcommit -a
-git log
-git push origin dev
-git branch 
-ls
-cd post/
-ls
-nmcli device status 
-ping net.tsinghua.edu.cn
-nmcli connection up Tsinghua-5G 
-nmcli device wifi list 
-nmcli connection up Tsinghua-5G 
-cd post/
-ls
-cd 2019/
-ls
-cd 02/
-ls
-vim 2019-02-17-daoshuoyishu-04.md 
-cp 2019-02-17-daoshuoyishu-04.md 2019-02-24-daoshuoyishu-05.md
-vim 2019-02-24-daoshuoyishu-05.md 
-ping net.tsinghua.edu.cn
-log
-ping www.baidu.com
-w3m www.baidu.com
-sudo zypper search wine-symbol
-ls
-cd post/
-ls
-cd
-ls
-dmesg |grep cache
-lshw
-cnf lshw
-dmidenode
-cnf dmidenode
-cnf dmidecode
-sudo dmidecode -t cache
-lscpu 
-cd 
-ls
-..
-cd graphics/
-ls
-gstatus 
-ls
-cd src/
-..
-ls
-vim .ycm_extra_conf.py 
-ls
-vim include/matrix.hpp 
-man gcc
-man clang
-man gcc
-log
-ping net.tsinghua.edu.cn
-cd 
-yarn run dev
-ls
-cd 
-ls
-cd src/renderer/
-ls
-cd components/
-..
-ls
-vim router/index.js 
-ls
-ls mock/
-bat mock/re
-bat mock/readme.md 
-ls
-ls to
-ls store/
-cd store/
-ls
-vim index.js 
-vim types.js 
-ls
-cd modules/
-ls
-vim index.js 
-vim Game.js 
-ls
-..
-ls
-..
-ls
-cd components/
-ls
-ls Profile
-ls
-ls Main
-ls
-vim Main
-vim Main.vue 
-vim Challenge.vue 
-ping arena.net9.org:8086
-ping arena.net9.org
-gr
-cd build/
-ls
-cd linux-unpacked/
-ls
-./arena9 
-cd .ssh/
-ls
-vim id_rsa.pub 
-cd
-ssh arena.net9.org
-ssh ai9@arena.net9.org
-cd 
-yarn run dev
-ssh ai9@arena.net9.org
-cd 
-yarn run dev
-ls
-vim renderer/config.js 
-vim main/config.js 
-yarn run dev
-cd 
-ls
-..
-ls
-cd build/
-cmake ..
-make
-./rt_test 
-cd
-yarn run dev
-cd
-ls
-cd graphics/
-ls
-vim include/matrix.hpp 
-git add 
-git add .
-git commit -s
-cling
-vim help.cpp
-cd
-cd build/
-make
-./rt_test 
-make
-ls
-make
-systemctl suspend
-ls
-cd 
-ls
-..
-vim include/matrix.hpp 
-gstatus 
-cd Sync/
-ls
-bat done.txt~
-bat done.txt
-diff done.txt*
-cd
-ls
-gstatus 
-git commit -a
-git commit -h
-git commit -a
-man gdiffmk 
-git diff
-git commit -a
-git remote add origin https://
-cd
-git remote add origin git@github.com:linusboyle/miniRay.git
-git remote 
-git remote -a
-git remote -v
-git remote remove origin 
-git remote -v
-git remote add origin git@github.com:linusboyle/miniRay.git
-git push origin master 
-log
-ls
-cd 
-ls
-gstatus 
-git commit -a
-git push origin dev
-ls
-vim .travis.yml 
-gcommit -a
-git push origin dev 
-git remote add upstream https://github.com/abcyzj/ArenaXClientMain
-git fetch upstream 
-git diff upstream/dev 
-git merge upstream/dev 
-git log
-git push origin dev 
-sudo zypper remove konqueror*
-zypper ps -s
-sudo zypper remove kfind*
-sudo zypper remove telegram-desktop 
-cd
-ls app/
-ls dwn/
-ls .local/share/app
-ls .local/share/applications/
-rm .local/share/applications/telegramdesktop.desktop
-rm .local/share/applications/appimagekit-joplin.desktop
-ls
-rm dwn/Joplin-1.0.111-x86_64.AppImage
-ls
-df -h
-ncdu
-sudo zypper remove kdevelop5*
-
-sudo killall packagekitd 
-sudo zypper remove kdevelop5*
-sudo killall packagekitd 
-sudo zypper remove joe 
-zypper ps -s
-ls
-cd Sync/
-diff todo.txt-c
-diff todo.sync-conflict-20190226-192247-EO37VK4.txt todo.txt
-ping net.tsinghua.edu.cn
-ping www.baidu.com
-log
-cd dev/src/
-ls
-cd ponysay/
-ls
-vim README.md 
-ls
-./de
-./dependency-test.sh 
-vim setup.py 
-./setup.py 
-./setup.py uninstall
-./setup.py 
-sudo ./setup.py uninstall -old
-sudo ./setup.py uninstall
-cd
-ls
-cd 
-ls
-git clone https://github.com/trazyn/weweChat
-git clone https://github.com/trazyn/weweChat --depth=1
-ls
-cd weweChat/
-ls
-vim package.json 
-npm run package-linux
-npm install
-ls
-vim ~/dev/arena9/ClientMain/
-vim ~/dev/arena9/ClientMain/oldscript/.gitlab-ci.yml 
-export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
-npm install
-ls
-ls node_modules/electron
-ls
-npm run package-linux
-cnf rpmbuild
-sudo zypper install rpm-build 
-npm run package-linux
-ls
-cd dist/
-ls
-..
-ls
-ls re
-ls release/
-cd release/
-ls
-./wewechat-1.1.7-linux-x86_64.AppImage 
-cd linux-unpacked/
-ls
-./wewechat 
-ldd wewechat 
-ls
-coredumpctl list 
-sudo coredumpctl list 
-coredumpctl dump 18805
-
-coredumpctl --output s
-ls
-rm s
-ls
-./wewechat 
-..
-ls
-rpmverify wewechat-1.1.7-linux-
-rpmverify wewechat-1.1.7-linux-x86_64.
-rpmverify wewechat-1.1.7-linux-x86_64.rpm 
-sudo zypper install libappindicator
-sudo zypper install libappindicator1
-sudo zypper install libappindicator3
-sudo zypper install libappindicator3-
-sudo zypper install libappindicator3-1 
-ls
-cd linux-unpacked/
-ls
-./wewechat 
-..
-cd
-vim re
-vim README.MD 
-vim package.json 
-npm run dev
-npm install
-rm -r node_modules/electron
-npm install
-npm run dev
-npm run package-linux
-ls
-cd release/
-ls
-./linux-unpacked/wewechat 
-ldd linux-unpacked/wewechat 
-ls
-ls linux-unpacked/
-./wewechat-1.1.7-linux-x86_64.AppImage 
-ls
-ping net.tsinghua.edu.cn
-cd Sync/
-diff todo.txt todo.sync-conflict-20190227-162025-EO37VK4.txt 
-cd dev/src/vcmi/
-git remote -v
-git pull
-git branch 
-git log
-ls
-..
-ls
-rm -rf ponysay/
-ls
-cd weweChat/
-ls
-..
-ls
-tmux
-tmux -a
-tmux attach
-tmux ls
-man tmux
-ls
-cd doc/
-ls
-cd 
-ls
-tmux
-ls
-xrdb .Xresources 
-ls
-cd pix/
-ls
-..
-ls
-vim
-cd 
-yarn run dev
-vim
-powertop
-sudo powertop
-cd
-gr
-ag 9080
-vim package.json 
-vim .electron-vue/dev-
 vim .electron-vue/dev-client.js 
 ls
 ag webpack
@@ -28765,3 +16635,5065 @@ git commit -a --amend
 gstatus 
 ls
 git push origin master 
+telnet telnet://bbs.cs.nthu.edu.tw
+telnet bbs.cs.nthu.edu.tw
+ls
+df
+df -h
+findmnt 
+cd
+./bg.sh 
+vim
+cd
+ls
+cd
+ls
+./BG.sh
+ls
+weinstall cdtweaks
+ls
+ls game
+cd game/
+ls
+weinstall cdtweaks
+ls
+find . -name  *.tlk
+tolower 
+ls
+vim linux.ini 
+ls
+weinstall cdtweaks
+ls
+vim setup-cdtweaks.debug 
+weinstall cdtweaks
+ls
+vim util.sh
+dos2unix util.sh 
+ls
+file util.sh 
+ls
+chmod +x util.sh 
+ls
+./util.sh 
+ls
+vim restore_case.sh 
+ls
+weinstall cdtweaks
+ls
+./restore_case.sh 
+ls
+vim util.sh 
+ls
+..
+./bg.sh 
+ping baidu.com
+cd
+ls
+./bg.sh 
+ls
+..
+ls
+cd Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+cd
+ls
+make
+gvim
+ls
+..
+ls
+vim .gitignore 
+gstatus 
+ls
+ls lf
+vim .gitignore 
+ls lf/common/
+ls
+ls plf/
+ls
+git rm *.html --cached 
+ls
+ls plf/
+ls
+gstatus 
+ls
+git rm plf/common/ --cached 
+git rm plf/common/ -r --cached 
+ls
+git rm lf/common/ -r --cached 
+ls
+gstatus 
+git ls-files
+ls
+vim .gitignore 
+git rm *.map --cached 
+git rm *.git --cached 
+git rm *.gif --cached 
+ls
+git ls-files
+ls
+git commit -a
+ls
+git push origin master 
+ls
+git status 
+ls
+cd plf/
+ls
+make TypecheckingTest.vo
+ls
+gstatus 
+vim Typechecking.glob 
+ls
+..
+ls
+vim .gitignore 
+git rm *.glob --cached 
+ls
+gstatus 
+git commit -a
+ls
+git push origin master 
+cd
+cd dfile/
+gstatus 
+vim ~/bin/
+ls ~/bin/
+ls ~/bin/zotero
+ls ~/bin/zotero -l
+ls
+vim keybind 
+ls
+gstatus 
+git iff
+git diff
+git add bash/.bash*
+git commit 
+ls
+git add Xresources/.Xresources 
+git commit 
+ls
+git add i3/.config/i3/config 
+git commit 
+ls
+git add vim/.vimrc 
+git status 
+git add vim/.vim 
+ls vim/
+ls vim/ -a
+ls
+git commit 
+ls
+git status 
+git add bin/authlog
+git add bin/authlog_ether 
+git commit 
+ls
+git status 
+git add bin/zotero 
+git status 
+git reset HEAD bin/zotero
+ls
+gstatus 
+ls
+git push origin master 
+ls
+vim README.md 
+git add *
+git status 
+git commit 
+git reset HEAD bin/k2pdfopt
+git reset HEAD bin/zotero
+vim .giti
+vim .gitignore
+gstatus 
+vim .gitignore
+gstatus 
+git commit 
+ls
+git add .gitignore 
+git commit 
+git push origin master 
+cd
+gvim
+make ReferencesTest.vo
+gstatus 
+git add References.v
+ls
+git commit 
+git push origin master 
+gvim
+make SubTest.vo
+ls
+git add Sub.v 
+git commit 
+git push origin master 
+cd
+ls
+./bg.sh 
+cd
+ls
+gvim
+make RecordsTest.vo
+git status 
+git add Records.v 
+git commit 
+git push origin master 
+gvim
+make RecordSubTest.vo
+git status 
+git commit -a
+ls
+git push origin master 
+coqide
+gstatus 
+glog
+vim HoareAsLogic.v
+ls
+df -h
+ls
+gstatus 
+ls
+cd
+ls
+cd Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+ls
+./start.sh 
+netlog
+sudo zypper dup
+cd 
+ls
+..
+ls
+cd CompCert/
+ls
+vim pg
+vim configure 
+ls
+xhost +
+xset b off
+ls
+vim co
+vim coq 
+./coq
+ls
+./configure 
+./configure -help
+./configure x86_64-linux
+opam
+opam list
+opam list upgrade
+opam upgrade
+opam update
+opam upgrade
+ocaml --version
+opam install menhir
+menhir 
+man menhir 
+ls
+./configure 
+./configure x86_64-linux
+opam pin menhir
+cd
+cd -
+opam
+opam install menhir=20181113
+./configure x86_64-linux
+ls
+make
+ls
+gstatus 
+ping baidu.com
+ping net.tsinghua.edu.cn
+uname
+uname -a
+ping net.tsinghua.edu.cn
+sudo zypper search active-window
+sudo zypper search plasmoid
+sudo zypper search active
+coqdoc 
+coqdoc --version
+coqdoc --help
+man coqdoc 
+xset b off
+cd
+ls
+make
+ls
+make install 
+sudo make install 
+ccomps
+ccomp
+man ccomp
+ls
+..
+ls
+..
+ls
+cd program/
+ls
+find . -name *.c
+cd tlpi_mine/
+ls
+ccomp mytee.c 
+vim mytee.c 
+ccomp confstr.c 
+xhost +
+ls
+..
+ls
+..
+ls
+find . -name *.c
+cd src/CompCert/
+ls
+cd test/
+ls
+cd c
+ls
+vim aes.c 
+ls
+vim lists.c 
+ccomp lists.c 
+ls Results/
+ls Results/ -l
+ls Results/ -a
+ls
+./a.out 
+rm a.out
+cd Results/
+vim lists 
+ls
+gr
+ls
+ls flocq/
+vim flocq/Version.v 
+ls
+..
+l
+ls
+cd CompCert/
+ls
+./coq
+vim co
+vim coq
+make print-includes 
+ls
+ccomp -v
+ccomp --version
+ls
+ccomp --version
+cd
+ls
+chmod +x start_coqide.sh 
+./start_coqide.sh 
+ping net.tsinghua.edu.cn
+mpd
+netlog
+cd
+ls
+./co
+./coq
+ls
+..
+ls
+cd coq_learn/
+gstatus 
+gs
+cd
+ls
+gstatus 
+ls
+..
+ls
+ls demo/
+ls linusboyle.cn/
+cd linusboyle.cn/
+gstatus 
+..
+cd -
+ls
+ls draft/
+vim draft/note.md 
+ls
+vim 404.md 
+ls
+vim archives.html 
+vim tags.html 
+ls
+cd
+cd po
+ls
+cd draft/
+ls
+calibrate_lens_gui 
+sudo zypper install calibre 
+help test
+ls
+echo $1
+test -n $1
+test -n $1 && echo sa
+test -n $1 || echo sa
+test -n "$1" && echo s
+test -n "$1" || echo as
+DD="asd"
+test -n "$DD" || echo as
+test -n "$DD" && echo as
+ls
+readlink -f bin
+readlink -f dfile/
+readlink -f dwn
+readlink -f dwn/words_alpha.txt 
+ls
+cd 
+cd
+sym coq2html/coq2html ~/bin/coq2html
+ls ~/bin/
+ls ~/bin/coq2html -l
+ls
+..
+ls dwn/
+file bin/zotero 
+cd bin/
+ls
+cd
+ls
+cd vfa/
+ls
+gvim
+ls
+gstatus 
+..
+ls
+vim .gitignore 
+ls vfa/
+gstatus 
+git add vfa/
+gstatus 
+git add .gitignore 
+git commit 
+git push origin master 
+cd
+make documentation 
+..
+ls
+cd sr
+git clone https://github.com/xavierleroy/coq2html
+cd coq2html/
+ls
+make
+ls
+./coq2html 
+..
+ls
+ln -s coq2html/coq2html ~/bin/coq2html
+cd
+ls
+ls bin/
+cd bin/
+ls -l
+rm coq2html
+cd -
+ks
+ln -s ./coq2html/coq2html ~/bin/coq2html
+cd -
+ls
+ls -l
+rm coq2html
+cd 
+cd -
+ls
+man ln
+ls
+dirname 
+dirname .
+man readlin
+man readlink
+readlink .
+readlink -f .
+man readlink
+readlink -f .
+readlink -f ..
+cd
+..
+vim .bashrc 
+ls
+cd 
+ls
+make documentation 
+cd 
+ls
+make
+cd
+d
+cd
+ls
+cd lustre-v6.1.737/
+ls
+cd doc/
+ls
+make
+ls
+df -h
+findmnt 
+netlog
+cd .local/share/Paradox\ Interactive/
+LS
+ls
+cd Hearts\ of\ Iron\ IV/
+ls
+mkdir mod
+ls
+cd
+cd dwn/
+ls
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+./BaiduPCS-Go 
+.
+..
+ls
+mv 1042192908_陸慈郎/HOI4v1.4.0_简体中文汉化包第一版 ~/.local/share/Paradox\ Interactive/Hearts\ of\ Iron\ IV/mod/
+cd 
+ls
+ls mod/
+ls mod/HOI4v1.4.0_简体中文汉化包第一版/
+cd mod/
+ls
+mv HOI4v1.4.0_简体中文汉化包第一版/* .
+ls
+rm HOI4v1.4.0_简体中文汉化包第一版/
+rmdir HOI4v1.4.0_简体中文汉化包第一版/
+ls
+netlog
+vim .vimrc
+cd dwn/
+aria2c 
+man aria2c 
+aria2c -x 8 -k 1M https://pan.linuxgame.cn/index.php/s/8DWrW3TCTCcq4KX/download
+ls
+file HeartsOfIronIV_1.7.1_amd64.appimage 
+ldd HeartsOfIronIV_1.7.1_amd64.appimage 
+chmod +x HeartsOfIronIV_1.7.1_amd64.appimage 
+ldd HeartsOfIronIV_1.7.1_amd64.appimage 
+ldd 
+man ldd
+ldd HeartsOfIronIV_1.7.1_amd64.appimage 
+file HeartsOfIronIV_1.7.1_amd64.appimage 
+readelf HeartsOfIronIV_1.7.1_amd64.appimage 
+readelf -s HeartsOfIronIV_1.7.1_amd64.appimage 
+./HeartsOfIronIV_1.7.1_amd64.appimage 
+cd B
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+ls
+./BaiduPCS-Go 
+ls
+..
+ls
+ls 1042192908_陸慈郎/
+ls 1042192908_陸慈郎/ -l
+ls 1042192908_陸慈郎/ -lh
+vim 1042192908_陸慈郎/Dungeons_amd64.appimage.BaiduPCS-Go-downloading 
+ls
+cd B
+cd BaiduPCS-Go-v3.5.4-linux-amd64/
+./BaiduPCS-Go 
+ls
+./BaiduPCS-Go 
+ls
+..
+ls
+cd 895205398_/
+ls
+file Dungeons_amd64.appimage 
+ldd Dungeons_amd64.appimage 
+chmod +x Dungeons_amd64.appimage 
+ldd Dungeons_amd64.appimage 
+man ldd
+./Dungeons_amd64.appimage 
+df -h
+sudo zypper info wesnoth
+sudo zypper install wesnoth
+cd .config/coq/
+ls
+vim coqiderc 
+vim coqide.keys 
+vim coqiderc 
+vim coqide.keys 
+cp coqide.keys bak
+ls
+vim coqide.keys 
+ls
+vim coqiderc 
+ls
+vim coqide.keys 
+vim coqiderc 
+coqide
+coqide
+cd
+ls
+cd snippet/
+ls
+vim insert.v
+gvim insert.v 
+ping net.tsinghua.edu.cn
+svn
+svn hel
+svn help
+man svn
+ks
+cd dev/src/
+ls
+svn co http://soft.cs.tsinghua.edu.cn/svn/open-l2c/
+svn co http://soft.cs.tsinghua.edu.cn/svn/open-l2c/
+svn co http://soft.cs.tsinghua.edu.cn/svn/open-l2c/ --username hanzhilei --password hanzhilei2019
+ls
+cd open-l2c
+ls
+ls -a
+ls .svn/
+svn h
+svn log
+ls
+ls compcert/
+vim compcert/Readme.txt 
+ls
+svn status 
+svn status .dir-locals.el 
+svn status -v
+svn log fr
+svn log framework.png 
+svn log .dir-locals.el 
+svn log Makefile 
+ls
+vim Makefile 
+ls
+make
+ls
+svn status
+cd
+make
+make|less
+ls
+./start_coqide.sh 
+ocaml --version
+ls
+man oopam
+opam
+ping baidu.com
+coqdep 
+man coqdep
+opam list
+opam pin 
+opam list
+opam show coq
+opam pin add coq 8.4.6
+opam pin add coq 8.9.1
+opam list
+coqide
+ls
+coqide
+m4
+man m4
+info m4
+ls
+vim .ssh/id_rsa.pub 
+cd 
+ls
+sudo zypper install svn2git 
+svn2git --help
+..
+ls
+svn2git open-l2c/
+svn2git open-l2c
+svn2git --help
+sudo zypper remove svn2git 
+cd open-l2c/
+ls
+gsta
+gstatus 
+ls
+git init
+ls
+git remote add origin git@git.net9.org:linusboyle/l2c.git
+git rm -rf .svn
+ls
+rm -rf .svn
+ls
+ls -a
+git push origin mas
+git push origin master
+ls
+git add .
+git status 
+ls
+rm compcert/lib/.Axioms.aux
+rm .depend
+ls -a
+ls compcert/
+ls compcert/ -a
+ls compcert/lib/
+ls compcert/lib/ -a
+ls 
+ls parser/
+ls
+git add .
+git status 
+gcommit 
+git push origin master 
+ls
+git log
+git commit -a
+git push origin master 
+git commit -a
+git push origin master 
+..
+ls
+git svn clone 
+git svn clone --stdlayout --no-metadata http://soft.cs.tsinghua.edu.cn/svn/open-l2c
+git svn clone --stdlayout --no-metadata http://soft.cs.tsinghua.edu.cn/svn/open-l2c tmp
+man git-svn
+git svn clone --stdlayout --no-metadata --username=linusboyle  http://soft.cs.tsinghua.edu.cn/svn/open-l2c tmp
+git svn clone --stdlayout --no-metadata --username=hanzhilei  http://soft.cs.tsinghua.edu.cn/svn/open-l2c tmp
+ls
+rm -rf tmp
+rm -rf tmp_dir/
+git svn clone http://soft.cs.tsinghua.edu.cn/svn/open-l2c/ tmp_dir
+ls
+cd tmp_dir/
+gstatus 
+git branch 
+git log
+ls
+..
+ls
+..
+cd coq_learn/s
+cd s
+cd snippet/
+ls
+gvim insert.v 
+git init
+git remote add origin Require Import Permutation.
+Require Import Coq.Arith.EqNat.
+Require Import Coq.Arith.Arith.
+git remote add origin git@github.com:linusboyle/coq_snippets.git
+git add insert.v 
+git commit 
+git push origin master 
+netlog
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+vim
+cd dev/
+cd src/
+git clone https://github.com/woubuc/blog.woubuc.be
+ls
+cd blog.woubuc.be/
+ls
+vim package.json 
+yarn
+ls
+node -v
+n
+ls
+node lts
+n lts
+ls
+/usr/bin/node -v
+ls
+which yarn
+which npm
+ls
+yarn dev
+cd
+ls
+vim netlify.toml 
+ls
+vim gridsome.
+vim gridsome.config.js 
+ls
+vim gridsome.server.js 
+ls
+cd src/
+ls
+coqide
+cd
+ls
+make man
+ls
+netlog
+netquit
+ocaml
+man ocaml
+ocaml
+vim
+cdc
+cd
+ls
+ag printer
+vim driver/Compiler.v 
+vim src/PrintCtemp.ml 
+vim driver/Compiler.v 
+ag print_lustre
+ag print_lustreT
+ag print_lustrer
+vim extraction/extraction.v 
+ls
+ag print_clight
+ag print_ctemp
+vim src/PrintCtemp.ml 
+ocaml
+man ocaml
+vim
+vim ~/.vim/thirdparty.vim 
+ls
+vim src/PrintCtemp.ml 
+ls
+vim compcert/PrintClight.ml 
+ls
+ls bin/
+vim .Xresources 
+ls doc/
+ls
+cd
+ls
+fzy 
+man fzy
+echo sa|fzy
+ls
+bash -v
+bash --version
+netlog
+ls
+vim
+ls
+./dev/256colors2.pl 
+ls
+ls d
+ls dfile/
+ls
+sudo zypper remove nnn 
+ranger
+tmux
+ls
+cd dfile/
+ls
+ls bash/ -a
+vim seafile-ignore.txt
+..
+ls
+vim .vimrc_background 
+ls
+vim .Xresources 
+netquit
+netlog
+diras
+dirs
+ls
+vim .bashrc 
+vim
+vim bin/tmux_color.sh 
+vim .bashrc 
+vim bin/tmux_color.sh 
+ls
+vim .bashrc 
+ls dev/src/base16/
+ls dev/src/base16/base16-xresources/
+cd cd 
+ls dev/src/base16/base16-xresources/
+cd dev/src/base16/base16-xresources/
+ls
+ls xresources/
+vim xresources/base16-dracula
+vim xresources/base16-dracula-256.Xresources 
+cd
+vim .bashrc 
+cd -
+ls
+vim xresources/base16-dracula-256.Xresources 
+ls
+vim xresources/base16-dracula-256.Xresources 
+xrdb ~/.Xresources 
+cd
+vim .bashrc
+vim
+curl https://raw.githubusercontent.com/mina86/urxvt-tabbedex/master/install | sh
+ls .urxvt/ext/
+ls .urxvt/ext/tabbedex
+readlink -f .urxvt/ext/tabbedex 
+cd .urxvt/
+ls
+vim tabbedex-command-runner.sample 
+vim pgid-cd 
+ls
+..
+ls
+ls bin/
+ls man
+ls
+man urxvt-tabbed
+ls
+ls man/
+ls man/man1/
+rm -rf man
+ls
+xrdb .Xresources 
+ls
+s
+cd
+ls
+vim .bashrc
+rm -rf app/enhancd/
+ls
+sudo zypper remove fzy 
+ls
+cd
+ls
+ls .config/base16-shell/
+rm -rf .config/base16-shell/
+ls
+vim .Xresources 
+cd .urxvt/ext/
+wget https://raw.githubusercontent.com/majutsushi/urxvt-font-size/master/font-size
+ls
+cd
+xrdb .Xresources 
+cd
+ls
+cd .urxvt/ext/
+wget https://raw.githubusercontent.com/effigies/urxvt-perl/master/fullscreen
+ls
+cd
+xrdb .Xresources 
+wmctrl 
+xrdb .Xresources 
+ls
+cd -
+ls
+rm fullscreen
+ls
+ls
+cd .vim/pack/co
+cd .vim/pack/colors/
+ls
+..
+ls
+vim .bash_aliases 
+vim .bashrc
+cd de
+cd bin
+ls
+cd ~/Zotero/pipes/
+ls
+bd
+dirs
+cd open-l2c/
+ls
+cd
+ls
+vim .bashrc 
+ls
+vim .bashrc
+ls
+vim .Xresources 
+xrdb .Xresources 
+ls
+cd
+cd program/
+ls
+vim .bashrc
+ls
+vim .Xresources 
+xrdb .Xresources 
+vim .Xresources 
+vim .bas
+vim .bashrc 
+cd program/
+ls
+ls dev/
+cd program/
+ls
+ls
+cd .vim/
+cd plugin/
+ls
+vim relative.vim 
+ls
+..
+ls
+cd pack/util/start/echodoc.vim/
+ls
+..
+ls
+git rm echodoc.vim/
+cd echodoc.vim/
+gstatus 
+rm doc/tags
+gstatus 
+vim ~/.bashrc 
+vim .bashrc
+xrdb .Xresources 
+vim .inputrc 
+
+xrdb .Xresources 
+vim .inputrc 
+cd -
+cd
+dirs
+popd
+cd .vim/
+cd pack/util/start/echodoc.vim/
+..
+git rm echodoc.vim/
+ls
+gstatus 
+git commit -a
+git push origin master 
+gr
+..
+cd -
+ls
+dirs
+gstatus 
+git add after/ftplugin/coq.vim 
+git diff
+vim init.vim 
+vim ~/.vimrc
+ls
+gstatus 
+git commit 
+ls
+git commit -a
+ls
+git push origin master 
+ls
+cd
+vim .bashrc
+vim .Xresources 
+xrdb .Xresources 
+ls
+netquit
+vim
+ls
+vim
+ls
+vim
+ls
+vim
+ls
+ranger
+ls
+cd CompCert/
+ls
+ag printer
+vim driver/Compiler.v
+ag print_clight
+ag printclight
+vim cfrontend/PrintClight.
+vim cfrontend/PrintClight.ml 
+ls
+vim _CoqProject 
+ls
+make exportclight
+make clightgen
+cd exportclight/
+ls
+vim README.md 
+..
+ls
+vim test.
+vim test.c
+./clightgen test.c 
+ls
+vim test.v
+ls
+vim test.
+vim test.c
+./clightgen test.c 
+vim test.v
+rm test.
+rm test.c
+rm test.v
+ls
+./coq
+cd program/
+ls
+vim snippet/
+ls
+vim tlpi_mine/mytee.c 
+..
+ls
+cd demo/
+ag struct
+vim cppstdlib/alloc/myalloc
+vim cppstdlib/alloc/myalloc03.cpp 
+vim cppstdlib/alloc/myalloc03.hpp 
+d
+cd
+cd CompCert/
+ls
+vim li.c
+./clightgen li.c
+vim li.c
+./clightgen li.c
+vim li.c
+ccomp li.c --fsyntax-only
+ccomp li.c -c
+vim li.c
+ccomp li.c -c
+ls
+rm li.o
+ls
+vim li.c
+./clightgen li.c
+ls
+vim li.v
+ls
+rm li.v
+rm li.c
+netquit
+./coq
+netlog
+ping net.tsinghua.edu.cn
+ls
+cd por
+cd program/
+ls
+vo asd 
+cd
+vim .inputrc 
+ls
+cd
+man putty
+man puttytel 
+man puttygen 
+mpc toggle
+voldown 
+mpc
+cd .vim/
+ls
+vi
+mkdir ftdetect
+cd ft
+cd ftdetect/
+ls
+vim lustre.vim
+xset b off
+vim lustre.vim
+vim a.lus
+vim lustre.vim
+vim a.lus
+..
+ls
+vim
+mkdir syntax
+ls
+cd syntax/
+ls
+wget http://www-verimag.imag.fr/~raymond/lus.vim
+ls
+vim lus.vim 
+vim a.lus
+ls
+mv lus.vim lustre.vim
+vim a.lus
+ls
+vim lustre.vim 
+ls
+..
+ls
+git add *
+gstatus 
+git commit 
+ls
+git push origin master 
+ls
+cd
+vim
+ls
+cd
+cd open-l2c/
+ls
+ag when
+ag current
+cd test/
+ls
+ag current
+ncdu
+ranger
+cd lustreV4/examples/uturn/
+ls
+diff log_tmp.lustre ums_verif.lustre 
+vimdiff ums_verif.lustre log_tmp.lustre 
+ls
+vim log_tmp.lustre 
+ls
+vim log_tmp.lustre 
+gr
+c
+cd
+cd dwn/
+ls
+rm -rf WeiDU-Linux
+ls
+ls 895205398_/
+mv 895205398_/Dungeons_amd64.appimage .
+ls
+..
+ls
+cd /run/media/linusboyle/新加卷/
+ls
+cd Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+netlog
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+netquit
+netlog
+netquit
+cd post/
+ge
+gr
+bundler.ruby2.6 exec jekyll s
+git add _posts/2019/07/2019-07-31-july-reading.md 
+git commit 
+git push origin master 
+cd
+cd src/
+ls
+ccomp a.c -c
+ccomp b.c -c
+ls
+ccomp a.o b.o -o test
+ls
+file test 
+ls
+./test 
+ccomp b.c -c
+ccomp a.o b.o -o test
+ls
+./te
+./test 
+ls
+rm test
+ls
+rm b.c
+rm b.o
+rm a.o
+cd CompCert/
+ls
+man ccompp
+man ccomp
+ls
+ls test/
+ls test/c
+cd test/c
+ls
+vim fib.c 
+ccomp fib.c 
+ls
+./a.out 
+rm a.out
+vim fib.c 
+ccomp fib.c 
+./a.out 12
+rm a.out
+vim fib.c 
+ccomp --interp fib.c 
+ccomp -interp fib.c 
+ls
+man ccomp
+ls
+ccomp -dc fib.c 
+ls
+vim fib.compcert.c 
+ls
+rm a.out
+rm fib.compcert.c
+ls
+vim fft.c 
+vim bisect.c 
+ls
+vim aes.c 
+vim lists.c 
+ls
+ls Results/
+vim lists.c 
+vim sha1.c 
+vim new_fib.c
+ccomp new_fib.c 
+ls
+./a.out 
+ls
+vim new_fib.c 
+ccomp new_fib.c 
+ls
+./a.out 
+ls
+rm a.out
+ls
+ccomp -interp new_fib.c 
+ls
+ccomp -dc new_fib.c 
+vim new_fib.compcert.c 
+man ccomp
+ccomp -dclight new_fib.c
+ls
+rm a.out
+ls
+vim new_fib.light.c 
+rm new_fib.c
+rm new_fib.compcert.c
+rm new_fib.light.c
+ls
+man ccomp
+ls
+gr
+ls
+..
+ls
+scp -P 9922 ai9@101.6.5.200:~/a.c .
+ls
+vim a.c 
+ccomp -dclight a.c 
+ccomp -dclight a.c -c
+ls
+vim a.light.c 
+ls
+scp -P 9922 ai9@101.open-l2c/l2c .
+scp -P 9922 ai9@101.6.5.200:~/open-l2c/l2c .
+ls
+file l2c
+./l2c 
+ls
+mv l2c open-l2c/
+ls
+ls coq2html/
+cd co
+cd coq2html/
+gstatus 
+git remote 
+vim .git/config 
+gr
+..
+ls
+cd open-l2c/
+ls
+cd doc/
+ls
+sc-r p -P 9922 ai9@101.6.5.200:~doc/html .-l2c/l2c .
+scp -P 9922 ai9@101.6.5.200:~/open-l2c/l2c .
+scp -P 9922 ai9@101.6.5.200:~/open-l2c/l2c 
+scp -P 9922 ai9@101.6.5.200:~/open-l2c/l2c/doc/html .
+scp -P 9922 ai9@101.6.5.200:~/open-l2c/doc/html .
+scp -P 9922 -r ai9@101.6.5.200:~/open-l2c/doc/html .
+ls
+..
+ls
+.
+..
+ls
+vim a.c
+rm a.light.c
+rm a.o
+lss
+ls
+vim a.c
+ls
+vim
+ls
+ping net.tsinghua.edu.cn
+cd 
+cd /run/media/linusboyle/新加卷/
+ls
+cd Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+netlog
+uname -a
+d
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+cd .local/share/Baldur\'s\ Gate\ II\ -\ Enhanced\ Edition/
+ls
+ls portraits/
+ls save/
+ls characters/
+ls bpsave/
+ls bpsave/000000000-Auto-Save/
+ls portraits/
+cp ~/dwn/Portraits/00* portraits/
+ls
+ls portraits/
+rm portraits/00L.bmp
+rm portraits/00S.bmp
+ls
+ls portraits/
+cp ~/pix/OHHEXXL.bmp .
+ls
+mv OHHEXXL.bmp portraits/
+cp ~/pix/OHHEXXM.bmp portraits/
+ping net.tsinghua.edu.cn
+authlog
+vim bin/authlog_t
+vim bin/authlog_ether 
+vim bin/authlog
+javac HW.java 
+ls
+java HW
+javac HW.java 
+ls
+javac -d . HW.java 
+ls
+ls helloworld/
+ls helloworld/HW/
+rm -rf helloworld/
+javac -d . HW.java 
+ls helloworld/
+ls
+rm -rf helloworld/
+javac -d . HW.java 
+ls
+javac -d . HW.java 
+LC_ALL=en_US javac -d . HW.java 
+java
+java --version
+man java
+man javac
+sudo zypper install java-11-openjdk 
+sudo zypper search --installed-only java
+sudo zypper install java-11-openjdk 
+sudo zypper install javadoc 
+sudo zypper info javadoc
+sudo zypper remove javadoc 
+sudo zypper info java-11-openjdk
+sudo zypper info java-11-openjdk-de
+sudo zypper info java-11-openjdk-devel 
+sudo zypper installjava-11-openjdk-devel 
+sudo zypper install java-11-openjdk-devel 
+javac
+ls
+cd program/
+ls
+mkdir java
+cd java/
+vim HW.java
+vim /usr/share/vim/vim81/ftplugin/java.vim 
+ls
+vim HW.java 
+cd
+cd .vim/pack/
+ls
+tree
+man trree
+man tree
+tree -L 3
+vim ~/.vim/thirdparty.vim 
+ls
+git rm util/start/vim-repl/
+git commit -a
+gstatus 
+git push origin master 
+..
+ls
+git status 
+git add pack/
+git add thirdparty.vim 
+gcommit 
+git push origin master 
+ls
+ls com
+ls compiler/
+vim after/ftplugin/cpp.vim 
+ls
+vim thirdparty.vim 
+cd pack/util/start/
+git submodule add https://github.com/neomake/neomake
+s
+ls
+gstatus 
+gr
+ls
+vim command.vim 
+cd -
+ls
+vim neomake/doc/neomake.txt 
+cd
+cd program/java/
+ls
+vim HW.java 
+vim ~/.vim/thirdparty.vim 
+vim HW.java 
+ls
+vim ~/.vim/thirdparty.vim 
+cd
+cd .vim/pack/
+gstatus 
+git commit 
+git push origin master 
+..
+vim thirdparty.vim 
+git push origin master 
+cd
+cd dwn/asig-v2.0-lin/
+ls
+cd demo/
+ls
+cd -
+ls
+cd ./demo/
+ls
+cd
+ls
+vim .bashrc 
+man cd
+vim .bashrc 
+netlog
+javac Main.java 
+ls
+vim input
+javac t.java 
+ls
+javac Main.java 
+ls
+java Main < input 
+ls post/
+g
+gt
+ls post/
+gt
+eval (gt)
+eval )
+ls post/
+echo post/
+echo as 
+ls post/
+gt
+bc
+javac BigInteger.java 
+ls
+cd program/java/pa1/prog3
+ls
+javac BigInteger.java 
+ls
+java BigInteger 
+javac BigInteger.java 
+java BigInteger 
+javac BigInteger.java 
+ls
+java BigInteger 
+bc
+jdb BigInteger
+javac BigInteger.java 
+java BigInteger 
+javac BigInteger.java 
+java BigInteger 1 2
+java BigInteger 1 21233123
+java BigInteger 1233123 13 132
+java BigInteger 0 0
+java BigInteger 0 1
+javac BigInteger.java 
+java BigInteger 0 1
+java BigInteger 1000000000000000000 100000000000
+java BigInteger 1000000000000000000 1000000000000
+ls
+java BigInteger 1000000000000000000 100000000000012313124
+java BigInteger 100000000000000000 1
+java BigInteger 100000000000000000 1000000000
+java BigInteger 100000000000000000 1000000000123131
+java BigInteger 100000000000000000 10000000001231311
+java BigInteger 100000000000000000 100000000012313111
+java BigInteger 1000000000000000000 100000000000012313124
+jdb BigInteger 1000000000000000000 100000000000012313124
+java BigInteger 100000000000000000 100000000012313111
+javac -g BigInteger.java 
+ls
+jdb BigInteger 1000000000000000000 100000000000012313124
+rlwrap jdb BigInteger 1000000000000000000 100000000000012313124
+javac BigInteger.java 
+java BigInteger 100000000000000000 100000000012313111
+java BigInteger 1000000000000000000 100000000000012313124
+javac BigInteger.java 
+java BigInteger 1000000000000000000 100000000000012313124
+java BigInteger 100000000000000000 100000000012313111
+javac BigInteger.java 
+java BigInteger 100000000000000000 100000000012313111
+java BigInteger 1000000000000000000 100000000000012313124
+ls
+java BigInteger 1000000000000000000 100000000000012313124
+echo $CDPATH
+cd dwn/asig-v2.0-lin/
+ls
+cd demo/
+ls
+vim filter.lus 
+ls
+file filter
+vim filter.tcl 
+cnf with
+cnf wish
+ls
+wish
+man wish
+ls
+wish filter.tcl 
+ls
+vim filter.c
+ls
+./filter 
+sudo zypper search libtk
+sudo zypper search tcl
+ls
+cd
+cd program/java/
+ls
+mkdir helloworld
+mv HW.* helloworld/
+ls
+mkdir pa1
+cd pa1/
+l
+ls
+vim prog1.java
+ls
+mkdir prog1
+cd prog1
+ls
+echo echo 
+echo echo
+ls
+ls ls
+cd ls
+.
+..
+ls prog1/
+cd cd 
+ls prog1/
+cd prog1/
+ls
+vim Main.java
+ls
+vim Main.java 
+ls
+javac Main.java 
+ls
+javac Main.java 
+vim Main.java 
+ls
+vim Main.java 
+cd
+cd .vim/pack/
+cd util/start/neomake/
+ls
+vim doc/neomake.txt 
+ls doc
+vim LICENSE 
+ls
+cd
+ls
+cd prog1/
+cd program/java/pa1/prog1/
+ls
+java Main 
+ls
+vim /usr/share/jvm/
+vim /usr/share/jvm-commmon/
+..
+ls
+mkdir prog4
+cd prog
+cd prog4
+ls
+vim Main.java
+ls
+vim Main.java
+javac Main.java 
+java Main <input 
+ls
+findmnt 
+man ntfs-3g
+gr
+ls
+..
+l
+ls
+mkdir assem
+ls
+mv assem/ snippet/
+cd snippet/
+ls
+cd 
+cd -
+cd assem/
+ls
+vim swap.c
+gcc swap.c -Og -S -fno-stack-protector 
+ls
+vim swap.
+vim swap.s
+vim m12.c
+gcc m12.c -Og -S -fno-stack-protector 
+ls
+vim m12.s
+man gcc
+vim neg.c
+gcc neg.c -Og -S -fno-stack-protector 
+vim neg.s
+cd program/java/
+ls
+mkdir enum
+cd enum
+ls
+vim t.java
+vim ~/.vim/thirdparty.vim 
+vim t.java
+ls
+javac t.java 
+ls
+..
+ls
+..
+ls
+cd java/pa1/prog4
+ls
+vim Main.java 
+cd program/java/pa1/prog1/
+vim Main.java 
+..
+mkdir prog5
+cd prog5
+ls
+vim ~/.bash_aliases 
+ls
+vim Main.java
+..
+cd prog3
+ls
+vim n
+vim BigInteger_template.java 
+cp BigInteger_template.java BigInteger.java 
+vim BigInteger.java 
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+mpc stop
+ls /dev/kvm
+file /dev/kvm
+egrep -c '(vmx|svm)' /proc/cpuinfo
+ls
+cat /proc/cpuinfo 
+cd dwn/asig-v2.0-lin/
+ls
+cp demo/filter.lus ~/dev/src/open-l2c/
+cd
+cd open-l2c/
+ls
+./l2c filter.lus 
+vim filter.lus 
+./l2c filter.lus 
+vim filter.lus 
+./l2c filter.lus 
+vim filter.lus 
+./l2c filter.lus 
+vim filter.lus 
+./l2c filter.lus 
+vim filter.lus 
+cd test/
+ls
+ag 'when'
+ag 'current'
+vim special/paper/tracker_t_sum_lv6.lustre 
+vim special/timothy-pldi17/functionalchain/kind_functionalChain.lus
+gstatus 
+git remote
+git remote -a
+git remote -v
+ls
+cd program/java/
+ls
+cd pa1/
+ls
+cd prog
+..
+ls
+cd helloworld/
+ls
+vim HW.java 
+sudo zypper install java-11-openjdk-javadoc 
+sudo zypper info java-11-openjdk-javadoc 
+sudo zypper install java-11-openjdk-javadoc 
+firefox /usr/share/javadoc/java-11-openjdk/index.html 
+cd
+cd .vim/pack/
+git submodule update 
+git submodule update --recursive 
+git submodule update --recursive --init 
+git submodule update --remote 
+git submodule update --remote --recursive 
+ls
+vim ~/a.c
+ls
+cd complete/opt/
+ls
+cd YouCompleteMe/
+ls
+./install.py --clang-completer --java-completer
+py
+sudo zypper install python-devel 
+ls
+py3 ./install.py --clang-completer --java-completer
+ls
+vim ~/.vim/thirdparty.vim 
+ls
+cd
+cd program/java/enum/
+ls
+..
+cd helloworld/
+ls
+vim HW.java 
+ls
+cd
+cd dwn/
+untar android-studio-ide-183.5692245-linux.tar.gz 
+cd android-studio/
+ls
+vim Install-Linux-tar.txt 
+./bin/studio.sh 
+cd
+ls
+ls app/android/
+ls app/android/emulator/emulator-check
+./app/android/emulator/emulator-check 
+./app/android/emulator/emulator-check accel
+ls
+./dwn/android-studio/bin/studio.sh 
+ls
+ls AndroidStudioProjects/
+cd src/
+ls
+rm a.c
+ls
+cd open-l2c/
+gstatus 
+ls
+..
+ls
+mv open-l2c/ open-l2c_git
+ls
+svn co http://soft.cs.tsinghua.edu.cn/svn/open-l2c/ --username hanzhilei --password hanzhilei2019
+ls
+cd open-l2c
+ls
+svn stat
+svn status
+..
+rm -rf open-l2c
+svn checkout svn://soft.cs.tsinghua.edu.cn/svn/open-l2c/ --username hanzhilei --password hanzhilei2019
+cd
+cd program/java/pa2/prog3
+ls
+javac Main.java 
+ls
+java Main < input 
+cd 
+cd src/
+ls
+#svn co http://soft.cs.tsinghua.edu.cn/svn/open-l2c/ --username hanzhilei --password hanzhilei2019
+svn co http://soft.cs.tsinghua.edu.cn/svn/open-l2c
+ls
+ls open-l2c
+cd open-l2c
+..
+ls
+mkdir test
+svn copy open-l2c/ test/mytest
+ls
+rmdir test/
+cd program/java/pa1/prog5
+ls
+java Main < input
+java Main
+ls
+vim input2
+java Main < input2
+ls
+..
+mkdir pa
+mv pa pa2
+cd pa2
+ls
+mkdir prog1
+cd prog
+cd prog1
+cp Man_template.java Man.java
+vim Man.java 
+javac Man.java 
+ls
+vim Man.java 
+..
+cd prog2
+ls
+cp Singleton_template.java Singleton.java
+vim Singleton
+vim Singleton.java 
+..
+mkdir prog3
+cd prog
+cd prog3
+ls
+vim Main.java
+netlog
+cd program/java/pa2/prog3/
+ls
+vim Main.java 
+javac Main.java 
+java Main < input 
+vim Main.java 
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+netquit 
+ls app/
+ls app/Zotero_linux-x86_64/
+bc
+py
+ls bin/
+ls app/TeXmacs/
+ls app/TeXmacs/bin/
+texmacs
+coqc --version
+ls 
+ls app/android/
+ls app/android/build-tools/
+ls app/android/build-tools/29.0.1/
+ls app/android/
+ls app/android/emulator/
+ls app/android/emulator/
+app/android/emulator/emulator
+app/android/
+appls /android/
+ls app/android/
+ls app/android/patcher/
+ls app/android/tools/
+ls app/android/tools/bin/
+netlog
+opam
+opam switch 
+opam switch -h
+opam switch --help
+opam switch create 4.02.3
+opam switch 
+ls .opam/
+ls .opam/4.02.3/
+ls .opam/default/
+ls .opam/default/bin/
+ls .opam/4.02.3/
+ls .opam/4.02.3/bin/
+ls
+opam pin coq=8.4pl6
+opam info coq
+opam pin coq=8.4.6
+opam pin
+opam pin -h
+opam pin --help
+opam pin add coq 8.4.6
+ls
+coq --version
+coq
+ls
+cd post/
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+cd post/
+gr
+bundler.ruby2.6 exec jekyll s
+cd post/
+gr
+ls
+ls _includes/
+vim _layouts/post.html 
+vim _includes/co
+vim _includes/copyright.html 
+ls
+cd _posts/2018/
+..
+cd 2019/
+ls
+mkdir 08
+cd 08
+ls
+vim 2019-08-09-receptive-determinate-language.md
+ls
+gr
+git add _includes/copyright.html 
+git commit 
+git add _posts/2019/08/
+git add _posts/2019/08/2019-08-09-receptive-determinate-language.md 
+git commit 
+git commit --amend 
+git push origin master 
+cd
+cd open-l2c_git/
+ls
+cp README.md ../open-l2c/
+..
+cd open-l2c
+ls
+svn status
+ls
+svn add README.md 
+svn update 
+svn log
+svn log|less
+ls
+vim README.md 
+ls
+vim MA
+vim MAINTAINERS 
+ls
+man svn 
+svn --help
+svn commit --help
+svn commit 
+svn --help|less
+svn help merge
+svn help merge|less
+svn help copy|less
+svn log
+svn log|head
+svn update
+svn log|head
+ls
+vim README.md 
+ls
+make
+ls
+opam info menhir
+opam pin add menhir 20151023
+make
+ls
+./l2c 
+ls
+vim README.md 
+ls
+svn commit
+ls
+svn update
+ls
+vim README.md 
+svn log|head
+man ascii
+man utf-8 
+cd
+cd .local/share/applications/
+ls
+rm gog_com-Torchlight_2_1.desktop
+rm gog_com-Torchlight_2_2.desktop
+l
+ls
+vim gog_com-Baldurs_Gate_2_Enhanced_Edition_1.desktop 
+ls
+ls /usr/local/bin/
+ls /usr/local/lib/compcert/
+ls /usr/local/lib/compcert/include/
+ls /usr/local/lib64/
+ls /usr/local/lib64/vcmi/
+ls /usr/local/lib64/vcmi/AI/
+netlog
+cd
+cd program/snippet/
+ls
+vim Tmin.c
+gcc Tmin.c 
+ls
+./a.out 
+ls
+vim Tmin.c
+gcc Tmin.c -o a.out.2
+./a.out.2 
+vim Tmin.c
+netlog
+cd
+cd src/open-l2c/
+ls
+make documentation 
+ls
+firefox doc/index.html 
+ls
+ls compcert/
+cd compcert
+ag coqlib
+vim lib/Coqlib.v
+fd
+fd coqlib
+vim lib/Coqlib.v
+ls
+..
+ls
+..
+ls
+ls lu
+cd lustre-v6.1.737/
+ls
+./sr
+ls src/
+ls
+make
+cnf oasis
+opam search 
+opam search |grep oasis
+opam install oasis
+ls
+make
+opam search |grep lutils
+opam install lutils
+opam search |grep lus
+ls
+..
+opam install lustre-v6
+ls
+opam info lustre-v6 
+ls
+cd post/
+ls
+cd 2019/08/
+ls
+vim 2019-08-09-receptive-determinate-language.md 
+git commit -a
+git push origin master 
+cd program/java/pa3/prog2
+l
+mkdir -p input/test/case
+cd input/test/case/
+ls
+touch a
+touch aa
+touch aaaa
+touch abc
+touch bc213
+touch As
+touch Abc
+mkdir ab
+ls
+cd program/java/
+ls
+mkdir pa3
+cd pa
+cd pa3
+mkdir prog1
+cp ../pa2/prog3/Main.java 
+cp ../pa2/prog3/Main.java .
+ls
+mv Main.java prog1/
+cd prog
+cd prog1
+ls
+vim Main.java 
+..
+ls
+cd prog1
+ls
+vim Main.java 
+..
+mkdir prog2
+cd prog
+cd prog2
+ls
+vim Main.java
+javac Main.java 
+ls
+vi Main.java 
+java Main 
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+netlog
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+cd
+cd program/java/
+ls
+cd pa3
+ls
+mkdir prog3
+cd prog3
+ls
+vim Main.java
+javac Main.java 
+ls
+vim input
+java Main < input 
+vim Main.java 
+javac Main.java 
+java Main < input 
+vim Main.java 
+javac Main.java 
+java Main < input 
+vim Main.java 
+javac Main.java 
+vim Main.java 
+javac Main.java 
+java Main <input 
+javac Main.java 
+vim Main.java 
+javac Main.java 
+ls
+java Main <input 
+vim Main.java 
+javac Main.java 
+java Main <input 
+ping net.tsinghua.edu.cn
+cd
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+cd
+cd open-l2c/
+ls
+fd bin
+fd binnum
+ls
+ls driver
+ls extraction/
+ls
+ls parser/
+ls
+ls doc
+ls
+svn status
+ls
+man svn
+l
+ls
+wget https://raw.githubusercontent.com/github/gitignore/master/Coq.gitignore
+ls
+mv Coq.gitignore .svnignore
+vim .svnignore 
+svn propset svn:ignore -R -F .svnignore .
+svn status
+ls
+vim .svnignore 
+svn propset svn:ignore -R -F .svnignore .
+svn status
+svn status|less
+vim .svnignore 
+svn propset svn:ignore -R -F .svnignore .
+svn status|less
+ls
+svn propset svn:ignore extraction/*.ml .
+ls
+svn help propedit
+svn help propedit|les
+svn help propedit|less
+svn propedit svn:ignore
+svn propedit svn:ignore .
+svn propedit svn:ignore extraction
+svn propedit svn:ignore .
+svn propedit svn:ignore extraction
+svn status|less
+ls doc
+file doc/coq2html
+ls
+vim .svnignore 
+rm .svnignore
+ls
+svn propedit svn:ignore doc
+svn status|less
+svn propedit svn:ignore doc
+svn status|less
+svn propedit svn:ignore .
+cd
+cd dev/mydic/
+ls
+cd Stanford\ Encyclopedia\ of\ Philosophy/
+ls
+vim platostanford.css 
+ls
+cd dwn/adom/
+./adom 
+cd
+cd open-l2c/
+ls
+fd parser
+svn update
+svn log
+svn log|less
+vim README.md 
+ls
+fd parser
+vim extraction/Parser.ml
+ls
+fd tree
+cd parser/
+ls
+ls validator/
+ls
+vim Parser.v
+ls
+cd CompCert/
+ls
+./coq
+ls
+opam switch default
+coq --version
+coqc --version
+ls
+./coq
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+ping baidu.com
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping net.tsinghua.edu.cn
+sudo zypper search nethack
+vulture-nethack-recover -h
+vulture-nethack-recover --help
+man vulture-nethack-recover 
+man vulture-nethack
+vulture-nethack
+ls /var/games/
+ls /var/games/vulture-nethack/
+ls /var/games/vulture-nethack/save/
+ls
+ls /var/games/vulture-nethack/save/
+l
+ls /var/games/vulture-nethack/
+ls
+which vulture-nethack
+ls /usr/bin/vul
+ls /usr/bin/vulture-nethack
+ls /usr/bin/vulture-nethack -l
+ls /usr/bin/vulture-nethack -lh
+ls
+ls /usr/share/vulture-
+ls /usr/share/vulture-nethack/
+sudo vulture-nethack
+man vulture-nethack
+cd /dw
+cd
+cd dwn/
+l
+cd adom/
+ls
+vim  docs/readme1st.txt 
+ls
+ls licenses/
+ls docs/
+./adom 
+sudo zypper install vulture-unnethack 
+vulture-unnethack
+man vulture-unnethack
+ls
+ls /var/games/vulture-nethack/
+ls /var/games/vulture-nethack/ -l
+ls /var/games/vulture-nethack/save/
+ls
+..
+ls
+mkdir game
+cd game/
+ls
+vulture-nethack -d . 
+ls
+man vulture-unnethack
+ls ~/.config/
+ls
+ls record
+vim record 
+ls
+..
+ls
+ls /var/games/
+ls /var/games/ -l
+ls /var/games/vulture-nethack/
+ls /var/
+ls /var/games/ -l
+ls /var -l
+sudo chown linusboyle /var/games/vulture-nethack/
+ls /var/games/ -l
+ls /var/games/vulture-
+ls /var/games/vulture-nethack/
+ls /var/games/vulture-nethack/ -
+ls /var/games/vulture-nethack/ -l
+s-R udo chown linusboyle /var/games/vulture-nethack/
+sudo chown -R linusboyle /var/games/vulture-nethack/
+ls /var/games/vulture-nethack/ -l
+vulture-nethack
+cd dwn/
+ls
+aria2c -x 8 -k 1M https://sjc8.dl.dbolical.com/dl/2019/01/29/adom_noteye_linux_ubuntu_64_3.3.3.tar.gz?st=TM1tEEPB4htzTH6Te5ZfFw==&e=1565685662https://sjc8.dl.dbolical.com/dl/2019/01/29/adom_noteye_linux_ubuntu_64_3.3.3.tar.gz?st=TM1tEEPB4htzTH6Te5ZfFw==&e=1565685662
+ls
+rm adom_linux_ubuntu_64_3.3.3.tar.gz
+ls
+untar adom_noteye_linux_ubuntu_64_r60_pub.tar.gz 
+ls
+cd adom/
+ls
+..
+ls
+rm -rf adom
+ls
+untar adom_noteye_linux_ubuntu_64_r60_pub.tar.gz 
+ls
+cd adom/
+ls
+ls docs/
+./adom --version
+ls
+./adom 
+ls
+ls common/
+ls
+ls games/
+ls li
+ls lib
+sudo zypper install libfluidsynth2
+ldd adom 
+ldd adom  |grep found
+ls /usr/lib64/libfluidsynth.so.2
+ls /usr/lib64/libfluidsynth.so.2 -l
+ls
+cd
+ls
+sudo zypper install nethack 
+sudo zypper info nethack 
+net
+/usr/games/nethack
+ls
+sudo chown -R linusboyle /var/games/nethack/
+/usr/games/nethack
+cd 
+cd program/java/
+cd pa4/prog1/
+ls
+javac Main.java 
+java Main <input 
+javac Main.java 
+java Main <input 
+javac Main.java 
+java Main <input 
+netlog
+cd program/java/
+ls
+mkdir pa4
+cd pa4
+ls
+mkdir prog1
+cd prog
+cd prog1
+ls
+vim Main.java
+javac Main.java 
+ls
+vim input
+java Main <input 
+vim Main.java
+javac Main.java 
+java Main <input 
+vim Main.java
+cd .local/share/akonadi_maildir_resource_0/
+ls
+cd
+netlog
+cd program/java/
+ls
+cd pa4/
+ls
+mkdir prog3
+cd prog3
+ls
+vim Main.java
+javac Main.java 
+vim input2
+ls
+java Main < input2 
+vim Main.java
+javac Main.java 
+java Main < input2 
+vim input1
+java Main < input1
+..
+mkdir prog2
+cd prog2/
+ls
+vim Main.java
+javac Main.java 
+javac Main.java -Xlint:uncheched
+javac Main.java -Xlint:unchecked
+javac Main.java 
+vim Main.java
+javac Main.java 
+ls
+vim Main.java 
+;s
+ls
+java Main 
+vim Main.java 
+ls
+cp Main.java Main_bak.java
+ls
+vim Main.java
+ls
+vim Main.java
+cd program/java/pa4
+cd prog2/
+ls
+javac Main.java 
+java Main 
+javac Main.java 
+java Main 
+ls
+java Main 
+ls
+java Main 
+vim Main_bak.java 
+javac Main.java 
+ls
+java Main 
+ls
+javac Main.java 
+java Main 
+javac Main.java 
+java Main 
+javac Main.java 
+java Main 
+netlog
+ls
+vim h.java
+javac h.java 
+vim h.java
+javac h.java 
+java h 
+rm h.class
+vim h.java 
+ls
+mv h.java dev/program/java/
+cd program/java/pa4
+ls
+..
+ls
+mv h.java stat_expr.java
+ls
+mv stat_expr.java stat_expr_test.java 
+ls
+mpd
+pgrep mpd 
+killall mpd
+mpd
+killall mpd 
+ls
+sudo systemctl restart mpd.socket 
+sudo systemctl stop mpd.service
+sudo systemctl stop mpd.socket
+mpd
+mpc toggle
+sudo zypper remove jack 
+sudo zypper dup
+sudo zypper remove python2-appdirs 
+sudo zypper dup
+ls
+sudo zypper update
+sudo systemctl start mpd.service 
+mpc toggle
+mpc list
+ls music/
+sudo systemctl start mpd.socket 
+journalctl -xe
+sudo journalctl -xe
+mpc toggle
+ls
+sudo systemctl stop mpd.service 
+mpd
+mpc
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+netlog
+ssh 2017011442@202.205.2.250
+ls
+scp 2017011442@202.205.2.250:~/* dev
+ls
+cd de
+ls
+lsv
+cd dev
+ls
+mkdir attacklab
+ls
+mv ctarget attacklab/
+mv hex2raw attacklab
+mv rtarget attacklab
+ls
+cd attacklab/
+ls
+objdump -d ctarget 
+objdump -d ctarget > c.S
+ls
+vim c.S 
+cd program/java/
+ls
+cd pa5/
+ls
+unzip pi
+unzip philosopher.zip 
+ls
+rm philosopher
+rm philosopher.zip
+ls
+cd p
+cd philosopher/
+ls
+cat 0.ans 
+cat 0.in
+ls
+vim Main.java 
+cd program/snippet/
+ls
+ls assem/
+cd assem/
+ls
+vim struct.c
+gcc struct.c -S 
+vim struct.c
+gcc struct.c -S 
+vim struct.c
+gcc struct.c -S 
+ls
+vim struct.s
+gcc struct.c -S -Og
+vim struct.s
+gcc struct.c -S -Og -fno-stack-protector 
+vim struct.s
+ls
+gnuplot 
+snap install vectr
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+vectr 
+snap remove vectr 
+ls
+tm_coq
+cd
+cd program/java/
+ls
+cd program/snippet/assem/
+ls
+cd readline/
+ls
+./main 
+cd /usr/share/
+ag O_RDONLY
+ls
+..
+cd include/
+ag O_RDONLY
+vim bits/fcntl-linux.h 
+cd
+cd program/java/
+ls
+cd pa5/philosopher/
+ls
+javac Main.java 
+ls
+vim 0.in 
+xhost +
+ls
+java Main < 0.in 
+vim 0.ans 
+java Main < 0.in > 0.mine
+ls
+vim 0.mine 
+vimdiff 0.mine 0.ans 
+cd
+ls
+texmacs
+cd program/snippet/assem/readline/
+ls
+vim output_line_num.txt 
+cat output_line_num.txt 
+vim output_line_num.txt 
+cd /usr/include/
+ls
+vim bits/fcntl-linux.h 
+netlog
+cd /usr/include/asmm
+cd /usr/include/asm
+ls
+vim unistd6
+vim unistd_64.h 
+ls
+vim unistd.h 
+ls
+..
+ls
+ls c++
+ls c++/8/
+ls
+vim unistd.h 
+ag O_RDONLY
+ag lseek
+ag whence
+ag lseek
+vim unistd.h 
+cd
+cd program/snippet/assem/
+ls
+as getline.s -o getline.o
+ls
+as getline.s -o getline.o
+ls
+objdump -d getline.o
+objdump -D getline.o
+as getline.s -o getline.o
+objdump -D getline.o
+ld getline.o
+as getline.s -o getline.o
+objdump -D getline.o
+ld getline.o
+ls
+rm a.out
+ls
+ld getline.o
+objdump -D a.out 
+ls
+as getline.s -o getline.o
+ls
+objdump -d getline.o
+xxd getline.o
+ls
+vim
+ls
+vim m12.
+vim m12.c
+ls
+as main.s -o main.o
+ls
+rm a.out
+ls
+mkdir readline
+ls
+mv main.s readline/
+mv getline.* readline/
+mv main.o readline/
+ls
+cat input.txt 
+ls
+cd readline/
+ls
+vim ../helloworld.s
+ls
+vim ../helloworld.s
+ls
+vim input 
+ls
+vim getline.s 
+as getline.s -o getline.o
+vim getline.s 
+as getline.s -o getline.o
+as main.s -o main.o
+vim getline.s 
+xxd getline.o
+xxd input 
+man lseek
+xxd input 
+vim ../helloworld
+vim ../helloworld.s 
+ls
+as main.s -o main.o
+ld getline.o
+objdump -d main
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.s getline.s -o main
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+ls
+objdump -d main
+ls
+./main < input 
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+./main < input 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+./main < input 
+ls
+vim input 
+vim main.s 
+..
+vim helloworld.s 
+ag printf
+vim countlf.s
+cd -
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+./main 
+ls
+vim ../countlf.s
+asp
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+./main 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+./main 
+ls
+vim main.s 
+vim output_line_num.txt 
+ls
+vim tostring.c
+gcc tostring.c -S
+vim tostring.c
+gcc tostring.c -S
+ls
+vim tostring.
+vim tostring.s
+ls
+vim tostring.s
+vim tostring.c
+gcc tostring.c -S
+vim tostring.s
+ls
+vim tostring.s
+as main.s -o main.o
+ls
+objdump -d main.o
+ls
+as tostring.s -o tostring.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o tostring.o -o main
+as tostring.s -o tostring.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o tostring.o -o main
+s
+ls
+objdump -d main
+ls
+cat input.txt 
+cat output_line_num.txt 
+./main 
+ls
+vim output_line_num.txt 
+./main 
+vim output_line_num.txt 
+ls
+ls -l
+ls -lh
+vim input.txt 
+./main 
+vim output_line_num.txt 
+ls
+rm a.out
+ls
+vim Makefile
+ls
+rm main
+ls
+rm *.o
+ls
+rm tostring.c
+ls
+make
+ls
+vim Makefile 
+make clean 
+ls
+cd
+texmacs
+cd program/snippet/assem/
+ls
+vim hellowordl.s
+mv hellowordl.s helloword.s
+as helloword.s 
+ls
+rm a.out
+ls
+mv helloword.s helloworld.s
+as helloworld.s -o helloworld.o
+ls
+objdump -d helloworld.o
+ls
+objdump -d helloworld.o
+file helloworld.o
+ls
+chmod +x helloworld.o
+./helloworld.o 
+ls
+rm helloworld.o
+as helloworld.s -o helloworld.o
+ls
+ld helloworld.o -o helloworld
+ls
+objdump -d helloworld.o
+objdump -d helloworld
+objdump -D helloworld.o
+objdump -d helloworld
+objdump -D helloworld
+./helloworld 
+file helloworld
+ls -l
+ls -lh
+ls
+objdump -D helloworld
+strip
+strip helloworld
+ls
+file helloworld
+ls -l
+objdump -D helloworld
+./helloworld 
+ls
+vim countlf.c
+gcc countlf.c
+ls
+objdump -d a.out 
+:q
+gcc countlf.c -S
+ls
+vim countlf.s
+vim input.tx
+vim input.txt
+./a.out 
+ls
+vim countlf.s
+man open
+ls
+vim getline.s
+ls
+as getline.s -o getline.o
+vim getline.s 
+ls
+cd readline/
+ls
+objdump -d main.o
+objdump -D main.o
+ls
+vim main.s 
+ls
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+ls
+objdump -d main
+vim main.s
+as main.s -o main
+as main.s -o main.o
+ls
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -o main
+ls
+objdump -d main
+ls
+vim input
+xxd input 
+ls
+./main < input 
+ls
+gdb main
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+ls
+gdb main
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+ls
+./main <input 
+ls
+objdump main
+objdump -d main
+gdb main
+ls
+vim main.s
+as main.s -o main.o
+vim main.s
+as main.s -o main.o
+ls
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+vim main.s 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+ls
+./main < input 
+ls
+vim main.s 
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+ls
+vim main.s 
+gdb main
+ls
+mv input input.txt
+vim ../.vimrc
+vim ../helloworld.s 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+ls
+./main 
+ls
+vim input.txt 
+ls
+./main 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+vim input.txt 
+man lseek
+gdb main
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+ls
+./main 
+ls
+objdump -d main
+as main.s -o main.o
+ldp
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+vim input.txt '
+vim input.txt 
+./main 
+vim input.txt 
+./main 
+ls
+rm a.out
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+vim input.txt 
+objdump -d main
+touch output_line_num.txt
+ls
+./main 
+ls
+vim output_line_num.txt 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+vim output_line_num.txt 
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+gdb main
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+as main.s -o main.o
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+./main 
+ls
+vim output_line_num.txt 
+xxd output_line_num.txt 
+gdb main
+ls
+vim main.s
+vim tostring.c
+gcc tostring.c 
+vim tostring.c
+gcc tostring.c 
+./a.out 
+vim tostring.c
+gcc tostring.c 
+./a.out 
+ls
+vim tostring.c
+gcc tostring.c 
+ls
+./a.out 
+vim tostring.c
+gcc tostring.c 
+./a.out 
+vim tostring.c
+gcc tostring.c 
+./a.out 
+vim tostring.c
+gcc tostring.c -S
+vim tostring.c
+bc
+ls
+make
+ls
+./main 
+cat output_line_num.txt 
+cat input.txt 
+cd program/java/pa5/
+ls
+mkdir url
+cd url/
+ls
+vim Main.java
+cd program/java/
+cd pa5/url/
+ls
+javac Main.java 
+ls
+vim input
+java Main < input 
+ls
+javac Main.java 
+java Main < input 
+javac Main.java 
+java Main < input 
+java Main < input > output
+vim output 
+javac Main.java 
+java Main < input > output
+vim output 
+javac Main.java 
+java Main < input > output
+vim output 
+javac Main.java 
+java Main < input 
+javac Main.java 
+java Main < input 
+vim output 
+ls
+vim input 
+java Main < input 
+vim input 
+ls
+java Main < input 
+ls
+vim input 
+javac Main.java 
+java Main < input 
+time java Main < input 
+javac Main.java 
+java Main < input 
+time java Main < input 
+cd program/java/pa5/
+ls
+cd url/
+ls
+vim Main.java 
+javac Main.java 
+java Main < input 
+vim Main.java 
+javac Main.java 
+java Main < input 
+time java Main < input 
+vim Main.java 
+scp dev/attacklab/2 2017011442@202.205.2.250:~
+ssh 2017011442@202.205.2.250
+ls
+cat 1
+cat 1 | ./hex2raw 
+ls
+./hex2raw < 1 >  a
+ls
+rm a
+ls
+cat 1 | ./hex2raw | ./ctarget -q
+ls
+cat 1 | ./hex2raw > tmp
+ls
+xxd tmp
+ls
+gdb ctarget 
+ls
+gdb ctarget 
+ls
+rm tmp
+ls
+xxd exploit2
+ls
+cat exploit2
+:q
+cat exploit2
+cat exploit2.s 
+ls
+cat 2
+cat 2 | ./hex2raw | ./ctarget -q
+ls
+cat c.S
+ls
+cat 1 | ./hex2raw > tmp
+gdb cta
+ls
+as exploit3.s -o exploit3
+ls
+cat 3 | ./hex2raw |./ctarget -q
+cat 3 | ./hex2raw 
+ls
+cat 3 | ./hex2raw | ./ctarget -q
+cat 3 | ./hex2raw > tmp
+ls
+gdb ctarget 
+cat 3 | ./hex2raw | ./ctarget -q
+cat 3 | ./hex2raw  > tmp
+gdb ctarget 
+ls
+as exploit3.s -o exploit3
+cat 3 | ./hex2raw | ./ctarget -q
+cd dev/attacklab/
+ls
+vim c.S
+./ctarget 
+./ctarget -a
+./ctarget -h
+./ctarget -q
+vim c.S
+objdump -D ctarget 
+objdump -D ctarget |grep Normal
+./ctarget -q
+ls
+vim c.S 
+texmacs
+ls
+cd AndroidStudioProjects/
+cd program/java/helloworld/
+ls
+ld -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 main.o getline.o -g -o main
+cd program/java/
+ls
+cd
+vim .bashrc
+cd
+cd dev/attacklab/
+ls
+as exploit2.s -o exploit2
+ls
+objdump -d exploit2
+./ctarget 
+./ctarget -q
+man ascii
+objdump -d exploit3
+as exploit.s
+as exploit3.s
+as exploit3.s -o exploit
+as exploit3.s -o exploit3
+ls
+rm exploit
+rm a.out
+ls
+objdump -d exploit3
+netquit 
+ls
+rm tmp
+ls
+objdump -d rtarget > r.S
+vim r.S 
+vim 1
+vim r.S 
+cat 1 | ./hex2raw |./rtarget -q
+cat 2 | ./hex2raw |./rtarget -q
+vim r.S 
+ls
+vim 1 
+vim r.S 
+ls
+mpd
+sudo zypper install exfat-utils 
+ls /dev/sdb
+dmesg 
+ls AndroidStudioProjects/
+rm -rf AndroidStudioProjects/
+ls
+sudo zypper install shntool 
+cd music/邝美云\ -\ 精装歌集\ 2018\ -\ WAV\ 整轨/
+ls
+shnsplit -f CDImage.cue CDImage.wav 
+ls
+sudo zypper install cuetools
+cuetag.sh CDImage.cue split-track*.wav
+shnsplit -f CDImage.cue -t "%n %t" -o flac CDImage.wav 
+ls
+rm 00\ pregap.flac
+ls
+cuetag.sh CDImage.cue *.flac
+ls app/android/
+ls
+ls
+ls dwn/
+ls dwn/android-studio/
+dwn/android-studio/bin/studio.sh 
+cd dwn/android-studio/
+ls
+cd b
+cd bin/
+ls
+..
+ls
+vim Install-Linux-tar.txt 
+./bin/studio.sh 
+html body div#wrapper.wrapper div#main.main-left div.news-box ul.news-list2 li#sogou_vr_11002301_box_0 dl dd a
+dwn/android-studio/bin/studio.sh 
+cd dwn/
+wget http://lanbing510.info/public/file/posts/wechat.json
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping net.tsinghua.edu.cn
+netlog
+ping baidu.com
+netquit 
+netlog
+ls
+ls /usr/local/bin/
+ls /usr/local/bin/ -l
+ls /usr/local/lib
+ls /usr/local/lib/node_modules/
+ls /usr/local/lib/node_modules/koa
+ls /usr/local/lib/node_modules/yarn/
+npm uninstall -g koa
+sudo npm uninstall -g koa
+ls
+ls /usr/local/lib/node_modules
+ls /usr/local/lib64/
+ls /usr/local/lib
+ls /usr/local/lib/compcert/
+ls /usr/local/lib/compcert/include/
+ls /usr/local/lib/node_modules/
+ls /usr/local/lib/node_modules/material-design-icons/
+vim /usr/local/lib/node_modules/material-design-icons/README.md 
+ls
+npm uninstall -g material-design-icons
+sudo npm uninstall -g material-design-icons
+npm --version
+node --versin
+node --version
+n
+man n
+n -h
+n rm 8.12.0
+sudo n rm 8.12.0
+sudo /usr/local/bin/n rm 8.12.0
+sudo /usr/local/bin/n rm 8.10.0
+node 
+node --version
+which node
+ls /usr/local/bin/node
+ls /usr/local/bin/node -;
+ls /usr/local/bin/node -l
+ls /usr/bin/node --version
+/usr/bin/node --version
+ls
+sudo npm uninstall -g n
+node --version
+ls
+cat 5 | ./hex2raw | ./rtarget -q
+ls
+node
+node --version
+ls /usr/local/lib64/
+ls /usr/local/bin/
+ls /usr/local/lib
+ls /usr/local/lib/node_modules/
+ls /usr/local/
+ls /usr/local/bin/
+sudo rm /usr/local/bin/node
+sudo rm /usr/local/bin/npm
+sudo rm /usr/local/bin/npx
+node --version
+sudo rm /usr/local/bin/ele
+sudo rm /usr/local/bin/electron
+sudo rm /usr/local/bin/element-theme
+sudo rm /usr/local/bin/et
+ls
+cd attacklab/
+ls
+vim c.S
+vim r.S
+ls
+vim exploit2.s 
+vim exploit3.s
+ls
+rm tmp
+ls
+vim exploit3.s 
+ls
+cd
+texmacs
+cd attacklab/
+ls
+vi c.S 
+vi 5
+ls
+cat 1 | ./hex2raw | ./ctarget -q
+cat 2 | ./hex2raw | ./ctarget -q
+cat 3 | ./hex2raw | ./ctarget -q
+cat 4 | ./hex2raw | ./rtarget -q
+cat 5 | ./hex2raw | ./rtarget -q
+ls
+vidir
+ls
+rm c.S
+rm r.S
+ls
+scp 2017011442.zip  2017011442@202.205.2.250:~
+ssh 2017011442@202.205.2.250
+cd dwn/BaiduPCS-Go-v3.5.4-linux-amd64/
+ls
+./BaiduPCS-Go 
+ls
+vim
+netquit 
+cd program/java/
+ls
+cd pa4/prog3/
+ls
+vim Main.java 
+ls
+cd
+ls dev/
+ls dev/src/
+ls dev/src/styles/
+ls dev/src/
+ls dev/src/blog.woubuc.be/
+cd dev/src/blog.woubuc.be/
+ls
+vim README.md 
+ls
+vim package.json 
+ls
+vim netlify.toml 
+ls
+vim gridsome.
+ls
+ls static/
+vim static/robots.txt 
+vim static/site.webmanifest 
+ls
+ls content/
+ls content/authors/
+ls content/posts/
+ls content/subjects/
+ls
+ls src/
+ls src/assets/
+ls src/assets/style/
+ls src/assets/style/include
+ls src/assets/
+ls src/
+vim src/index.html 
+ls
+ls src/
+cd src/
+ls
+ls templates/
+vim templates/Author.vue 
+ls ~/.vim
+ls ~/.vim/ft
+ls ~/.vim/ftdetect/
+ls ~/.vim/ftplugin/
+vim ~/.vim/ftplugin/vue.vim 
+vim ~/.vim/after/
+vim ~/.vim/after/ft
+vim ~/.vim/after/syntax/
+vim ~/.vim/pack/filetype/start/vim-vue/ftdetect/
+ls
+vim /usr/share/vim/vim81/filetype.vim 
+cd /usr/share/vim/vim81/filetype.vim
+cd /usr/share/vim/vim81/
+ls
+ag vuejs
+vim synmenu.vim 
+ls
+vim syntax/vuejs.vim 
+ls
+cd -
+ls
+ls pages/
+vim index.html 
+ls
+ls highlight/
+ls templates/
+vim pages/Index.vue 
+ls
+cd dev/src/blog.woubuc.be/
+ls
+yarn dev
+yarn
+yarn develop
+vim package.json 
+yarn dev
+ls
+..
+rm -rf blog.woubuc.be/
+ls
+yarn global add @gridsome/cli
+ls
+cd
+fd gridsome
+cd .local/
+ls
+cd s
+cd share/
+ls
+..
+fd gridsome
+..
+ls
+ls bin/
+ls /usr/local/bin/
+ls /usr/local/n/versions/
+ls /usr/local/n/
+ls /usr/local/lib/node_modules/
+sudo yarn global add @gridsome/cli
+ls
+cd src/
+s
+git clone https://github.com/gridsome/gridsome-starter-default
+cd gridsome-starter-default/
+ls
+ls /opt/
+ls /opt/electronic-wechat-linux-x64/
+ls /opt/
+ls /opt/google/
+ls /opt/kingsoft/
+yarn
+ncdu
+ls
+vim package.json 
+ls
+vim yarn.lock 
+ls
+yarn dev
+yarn develop
+ls
+ncdu
+df -h
+ls
+cd .vim/sn
+cd .vim/uni
+cd .vim/UltiSnips/
+ls
+vim cpp.snippets 
+ls
+..
+ag mate
+ls
+vim keymap.vim 
+vim thri
+vim thirdparty.vim 
+vim a.cpp
+ls
+ls UltiSnips/
+ls pack/util/start/ultisnips/
+ls pack/util/start/ultisnips/UltiSnips/
+ls pack/util/start/ultisnips/u
+ls pack/util/start/ultisnips/utils/
+ls
+vim
+vim a.cpp
+ls
+vim thirdparty.vim 
+cd UltiSnips/
+ls
+vim java.snippets
+ls
+vim a.java
+ls
+vim java.snippets
+vim a.java
+ls
+vim java.snippets 
+vim a.java
+ls
+cd
+cd src/texmacs/
+ls
+git remote -a
+git remote -v
+git fetch origin 
+git rebase origin/master 
+ls
+git log
+git diff 6ef6d1266fc20cace40d804e5eb8285d0c0e4c71
+git log
+gitg
+ls
+gitg
+gitk
+ls
+..
+ls
+cd gridsome-starter-default/
+ls
+yarn dev
+yarn develop
+cd src/
+ls
+ls pages/
+ls templates/
+ls layouts/
+vim layouts/Default.vue 
+vim main.js 
+vim layouts/Default.vue 
+ls
+..
+ls
+git clone --depth=1 https://github.com/sergeyfilimonov/sergeyfilimonov.com
+cd sergeyfilimonov.com/
+ls
+ls blog/
+vim blog/posts/apple-ibook.md 
+ls
+yarn
+ls
+..
+ls
+netlog
+ping baidu.com
+ping tuoj.thusaac.com
+bc
+vim a.java
+ls
+cd dev/
+ls
+cd program/
+ls
+ls snippet/
+ls java/
+ls snippet/
+ls snippet/assem/
+cd snippet/
+bat Tmin.c 
+ls
+rm a.out
+rm a.out.2
+ls
+ls assem/
+..
+ls
+cd java/
+ls
+mkdir thread
+cd thread
+ls
+vim Main.java
+ls
+..
+cd pa5/philosopher/
+ls
+vim Philosopher.java 
+ls
+..
+ls
+..
+ls
+vim ~/.vim/UltiSnips/java.snippets 
+vim a.java
+ls
+vim ~/.vim/UltiSnips/java.snippets 
+ls
+vim test.java
+ls
+rm test.java
+cd pa1/prog3
+ls
+..
+cd prog4
+ls
+vim Main.java 
+..
+vim prog1/Main.java 
+..
+cd pa2/
+ls
+..
+cd pa3
+ls
+ls prog2
+vim prog2/Main.java 
+vim prog3/Main.java 
+ls prog1
+vim prog1/
+ls
+vim prog2/Main.java 
+cd prog2
+ls
+java Main 
+ls input/test/case/
+java Main 
+vim Main.java 
+..
+ls
+mkdir exam
+ls
+cd exam/
+ls
+mkdir pretest
+cd pretest/
+ls
+vim Main.java
+javac Main.java 
+ls
+java Main 
+vim Main.java
+ls
+..
+ls
+mkdir 1
+mkdir 2
+mkdir 3
+mkdir 4
+mkdir 5
+mkdir 6
+mkdir 7
+mkdir 8
+cd 1
+vim Main.java
+..
+cd 2
+ls
+vim Main.java
+vim input 
+vim Main.java
+ls
+vim Main.java 
+vim input 
+java Main < input 
+ls
+vim input 
+java Main < input 
+javac Main.java 
+java Main < input 
+vim input 
+javac Main.java 
+java Main < input 
+vim input 
+javac Main.java 
+java Main < input 
+javac Main.java 
+java Main < input 
+vim input 
+java Main < input 
+..
+cd 3
+ls
+..
+cd 7
+vim Main.java
+ls
+vim Main.java
+vim input 
+vim Main.java
+..
+ls
+cd 8/
+ls
+vim Main.java
+ls
+..
+cd 6
+ls
+vim Main.java
+..
+ls
+cd 3
+ls
+vim Main.java
+..
+ls
+cd 6
+s
+ls
+vim Main.ja
+vim Main.java
+ls
+javac Main.java 
+ls
+vim input
+java Main < input 
+ls
+vim Main.java 
+ls
+vim Main.java 
+cd program/java/exam/1
+ls
+javac Main.java 
+ls
+vim input
+ls
+java Main 
+ls
+java Main < input 
+ls
+..
+ag Union
+vim pa4/prog2/Main
+vim pa4/prog2/Main.java 
+ls
+cd exam/2
+ls
+javac Main.java 
+ls
+vim input
+ls
+java Main  < input 
+ls
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+ls
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+ls
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+vim input 
+java Main  < input 
+vim input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+vim input 
+java Main  < input 
+ls
+vim Main.java 
+javac Main.java 
+java Main  < input 
+vim Main.java 
+javac Main.java 
+java Main  < input 
+vim Main.java 
+..
+cd 3
+ls
+vim Main.java
+..
+cd 7
+javac Main.java 
+vim input
+java Main  < input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+javac Main.java 
+java Main  < input 
+vim input 
+java Main  < input 
+..
+cd 3
+ls
+javac Main.java 
+vim input
+ls
+java Main < input 
+javac Main.java 
+java Main < input 
+vim input
+java Main < input 
+javac Main.java 
+java Main < input 
+javac Main.java 
+java Main < input 
+vim input 
+java Main < input 
+javac Main.java 
+java Main < input 
+vim input 
+java Main < input 
+javac Main.java 
+java Main < input 
+vim input 
+java Main < input 
+vim input 
+java Main < input 
+vim input 
+java Main < input 
+vim input 
+java Main < input 
+vim input 
+javac Main.java 
+java Main < input 
+ls
+vim Main.java 
+netlog
+vim
+cd dev/goldendict_dark_mode/
+ls
+vim article-style.css 
+cd
+vim .vim/thirdparty.vim 
+ping tuoj.thusaac.com
+ping baidu.com
+ping net.tsinghua.edu.cn
+netlog
+ping net.tsinghua.edu.cn
+ping baidu.com
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+cd 
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+./start.sh 
+cd
+cd .vim/pack/
+ls
+cd colors/
+ls
+cd 
+mkdir start
+cd start/
+ls
+git submodule add https://github.com/rbong/vim-crystalline
+cd -
+ls
+rmdir start/
+cd .vim/pack/colors/
+mkdir start
+cd start/
+git submodule add https://github.com/rbong/vim-crystalline
+cd
+cd .vim/
+ls
+vim thirdparty.vim 
+ls
+cd pack/colors/start/
+cd 
+cd -
+ls
+cd vim-crystalline/
+ls
+ls autoload/crystalline
+ls autoload/crystalline/theme/
+cd
+vim
+cd
+vim
+cd
+cd /run/media/linusboyle/新加卷/Baldurs\ Gate\ 2\ Enhanced\ Edition/
+ls
+./start.sh 
+ls dev/android/
+q
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping baidu.com
+cd dwn/
+ls
+openvpn
+sudo openvpn --config vpn9.ovpn 
+./dwn/android-studio/bin/studio.sh 
+ls
+cd b
+cd bin
+ls
+cp netlog httest
+mv httest ..
+ls
+..
+ls
+cd bin/
+ls
+..
+ls
+cd b
+cd bin/
+ls -l
+ls -la
+fd ht
+..
+fd httest
+mv sync/dotfiles/httest .
+ls
+vim httest 
+./httest 
+vim httest 
+./httest 
+vim httest 
+./httest 
+vim httest 
+pydoc3 urllib 
+pydoc3 urllib.request
+vim httest 
+pydoc3 urllib.request.urlopen
+vim httest 
+./httest 
+vim httest 
+./httest 
+vim httest 
+./httest 
+vim httest 
+./httest 
+ping baidu.com
+cd de
+cd android/
+ls
+mkdir newsclient
+cd newsclient
+..
+git clone git@git.net9.org:java/newsapp.git newsclient/
+cd newsclient
+ls
+git log
+ls
+ls app/
+vim .gitignore 
+cd app/
+vim .gitignore 
+ls
+ls src/
+ls src/main/
+ls src/main/java/
+ls src/main/java/com/
+ls src/main/java/com/example/
+ls src/main/java/com/example/newsclientapp/
+ls src/main/java/com/example/newsclientapp/ui/
+ls src/main/java/re
+ls src/main/res/
+ls src/main/res/layout/
+~/dwn/android-studio/bin/studio.sh 
+ls
+git status 
+..
+git status 
+git checkout -- .
+git status 
+git pull
+vim build.gradle 
+ls
+git log
+df -h
+ping baidu.com
+ping net.tsinghua.edu.cn
+authlog
+authlog_ether 
+ping net.tsinghua.edu.cn
+vim
+xhost +
+vim
+vim-nox11 
+ping net.tsinghua.edu.cn
+ping auth4.tsinghua.edu.cn
+ls
+cd app/android/
+ls
+ls tools/
+ls build-tools/
+ls build-tools/29.0.1/
+..
+ls
+..
+ls
+gvim
+vim .vimrc
+gvi
+vim .vimrc
+ping net.tsinghua.edu.cn
+netlog
+vim dev/src/lua/linit.c 
+cd dev
+ag warra
+vim src/texmacs/LICENSE 
+vim src/texmacs/src/Kernel/Abstractions/basic.
+vim src/texmacs/src/Kernel/Abstractions/basic.cpp 
+mpd
+ping baidu.com
+ping net.tsinghua.edu.cn
+dig auth4.tsinghua.edu.cn
+w3m auth4.tsinghua.edu.cn
+ping 101.6.4.100
+networkctl status 
+networkctl list 
+nmcli general status 
+nmcli device 
+nmcli device s
+nmcli device status 
+nmcli help 
+nmcli networking 
+nmcli networking help 
+nmcli networking connectivity 
+nmcli agent 
+nmcli monitor 
+nmcli general hostname 
+nmcli general permissions 
+nmcli general help 
+nmcli general logging 
+nmcli device help 
+ping net.tsinghua.edu.cn
+ping baidu.com
+ping net.tsinghua.edu.cn
+~/dwn/android-studio/bin/studio.sh 
+git status
+git diff
+git push origin master 
+cd /run/media/linusboyle/14f640fa-0f21-4213-9c8b-d7eaa8d58682/game/游戏本体/
+ls
+cd linu
+cd linusboyle.cn/
+cd -
+cd linux/
+ls
+cd Sid\ Meiers\ Civilization\ VI\ Gathering\ Storm/
+ls
+./CIV6
+..
+.
+..
+ag retro
+ag retrofit
+ag base
+cd threebears/
+ls
+cd 
+cd -
+cd news
+ls
+ag url
+ag 
+ag www
+ag callback
+ag cal
+ag call
+..
+ag callback
+ag call
+ag enqueue
+ag exe
+cd dwn/android-studio/
+fd desktop
+fd bin
+cd
+vim .bash_aliases 
+vim .bashrc 
+sym dwn/android-studio/bin/studio.sh bin/android-studio
+ls
+ls bin/
+ping baidu.com
+w3m baidu.com
+networkctl list 
+netlog
+..
+ag retrofitclient
+cd news/di/
+ls
+cd module/
+ls
+ag networkmodule
+..
+ag request
+ag requestlistnews
+..
+ag newscontract
+ag newscontract.view
+ag NewsModule
+git fetch origin 
+git rebase origin/master 
+git stash 
+git rebase origin/master 
+git rebase --continue 
+git stash pop 
+git push origin master 
+git push origin hzl_dev 
+git checkout master 
+git rebase hzl_dev 
+git push origin master 
+git fetch origin 
+git push origin master 
+git fetch origin 
+git push origin master 
+cd /run/media/linusboyle/14f640fa-0f21-4213-9c8b-d7eaa8d58682/game/游戏本体/
+ls
+cd linu
+cd linux
+ls
+./Sid\ Meiers\ Civilization\ VI\ Gathering\ Storm/CIV6
+netlog
+cd dwn/nwn/
+ls
+cd nwn/
+ls
+vim readme.
+vim readme.txt 
+ls
+vim readme-SDL.txt 
+vim readme.linuxclientupdate.txt 
+ls
+ls -l
+ls
+ldd nwn
+ldd nwmain 
+ls
+file nw
+file nwn
+vim nwn
+ls
+ls lib/
+ls lib/ -l
+ls modules/
+ls music/
+ls
+./nwn
+ls
+ls lib/
+cd lib/
+ls
+ls -s libSDL-1.2.so.0.0.5~ libSDL-1.2.so.0
+man ln
+ls -s libSDL-1.2.so.0.0.5~ libSDL-1.2.so.0
+ls -s libSDL-1.2.so.0.0.5~ ./libSDL-1.2.so.0
+ls -s ./libSDL-1.2.so.0.0.5~ ./libSDL-1.2.so.0
+ls
+ln -s libSDL-1.2.so.0.0.5~ libSDL-1.2.so.0
+ls
+..
+ldd nwmain 
+./nwn
+git fetch origin 
+git push origin master 
+git push origin dev 
+ls /usr/lib/libSDL2-2.0.so.0
+readelf -e /usr/lib/libSDL2-2.0.so.0
+readelf -e /usr/lib/libSDL2-2.0.so.0| grep 32
+cd dwn/nwn/nwn/
+ls
+ldd nwm
+ldd nwmain 
+ls
+ls lib/
+ls
+fd mss
+ls miles/
+vim nwn
+ls
+fd moviw
+fd movie
+vim docs/nwmovies.README.txt 
+ls
+ls -a
+vim nwn
+ls -l
+ls
+vim nwn
+./nwn
+./fixinstall 
+cd nwmmo
+cd nwmovies/
+ls
+ldd nwmovies.so 
+readelf -s nwmovies.so 
+readelf -s nwmovies.so |less
+ls
+readelf nwmovies.so 
+readelf -e nwmovies.so 
+readelf -e nwmovies.so |grep elf
+readelf -e nwmovies.so |grep 32
+ls
+..
+ls
+vim nwn
+ls
+cd nwmovies/
+ls
+ldd bink
+ldd BinkPlayer 
+ls
+readelf -e BinkPlayer 
+readelf -e BinkPlayer |grep 3
+ls
+readelf -e binklib.so 
+readelf -e binklib.so |grep 32
+ls
+..
+ls
+readelf -e lib/libSDL-1.2.so.0 | grep 32
+ls
+vim nw
+ls
+cd lib/
+ls
+..
+ls
+cd nwmovies/
+ls
+ls libdis/
+ldd libdis/li
+ldd libdis/libdisasm.so 
+ls
+ldd nwmovies.so 
+ldd bink
+ldd binklib.so 
+ls
+ldd BinkPlayer 
+ls
+..
+./nwn
+cd nwmovies/
+ls
+ldd BinkPlayer 
+..
+vim nwmovies.pl 
+ls
+./nwmovies.pl 
+./nwmovies.pl nwmovies/BiowareLogo.bik 
+./nwmovies.pl BiowareLogo.bik 
+./nwmovies.pl BiowareLogo 
+ls
+cd nwmovies/
+ls
+./BinkPlayer BiowareLogo.bik 
+vim ../nwm
+vim ../nwn
+export LD_LIBRARY_PATH=./lib:./miles:$LD_LIBRARY_PATH
+ls
+..
+ls
+./nwmovies.pl BiowareLogo 
+ag mkimod
+ldd nwmovies/BinkPlayer 
+sudo zypper install libSDL-1_2-0-32bit 
+ldd nwmovies/BinkPlayer 
+ldd nwmain 
+ls nwm
+ldd nwmovies/BinkPlayer 
+ldd nwmovies/BinkPlayer |grep no
+./nwmovies.pl BiowareLogo 
+ls
+ln -s /usr/lib/libX11.so.6 lib/libX11.so
+ls lib/
+ls lib/ -s
+ls lib/ -al
+./nwmovies.pl BiowareLogo 
+killall BinkPlayer 
+sudo killall -9 BinkPlayer 
+ls
+./nwmovies.pl BiowareLogo 
+sudo killall -9 BinkPlayer 
+sudo zypper install libSDL-1_2-0-32bit 
+ls /usr/lib/libSDL-1.2.so.0
+sudo zypper install libSDL_gfx-devel-32bit 
+ldd nwmovies/BinkPlayer
+ls
+vim nwn
+cd dwn/nwn/
+ks
+ls
+cd 
+cd -
+cd nwn/
+ls
+export LD_LIBRARY_PATH=./miles:$LD_LIBRARY_PATH
+ls
+ldd nwm
+ldd nwmain 
+ls
+ldd nwmovies/BinkPlayer 
+sudo zypper install libSDL_mixer-1_2-0-32bit 
+ls
+ldd nwmovies/BinkPlayer 
+ls
+./nwmovies.pl BiowareLogo 
+sudo zypper install libX11-6-32bit 
+ls miles/
+ls
+sudo zypper install libSDL_gfx-devel-32bit 
+ls
+./nwmovies.pl BiowareLogo 
+./nwmovies.pl AtariLogo
+ls
+./nwn
+ls
+vim nwn
+sudo killall -9 BinkPlayer 
+cd dwn/nwn/nwn/
+export LD_LIBRARY_PATH=./lib:./miles:$LD_LIBRARY_PATH
+ls
+ldd nwm
+ldd nwmain 
+./nwmovies.pl AtariLogo
+sudo killall -9 BinkPlayer 
+./nwmovies.pl AtariLogo
+sudo killall -9 BinkPlayer 
+sudo zypper info libSDL_gfx15
+sudozypper info libSDL_gfx15
+zypper info libSDL_gfx15
+zypper info libSDL-1_2-0-32bit 
+zypper info libSDL2_gfx-1_0-0
+ls
+./nw
+./nwn
+ls
+./nwmovies.pl AtariLogo
+sudo killall -9 BinkPlayer 
+sudo zypper install alsa-plugins-pulse
+sudo zypper install alsa-plugins-pulse-32bit 
+ls
+file nwserver 
+sudo zypper remove libSDL-1_2-0-32bit 
+ls
+vim nwn
+ls
+vim nwn
+export ALSA_OSS_PCM_DEVICE="hw:0,0"
+cd dwn/nwn/nwn/
+export LD_LIBRARY_PATH=./lib:./miles:$LD_LIBRARY_PATH
+ls
+vim nwn
+aoss ./nwmain 
+ls
+./fixinstall 
+vim nwmovies
+vim nwmovies.ini 
+ls
+vim nwncdkey.ini 
+vim NWNv170.txt 
+ls
+vim xp1
+vim xp1.key 
+ls
+vim nwmain 
+ls
+./nwmovies.pl AtariLogo
+ls lib
+netlog
+cd dwn/nwn/nwn/
+./nwn
+amixer 
+pactl 
+pactl help
+pactl stat
+man pactl
+pactl list
+sudo zypper install openal-soft-devel-32bit 
+ls
+vim nwn.ini 
+ls
+ls music/
+sudo modprobe -h
+man modprobe
+man aoss
+ls
+vim nwn
+./nwn
+vim nw
+vim nwn
+man aoss
+ls /proc/asound/card0/pcm0p
+sudo modprobe osst 
+sudo lsmod 
+sudo lsmod |grep oss
+sudo lsmod |grep alsa
+sudo lsmod |grep a
+sudo lsmod |grep al
+sudo lsmod |grep sou
+ls
+./nwn
+sudo zypper install alsa-oss
+sudo zypper install alsa-oss-32bit 
+aoss ./nwmain 
+export LD_LIBRARY_PATH=./lib:./miles:$LD_LIBRARY_PATH
+aoss ./nwmain 
+man aoss
+ls
+vim nwn
+ls
+./nwn
+vim nwn
+./nwn
+ls
+cd docs/
+ls
+vim nwmovies.ChangeLog 
+vim nwmovies.README.soundcard.txt 
+
+vim nwmovies.README.txt 
+ls
+vim nwmovies.README.txt 
+ls
+..
+./nwn
+vim nwn
+./nwn
+ls
+./nwmovies.pl AtariLogo
+ldd nwmovies/BinkPlayer 
+ls
+cd nwmovies/
+ls
+mv BinkPlayer BinkPlayer.sav
+ls
+..
+ls
+./nwmovies.pl AtariLogo
+cd -
+ls
+mv BinkPlayer.sav BinkPlayer
+ls
+..
+ls
+./nwmovies.pl AtariLogo
+sudo zypper install libX11-devel-32bit 
+./nwmovies.pl AtariLogo
+sudo killall -9 BinkPlayer 
+ls
+vim nwmovies
+vim nwmovies.ini 
+ls
+vim nwn
+./nwn
+man padsp
+padsp ./nwn
+sudo zypper install libpulse0-32bit 
+sudo zypper install libpulse-devel-32bit 
+sudo zypper install alsa-plugins-32bit 
+sudo zypper install alsa-plugins-pulse
+sudo zypper install alsa-plugins-pulse-32bit 
+lsmod |grep snd
+smod |grep snd
+ls
+htop
+sudo killall nwmain 
+htop
+ls
+sudo killall kmix 
+htop
+sudo killall nwmain 
+htop
+sudo killall -9 nwmain 
+htop
+systemctl restart sddm.service 
+lsls
+sudo systemctl reboot 
+ag Presenter
+gvim android\ news\ response.json 
+./adom 
+ldd adom | less
+ls /usr/lib64/libfluidsynth.so.2 -l
+..
+ls
+rpm2cpio libfluidsynth1-1.1.11-lp152.3.1.x86_64.rpm | cpio -i --make-directories 
+ls
+ls -l
+ls -l|less
+..
+ls
+ldd adom | less
+./adom 
+ls /usr/lib64/libreadline.so
+ls /usr/lib64/libreadline.so -l
+rpm2cpio libreadline7-7.0-lp152.10.17.x86_64.rpm | cpio -i --make-directories 
+ls
+ls -l |less
+..
+ldd adom | less
+ldd adom|grep no
+ldd adom|grep not
+./adom 
+ldd libz.so.1 
+ldd ../adom |grep png
+ls /lib/libz.so.1 -l
+ls /lib64/
+ls /lib64/libz.so.1
+ls /usr/lib/
+ls /usr/lib/libz.so
+ls /usr/lib/libz.so -l
+mv libz.so.1 libz.so.1.old
+ln -s /lib64/libz.so.1 libz.so.1
+lld ../adom 
+..
+ls
+ldd adom | less
+./adom 
+rpm2cpio libSDL-1_2-0-32bit-1.2.15-21.4.x86_64.rpm | cpio -i --make-directories 
+rpm2cpio libSDL_mixer-1_2-0-32bit-1.2.12-8.13.x86_64.rpm | cpio -i --make-directories 
+rpm2cpio libmikmod3-32bit-3.3.7-1.13.x86_64.rpm | cpio -i --make-directories 
+rpm2cpio libmodplug1-32bit-0.4.6-2.1.x86_64.rpm | cpio -i --make-directories 
+rm libmikmod3-32bit-3.3.7-1.13.x86_64.rpm
+rm libmodplug1-32bit-0.4.6-2.1.x86_64.rpm
+rm libSDL_mixer-1_2-0-32bit-1.2.12-8.13.x86_64.rpm
+rpm2cpio libopenmpt0-32bit-0.4.6-2.1.x86_64.rpm | cpio -i --make-directories 
+rpm2cpio libSDL_gfx-devel-32bit-2.0.26-1.5.x86_64.rpm | cpio -i --make-directories 
+rpm2cpio libSDL_gfx-devel-32bit-2.0.25-lp152.3.1.x86_64.rpm | cpio -i --make-directories 
+rpm2cpio libSDL_gfx15-32bit-2.0.25-lp152.3.1.x86_64.rpm | cpio -i --make-directories 
+ls
+ls -l
+cat /proc/asound/pcm
+sudo zypper install libSDL_mixer-1_2-0-32bit 
+ls
+mpd
+xrandr 
+man xrandr
+xrandr --fb 1366x768
+xhost +
+xrandr 
+xhost +
+xset b off
+cd dwn/nwn/nwn/
+ls
+ls saves/
+ls saves/000002\ -\ 1/
+vim nwn
+pasuspender 
+vim /etc/alsa/conf.d/50-pulseaudio.conf 
+vim /etc/alsa/conf.d/50-oss.conf 
+ls
+cd /etc/
+fd asound
+vim asound.state 
+ls
+cd
+cd dwn/nwn/nwn/
+ls
+./nwn
+ls
+cd
+cd post/
+ls
+cd 201
+ls
+cd 2019
+ls
+cd 08
+ls
+vim 2019-08-29-playing-neverwinter-nights-on-linux.md
+gr
+bundler.ruby2.6 exec jekyll s
+ls
+ag background
+ag background_cover
+ag background-cover
+vim _sass/components/_pa
+vim _sass/components/_panels.scss 
+ls
+bundler.ruby2.6 exec jekyll s
+ls
+git status 
+git add _sass/components/_panels.scss 
+git commit 
+git add .
+git commit 
+git push origin master 
+cd dwn/nwn/nwn/
+./nwn
+cd /dw
+cd dwn/nwn/nwn/
+ls
+./nwn
+cd dev/NewsClient-master/
+ls
+cd app/src/main/
+ls
+cd java/
+ls
+cd me/threebears/news/
+ls
+ag wx
+ag sh
+ag share
+vim ui/activity/NewsDetailActivity.java 
+ls
+vim ui/activity/NewsDetailActivity.java 
+cd
+cd dev/android/
+ls
+ls myfirstapp/
+cd my
+cd myfirstapp/
+ag intent
+git status 
+git push origin dev 
+git fetch origin 
+git push origin dev 
+git fetch origin 
+git push origin dev 
+git fetch origin 
+git branch -D --remotes origin/dev 
+git push origin dev 
+git fetch origin 
+git checkout hzl_dev
+git push origin hzl_dev 
+cd dev/android/newsclient/
+ag sharing
+ag 时事
+ag display_news
+cd
+cd dwn/nwn/nwn/
+ls
+./nwn
+coqc -c
+coqc -v
+opam switch
+opam switch 4.02.3
+ls
+coqc -v
+opam list
+ls
+cd
+cd open-l2c/
+ls
+svn status
+man svn
+svn --helo
+svn help
+svn update 
+ls
+svn log
+svn log|less
+ls
+./start_coqide.sh 
+opam install coqide
+./start_coqide.sh 
+cd dwn/nwn/nwn/
+cd
+cd dwn/nwn/nwn/
+ls
+./nwn
+netlog
+vim a.java
+mv a.java DateUtils.java
+ls
+javac DateUtils.java 
+java DateUtils 
+rm DateUtils.*
+ls
+ping baidu.com
+ping net.tsinghua.edu.cn
+ping baidu.com
+cd app/android/
+ncdu
+ncdu
+du -h
+cat 2019083000592305a73c1795402488a47f811d6ae1c4 
+git fetch origin 
+git push origin hzl_dev 
+git push origin master 
+git fetch origin 
+git push origin master 
+netlog
+networkctl list 
+netquit
+git fetch origin 
+git push origin master 
+cd program/java/pa5/philosopher/
+ls
+vim Philosopher.java 
+git fetch origin 
+git push origin master 
+git fetch origin 
+git push origin hzl_dev 
+sudo apparmor_parser -r  /var/lib/snapd/apparmor/profiles/*
+ping baidu.com
+ping net.tsinghua.edu.cn
+networkctl list 
+netlog
+ping net.tsinghua.edu.cn
+mpc
+mpc toggle
+ping net.tsinghua.edu.cn
+ping baidu.com
+netlog
+netquit
+ls
+cd dwn/nwn/nwn/
+ls
+./nwn
+git push origin master 
+git fetch origin 
+git push origin master 
+git status 
+wc
+git ls-files | wc
+wc
+git ls-files | xargs cat | wc
+fd java
+fd java | xargs cat | wc
+fd *.java | xargs cat | wc
+fd '.*\.java'
+fd '.*\.java'|xargs cat | wc
+git push origin master 
+git fetch origin 
+netlog
+netquit
+git status 
+git fetch origin 
+git push origin master 
+c
+cd
+ls
+cd dev/program/
+ls
+cd snippet/
+s
+ls
+vim out.c
+ls
+mkdir clight_tet
+mv clight_tet/ clight_test
+ls
+mv out.c clight_test/
+cd clight_test/
+ls
+ccomp out.c -c -o out.o
+vim out.c 
+ccomp out.c -c -o out.o
+vim out.c 
+ccomp out.c -c -o out.o
+vim out.c 
+objdump -s out.o
+objdump -d out.o
+objdump -D out.o
+vim out.c 
+gcc out.c -o out.o
+gcc out.c -o -c out.o
+gcc out.c -c -o out.o
+objdump -D out.o
+ls
+ccomp out.c -c -o out.o
+objdump -D out.o
+ls
+l
+ls
+vim out.c 
+ls
+ccomp out.c -o out
+ls
+./out 
+ls
+man ccomp
+ccomp --interp out.c
+ccomp -interp out.c
+vim input
+ccomp -interp out.c < input 
+cat input 
+man ccomp
+ccomp -interp -trace out.c < input 
+vim out.c 
+ccomp -interp -trace out.c
+ls
+vim out.c 
+ccomp -interp -trace out.c
+ls
+man ccomp
+ccomp -dc out.comp out.c
+ls
+ccomp -dc out.c 
+ls
+vim out.compcert.c
+ls
+vim out.c
+ls
+..
+ls
+mkdir lustre_test
+ls
+cd lustre
+cd lustre_test/
+ls
+vim counter.lustre
+cd open-l2c/
+ls
+./start_coqide.sh 
+git fetch origin 
+git push origin crash_bug 
+git fetch origin 
+git push origin mass
+git push origin master 
+git status 
+git fetch origin 
+git push origin master 
+git fetch origin 
+git push origin master 
+git push origin login 
+git fetch origin 
+netlog
+ping baidu.com
+git push origin login 
+git fetch origin 
+git push origin login 
+git fetch origin 
+git push origin master 
+git push origin login 
+git fetch origin 
+git push origin login 
+netlog
+cd dwn/nwn/nwn/
+ls
+./nwn
+cd dwn/nwn/nwn/
+ls
+./nwn
+cd dwn/nwn/nwn/
+./nwn
+netlog
+sudo zypper dup
+mpd
+uma
+umas
+umask 
+uname -a
+cd intelFPGA_lite/
+ncdu
+df -h
+ls .android
+rm -rf .android
+rm -rf .AndroidStudio3.5/
+;s
+ls
+ls .config/Android\ Open\ Source\ Project/
+rm -r .config/Android\ Open\ Source\ Project/
+ls
+df -h
+ncdu
+df -h
+netlog
+dmesg | ta
+dmesg | tail 
+s
+netlog
+netquit
+fcitx -v
+sudo zypper remove fcitx
+netlog
+ls
+cd doc/Java/2019大作业/陈熠豪\&韩志磊_大作业/
+ls
+cd src/
+ls
+cd newsclient/
+git checkout master 
+ls
+git checkout -b refined
+ls
+git log
+git log -a
+git branch 
+git log login 
+git cherry-pick d1d198c56c9bbb18abcb2586ebe2770b1536f54e
+git log
+ls
+git remote add github git@github.com:linusboyle/NewsApp.git
+git push github refined 
+vim README.md
+xhost +
+xset b off
+git add README.md 
+git commit 
+git push github refined 
+netlog
+w3m google.com
+ls
+netquit
+kmenuedit 
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
+qdbus org.kde.KWin /KWin reconfigure
+cd bin/
+gr
+ls
+ls bin/
+rm bin/android-studio
+ls
+ls bin/
+ls
+cd dfile/
+ls
+gstatus 
+git add .
+git commit 
+ls
+vim seafile-ignore.txt 
+git commit 
+git push origin master 
+ls
+ls b
+ls bin/
+rm bin/.directory
+cd
+cd bin/
+vim copyit 
+copyit as
+ls
+bat greeting 
+ls
+vim gr
+vim gr.sh 
+git -v
+git --version
+git rev-parse 
+git rev-parse --show-toplevel
+vim ~/.bash_a
+vim ~/.bash_aliases 
+ls
+git rm gr.sh 
+ls
+cd
+cd -
+ls
+cd
+vim .vimrc
+cd .vim/pack/util/
+cd start/
+ls
+..
+ls
+..
+ls
+ls colors/start/
+git rm colors/start/vim-crystalline/
+git rm colors/start/vim-crystalline/ -f
+git status 
+git commit -a
+git status 
+..
+;s
+ls
+gstatus 
+git commit -a
+ls
+rm UltiSnips/java.snippets
+ls
+ls UltiSnips/
+ls
