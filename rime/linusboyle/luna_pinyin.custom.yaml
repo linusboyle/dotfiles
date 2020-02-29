@@ -2,5 +2,5 @@ patch:
     "switches/@last":
         name: ascii_input
         states: [ 句读, 标点 ]
-    "translator/dictionary": hzl_pinyin
+    "translator/dictionary": luna_pinyin.extended
     "speller/algebra/@before 0": xform/^([b-df-hj-np-tv-z])$/$1_/

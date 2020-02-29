@@ -38,3 +38,6 @@ alias gstatus='git status'
 alias glog='git log'
 
 # alias xo='xdg-open'
+
+alias v="vim"
+alias pastebin="curl -F 'sprunge=<-' http://sprunge.us | xclip -selection clipboard"

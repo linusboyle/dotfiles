@@ -1,0 +1,12 @@
+#! /bin/bash
+# toggle the audio output and send notification
+
+amixer -q set Master toggle 
+
+stat=$(amixer get Master |egrep -o '\[(on|off)\]'|head -1) 
+
+if test $stat = "[on]" ; then
+    notify-send -i audio-ready -t 3000 "Audio Now On"
+else
+    notify-send -i audio-off -t 3000 "Audio Now Off"
+fi

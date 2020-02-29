@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#laucher without target hint
+#just type in command
+RES=$(rofi -dmenu -input /dev/null -p ">_:" -mesg "Input the line to exec") 
+TERMINAL="konsole"
+#quit when any key is pressed
+if test -n "$RES" ; then
+    $TERMINAL -e bash -c "echo running \\\"\"$RES\"\\\" ...: |lolcat ; $RES ; read -n 1"
+fi

@@ -57,14 +57,17 @@ fi
 export EDITOR=vim
 export GTAGSLABEL=native-pygments
 export TEXMACS_PATH="$HOME/app/TeXmacs"
-export PATH="$TEXMACS_PATH/bin:$PATH"
 export CDPATH=".:$HOME/dev:$HOME/dev/src:$CDPATH"
-export QSYS_ROOTDIR="/home/linusboyle/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
+
+# remember to remove these and gradle
+export PATH="$TEXMACS_PATH/bin:$PATH"
+export JAVA_HOME="/usr/lib64/jvm/java-12-openjdk-12"
+# alias decaf="java -jar --enable-preview /home/linusboyle/dev/decaf-2017011442/build/libs/decaf.jar"
 
 source tmux_color.sh
 
 # added by travis gem
-[ -f /home/linusboyle/.travis/travis.sh ] && source /home/linusboyle/.travis/travis.sh
+# [ -f /home/linusboyle/.travis/travis.sh ] && source /home/linusboyle/.travis/travis.sh
 
 test -r /home/linusboyle/.opam/opam-init/init.sh && . /home/linusboyle/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 eval `opam env`

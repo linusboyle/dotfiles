@@ -65,7 +65,7 @@ font pango:Hack Bold 10
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/linusboyle/pix/trianglify.png fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1366x768.png fill
 #
 # Example configuration:
 #
@@ -286,7 +286,7 @@ bar {
     position top
     font pango:Hack Bold 10 
 
-    mode hide
+    #mode hide
     modifier Mod1
 
     colors {

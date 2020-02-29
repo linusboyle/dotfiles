@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Zhilei Han
-	email = linusboyle@gmail.com
+	email = hzl17@mails.tsinghua.edu.cn
 [color]
     ui = true
 [core]
@@ -15,3 +15,5 @@
     prompt = true
 # [init]
 # templateDir = ~/.git_template
+[alias]
+	la = log --all --oneline --graph

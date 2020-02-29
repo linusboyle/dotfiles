@@ -1,7 +1,0 @@
-#!/bin/bash
-
-if pgrep -u $UID -x polybar >/dev/null; then
-    polybar-msg cmd toggle
-else
-    launchbar
-fi

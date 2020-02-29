@@ -1,3 +1,0 @@
-[submodule "vim/.vim"]
-	path = vim/.vim
-	url = git@github.com:linusboyle/Viminal.git

@@ -38,6 +38,16 @@ name: luna_pinyin.extended
 version: "2014.09.07"
 sort: by_weight
 use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin
+  - luna_pinyin.hanyu
+  - luna_pinyin.poetry
+  - luna_pinyin.cn_en
+  - luna_pinyin.computer
+  - luna_pinyin.history
+  - luna_pinyin.place
+  - name
+  - greek
 ...
 
 一一列舉		1

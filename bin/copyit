@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# comment the next line to convert newlines to spaces
-IFS=
-echo -n "$1" | xclip -selection clipboard && notify-send -i clipboard nnn 'content copyed to clipboard'

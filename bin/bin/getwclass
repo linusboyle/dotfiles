@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# this script will notify the class info of the current
+# focused window
+
+# requires xdotool and libnotify
+
+WINDOWID=$( xdotool getwindowfocus )
+CLASS=$( xprop -id "$WINDOWID" WM_CLASS | grep -oP '[^,]*, "\K[^"]+(?=")')
+
+notify-send "class info" "WM_CLASS of current window is '$CLASS'!"
