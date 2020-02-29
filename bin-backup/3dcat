@@ -1,0 +1,9 @@
+#!/bin/bash
+#a wrapper around toilet
+
+if test -n "$1"; then 
+    figlet -t -f 3d "$@" |lolcat
+else
+    read words
+    figlet -t -f 3d "$words" |lolcat
+fi
