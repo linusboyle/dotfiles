@@ -7140,3 +7140,636 @@ vim .local/share/applications/zotero.desktop
 rm -rf app/bin/
 vim .bashrc 
 ls
+..
+ls
+vim .gitmodules 
+cd
+cd- 
+cd -
+ls
+ranger
+ls
+cd pack
+ls
+git rm colors/
+git rm -r colors/
+ls
+vim .giti
+vim .gitmodules
+gstatus 
+..
+ls
+git rm pack
+ls pack
+cd pack
+ls
+git rm *
+ls colors/
+ls filetype/
+ls filetype/start/
+ls filetype/start/Coqtail/
+ks
+git rm -r *
+ls
+rm -rf colors/
+gstatus 
+git rm -r *
+ls
+ls complete/
+rmdir complete/
+git rm -r *
+ls
+rmdir filetype/
+rm -rf filetype/
+rm -rf util/
+gstatus 
+..
+ls
+git rm pack
+git rm -f pack
+ls
+gstatus 
+vim .gitignore 
+vim seafile-ignore.txt
+ls
+vim seafile-ignore.txt
+ls
+gsta
+gstatus 
+vim .gitmodules 
+rm .gitmodules
+gstatus 
+git add -A
+gstatus 
+ls
+git diff
+git commit 
+ls
+gstatus 
+git push thu master 
+git push origin master 
+ls
+ncdu
+gstatus 
+ls
+vim command.vim 
+ls
+vim command.vim 
+git rm command.vim 
+ls
+rm command.vim
+ls
+rm tweaks.vim
+ls
+gstatus 
+git add -A
+git commit 
+ls
+vim seafile-ignore.txt 
+ls
+cd
+ls .vim
+cd .vim
+ls
+vim .gitignore 
+vim seafile-ignore.txt 
+gstatus 
+cd src/
+git clone https://github.com/jaredallard/notion-app
+git clone https://github.com/Lekensteyn/dmg2img
+cd dmg2img/
+ls
+vim Makefile 
+make
+ls
+./vfdecrypt 
+./dmg2img 
+ls
+cp dmg2img vfdecrypt ~/dfile/bin/bin/
+ls
+cp dmg2img vfdecrypt ~/dfile/bin-private/bin/
+..
+cd notion-app/
+ls
+vim notion 
+ls
+vim build.sh 
+ls
+vim build.sh 
+ls
+vim PKGBUILD 
+ls
+vim LICENSE 
+ls
+git la
+git log
+ls
+vim build.sh 
+./build.sh 
+sudo zypper install noto-coloremoji-fonts 
+cd
+ls
+ls fontconfig/
+ls
+ls tmp
+rm tmp/a.txt
+ls
+ls doc/
+ls
+ls di
+ls dfile/
+cd bin/
+ls
+git ls-files|grep coq
+git ls-files|grep net
+git ls-files
+cd
+cd dfile/
+git ls-files
+git ls-files|grep net
+git ls-files|grep coq
+vim bin/coq
+vim bin/coq2
+ls
+ls vim/
+ls vim/ -a
+rmdir vim
+ls
+mkdir vim
+ls
+
+rm -rf test/
+ls
+gstatus 
+git diff sway/.config/sway/config
+git add -A
+git status 
+git commit 
+ls
+ls img
+ls dunst/
+ls
+ls bin-backup/
+ls
+mkdir bin-private
+mkdir bin-private/bin
+mv bin/bin/ghupload* bin-private/bin/
+stow -S bin-private/
+..
+ls
+ls bin
+ls
+ls bin
+ls bin/ -l
+ls
+cd -
+ls
+stow -D bin-private/
+ls ..
+ls ../bin/
+ls
+ls bin-private/bin/
+ls bin/bin/
+ls
+stow bin-private
+..
+ls
+ls bin
+cd -
+vim .git
+vim .gitignore 
+git status 
+git add -A
+git status 
+git commit 
+ls
+ls bin-
+ls bin-private/
+ls bin-private/bin/
+ls
+ls ag
+ls ag -a
+ls xdg-user-dirs/
+ls xdg-user-dirs/ -a
+ls xdg-user-dirs/.config/
+rnager
+ranger
+ls
+vim xdg-user-dirs/.config/user-dirs.locale 
+vim xdg-user-dirs/.config/user-dirs.dirs 
+ls
+vim keybind 
+ls
+git ls-files | grep seafile-ignore.txt 
+ls
+git rm --cached seafile-ignore.txt 
+gstatus 
+vim .gitignore 
+git add -A
+gstatus 
+gcommit 
+ls
+cd kde
+ls
+mkdir -p .local/share/kservices5/ServiceMenus/
+cd .local/share/kservices5/ServiceMenus/
+s
+ls
+dolphin  .
+gr
+ls
+stow kde
+stow vnote/
+..
+fd rlwrap
+fd vim
+ls
+cd .vim/
+ls
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ls
+ls autoload/
+ls
+ls plugin/
+fd plug
+vim autoload/plug.vim 
+ls
+vim vimrc 
+mail
+cd
+cd dfile/
+stow vim
+git ls-files|grep privae
+git ls-files|grep private
+ls
+git ls-files
+git ls-files|grep bin
+stow -R bin-private
+vim seafile-ignore.txt 
+ls
+vim seafile-ignore.txt 
+ls
+cd vim/.
+cd vim/.vi
+cd vim/.vim
+ls
+cd .vim/
+ls
+cp -r cache/ ~/
+ls
+ls cache/
+ls cache/ -a
+ls
+mv ~/cache/ .
+ls
+cd /etc/fonts/
+ls
+cd conf.
+cd conf.avail/
+ls
+sudo vim 75-noto-color-emoji.conf
+sudo ln -sf /etc/fonts/conf.avail/75-noto-color-emoji.conf /etc/fonts/conf.d/
+ls /etc/containerd/
+ls /etc/fonts/conf.d
+vim a.tm
+texmacs
+vim a.tm 
+texmacs
+ls .TeXmacs/
+ls .TeXmacs/system/
+ls .TeXmacs/system/cache/
+rm -rf .TeXmacs/system/cache/*
+ls
+texmacs
+cd ucore_os_lab/
+ls
+cd
+mails
+mail
+ls
+vim autoupdate.sh
+./autoupdate.sh 
+mv autoupdate.sh bin/
+ls
+ls bin/
+mv bin/autoupdate.sh dfile/bin/
+cd dfile/b
+cd dfile/bin
+ls
+mv autoupdate.sh bin/
+..
+stow -R bin
+cd
+ls
+rm mbox
+ls
+texmacs
+ls
+cd .TeXmacs/
+ls
+ranger
+cd
+mv .TeXmacs/ texmacs_bak
+ls
+texmacs
+ls
+man trasher
+mv texmacs_bak/fonts/truetype/* .TeXmacs/fonts/truetype/
+rm -rf texmacs_bak/
+texmacs
+mail
+y
+yes
+man yes
+info yes
+gr
+cd labcodes/lab3
+make
+make qemu
+git checkout master 
+git la
+..
+cd lab1/
+ls
+git mv report.md lab1.md
+gstatus 
+git commit 
+git la
+git push thu master 
+git la
+git switch lab3
+git log
+git la
+..
+cd lab3
+ls
+make
+vim ~/.vim/th
+vim ~/.vim/thirdparty.vim 
+touch .root
+make debug
+man cgdb
+cgdb 
+cgdb --tui
+ls
+..
+gr
+cd labcodes/lab3
+l
+ls
+vim Makefile 
+make debug
+make
+make qemu
+make grade 
+gstatus 
+rm .root
+git add -A
+git diff
+man git-commit
+git commit -v
+git la
+ls
+make clean 
+make tags 
+touch .root
+make tags 
+cp /home/linusboyle/sync/vnote/notes/课程/操作系统/Lab4.md .
+ls
+mv Lab4.md lab4.md
+make
+make qemu
+make clean 
+gstatus 
+rm .root
+git add -A
+git commit -v
+git switch -c lab4
+git commit -v
+git la
+make tags 
+gr
+vim .gitignore 
+vim .git/config 
+git status 
+git push -h
+git push -n thu master 
+vim .git/config 
+git push -n thu master 
+git la
+git fetch thu 
+git la
+git push thu master master 
+git push thu lab2 lab2 
+git push thu lab2
+cd labcodes_answer/lab3_result/
+ls
+make 
+ls
+make qemu
+ls
+ls ../lab1_result/
+ls ../lab2_result/
+ls ../lab3_result/
+ls
+git merge -h
+man git-merge
+ls
+vim kern/mm/vmm.c 
+ag pra_vaddr
+git diff
+vim kern/mm/swap_fifo.c 
+..
+cd lab4_result/
+make
+make qemu
+vim kern/process/proc.c
+make clean 
+ks
+.
+..
+ls
+cd uco
+cd ucore_os_lab/
+ls
+cd labcodes
+ls
+cd lab2/
+ls
+vim kern/mm/pmm.
+vim kern/mm/pmm.c 
+..
+cd lab3
+ls
+make tags
+ls
+vim kern/init/init.c 
+glo
+glog
+git la
+vim kern/init/init.c 
+ls
+vim kern/init/init.c 
+ls
+mail
+man mail
+mailx
+ls
+..
+cd lab4
+ls
+make tags 
+ls
+vim kern/init/init.c 
+ls
+vim kern/process/proc.c
+vim data
+vim a.c
+gcc a.
+gcc a.c
+ls
+./a.out 
+;s
+ls
+vim a.c
+gcc a.c
+cat data | ./a.out 
+vim a.c
+gcc a.c
+cat data | ./a.out 
+vim a.c
+gcc a.c
+cat data | ./a.out 
+ls
+vim a.c
+gcc -g a.c
+gdb a.out 
+gcc -g a.c
+gdb a.out 
+vim a.c
+gdb a.out 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gdb a.out 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -E a.c
+gcc -E a.c| less
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+vim ad
+vim data 
+./a.out < data 
+vim data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+
+./a.out < data 
+vim a.c
+./a.out < data 
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data 
+vim a.c
+gcc -g a.c
+./a.out < data | pbcopy 
+vim a.c
+gcc -g a.c
+./a.out < data | pbcopy 
+vim a.c
+gcc -g a.c
+./a.out < data | pbcopy 
+vim a.c
+gcc -g a.c
+./a.out < data | pbcopy 
+ls
+rm a.out
+s
+ls
+mv a.c dev/program/os/page.c
+ls
+mv data dev/program/os/
+ls
+cd dev/program/os/
+ls
+vim result
+ls
+git sta
+git status 
+git add -A
+gcommit 
+git push origin master 
+vim .git/config 
+cd program/os/
+ls
+git remote add github git@github.com:linusboyle/os-snippets.git
+git push github master 
+y
+pu
+py
+texmacs
+./app/matlab/bin/m
+./app/matlab/bin/matlab
+sudo arp-scan --interface=wlp5s0 --localnet
+ping 192.168.31.1
+ping 192.168.31.97
+ssh root@192.168.31.1
+ssh root@192.168.31.97
+ip a
+man arp-scan 
+sudo arp-scan --interface=wlp5s0 --localnet
+ping 192.168.31.202
+man ping
+sudo ping -f 192.168.31.1
+sudo ping -f 192.168.31.202
+cd sync/vnote/notes/
+ls
+ivm .gitignore 
+vim .gitignore 
+texmacs
+man baloo
+balooctl -h
+balooctl status
+balooctl enable
+ls
+man ascii
+ls
+gbr
+git branch 
+git switch -c lab5

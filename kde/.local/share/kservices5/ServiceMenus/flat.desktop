@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=FlatDir;
+MimeType=inode/directory;
+Type=Service
+X-KDE-Priority=Toplevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Icon=inode-directory.png
+
+[Desktop Action FlatDir]
+Name=Flatten Directory
+Name[zh_CN]=平铺目录
+Icon=inode-directory.png
+Exec=flat %f

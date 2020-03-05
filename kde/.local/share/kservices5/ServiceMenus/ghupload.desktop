@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=GHUpload;
+MimeType=image/jpeg;image/png;
+Type=Service
+X-KDE-Priority=Toplevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Icon=image-x-generic.png
+
+[Desktop Action GHUpload]
+Name=Upload to Github
+Name[zh_CN]=上传Github图床
+Icon=image-x-generic.png
+Exec=ghupload %f
