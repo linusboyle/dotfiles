@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Author: Zhilei Han <hzl17@mails.tsinghua.edu.cn> 
+
+transform () {
+    cat /dev/stdin | sed 's/^[^:]*:\///g'
+}
+
+test -p /dev/stdin && transform

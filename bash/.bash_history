@@ -7773,3 +7773,856 @@ ls
 gbr
 git branch 
 git switch -c lab5
+cd 
+cd dfile/
+gstatus 
+ls vim/
+ls vim/.
+ls vim/.vim/
+ncdu
+vim .gitignore 
+cd vim/.vim/
+ls
+ls -a
+vim .gitignore 
+man gitignore 
+ls
+man git-describe 
+ls
+gstatus 
+ncdu
+..
+ls
+.
+gr
+vim .gitignore 
+git status 
+git add -A
+gstatus 
+git restore --staged 
+git restore --staged *
+gstatus 
+git restore --staged .
+gstatus 
+cd vim/.vim/
+ls
+rm -rf .git
+ls
+git status 
+gr
+git add -A
+git status 
+ls
+git commit 
+git push github master 
+git push origin master 
+git status 
+git fetch origin 
+git la
+git log --remotes 
+git log --remotes --graph 
+git log --remotes --graph --all
+git push -f origin master 
+git la
+cd
+cd program/os/
+gstatus 
+rm a.out
+gla
+git a
+git la
+vim .git/config 
+cd
+texmacs
+gr
+cd labcodes_answer/lab5_result/
+make
+make qemu
+make grade 
+ls
+ls user/
+ls b
+ls bin
+ls
+ls bin
+ls
+vim kern/mm/pmm.c
+vim kern/process/proc.c 
+vim kern/mm/vmm.c
+make qemu
+make 
+make qemu
+ls
+touch .root
+vim Makefile 
+make "V="
+make clean 
+ls
+make tags 
+cd user/
+ls
+tree
+ls
+..
+ls
+ls lb
+ls libs/
+ls
+ls obj/
+ls obj/user/
+ag binary
+ag binary_p
+ag binary_obj
+vim kern/process/proc.c
+ls
+vim Makefile 
+ls
+ls user/
+ls user/libs/
+ls
+ag binary
+vim Makefile 
+ag teststart
+vim Makefile 
+ls
+vim Makefile 
+ls
+ag out
+ag out_start
+mail
+rm ~/mbox
+ls
+make tags 
+sudo zypper ref
+sudo zypper search leo
+sudo zypper search rust
+ag LAB5
+make tags 
+make
+make qemu
+make grade 
+vim user/waitkill.c 
+vim Makefile 
+vim tools/grade.sh 
+ag DEBUG
+ag DEBUG_GRADE
+ls
+vim user/spin.c 
+ag kill
+cd user/
+ag kill
+..
+make grade 
+vim tools/g
+vim tools/grade.sh 
+ag kill
+cd user/
+ag kill
+vim spin.c 
+vim libs/syscall.
+vim libs/syscall.c
+vim spin.c 
+cd ucore_os_lab/o
+cd ucore_os_lab/
+ls
+cd labcodes
+cd lab5/
+make tags 
+ls
+make tags 
+ls
+vim kern/init/init.c 
+ls
+g
+gr
+ls
+cd program/os/
+ls
+vim page.c 
+xxd data | less
+ls
+vim data 
+xxd data | less
+ls
+vim page.c 
+gcc page.c 
+./a.out 
+./a.out < data 
+vim page.c 
+gcc page.c 
+vim page.c 
+gcc page.c 
+./a.out 
+vim page.c 
+gcc page.c 
+./a.out 
+rm a.out
+ls
+git status 
+git commit -a
+git push origin master 
+vim result 
+gcc page.c 
+./a.out 
+vim result 
+cd
+cd ucore_os_lab/
+ls
+cd labcodes/lab5/
+ls
+vim kern/init/init.c 
+gstatus 
+rm .root
+gstatus 
+cp /home/linusboyle/sync/vnote/notes/课程/操作系统/Lab5.md lab5.md
+ls
+vim lab5.md 
+ls
+git add -A
+git commit 
+gstatus 
+git la
+ls
+..
+cd lab6/
+git switch -c lab6
+git la
+git push lab3
+git push origin lab3
+git push thu lab3
+git push thu lab4
+git push thu lab5
+git la
+cd ucore_os_lab/
+ls
+cd labcodes/
+ls
+cd lab5
+ls
+vim kern/trap/trap.
+vim kern/trap/trap.c
+make
+make qemu
+make clean
+make
+ls
+make qemu
+ls
+make grade
+vim tools/grade.sh 
+make grade
+make
+make qemu
+make debug
+vim user/waitkill.c 
+texmacs
+vim bin/ghupload.py 
+cd ucore_os_lab/
+git la
+cd dwn/BaiduPCS-Go-v3.5.4-linux-amd64/
+ls
+./BaiduPCS-Go 
+gdb
+cd /home/linusboyle/doc/软件前沿技术/
+cd ..
+fd md
+..
+wine uninst.exe 
+ls .wine/drive_c/Program\ Files\ \(x86\)/
+ls .wine/drive_c/Program\ Files\ \(x86\)/Common\ Files/
+ls .wine/drive_c/Program\ Files\ \(x86\)/Common\ Files/System/
+ls .wine/drive_c/
+cd .wine/drive_c/
+fd notion
+cd users/linusboyle/
+ls
+fd notion
+cd Application\ Data/
+ls
+cd notion
+ls
+cd notion-app/
+ls
+..
+ls
+cd -
+cd
+cd .wine/drive_c/
+cd users/linusboyle/Application\ Data/
+cd Notion/
+ls
+cd assetCache/
+ls
+..
+s
+ls
+fd un
+..
+ls
+..
+ls
+cd AppData/
+ls
+..
+fd un
+ranger
+cd Local\ Settings/Application\ Data/Programs/Notion/
+ls
+wine Uninstall\ Notion.exe 
+.
+..
+fd no
+rm .local/share/applications/wine/Programs/Notion.desktop
+rm .local/share/applications/wine/Programs/乐播投屏/
+cd
+cd lab
+cd lab5
+make
+make qemu
+make clean
+make
+make qemu
+make
+make qemu
+ls
+ls bin/
+ls
+ls obj
+ls
+mak
+make
+ls
+ls obj/
+make qemu
+make 
+make clean
+make
+make qemu
+ls
+ls bin/
+ls boot/
+ls bin -l
+ls bin -lh
+ls
+vim kern/init/init.c 
+mae
+make
+make qemu
+ls
+..
+cd lab5
+make qemu
+make clean
+make debug
+ls
+make clean
+ls
+make
+ls
+ls bin/ -lh
+cd lab5
+make
+make qemu
+make
+make qemu
+make
+make clena
+make clean
+make
+make qemu
+ls
+.
+..
+rm -rf lab*
+ls
+rm -rf lab*
+ls
+。。
+..
+cd labcodes_answer/lab7_result/
+ls
+make
+make qemu
+qemu-system-i386 --version
+cd dwn/DeepNude_Linux_v2/
+ls
+vim LaunchDeepNude.sh 
+cd main/
+ls
+file DeepNude 
+..
+ls
+sh LaunchDeepNude.sh 
+ls
+cd main/
+ls
+chmod +x DeepNude 
+./DeepNude 
+ls /home/
+ls
+ls cv2
+l
+./DeepNude 
+ldd DeepNude 
+ls /usr/local/lib/python3.7/
+ls /usr/local/lib/python3.7/si
+ls /usr/local/lib/python3.7/site-packages/
+ls /usr/local/lib/python3.7/site-packages/osdlyrics/
+ls /usr/local/lib64/
+ls /usr/lib64/
+ls /usr/lib64/python
+ls /usr/lib64/python3.7/
+ls /usr/lib64/python3.7/signal.py
+ls /usr/lib64/python3.7/site
+ls /usr/lib64/python3.7/site-packages/
+ls /usr/lib64/python3.7/site-packages/numpy/
+pip3 -h
+pip3 install -
+sudo pip3 install opencv-python
+ls /usr/lib64/python3.7/site-packages/cv2
+..
+cd test/
+ls
+cp -ar /usr/lib64/python3.7/site-packages/cv2/ main/
+ls main
+ls main/cv2
+cp -ar /usr/lib64/python3.7/site-packages/numpy/ main/
+ls
+chmod +x LaunchDeepNude.sh 
+./LaunchDeepNude.sh 
+..
+cd labcodes_answer/lab6_result/
+ls
+vim kern/schedule/default_sched_stride_c 
+vim kern/schedule/default_sched.c
+vim kern/process/proc.c
+make
+vim kern/vmm/vmm.c
+vim kern/mm/vmm.c
+make
+ls
+make qemu
+vim kern/schedule/default_sched.c
+make grade
+make qemu
+vim kern/trap/trap.
+vim kern/trap/trap.c
+vim kern/schedule/default_sched.c
+make qemu
+make run-matrix
+make clean
+make run-matrix
+make grade
+make run-priority' 
+make run-priority
+touch .root
+vim user/waitkill.c 
+make tags 
+vim user/waitkill.c 
+vim Makefile 
+make run-waitkill
+vim Makefile 
+make
+make run-waitkill
+vim Makefile 
+make run-waitkill
+q
+l
+ls
+gstatus 
+vim ../../.gitignore 
+gstatus 
+git diff
+vim ../lab4/kern/process/proc.c
+gstatus 
+rm .root
+vim Makefile 
+gstatus 
+git restore .
+..
+cd lab6
+touch .root
+make
+make qemu
+ag PageReserved
+vim kern/mm/default_pmm.c
+ag lab6
+cd kern
+ag lab6
+make
+..
+make
+make qemu
+make grade
+cd kern
+ag lab6
+..
+cd labcodes_answer/lab6_result/
+ls
+make
+make qemu
+make clean
+make qemu
+gr
+cd labcodes/lab6/
+ls
+make debug
+mails
+mail
+ls
+make debug
+make clean 
+make tags 
+ls
+make
+make qemu
+make grade 
+make
+make qemu
+make
+make qemu
+make debug
+make
+make qemu
+make clean
+make
+make qemu
+make grade
+make clean && make
+ls
+gstatus 
+make
+make qemu
+ls bin/
+make qemu|pbcopy 
+pbpaste | curl -F 'sprunge=<-' http://sprunge.us
+bc
+make
+make qemu
+ls
+cd kern/schedule/
+ls
+mv default_sched.c default_sched.c.ba
+ls
+cp default_sched_stride_c default_sched.c
+ls
+cd -
+make
+make qemu
+ag lab6
+cd kern
+ag lab6
+ag lab6 your code
+ag 'lab6 your code'
+make clean
+..
+make clean
+make
+make qemju
+make qemu
+make
+cd kern/schedule/
+cp default_sched_stride_c default_sched.c
+cd -
+make
+make qemu
+make grade
+make
+make qemu
+make
+make qemu
+make grade
+vim user/priority.c 
+make run-matrix
+make run-priority
+git diff
+git diff user/priority.c
+make run-priority
+make grade
+make 
+make qemu
+make 
+make qemu
+ls
+make
+make clean
+make
+make qemu
+gstat
+gstatus 
+rm .root
+gstatus 
+mv kern/schedule/default_sched.c.ba kern/schedule/default_sched.c.back
+gstatus 
+git restore ../../labcodes_answer/
+gstatus 
+git add -A
+git commit 
+ls
+make clean
+..
+ranger
+cd ucore_os_lab/labcodes/lab6/
+ls
+gstatus 
+git restore ..
+gstatus 
+..
+cd lab5
+ls
+vim Makefile 
+make run-waitkill
+vim Makefile 
+ls
+vim kern/trap/trap.
+vim kern/trap/trap.c
+..
+cd lab6
+ls
+make tag
+make tags
+vim Makefile 
+ls
+which ctags
+ctags --version
+universal-ctags --version
+ls
+vim kern/init/init.c 
+ls
+mails
+mail
+ls
+gstatus 
+git push thu lab6 
+git la
+git switch master 
+ls
+man git-switch 
+git la
+gr
+vim README
+vim README.md 
+git commit -a
+git push thu master 
+git switch lab6
+ls
+git status 
+git la
+cp /home/linusboyle/sync/vnote/notes/课程/操作系统/Lab6.md labcodes/lab6/lab6.md
+gsta
+gstatus 
+git add -A
+git commit 
+git labcodes/lab6
+cd labcodes/lab6
+make clean
+ls
+ls -a
+rm *.log
+ls
+ls a
+ls -a
+rm .*.log
+ls
+ls -a
+..
+ls
+gstatus 
+git push thu lab6
+git la
+make
+make qemu
+make
+make clean
+make
+make qemu
+make
+make qemu
+make grade
+cd ucore_os_lab/
+ls
+cd labcodes
+ls
+cd lab6/
+ls
+vim kern/mm/vmm.c
+cd app/matlab/bin/
+./matlab
+cd ucore_os_lab/
+gstatus 
+git diff
+git restore .
+gstatus 
+git switch master 
+git la
+git merge lab2
+git push thu master 
+git fetch thu
+git la
+git rebase thu/master 
+git la
+man git-reset
+git reset thu/master 
+git la
+gstatus 
+git clean
+git reset --hard thu/master 
+gstatus 
+git la
+ls
+git merge lab2
+rm labcodes/lab2/report.md
+git merge lab2
+git la
+git push thu master 
+ls
+vim re
+vim README
+vim README.md 
+git la
+cd dfile/
+gstatus 
+texmacs
+make clean
+gr
+cd labcodes_answer/lab7_result/
+ls
+vim kern/sync/monitor.c
+make
+make qemu
+cd ucore_os_lab/
+ls
+ranger
+git status 
+git switch lab6
+git switch -c lab7
+git la
+cd labcodes/lab7
+ls
+vim kern/init/init.c 
+git la
+make tags
+touch .root
+make
+make qemu
+make
+make qemu
+make
+make qemu
+make grade
+ls
+mail
+ls
+cp /home/linusboyle/sync/vnote/notes/课程/操作系统/Lab7.md lab7.md
+ls
+gstatus 
+rm .root
+gstatus 
+git add -A
+git commit 
+git push thu lab7
+git la
+git switch master 
+gr
+vim README.md 
+git commit 
+git commit -a
+git la
+git push thu master 
+cd ucore_os_lab/
+ls
+cd labcodes/lab6/
+ls
+git switch lab6
+ls
+git la
+cp /home/linusboyle/sync/vnote/notes/课程/操作系统/Lab6.md lab6.md 
+git commit 
+git commit -a
+git diff
+git commit -a
+git push thu lab6
+git la
+git switch master 
+gr
+vim README.md 
+git commit -a
+git push thu master 
+git la
+..
+cd lab7
+make clean
+touch .root
+make
+mail
+ls
+ls disk0/
+ls disk0/ -l
+ls bin/
+ls
+vim Makefile 
+ls
+gstatus 
+ls
+make qemu
+ls
+vim tools/kernel.ld 
+make
+vimdiff Makefile ../../labcodes_answer/lab8_result/Makefile 
+make
+..
+gr
+cd labcodes_answer/lab8_result/
+ls
+make 
+make
+make qemu
+ls
+ls disk0/
+vim kern/fs/sfs/sfs_inode.c 
+make
+,,
+..
+cd lab7
+vim kern/process/proc.c
+vim user/exit.c 
+vim user/priority.c 
+ag argc
+cd user/
+ag argc
+vim sh.c
+..
+vim kern/process/proc.c
+gr
+cd labcodes_answer/lab8_result/
+ls
+vim kern/process/proc.c
+man test
+cd
+cd bin/
+ls
+vim test.sh
+./test.sh 
+vim test.sh
+test -p /dev/stdin 
+echo $?
+vim test.sh
+echo as | test.sh 
+vim test.sh
+ls
+mv test.sh ptrm
+ls
+mv ptrm ~
+cd
+ls
+mv ptrm dfile/bin/
+cd dfile/
+ls
+mv bin/ptrm bin/bin/
+ls
+ls bin-private/
+ls bin-private/bin/
+git ls-files|grep gh
+ls
+stow -R bin
+cd

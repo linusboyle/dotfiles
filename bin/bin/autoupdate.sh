@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 #Author: Zhilei Han <hzl17@mails.tsinghua.edu.cn> 
 
-cd /home/linusboyle/sync/vnote/notes/
-git add -A
-git commit -m "update"
-git push origin master
+update () {
+    cd "$1"
+    git add -A
+    git commit -m "update"
+    git push origin master
+}
+
+update "/home/linusboyle/sync/vnote/notes/"
+update "/home/linusboyle/dfile/"
