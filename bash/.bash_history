@@ -8778,3 +8778,9 @@ git la
 cd ucore_os_lab/
 la
 git la
+cd ucore_os_lab/
+git remote -v
+git la
+git remote -v
+cd ucore_os_lab/
+git la
