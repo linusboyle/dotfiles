@@ -8626,3 +8626,155 @@ git ls-files|grep gh
 ls
 stow -R bin
 cd
+cd dfile/
+fd auto
+ls
+vim bin/bin/aut
+vim bin/bin/autoupdate.sh 
+cd
+ls bin/
+man autoupdate 
+autoupdate.sh 
+ls
+vim bin/autoupdate.sh 
+autoupdate.sh 
+ls
+cd dfile/
+ls
+gstatus 
+git la
+cd
+cd ucore_os_lab/labcodes/lab8/
+ls
+git switch lab7
+git la
+git switch -c lab8
+make tags
+ls
+vim Makefile 
+make 
+ls bin/
+vim Makefile 
+ls
+make tags
+vim Makefile 
+s
+ls
+vim kern/init/init.c 
+git log
+ag LAB8
+cd kern/schedule/
+..
+ag LAB8
+ls
+..
+make
+ake
+make
+make qemu
+make grade
+/home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png
+ptrm
+echo '/home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png'
+echo '/home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png' | sed 's/^[^:]*::\///g'
+echo 'https://home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png' | sed 's/^[^:]*:\///g'
+echo 'files://home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png' | sed 's/^[^:]*:\///g'
+echo 'files://home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png | test.sh
+
+
+echo 'files://home/linusboyle/sync/vnote/notes/课程/操作系统/_v_images/20200313200505222_754023165.png' | test.sh
+ls
+cp /home/linusboyle/sync/vnote/notes/课程/操作系统/Lab8.md lab8.md
+ls
+git status 
+rm .root
+git add -A
+git commit 
+ls
+git switch master 
+ls
+gr
+vim README.md 
+git commit -a
+ls
+vim README.md 
+ls
+git la
+git switch lab2
+ls
+cd labcodes
+ls
+cd lab2
+ls
+vim report.md 
+git log
+vim report.md 
+ls
+git commit 
+git commit -a
+git switch master 
+ls
+gr
+vim README.md 
+git switch lab3
+ls
+gitla
+git la
+ls
+git switch lab2
+ls
+git mv labcodes/lab2/report.md labcodes/lab2/lab2.md
+fd md
+git switch lab8
+git commit 
+git switch lab8
+fd md
+fd "md
+fd "lab*md"
+fd "labmd"
+fd "lab md"
+fd "lab.md"
+fd "lab.*md"
+ls
+git switch lab3
+ls
+git la
+git log
+vim labcodes/lab3/lab3.md 
+git commit 
+git commit -a
+git switch lab4
+git log
+vim labcodes/lab4/lab4.md 
+git commit 
+git commit -a
+git commit 
+git switch lab5
+ls
+vim labcodes/lab5/lab5.md 
+git commit -a
+git switch lab6
+vim labcodes/lab6/lab6.md 
+git commit -a
+git switch lab7
+vim labcodes/lab7/lab7.md 
+git commit -a
+git switch lab8
+vim labcodes/lab8/lab8.md 
+git la
+git switch master 
+git push thu master 
+git merge lab2
+git la
+git merge lab3
+git merge lab4
+git merge lab5
+git merge lab6
+git merge lab7
+git merge lab8
+git la
+git push thu  master 
+git la
+cd ucore_os_lab/
+la
+git la
