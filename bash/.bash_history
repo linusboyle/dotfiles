@@ -8784,3 +8784,45 @@ git la
 git remote -v
 cd ucore_os_lab/
 git la
+cd ucore_os_lab/
+ls
+cd labcodes/lab2
+make grade
+..
+cd lab3
+make grade
+..
+ls
+cd lab4
+make grade
+..
+ls
+cls
+ls
+./autotest.sh 
+cd lab5/
+ls
+vim kern/trap/trap.
+vim kern/trap/trap.c
+make
+make grade
+ls
+git commit -a
+gstatus 
+git diff
+git commit 
+git commit -a
+git switch lab5
+git commit -a
+git switch master 
+git merge lab5
+git la
+ls
+gr
+git push thu lab5
+git push thu master 
+git la
+vim
+texmacs
+ls
+mail
