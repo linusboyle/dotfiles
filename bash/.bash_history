@@ -8826,3 +8826,5 @@ vim
 texmacs
 ls
 mail
+typo
+cnf typo
