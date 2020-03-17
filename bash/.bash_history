@@ -8828,3 +8828,7 @@ ls
 mail
 typo
 cnf typo
+texmacs
+bc
+cd app/matlab/bin/
+./matlab
