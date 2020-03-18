@@ -8832,3 +8832,82 @@ texmacs
 bc
 cd app/matlab/bin/
 ./matlab
+vim readme.md 
+vim src/ClightToAsm.v 
+ls
+vim variables.mk 
+ls
+vim variables.mk 
+fd _Coq
+tree|less
+vim variables.mk 
+ag Coqproject
+ag Coq
+ag CoqProject
+vim configure 
+./configure 
+ls
+vim configure 
+ls
+./configure 
+ls
+vim _CoqProject 
+vim src/ClightToAsm.v 
+vim _CoqProject 
+ls
+coqide
+ls
+rm Unnamed_coqscript_1.crashcoqide
+ls
+vim _CoqProject 
+ls
+cd velus/
+ls
+git pull
+git la
+git branch 
+git la
+ls
+git la
+ls
+ls comp
+ls CompCert/
+vim .gitmodules 
+ls
+vim compile 
+ls
+ls src/
+ls
+ls docker/
+ls ex
+ls examples/
+vim examples/tracker.lus 
+ls
+ls src/
+vim src/ClightToAsm.v 
+vim .merlin 
+ls
+cd src
+ls
+..
+ls
+fd coq
+vim vdfi
+vim vfiles 
+ls
+vim Makefile 
+ls
+vim src/ClightToAsm.v 
+ls
+opam list 
+opam 
+opam switch 
+opam switch default 
+opam lsit
+opam list
+opam pin --help
+opam update
+opam upgrade
+cd
+cd app/matlab/bin/
+./matlab
