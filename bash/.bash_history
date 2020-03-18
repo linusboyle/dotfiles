@@ -8911,3 +8911,162 @@ opam upgrade
 cd
 cd app/matlab/bin/
 ./matlab
+sudo zypper install wesnoth
+ls ocamlfuse/
+git status 
+git ls-files| grep ocamlfuse
+fd idl
+vim ocamlfuse/Fuse_bindings.idl 
+ls
+vim ocamlfuse/Fuse.d
+ag mkfs
+ls
+vim ocamlfuse/Unix_util_stubs.c 
+git ls-files| grep ".c"
+git ls-files| grep ".c$"
+ls ocamlfuse/
+man ocamlopt
+man ocamlc
+make
+make fscq
+ls codegen/Word.hs
+ls codegen/Word.
+ls codegen/
+make AsyncFS.ml
+make codegen/AsyncFS.ml
+vim ExtractOcaml.v 
+vim coqbuild/AByteFile.vio
+gstatus 
+vim coqbuild/Makefile.coq
+ls
+vim coqbuild/Makefile.coq
+vim coqbuild/Makefile.coq.conf 
+ls
+vim Array.v 
+ls
+vim Mem
+vim Mem.v 
+fd fs
+vim README
+vim AsyncFS,v
+vim AsyncFS.v 
+ls
+make codegen/AsyncFS.ml
+vim Testprog.v 
+ls
+vim TODO 
+ls
+vim Extract
+vim Testprog.v 
+vim ExtractOcaml.v 
+git la
+git branch 
+git branch -a
+git switch origin/new-extract 
+git la
+git branch 
+git switch origin/new-extract 
+git checkout origin/new-extract 
+git la
+git log
+git checkout master 
+ls
+cd src/
+ls
+git clone https://github.com/mit-pdos/fscq
+ls
+cd fscq/
+ls
+ls bench/
+ls builder/
+ls
+vim README.md 
+ls
+ls xv6/
+vim xv6/bio.c 
+ls
+cd src
+ls
+vim README
+vi Makefile 
+ls
+l | grep -v "*.v"
+l | grep "*.v"
+l | grep ".v"
+l | grep -v ".v"
+vim _CoqProject 
+vim fscq.hs 
+vim README.profiling 
+vim README.coqide 
+which ocaml
+which ocaml| xargs ls -l
+which ocaml| xargs file
+vim ~/.opam/default/bin/ocaml
+man command
+help command
+vim ~/.opam/default/bin/ocaml
+ls
+vim coqide.sh 
+ls
+vim find_code.py 
+./find_code.py 
+./find_code.py Nomega.v 
+./find_code.py DirName.v 
+ls
+vim monad.sh 
+vim de
+vim default.nix 
+make
+ls
+vim Makefile 
+sudo zypper install libfuse3-3
+sudo zypper install fuse-devel
+make
+vim Makefile 
+ls
+sudo zypper install ghc
+ls
+vim Makefile 
+ls
+camldel
+vim Makefile 
+camlidl
+opam search camlidl
+opam list
+ls
+opam list
+opam switch 4.02.3 
+opam list
+opam switch default 
+opam install camlidl
+opam upgrade
+opam install camlidl
+make
+vim Makefile 
+ls
+vim ExtractOcaml.v 
+ls
+vim Makefile 
+make
+vim Makefile 
+man zypper
+zypper help install
+zypper help install|grep down
+zypper help install|grep old
+info make
+opam search zarith
+opam search extunix
+make
+ls
+vim ExtractOcaml.v 
+ls
+fd test
+fd fs
+vim ExtractOcaml.v 
+make
+vim ExtractOcaml.v 
+gstatus 
+cat /var/log/zypp/his
+cat /var/log/zypp/history | grep wes
+sudo cat /var/log/zypp/history | grep wes
+sudo cat /var/log/zypp/history | grep wesnoth
