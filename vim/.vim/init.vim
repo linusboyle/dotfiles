@@ -71,6 +71,7 @@ Plug 'sirver/ultisnips'
 Plug 'whonore/Coqtail'
 Plug 'neomake/neomake'
 Plug 'wellle/targets.vim'
+Plug 'bohlender/vim-smt2'
 
 call plug#end()
 
