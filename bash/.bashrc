@@ -55,22 +55,21 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
+export LESS="-M -I -j 10 -# 4"
 export GTAGSLABEL=native-pygments
 export TEXMACS_PATH="$HOME/app/TeXmacs"
-export CDPATH=".:$HOME/dev:$HOME/dev/src:$CDPATH"
+#export CDPATH=".:$HOME/dev:$HOME/dev/src:$CDPATH"
 
 # remember to remove these and gradle
 export PATH="$TEXMACS_PATH/bin:$PATH"
 export JAVA_HOME="/usr/lib64/jvm/java-12-openjdk-12"
-# alias decaf="java -jar --enable-preview /home/linusboyle/dev/decaf-2017011442/build/libs/decaf.jar"
 
 source tmux_color.sh
 
-# added by travis gem
-# [ -f /home/linusboyle/.travis/travis.sh ] && source /home/linusboyle/.travis/travis.sh
-
 test -r /home/linusboyle/.opam/opam-init/init.sh && . /home/linusboyle/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 eval `opam env`
+
+eval "$(lua /home/linusboyle/dev/src/z.lua/z.lua --init bash echo enhanced once fzf)"
 
 function sym () {
     test -n "$1" && test -n "$2" && ln -s $(readlink -f "$1") "$2"
