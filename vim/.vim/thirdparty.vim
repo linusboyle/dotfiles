@@ -118,7 +118,7 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 "markdown
 let g:vim_markdown_frontmatter = 1
-let g:vim_markdown_math = 1
+let g:vim_markdown_math = 0
 let g:tex_conceal = ""
 
 " asyncrun/neomake
