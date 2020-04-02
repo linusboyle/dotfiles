@@ -75,6 +75,12 @@ Plug 'bohlender/vim-smt2'
 
 call plug#end()
 
+" third party colorschemes are only
+" available after vim-plug init.
+if has('gui_running')
+    colorscheme monokai
+endif
+
 " some commands
 command -nargs=0 SConfig source $MYVIMRC
 command -nargs=0 EConfig edit $MYVIMRC

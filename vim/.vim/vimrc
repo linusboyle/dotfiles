@@ -197,7 +197,6 @@ if has('gui_running')
     set guioptions-=r
     set guioptions-=m
     set guioptions-=L
-    colorscheme monokai
 endif
 
 " statusline/tabline
