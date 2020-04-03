@@ -1,5 +1,5 @@
 setlocal path+=/usr/include
-setlocal path+=/usr/include/c++/8 " standard library path
+setlocal path+=/usr/include/c++/9 " standard library path
 compiler g++
 
 nnoremap <buffer> <silent> <F8> :AsyncRun -cwd=<root>/build -raw cmake .. && make <cr>
