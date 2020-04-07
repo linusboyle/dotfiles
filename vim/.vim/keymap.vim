@@ -82,6 +82,8 @@ vnoremap <leader>y "+y
 noremap <F1> <NOP>
 noremap <C-z> <NOP>
 
+noremap <C-c> <NOP>
+
 " dictionary completion
 inoremap <c-k> <c-x><c-k>
 

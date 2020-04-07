@@ -45,8 +45,6 @@ iabbrev @@ hzl17@mails.tsinghua.edu.cn
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'jacoborus/tender.vim'
 Plug 'crusoexia/vim-monokai'
 Plug 'alpertuna/vim-header'
 Plug 'unblevable/quick-scope'
@@ -72,6 +70,10 @@ Plug 'whonore/Coqtail'
 Plug 'neomake/neomake'
 Plug 'wellle/targets.vim'
 Plug 'bohlender/vim-smt2'
+Plug 'wlangstroth/vim-racket'
+Plug 'jpalardy/vim-slime'
+Plug 'MicahElliott/vrod', {'for': 'racket'}
+Plug 'luochen1990/rainbow'
 
 call plug#end()
 

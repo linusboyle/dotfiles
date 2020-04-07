@@ -20,47 +20,47 @@ function! g:CoqtailHighlight()
 endfunction
 
 "YCM-------------------------------{{{
-let g:ycm_server_python_interpreter='/usr/bin/python3'
-let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+"let g:ycm_server_python_interpreter='/usr/bin/python3'
+"let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
-" 触发补全快捷键 
-let g:ycm_key_list_select_completion = ['<TAB>'] 
-let g:ycm_key_list_previous_completion = ['<c-p>'] 
+ "触发补全快捷键 
+"let g:ycm_key_list_select_completion = ['<TAB>'] 
+"let g:ycm_key_list_previous_completion = ['<c-p>'] 
 
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_collect_identifiers_from_comments_and_strings = 0
-let g:ycm_server_log_level = 'info'
-let g:ycm_complete_in_strings = 1
-let g:ycm_cache_omnifunc = 0
-let g:ycm_collect_identifiers_from_tags_files = 0
-let g:ycm_seed_identifiers_with_syntax = 1
+"let g:ycm_add_preview_to_completeopt = 0
+"let g:ycm_collect_identifiers_from_comments_and_strings = 0
+"let g:ycm_server_log_level = 'info'
+"let g:ycm_complete_in_strings = 1
+"let g:ycm_cache_omnifunc = 0
+"let g:ycm_collect_identifiers_from_tags_files = 0
+"let g:ycm_seed_identifiers_with_syntax = 1
 
-let g:ycm_show_diagnostics_ui = 1
-let g:ycm_always_populate_location_list = 0
-let g:ycm_enable_diagnostic_signs = 0
+"let g:ycm_show_diagnostics_ui = 1
+"let g:ycm_always_populate_location_list = 0
+"let g:ycm_enable_diagnostic_signs = 0
 
-let g:ycm_error_symbol = '×'
-let g:ycm_warning_symbol = '☯'
+"let g:ycm_error_symbol = '×'
+"let g:ycm_warning_symbol = '☯'
 
 "white list
-let g:ycm_filetype_whitelist = {
-            \ "c":1,
-            \ "cpp":1,
-            \ "sh":1,
-            \ "html":1,
-            \ "java":1,
-            \ "javascript":1,
-            \ "python":1
-            \ }
+"let g:ycm_filetype_whitelist = {
+            "\ "c":1,
+            "\ "cpp":1,
+            "\ "sh":1,
+            "\ "html":1,
+            "\ "java":1,
+            "\ "javascript":1,
+            "\ "python":1
+            "\ }
 
 "nnoremap <leader>s :YcmCompleter GetType<CR>
-" kind of useful
+ "kind of useful
 "nnoremap <leader>f :YcmCompleter FixIt<CR>
 
-let g:ycm_semantic_triggers =  {
-            \ 'c,cpp,java': ['re!\w{2}', '.'],
-            \ 'html': ['re!\w{2}','</'],
-            \ }
+"let g:ycm_semantic_triggers =  {
+            "\ 'c,cpp,java': ['re!\w{2}', '.'],
+            "\ 'html': ['re!\w{2}','</'],
+            "\ }
 "}}}
 
 "undo tree
@@ -109,7 +109,7 @@ let g:delimitMate_expand_cr = 1
 
 "header
 let g:header_field_author = 'Zhilei Han'
-let g:header_field_author_email = 'linusboyle@gmail.com'
+let g:header_field_author_email = 'hzl17@mails.tsinghua.edu.cn'
 let g:header_auto_add_header = 0
 
 " quick-scope
@@ -138,6 +138,13 @@ let g:UltiSnipsExpandTrigger='<F2>'
 let g:UltiSnipsListSnippets='<c-`>'
 
 "echodoc
-let g:echodoc#enable_at_startup = 1
+"let g:echodoc#enable_at_startup = 1
+
+"slime
+let g:slime_target = "vimterminal"
+let g:slime_vimterminal_config = {"vertical":1, "term_finish": "close"}
+
+"rainbow
+let g:rainbow_active=0
 
 "}}}
