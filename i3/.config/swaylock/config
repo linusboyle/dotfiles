@@ -1,0 +1,9 @@
+ignore-empty-password
+image=/home/linusboyle/pix/trianglify.png
+font=Hack
+indicator-radius=100
+indicator-thickness=10
+key-hl-color=292D3E
+inside-color=32374D
+ring-color=8796B0
+daemonize
