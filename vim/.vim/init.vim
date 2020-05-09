@@ -74,6 +74,7 @@ Plug 'wlangstroth/vim-racket'
 Plug 'jpalardy/vim-slime'
 Plug 'MicahElliott/vrod', {'for': 'racket'}
 Plug 'luochen1990/rainbow'
+Plug 'rhysd/vim-llvm'
 
 call plug#end()
 
