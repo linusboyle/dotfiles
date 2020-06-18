@@ -54,7 +54,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=vim
+if [ -n "$DISPLAY" ]; then
+    export EDITOR=gvim
+else
+    export EDITOR=vim
+fi
+
 export LESS="-M -I -j 10 -# 4"
 export GTAGSLABEL=native-pygments
 export TEXMACS_PATH="$HOME/app/TeXmacs"
