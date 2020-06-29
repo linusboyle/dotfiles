@@ -63,6 +63,7 @@ fi
 export LESS="-M -I -j 10 -# 4"
 export GTAGSLABEL=native-pygments
 export TEXMACS_PATH="$HOME/app/TeXmacs"
+export SBTPATH="$HOME/app/sbt"
 #export CDPATH=".:$HOME/dev:$HOME/dev/src:$CDPATH"
 
 # remember to remove these and gradle
