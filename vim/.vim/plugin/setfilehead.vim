@@ -19,6 +19,8 @@
 " OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 " SOFTWARE.
 
+let g:loaded_setfindhead=1
+
 if exists('g:loaded_setfindhead') || &compatible
   finish
 endif

@@ -55,7 +55,7 @@ if ! shopt -oq posix; then
 fi
 
 if [ -n "$DISPLAY" ]; then
-    export EDITOR=gvim
+    export EDITOR="gvim -f"
 else
     export EDITOR=vim
 fi

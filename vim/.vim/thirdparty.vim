@@ -10,7 +10,7 @@ let g:cpp_experimental_simple_template_highlight = 1
 "easymotion
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
-nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-s2)
 
 " coq
 let g:coqtail_nomap = 1

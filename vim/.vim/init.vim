@@ -48,8 +48,6 @@ Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
 Plug 'alpertuna/vim-header'
 Plug 'unblevable/quick-scope'
-Plug 'posva/vim-vue'
-Plug 'leafgarland/typescript-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'octol/vim-cpp-enhanced-highlight', {'for' : 'cpp'}
 Plug 'tpope/vim-fugitive'
@@ -75,6 +73,7 @@ Plug 'jpalardy/vim-slime'
 Plug 'MicahElliott/vrod', {'for': 'racket'}
 Plug 'luochen1990/rainbow'
 Plug 'rhysd/vim-llvm'
+Plug 'let-def/ocp-indent-vim'
 
 call plug#end()
 
