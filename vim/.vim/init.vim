@@ -74,6 +74,8 @@ Plug 'MicahElliott/vrod', {'for': 'racket'}
 Plug 'luochen1990/rainbow'
 Plug 'rhysd/vim-llvm'
 Plug 'let-def/ocp-indent-vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 

@@ -71,23 +71,46 @@ let g:undotree_TreeNodeShape = '・'
 nnoremap <F6> :UndotreeToggle<cr>
 
 "Leaderf -------------------------------------{{{
+
 "let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 "let g:Lf_StlColorscheme = 'powerline'
 
-let g:Lf_ShortcutF = '<leader>f'
-let g:Lf_ShortcutB = '<Nop>'
-
-let g:Lf_DefaultMode='FullPath'
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font':''}
 let g:Lf_RootMarkers = ['.project', '.root', '.svn','.hg','.git']
-let g:Lf_WorkingDirectoryMode = 'Ac'
+let g:Lf_WindowPosition = 'popup'
 let g:Lf_WindowHeight = 0.25
-let g:Lf_CacheDirectory = expand('~/.vim/cache')
-let g:Lf_ShowRelativePath = 0
-let g:Lf_HideHelp = 1
-let g:Lf_PreviewResult = {'Function':0}
+let g:Lf_PopupHeight = 0.3
+let g:Lf_PreviewInPopup = 1
 
-"let g:Lf_GtagsAutoGenerate = 0
+let g:Lf_ShortcutF = '<leader>f'
+let g:Lf_ShortcutB = '-'
+
+let g:Lf_MruFileExclude = split(&wildignore, ',')
+let g:Lf_WildIgnore = {
+        \ 'dir': ['.svn','.git','.hg'],
+        \ 'file': g:Lf_MruFileExclude
+        \}
+
+let g:Lf_DefaultMode='FullPath'
+let g:Lf_WorkingDirectoryMode = 'Ac'
+let g:Lf_CacheDirectory = expand('~/.vim/cache')
+let g:Lf_HideHelp = 1
+let g:Lf_JumpToExistingWindow = 1
+let g:Lf_PreviewResult = {
+            \ 'File': 1,
+            \ 'Buffer': 0,
+            \ 'Mru': 1,
+            \ 'Tag': 0,
+            \ 'BufTag': 1,
+            \ 'Function': 1,
+            \ 'Line': 0,
+            \ 'Colorscheme': 0,
+            \ 'Rg': 1,
+            \ 'Gtags': 0
+            \}
+
+
+"let g:Lf_GtagsAutoGenerate = 1
 "let g:Lf_GtagsSource = 2
 "let g:Lf_GtagsSkipUnreadable = 1
 "let g:Lf_GtagsSkipSymlink = 'a'
@@ -101,7 +124,7 @@ let g:Lf_NormalMap = {
     \ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
     \ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
     \ }
-nnoremap - :Leaderf! buffer<cr>
+"nnoremap - :Leaderf! buffer<cr>
 "}}}
 
 "delimitmate
@@ -147,4 +170,23 @@ let g:slime_vimterminal_config = {"vertical":1, "term_finish": "close"}
 "rainbow
 let g:rainbow_active=0
 
+"terminal
+let g:terminal_default_mapping = 0
+let g:terminal_edit = "SelectiveDrop"
+
+nnoremap <silent> + :call TerminalToggle()<CR>
+tnoremap <silent> + <c-w>:call TerminalToggle()<CR>
+
+" coc.nvim
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Highlight the symbol and its references when holding the cursor.
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 "}}}

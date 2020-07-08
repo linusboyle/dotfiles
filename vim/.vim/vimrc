@@ -74,7 +74,7 @@ if has('folding')
   set foldmethod=indent
 endif
 
-" format options
+" format options, for Chinese multi_byte characters
 set formatoptions+=m " 如遇Unicode值大于255的文本，不必等到空格再折行
 set formatoptions+=B " 合并两行中文时，不在中间加空格
 set formatoptions+=j " merge comments
@@ -90,10 +90,14 @@ set incsearch
 " gutter column
 set number
 set relativenumber 
+if has("patch-8.1.1564")
+    " Recently vim can merge signcolumn and number column into one
+    set signcolumn=number
+endif
 
 " complete
 if exists('+completeopt')
-    set completeopt=menu,menuone
+    set completeopt=menu,menuone,popup
     set complete-=u
     set complete-=i
 endif
@@ -106,13 +110,15 @@ set nosmartcase
 set backspace+=eol,start,indent
 
 " sorry for you poor kids...
-set shortmess=atI
+set shortmess=actI
 
 " use bash aliases
 let $BASH_ENV = "~/.bash_aliases"
 
 " timeout
 set timeoutlen=300
+" faster Cursorhold
+set updatetime=300
 
 " pop prompt on failed operation
 set confirm
@@ -130,6 +136,7 @@ set autoread
 
 " backup/swap/undo
 set nobackup
+set nowritebackup
 if has("persistent_undo")
     let s:undo_dir = expand("~/.cache/undodir")
 
@@ -211,6 +218,7 @@ set statusline+=\ %B
 "right aligned
 set statusline+=%#ModeMsg#
 set statusline+=%=%l:%c\ %p%%\ %y
+set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}
 "set showtabline=2
 
 set tabline=%!MyTabLine()

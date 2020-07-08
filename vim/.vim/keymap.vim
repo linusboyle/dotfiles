@@ -84,9 +84,6 @@ noremap <C-z> <NOP>
 
 noremap <C-c> <NOP>
 
-" dictionary completion
-inoremap <c-k> <c-x><c-k>
-
 " }}}
 
 "Commandline Mapping--------------------{{{
@@ -126,6 +123,9 @@ noremap ]t :tabnext<cr>
 "InsertMode Mapping-----------------------{{{
 inoremap <C-U> <C-G>u<C-U>
 
+" dictionary completion
+inoremap <c-k> <c-x><c-k>
+
 " Of course, this is just taken from official vim helpdoc
 function! s:CleverTab()
     if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
@@ -139,5 +139,18 @@ function! s:CleverTab()
     endif
 endfunction
 
-inoremap <silent> <Tab> <C-R>=<sid>CleverTab()<CR>
+"inoremap <silent> <Tab> <C-R>=<sid>CleverTab()<CR>
+
+inoremap <silent><expr> <TAB>
+            \ pumvisible() ? "\<C-n>" :
+            \ <SID>check_back_space() ? "\<TAB>" :
+            \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <F4> <C-R>+
 " }}}
