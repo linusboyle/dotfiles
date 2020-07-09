@@ -4,6 +4,8 @@ alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias grep='grep --color=auto'
 
+alias less="less -R"
+
 #alias fbterm='LANG=zh_CN.utf-8 LC_ALL="C" fbterm'
 
 #tag the music,of course

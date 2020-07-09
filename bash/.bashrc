@@ -60,7 +60,8 @@ else
     export EDITOR=vim
 fi
 
-export LESS="-M -I -j 10 -# 4"
+export LESS="-M -i -j 10 -# 4"
+export LESSOPEN="| ~/bin/lesspipe.sh %s"
 export GTAGSLABEL=native-pygments
 export TEXMACS_PATH="$HOME/app/TeXmacs"
 export SBTPATH="$HOME/app/sbt"
