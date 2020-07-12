@@ -91,6 +91,7 @@ command -nargs=0 EConfig edit $MYVIMRC
 
 " tweaks
 let g:no_ocaml_maps=1
+let g:tex_flavor="latex"
 
 runtime keymap.vim
 runtime thirdparty.vim
