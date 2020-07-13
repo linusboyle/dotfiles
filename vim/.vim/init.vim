@@ -30,8 +30,8 @@ endif
 let g:global_config_guard=1
 
 " add merlin plugin for ocaml
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " it's stupid...but useful
 iabbrev mian main
