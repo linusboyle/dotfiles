@@ -15,5 +15,7 @@
             "args": ["config", "exec", "--", "ocamllsp"],
             "filetypes": ["ocaml"]
         }
-    }
+    },
+    "latex.forwardSearch.executable": "okular",
+    "latex.forwardSearch.args":["--unique", "file:%p#src:%l%f"]
 }
