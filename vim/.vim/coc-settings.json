@@ -17,5 +17,6 @@
         }
     },
     "latex.forwardSearch.executable": "okular",
-    "latex.forwardSearch.args":["--unique", "file:%p#src:%l%f"]
+    "latex.forwardSearch.args":["--unique", "file:%p#src:%l%f"],
+    "latex.build.args":["-pdf","-interaction=nonstopmode","-synctex=1", "-pvc"]
 }
