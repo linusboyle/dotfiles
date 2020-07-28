@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      function error(str) {
+        var x = document.getElementById("anki_notify");
+        x.innerText = "Error: " + str;
+      }
+
+      function success(str) {
+        var x = document.getElementById("anki_notify");
+        x.innerText = "Success: " + str;
+      }
+
+      function invoke(action, version, params={}) {
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener('error', () => error('failed to issue request'));
+        xhr.addEventListener('load', () => {
+            try {
+                const response = JSON.parse(xhr.responseText);
+                console.log(response);
+                if (Object.getOwnPropertyNames(response).length != 2) {
+                    throw 'response has an unexpected number of fields';
+                }
+                if (!response.hasOwnProperty('error')) {
+                    throw 'response is missing required error field';
+                }
+                if (!response.hasOwnProperty('result')) {
+                    throw 'response is missing required result field';
+                }
+                if (response.error) {
+                    throw response.error;
+                }
+                success(response.result);
+            } catch (e) {
+                error(e);
+            }
+        });
+
+        xhr.open('POST', 'http://localhost:8765');
+        xhr.send(JSON.stringify({action, version, params}));
+      };
+
+      function fire() {
+        var note = {
+          "note" : {
+            "deckName": "English Vocabulary",
+            "modelName": "PlainWithComment",
+            "fields": {
+                "Name": document.title,
+                "Comment": ""
+            },
+            "options": {
+                "allowDuplicate": false
+            },
+            "tags": []
+          }
+        };
+        invoke('addNote', 6, note);
+      }
+
+      function btn_text () {
+        var x = document.getElementById("anki_btn");
+        console.log(x);
+        x.innerText = "添加" + document.title + "到Anki";
+      }
+    </script>
+  </head>
+  <body onload="btn_text()">
+    <div id="anki_notify"></div>
+    <hr/>
+    <button id="anki_btn" type="button" onclick="fire()" style="background-color: transparent; border: none; color: #369; text-align: center; margin: 0px; cursor: pointer;position:fixed;right:0;top:0;">添加到Anki</button>
+  </body>
+</html>
