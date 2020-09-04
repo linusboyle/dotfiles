@@ -199,4 +199,17 @@ endfunction
 
 " Highlight the symbol and its references when holding the cursor.
 " autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" VimWiki
+let g:vimwiki_list = [
+            \{
+            \"path" : "~/sync/wiki/text/", 
+            \"path_html" : "~/sync/wiki/html/", 
+            \"syntax": "markdown",
+            \"ext": ".wiki"
+            \}]
+
+let g:vimwiki_ext2syntax = {}
+let g:vimwiki_hl_headers = 1
+let g:vimwiki_global_ext = 0
 "}}}
