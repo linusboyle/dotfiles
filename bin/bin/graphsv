@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#Author: Zhilei Han <hzl17@mails.tsinghua.edu.cn> 
+
+if [ $# -eq 0 ] 
+then
+    notify-send "graphsv" "Please pass file name"
+    exit 1
+fi
+
+if xclip -o -target TARGETS -selection clipboard | grep image/png
+then
+    xclip -o -target image/png -selection clipboard > $1
+else
+    notify-send "graphsv" "Not an image"
+fi

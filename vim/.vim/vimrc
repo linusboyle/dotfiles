@@ -263,9 +263,6 @@ set thesaurus+=$HOME/.vim/thesaurus/mthesaur.txt
 " dictionary
 set dictionary+=$HOME/.vim/dictionary/english.txt 
     
-let g:todo_pattern = '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|BUG\|HACK\)'
-let g:debug_pattern = '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)'
-
 runtime init.vim
 
 nohlsearch

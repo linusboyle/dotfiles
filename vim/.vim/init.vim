@@ -40,6 +40,8 @@ iabbrev fasle false
 iabbrev tihs this
 iabbrev @@ hzl17@mails.tsinghua.edu.cn
 
+let g:loaded_simplehighlight = 1
+
 " Load third-party plugins
 
 call plug#begin('~/.vim/plugged')
@@ -77,6 +79,7 @@ Plug 'let-def/ocp-indent-vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
+Plug 'mattn/calendar-vim'
 
 call plug#end()
 
