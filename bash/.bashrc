@@ -81,3 +81,7 @@ eval "$(lua /home/linusboyle/dev/src/z.lua/z.lua --init bash echo enhanced once 
 function sym () {
     test -n "$1" && test -n "$2" && ln -s $(readlink -f "$1") "$2"
 }
+
+zet() {
+    vim "+VimwikiIndex" "+ZettelNew $*"
+}

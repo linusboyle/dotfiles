@@ -206,10 +206,23 @@ let g:vimwiki_list = [
             \"path" : "~/sync/wiki/text/", 
             \"path_html" : "~/sync/wiki/html/", 
             \"syntax": "markdown",
-            \"ext": ".wiki"
+            \"ext": ".wiki",
+            \"auto_tags" : 1,
+            \"auto_diary_index" : 1
             \}]
 
 let g:vimwiki_ext2syntax = {}
 let g:vimwiki_hl_headers = 1
 let g:vimwiki_global_ext = 0
+let g:vimwiki_toc_header_level = 2
+let g:vimwiki_tags_header_level = 2
+let g:vimwiki_links_header_level = 2
+let g:vimwiki_key_mappings =
+\ {
+\ 'table_mappings': 0,
+\ }
+
+let g:zettel_format = "%Y%m%d-%title-%file_no"
+let g:zettel_default_mappings = 0
+
 "}}}
