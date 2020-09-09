@@ -115,7 +115,7 @@ let g:Lf_PreviewResult = {
 "let g:Lf_GtagsSkipUnreadable = 1
 "let g:Lf_GtagsSkipSymlink = 'a'
 "let g:Lf_Gtagslabel='native-pygments'
-
+let g:Lf_ShowDevIcons = 0
 let g:Lf_NormalMap = {
     \ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
     \ "Buffer": [["<ESC>", ':exec g:Lf_py "bufExplManager.quit()"<CR>']],
@@ -222,7 +222,7 @@ let g:vimwiki_key_mappings =
 \ 'table_mappings': 0,
 \ }
 
-let g:zettel_format = "%Y%m%d-%title-%file_no"
+let g:zettel_format = "%Y%m%d-%file_no"
 let g:zettel_default_mappings = 0
 let g:zettel_options = [{
             \"front_matter" : [],
