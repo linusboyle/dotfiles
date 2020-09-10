@@ -4,7 +4,7 @@ xmap <buffer> z <Plug>ZettelNewSelectedMap
 nmap <buffer> gZ <Plug>ZettelReplaceFileWithLink
 nnoremap <buffer> <leader>nz :ZettelNew<space>
 
-let b:undo_ftplugin = '|iunmap <buffer> ||'
+let b:undo_ftplugin = 'iunmap <buffer> ]]'
             \ . '|nunmap <buffer> T'
             \ . '|nunmap <buffer> z'
             \ . '|nunmap <buffer> gZ'
