@@ -207,7 +207,7 @@ let g:vimwiki_list = [
             \"path_html" : "~/sync/wiki/html/", 
             \"syntax": "markdown",
             \"ext": ".wiki",
-            \"auto_tags" : 1,
+            \"auto_tags" : 0,
             \"auto_diary_index" : 1
             \}]
 
