@@ -1,5 +1,5 @@
 " init.vim
-" Copyright (c) 2019 Linus Boyle <linusboyle@gmail.com>
+" Copyright (c) 2019 Zhilei Han <hzl17@mails.tsinghua.edu.cn>
 "
 " Permission is hereby granted, free of charge, to any person obtaining a copy
 " of this software and associated documentation files (the "Software"), to deal
@@ -23,35 +23,18 @@
 " I'm hoping the vimrc file can be easily re-sourced without
 " much overhead
 
-if get(g:, 'global_config_guard', 0)
-    finish
-endif
-
-let g:global_config_guard=1
-
 " add merlin plugin for ocaml
 "let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 "execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
-" it's stupid...but useful
-iabbrev mian main
-iabbrev ture true
-iabbrev fasle false
-iabbrev tihs this
-iabbrev @@ hzl17@mails.tsinghua.edu.cn
-
-let g:loaded_simplehighlight = 1
-
 " Load third-party plugins
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
+
 Plug 'alpertuna/vim-header'
 Plug 'unblevable/quick-scope'
-Plug 'plasticboy/vim-markdown'
-Plug 'octol/vim-cpp-enhanced-highlight', {'for' : 'cpp'}
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/LeaderF'
@@ -69,20 +52,24 @@ Plug 'sirver/ultisnips'
 Plug 'whonore/Coqtail'
 Plug 'neomake/neomake'
 Plug 'wellle/targets.vim'
-Plug 'bohlender/vim-smt2'
-Plug 'wlangstroth/vim-racket'
 Plug 'jpalardy/vim-slime'
 Plug 'MicahElliott/vrod', {'for': 'racket'}
 Plug 'luochen1990/rainbow'
-Plug 'rhysd/vim-llvm'
-Plug 'let-def/ocp-indent-vim'
-Plug 'derekwyatt/vim-scala'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
 Plug 'mattn/calendar-vim'
 Plug 'michal-h21/vim-zettel'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-peekaboo'
+
+Plug 'rhysd/vim-llvm'
+Plug 'let-def/ocp-indent-vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'wlangstroth/vim-racket'
+Plug 'plasticboy/vim-markdown'
+Plug 'octol/vim-cpp-enhanced-highlight', {'for' : 'cpp'}
+Plug 'bohlender/vim-smt2'
 
 call plug#end()
 
@@ -92,13 +79,29 @@ if has('gui_running')
     colorscheme monokai
 endif
 
+" the configuration after here
+" cannot be modified on the fly
+if get(g:, 'global_config_guard', 0)
+    finish
+endif
+
+let g:global_config_guard=1
+
 " some commands
 command -nargs=0 SConfig source $MYVIMRC
 command -nargs=0 EConfig edit $MYVIMRC
 
-" tweaks
+" tweaks of the builtin and handwritten plugins
 let g:no_ocaml_maps=1
 let g:tex_flavor="latex"
+let g:loaded_simplehighlight = 1
 
 runtime keymap.vim
 runtime thirdparty.vim
+
+" it's stupid...but useful
+iabbrev mian main
+iabbrev ture true
+iabbrev fasle false
+iabbrev tihs this
+iabbrev @@ hzl17@mails.tsinghua.edu.cn

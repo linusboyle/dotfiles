@@ -1,7 +1,5 @@
-" vim:set foldmethod=marker foldlevel=0:
-
 " .vimrc
-" Copyright (c) 2018 Linus Boyle <linusboyle@gmail.com>
+" Copyright (c) 2018-2020 Zhilei Han <hzl17@mails.tsinghua.edu.cn>
 "
 " Permission is hereby granted, free of charge, to any person obtaining a copy
 " of this software and associated documentation files (the "Software"), to deal
