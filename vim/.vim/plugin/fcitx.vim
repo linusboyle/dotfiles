@@ -20,7 +20,7 @@
 " SOFTWARE.
 
 if !executable('fcitx-remote')
-    echom "fcitx.vim:fcitx-remote not found!"
+    echom "fcitx.vim: fcitx-remote not found!"
     finish
 endif
 
@@ -31,11 +31,13 @@ endif
 let g:loaded_fcitx = 1
 
 function s:switchon() abort
-    silent call system('fcitx-remote -o')
+    exec "AsyncRun -silent fcitx-remote -o"
+    "silent call system('fcitx-remote -o')
 endfunction
 
 function s:switchoff() abort
-    silent call system('fcitx-remote -c')
+    exec "AsyncRun -silent fcitx-remote -c"
+    "silent call system('fcitx-remote -c')
 endfunction
 
 function! s:enable()
