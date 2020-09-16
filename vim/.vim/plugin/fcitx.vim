@@ -31,16 +31,20 @@ endif
 let g:loaded_fcitx = 1
 
 function s:switchon() abort
-    exec "AsyncRun -silent fcitx-remote -o"
-    "silent call system('fcitx-remote -o')
+    "exec "AsyncStop"
+    "exec "AsyncRun -silent fcitx-remote -o"
+    silent call system('fcitx-remote -o')
 endfunction
 
 function s:switchoff() abort
-    exec "AsyncRun -silent fcitx-remote -c"
-    "silent call system('fcitx-remote -c')
+    "exec "AsyncStop"
+    "exec "AsyncRun -silent fcitx-remote -c"
+    silent call system('fcitx-remote -c')
 endfunction
 
 function! s:enable()
+    "nnoremap <silent> i :call <sid>switchon()<cr>i
+    "inoremap <silent> <esc> <esc>:call <sid>switchoff()<cr>
     augroup FCITX_AUTOCMD
         autocmd!
         autocmd InsertEnter * call <sid>switchon()
@@ -49,9 +53,11 @@ function! s:enable()
 endfunction
 
 function! s:disable()
+    "nunmap i
+    "iunmap <esc>
     try
         autocmd! FCITX_AUTOCMD
-	catch /^Vim\%((\a\+)\)\=:E216/
+    catch /^Vim\%((\a\+)\)\=:E216/
         echom 'fcitx autoswitch is not enabled yet!'
     endtry
 endfunction
