@@ -222,7 +222,7 @@ let g:vimwiki_key_mappings =
             \ 'table_mappings': 0,
             \ }
 
-let g:zettel_format = "%title-%file_no"
+let g:zettel_format = "%Y%m%d-%title-%file_no"
 let g:zettel_default_mappings = 0
 let g:zettel_options = [{
             \"front_matter" : [],

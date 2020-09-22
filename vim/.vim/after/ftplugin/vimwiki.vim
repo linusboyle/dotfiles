@@ -4,6 +4,7 @@ xmap <buffer> z <Plug>ZettelNewSelectedMap
 nmap <buffer> gZ <Plug>ZettelReplaceFileWithLink
 nnoremap <buffer> <leader>nz :ZettelNew<space>
 nnoremap <buffer> <leader>gg :call <SID>CommitAll()<CR>
+iunmap <buffer> <cr>
 
 function! s:CommitAll() abort
     execute "Git add -A"

@@ -260,6 +260,9 @@ set thesaurus+=$HOME/.vim/thesaurus/mthesaur.txt
 
 " dictionary
 set dictionary+=$HOME/.vim/dictionary/english.txt 
+
+" keyword
+set iskeyword+=-
     
 runtime init.vim
 
