@@ -11,9 +11,12 @@ function! s:CommitAll() abort
     execute "Gcommit -m " . shellescape(input("enter commit message: "))
 endfunction
 
+let b:surround_115 = " **\r** "
+
 let b:undo_ftplugin = 'iunmap <buffer> ]]'
             \ . '|nunmap <buffer> T'
             \ . '|xunmap <buffer> z'
             \ . '|nunmap <buffer> gZ'
             \ . '|nunmap <buffer> <leader>nz'
             \ . '|nunmap <buffer> <leader>gg'
+            \ . '|unlet b:surround_115'

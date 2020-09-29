@@ -228,5 +228,6 @@ let g:zettel_options = [{
             \"front_matter" : [],
             \"template" :  "~/.vim/template/skeleton.wiki"
             \}]
+let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
 
 "}}}
