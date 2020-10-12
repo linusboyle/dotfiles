@@ -71,6 +71,7 @@ Plug 'wlangstroth/vim-racket'
 Plug 'plasticboy/vim-markdown'
 Plug 'octol/vim-cpp-enhanced-highlight', {'for' : 'cpp'}
 Plug 'bohlender/vim-smt2'
+Plug 'camilstaps/vim-smv'
 
 call plug#end()
 
