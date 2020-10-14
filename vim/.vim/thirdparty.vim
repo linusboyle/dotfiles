@@ -236,8 +236,8 @@ let g:zettel_options = [{
 
 let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
 
-" neuron
+" current word
+let g:vim_current_word#highlight_delay = 2000
+let g:vim_current_word#enabled = 0
 
-let g:neuron_dir = expand("~/sync/wiki/text/")
-"let g:neuron_extension = ".wiki"
 "}}}

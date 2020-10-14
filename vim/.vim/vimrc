@@ -216,7 +216,6 @@ set statusline+=\ %B
 "right aligned
 set statusline+=%#ModeMsg#
 set statusline+=%=%l:%c\ %p%%\ %y
-set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}
 "set showtabline=2
 
 set tabline=%!MyTabLine()

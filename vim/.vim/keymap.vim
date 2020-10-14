@@ -44,6 +44,10 @@ nmap <leader><leader>r <plug>gtagsfind_r
 " syntax group
 nmap <leader>s <plug>(showSynGroup)
 
+" toggle current word highlight
+
+noremap <leader>hh :VimCurrentWordToggle<cr>
+
 "}}}
 
 "Fundamental Mapping---------------{{{

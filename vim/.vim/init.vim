@@ -59,10 +59,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
 Plug 'mattn/calendar-vim'
 Plug 'michal-h21/vim-zettel'
-Plug 'fiatjaf/neuron.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
+Plug 'dominikduda/vim_current_word'
 
 Plug 'rhysd/vim-llvm'
 Plug 'let-def/ocp-indent-vim'

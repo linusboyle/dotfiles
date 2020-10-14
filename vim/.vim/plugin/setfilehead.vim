@@ -34,5 +34,5 @@ let g:loaded_setfindhead=1
 augroup filetype_grp
     autocmd!
     autocmd BufNewFile *.sh silent 0r $HOME/.vim/template/skeleton.sh
-    autocmd! BufNewFile *.py silent 0r $HOME/.vim/template/skeleton.py
+    autocmd BufNewFile *.py silent 0r $HOME/.vim/template/skeleton.py
 augroup END

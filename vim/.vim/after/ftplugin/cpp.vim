@@ -7,6 +7,5 @@ nnoremap <buffer> <silent> <F8> :AsyncRun -cwd=<root>/build -raw cmake .. && mak
 let b:delimitMate_matchpairs = "(:),[:],{:}"
 
 let b:undo_ftplugin .= '|unlet b:delimitMate_matchpairs'
-            \ . '|setlocal omnifunc<'
             \ . '|setlocal path<'
             \ . '|nunmap <buffer> <F8>'
