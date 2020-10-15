@@ -78,7 +78,7 @@ call plug#end()
 " third party colorschemes are only
 " available after vim-plug init.
 if has('gui_running')
-    colorscheme monokai
+    colorscheme sahara
 endif
 
 " the configuration after here
