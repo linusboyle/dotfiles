@@ -1,7 +1,3 @@
-" vim:set foldmethod=marker foldlevel=0:
-
-" Plugin Setting-------------------------{{{
-
 " cpp syntax
 let g:cpp_class_scope_highlight = 1
 let g:cpp_concepts_highlight = 1
@@ -253,16 +249,14 @@ function! s:bibtex_markdown_sink(lines)
     execute ':normal! a' . r
 endfunction
 
-nnoremap <silent> <leader>c :call fzf#run({
+nnoremap <silent> <leader>m :call fzf#run({
                         \ 'source': 'bibtex-ls',
                         \ 'sink*': function('<sid>bibtex_cite_sink'),
                         \ 'up': '40%',
                         \ 'options': '--ansi --layout=reverse-list --multi --prompt "Cite> "'})<CR>
 
-nnoremap <silent> <leader>m :call fzf#run({
-                        \ 'source': 'bibtex-ls',
-                        \ 'sink*': function('<sid>bibtex_markdown_sink'),
-                        \ 'up': '40%',
-                        \ 'options': '--ansi --layout=reverse-list --multi --prompt "Markdown> "'})<CR>
-
-"}}}
+"nnoremap <silent> <leader>m :call fzf#run({
+                        "\ 'source': 'bibtex-ls',
+                        "\ 'sink*': function('<sid>bibtex_markdown_sink'),
+                        "\ 'up': '40%',
+                        "\ 'options': '--ansi --layout=reverse-list --multi --prompt "Markdown> "'})<CR>
