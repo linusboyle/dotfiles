@@ -63,6 +63,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'dominikduda/vim_current_word'
+Plug 'liuchengxu/vim-which-key'
+Plug 'wellle/context.vim'
 
 Plug 'rhysd/vim-llvm'
 Plug 'let-def/ocp-indent-vim'
@@ -96,7 +98,6 @@ command -nargs=0 EConfig edit $MYVIMRC
 " tweaks of the builtin and handwritten plugins
 let g:no_ocaml_maps=1
 let g:tex_flavor="latex"
-let g:loaded_simplehighlight = 1
 
 runtime keymap.vim
 runtime thirdparty.vim

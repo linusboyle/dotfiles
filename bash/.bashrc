@@ -68,7 +68,7 @@ export SBTPATH="$HOME/app/sbt"
 #export CDPATH=".:$HOME/dev:$HOME/dev/src:$CDPATH"
 
 # remember to remove these and gradle
-export PATH="$TEXMACS_PATH/bin:$PATH"
+export PATH="$HOME/go/bin:$TEXMACS_PATH/bin:$PATH"
 export JAVA_HOME="/usr/lib64/jvm/java"
 
 source tmux_color.sh

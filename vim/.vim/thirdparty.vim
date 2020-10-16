@@ -240,4 +240,29 @@ let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading
 let g:vim_current_word#highlight_delay = 2000
 let g:vim_current_word#enabled = 0
 
+let $FZF_BIBTEX_CACHEDIR = expand('$HOME/.vim/cache/bibtex')
+let $FZF_BIBTEX_SOURCES = expand('$HOME/doc/Library.bib')
+
+function! s:bibtex_cite_sink(lines)
+    let r=system("bibtex-cite ", a:lines)
+    execute ':normal! a' . r
+endfunction
+
+function! s:bibtex_markdown_sink(lines)
+    let r=system("bibtex-markdown ", a:lines)
+    execute ':normal! a' . r
+endfunction
+
+nnoremap <silent> <leader>c :call fzf#run({
+                        \ 'source': 'bibtex-ls',
+                        \ 'sink*': function('<sid>bibtex_cite_sink'),
+                        \ 'up': '40%',
+                        \ 'options': '--ansi --layout=reverse-list --multi --prompt "Cite> "'})<CR>
+
+nnoremap <silent> <leader>m :call fzf#run({
+                        \ 'source': 'bibtex-ls',
+                        \ 'sink*': function('<sid>bibtex_markdown_sink'),
+                        \ 'up': '40%',
+                        \ 'options': '--ansi --layout=reverse-list --multi --prompt "Markdown> "'})<CR>
+
 "}}}
