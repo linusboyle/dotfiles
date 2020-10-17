@@ -74,14 +74,16 @@ Plug 'plasticboy/vim-markdown'
 Plug 'octol/vim-cpp-enhanced-highlight', {'for' : 'cpp'}
 Plug 'bohlender/vim-smt2'
 Plug 'camilstaps/vim-smv'
+Plug 'ferrine/md-img-paste.vim'
 
 call plug#end()
 
+colorscheme sahara
 " third party colorschemes are only
 " available after vim-plug init.
-if has('gui_running')
-    colorscheme sahara
-endif
+"if has('gui_running')
+    "colorscheme sahara
+"endif
 
 " the configuration after here
 " cannot be modified on the fly

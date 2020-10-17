@@ -260,3 +260,6 @@ nnoremap <silent> <leader>m :call fzf#run({
                         "\ 'sink*': function('<sid>bibtex_markdown_sink'),
                         "\ 'up': '40%',
                         "\ 'options': '--ansi --layout=reverse-list --multi --prompt "Markdown> "'})<CR>
+
+let g:mdip_imgdir = 'static'
+" let g:mdip_imgname = 'image'

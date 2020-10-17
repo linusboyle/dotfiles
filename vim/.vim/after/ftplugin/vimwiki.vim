@@ -5,6 +5,7 @@ nmap <buffer> gZ <Plug>ZettelReplaceFileWithLink
 nnoremap <buffer> <leader>nz :ZettelNew<space>
 nnoremap <buffer> <leader>gg :call <SID>CommitAll()<CR>
 iunmap <buffer> <cr>
+nnoremap <buffer><silent> <F5> :call mdip#MarkdownClipboardImage()<CR>
 
 function! s:CommitAll() abort
     execute "Git add -A"
@@ -20,3 +21,4 @@ let b:undo_ftplugin = 'iunmap <buffer> ]]'
             \ . '|nunmap <buffer> <leader>nz'
             \ . '|nunmap <buffer> <leader>gg'
             \ . '|unlet b:surround_115'
+            \. '|unmap <buffer> <F5>'
