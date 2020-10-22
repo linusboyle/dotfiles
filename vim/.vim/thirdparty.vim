@@ -174,24 +174,24 @@ nnoremap <silent> + :call TerminalToggle()<CR>
 tnoremap <silent> + <c-w>:call TerminalToggle()<CR>
 
 " coc.nvim
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+"nmap <silent> [g <Plug>(coc-diagnostic-prev)
+"nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+"nmap <silent> gd <Plug>(coc-definition)
+"nmap <silent> gy <Plug>(coc-type-definition)
+"nmap <silent> gi <Plug>(coc-implementation)
+"nmap <silent> gr <Plug>(coc-references)
 
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+"nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
+"function! s:show_documentation()
+  "if (index(['vim','help'], &filetype) >= 0)
+    "execute 'h '.expand('<cword>')
+  "else
+    "call CocAction('doHover')
+  "endif
+"endfunction
 
 " Highlight the symbol and its references when holding the cursor.
 " autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -240,7 +240,7 @@ let $FZF_BIBTEX_CACHEDIR = expand('$HOME/.vim/cache/bibtex')
 let $FZF_BIBTEX_SOURCES = expand('$HOME/doc/Library.bib')
 
 function! s:bibtex_cite_sink(lines)
-    let r=system("bibtex-cite ", a:lines)
+    let r=system("bibtex-cite -prefix \"\" ", a:lines)
     execute ':normal! a' . r
 endfunction
 
