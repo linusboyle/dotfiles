@@ -53,9 +53,7 @@ Plug 'whonore/Coqtail'
 Plug 'neomake/neomake'
 Plug 'wellle/targets.vim'
 Plug 'jpalardy/vim-slime'
-Plug 'MicahElliott/vrod', {'for': 'racket'}
 Plug 'luochen1990/rainbow'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ycm-core/YouCompleteMe'
 Plug 'vimwiki/vimwiki'
 Plug 'mattn/calendar-vim'
