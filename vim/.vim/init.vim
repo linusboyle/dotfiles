@@ -33,7 +33,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
 
-Plug 'alpertuna/vim-header'
 Plug 'unblevable/quick-scope'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'

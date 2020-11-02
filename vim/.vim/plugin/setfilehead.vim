@@ -19,8 +19,6 @@
 " OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 " SOFTWARE.
 
-let g:loaded_setfindhead=1
-
 if exists('g:loaded_setfindhead') || &compatible
   finish
 endif
@@ -31,8 +29,18 @@ endif
 
 let g:loaded_setfindhead=1
 
-augroup filetype_grp
+augroup template
     autocmd!
     autocmd BufNewFile *.sh silent 0r $HOME/.vim/template/skeleton.sh
     autocmd BufNewFile *.py silent 0r $HOME/.vim/template/skeleton.py
+    autocmd BufWritePre * call <sid>UpdateModifiedTime()
 augroup END
+
+function! s:UpdateModifiedTime()
+    if line("$") > 20
+        let l = 20
+    else
+        let l = line("$")
+    endif
+    exe '1,'..l..'s/\(Last Modified\s*:\).*/\1 '..strftime("%F %T").."/eg"
+endfunc
