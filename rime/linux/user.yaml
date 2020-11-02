@@ -1,5 +1,5 @@
 var:
-  last_build_time: 1602343394
+  last_build_time: 1602343683
   option:
     ascii_punct: false
     full_shape: false
@@ -10,8 +10,8 @@ var:
     bopomofo: 1522570677
     cangjie5: 1534991246
     easy_en: 1534991173
-    ipa_yunlong: 1602343626
-    luna_pinyin: 1602343648
+    ipa_yunlong: 1603178028
+    luna_pinyin: 1603178323
     luna_pinyin_fluency: 1528971354
     luna_pinyin_simp: 1522387575
     mipa: 1602343542
