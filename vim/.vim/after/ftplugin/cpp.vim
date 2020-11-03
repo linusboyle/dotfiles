@@ -2,7 +2,7 @@ setlocal path+=/usr/include
 setlocal path+=/usr/include/c++/10/ "standard library path
 compiler g++
 
-nnoremap <buffer> <silent> <F8> :AsyncRun -cwd=<root>/build -raw cmake .. && make <cr>
+"nnoremap <buffer> <silent> <F8> :AsyncRun -cwd=<root>/build -raw cmake .. && make <cr>
 
 let b:delimitMate_matchpairs = "(:),[:],{:}"
 

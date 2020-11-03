@@ -1,9 +1,12 @@
+" configuration of third party plugins
+" it's very tedious
+
 " cpp syntax
 let g:cpp_class_scope_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_experimental_simple_template_highlight = 1
 
-"easymotion
+" easymotion
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 nmap s <Plug>(easymotion-s2)
@@ -140,17 +143,10 @@ let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_math = 0
 let g:tex_conceal = ""
 
-" asyncrun/neomake
+" asyncrun
 let g:asyncrun_open = 6
-let g:neomake_open_list = 2
 command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
-nnoremap <silent> <F9> :Neomake<CR>
 nnoremap <silent> <F10> :call asyncrun#quickfix_toggle(6)<cr>
-
-let g:neomake_error_sign = {
-\ 'text': '✖',
-\ 'texthl': 'SpellBad',
-\ }
 
 "ultisnip
 let g:UltiSnipsExpandTrigger='<F2>'
