@@ -76,7 +76,7 @@ Plug 'ferrine/md-img-paste.vim'
 
 call plug#end()
 
-colorscheme sahara
+colorscheme eldar
 " third party colorschemes are only
 " available after vim-plug init.
 "if has('gui_running')
