@@ -25,7 +25,7 @@ endif
 
 let g:loaded_grepOperator= 1
 
-let s:grep_command = "Leaderf rg -e "
+let s:grep_command = "Ag "
 
 function! s:GrepOperator(type) abort
     let l:saved_unnamed_register = @@
@@ -41,7 +41,7 @@ function! s:GrepOperator(type) abort
     endif
 
     "if empty(l:project_root)
-         silent! execute s:grep_command . shellescape(@@) . " ."
+         silent! execute s:grep_command .. @@
     "else
         "silent! execute s:grep_command . shellescape(@@) . " " . l:project_root
     "endif

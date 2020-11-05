@@ -12,3 +12,6 @@ onoremap <silent> ii :<c-u>call textobj#inIndentation()<cr>
 
 xnoremap <silent> id :<c-u> normal! G$Vgg0<cr>
 onoremap <silent> id :<c-u> normal! GVgg<cr>
+
+xnoremap <silent> il :<c-u> normal! ^vg_<cr>
+onoremap <silent> il :<c-u> normal! ^vg_<cr>

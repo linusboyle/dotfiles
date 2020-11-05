@@ -74,39 +74,39 @@ nnoremap <F6> :UndotreeToggle<cr>
 "let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 "let g:Lf_StlColorscheme = 'powerline'
 
-let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font':''}
-let g:Lf_RootMarkers = ['.project', '.root', '.svn','.hg','.git']
-let g:Lf_WindowPosition = 'popup'
-let g:Lf_WindowHeight = 0.25
-let g:Lf_PopupHeight = 0.3
-let g:Lf_PreviewInPopup = 1
+"let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font':''}
+"let g:Lf_RootMarkers = ['.project', '.root', '.svn','.hg','.git']
+"let g:Lf_WindowPosition = 'popup'
+"let g:Lf_WindowHeight = 0.25
+"let g:Lf_PopupHeight = 0.3
+"let g:Lf_PreviewInPopup = 1
 
-let g:Lf_ShortcutF = '<leader>f'
-let g:Lf_ShortcutB = '-'
+"let g:Lf_ShortcutF = '<leader>f'
+"let g:Lf_ShortcutB = '-'
 
-let g:Lf_MruFileExclude = split(&wildignore, ',')
-let g:Lf_WildIgnore = {
-        \ 'dir': ['.svn','.git','.hg'],
-        \ 'file': g:Lf_MruFileExclude
-        \}
+"let g:Lf_MruFileExclude = split(&wildignore, ',')
+"let g:Lf_WildIgnore = {
+        "\ 'dir': ['.svn','.git','.hg'],
+        "\ 'file': g:Lf_MruFileExclude
+        "\}
 
-let g:Lf_DefaultMode='FullPath'
-let g:Lf_WorkingDirectoryMode = 'Ac'
-let g:Lf_CacheDirectory = expand('~/.vim/cache')
-let g:Lf_HideHelp = 1
-let g:Lf_JumpToExistingWindow = 1
-let g:Lf_PreviewResult = {
-            \ 'File': 1,
-            \ 'Buffer': 0,
-            \ 'Mru': 1,
-            \ 'Tag': 0,
-            \ 'BufTag': 1,
-            \ 'Function': 1,
-            \ 'Line': 0,
-            \ 'Colorscheme': 0,
-            \ 'Rg': 1,
-            \ 'Gtags': 0
-            \}
+"let g:Lf_DefaultMode='FullPath'
+"let g:Lf_WorkingDirectoryMode = 'Ac'
+"let g:Lf_CacheDirectory = expand('~/.vim/cache')
+"let g:Lf_HideHelp = 1
+"let g:Lf_JumpToExistingWindow = 1
+"let g:Lf_PreviewResult = {
+            "\ 'File': 1,
+            "\ 'Buffer': 0,
+            "\ 'Mru': 1,
+            "\ 'Tag': 0,
+            "\ 'BufTag': 1,
+            "\ 'Function': 1,
+            "\ 'Line': 0,
+            "\ 'Colorscheme': 0,
+            "\ 'Rg': 1,
+            "\ 'Gtags': 0
+            "\}
 
 
 "let g:Lf_GtagsAutoGenerate = 1
@@ -114,25 +114,20 @@ let g:Lf_PreviewResult = {
 "let g:Lf_GtagsSkipUnreadable = 1
 "let g:Lf_GtagsSkipSymlink = 'a'
 "let g:Lf_Gtagslabel='native-pygments'
-let g:Lf_ShowDevIcons = 0
-let g:Lf_NormalMap = {
-    \ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
-    \ "Buffer": [["<ESC>", ':exec g:Lf_py "bufExplManager.quit()"<CR>']],
-    \ "Mru":    [["<ESC>", ':exec g:Lf_py "mruExplManager.quit()"<CR>']],
-    \ "Tag":    [["<ESC>", ':exec g:Lf_py "tagExplManager.quit()"<CR>']],
-    \ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
-    \ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
-    \ }
+"let g:Lf_ShowDevIcons = 0
+"let g:Lf_NormalMap = {
+    "\ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
+    "\ "Buffer": [["<ESC>", ':exec g:Lf_py "bufExplManager.quit()"<CR>']],
+    "\ "Mru":    [["<ESC>", ':exec g:Lf_py "mruExplManager.quit()"<CR>']],
+    "\ "Tag":    [["<ESC>", ':exec g:Lf_py "tagExplManager.quit()"<CR>']],
+    "\ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
+    "\ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
+    "\ }
 "nnoremap - :Leaderf! buffer<cr>
 "}}}
 
 "delimitmate
 let g:delimitMate_expand_cr = 1
-
-"header
-let g:header_field_author = 'Zhilei Han'
-let g:header_field_author_email = 'hzl17@mails.tsinghua.edu.cn'
-let g:header_auto_add_header = 0
 
 " quick-scope
 let g:qs_max_chars=80
@@ -259,3 +254,13 @@ nnoremap <silent> <leader>m :call fzf#run({
 
 let g:mdip_imgdir = 'static'
 " let g:mdip_imgname = 'image'
+
+function! s:FileSelect() abort
+    if (!empty(FugitiveGitDir()))
+        execute 'GitFiles'
+    else
+        execute 'FZF'
+    endif
+endfunction
+
+nnoremap <silent> <leader>f :call <sid>FileSelect()<CR>

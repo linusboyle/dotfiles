@@ -28,7 +28,7 @@
 "execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " Load third-party plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/thirdparty')
 
 Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
@@ -36,7 +36,7 @@ Plug 'crusoexia/vim-monokai'
 Plug 'unblevable/quick-scope'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
-Plug 'Yggdroot/LeaderF'
+"Plug 'Yggdroot/LeaderF'
 Plug 'scrooloose/nerdcommenter'
 Plug 'godlygeek/tabular'
 Plug 'mbbill/undotree'
