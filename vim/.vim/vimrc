@@ -39,7 +39,9 @@ endif
 
 " diff methods
 set diffopt+=vertical
+set diffopt+=vertical
 if has('diff') && v:version > 800
+    set diffopt+=internal
     set diffopt+=algorithm:patience
     set diffopt+=indent-heuristic
 endif
