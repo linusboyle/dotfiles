@@ -38,10 +38,14 @@ if has('autocmd')
 endif
 
 " diff methods
+set diffopt+=vertical
 if has('diff') && v:version > 800
     set diffopt+=algorithm:patience
     set diffopt+=indent-heuristic
 endif
+
+set list
+set lcs=trail:¶,tab:>-,nbsp:¬
 
 " indent
 set autoindent
@@ -58,9 +62,22 @@ if has('virtualedit')
     set virtualedit+=block
 endif
 
-"if has('linebreak')
-    "set linebreak " break lines after words
-"endif
+" gutter column
+set number
+set relativenumber
+set numberwidth=6
+if has("patch-8.1.1564")
+    " Recently vim can merge signcolumn and number column into one
+    set signcolumn=number
+endif
+
+" wrap
+set cpoptions+=n
+set wrap
+if has('linebreak')
+    set linebreak " break lines after words
+    let &sbr = nr2char(8618).."     "
+endif
 
 "let ftplugins set it
 set path-=/usr/include
@@ -84,14 +101,6 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch
 endif
 set incsearch
-
-" gutter column
-set number
-set relativenumber 
-if has("patch-8.1.1564")
-    " Recently vim can merge signcolumn and number column into one
-    set signcolumn=number
-endif
 
 " complete
 if exists('+completeopt')
@@ -118,11 +127,17 @@ set timeoutlen=300
 " faster Cursorhold
 set updatetime=300
 
+" some behaviors:
 " pop prompt on failed operation
 set confirm
-
 " history storage
 set history=2000
+" quickfix
+set switchbuf=useopen
+" vsplit to right side
+set splitright
+
+set nostartofline
 
 " program used when running :grep
 if filereadable('/usr/bin/ag')
@@ -136,15 +151,24 @@ set autoread
 set nobackup
 set nowritebackup
 if has("persistent_undo")
-    let s:undo_dir = expand("~/.cache/undodir")
+    let undo_dir = expand("~/.cache/undodir")
 
-    if !isdirectory(s:undo_dir)
-        silent! call mkdir(s:undo_dir, 'p')
+    if !isdirectory(undo_dir)
+        silent! call mkdir(undo_dir, 'p')
     endif
 
-    set undodir=~/.cache/undodir
+    let &undodir=undo_dir
     set undofile
 endif
+
+" No swap files for unmodified buffers
+set noswapfile
+augroup Swap
+    autocmd!
+    autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *
+                \ if isdirectory(expand("<amatch>:h")) |
+                \ let &swapfile = &modified | endif
+augroup END
 
 " mouse settings
 set mouse=a
@@ -154,6 +178,7 @@ set mousehide
 set title
 set novisualbell " remove error bell
 set noerrorbells
+set belloff=all
 set t_vb=
 set ttyfast
 
@@ -180,7 +205,7 @@ set noshowmatch
 
 " wildmenu settings
 set wildmenu
-set wildmode=full
+set wildmode=longest,full
 set wildcharm=<C-z>
 
 " encodings
@@ -262,7 +287,7 @@ set dictionary+=$HOME/.vim/dictionary/english.txt
 
 " keyword
 set iskeyword+=-
-    
-runtime init.vim
+set isfname-=\=
 
+runtime init.vim   
 nohlsearch

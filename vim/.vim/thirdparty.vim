@@ -264,3 +264,4 @@ function! s:FileSelect() abort
 endfunction
 
 nnoremap <silent> <leader>f :call <sid>FileSelect()<CR>
+nnoremap - :Buffer<cr>
