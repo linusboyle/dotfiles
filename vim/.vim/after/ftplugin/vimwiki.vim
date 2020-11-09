@@ -14,6 +14,7 @@ function! s:CommitAll() abort
 endfunction
 
 let b:surround_115 = " **\r** "
+let b:surround_105 = " *\r* "
 
 let b:undo_ftplugin = 'iunmap <buffer> ]]'
             \ . '|nunmap <buffer> T'
@@ -22,5 +23,6 @@ let b:undo_ftplugin = 'iunmap <buffer> ]]'
             \ . '|nunmap <buffer> <leader>nz'
             \ . '|nunmap <buffer> <leader>gg'
             \ . '|unlet b:surround_115'
+            \ . '|unlet b:surround_105'
             \ . '|unmap <buffer> <F5>'
             \ . '|unmap <buffer> <leader>f'

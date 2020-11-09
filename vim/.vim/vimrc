@@ -77,7 +77,7 @@ endif
 set cpoptions+=n
 set wrap
 if has('linebreak')
-    set linebreak " break lines after words
+    set nolinebreak " break lines after words
     let &sbr = nr2char(8618).."     "
 endif
 
