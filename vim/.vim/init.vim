@@ -33,7 +33,9 @@ call plug#begin('~/.vim/thirdparty')
 Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
 
+"Plug 'https://gitlab.com/nickspoon/qfx.vim.git'
 Plug 'unblevable/quick-scope'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 "Plug 'Yggdroot/LeaderF'
