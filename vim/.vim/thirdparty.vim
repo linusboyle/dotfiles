@@ -231,7 +231,7 @@ let $FZF_BIBTEX_CACHEDIR = expand('$HOME/.vim/cache/bibtex')
 let $FZF_BIBTEX_SOURCES = expand('$HOME/doc/Library.bib')
 
 function! s:bibtex_cite_sink(lines)
-    let r=system("bibtex-cite -prefix \"\" ", a:lines)
+    let r=system("bibtex-cite -prefix \"[[\" -postfix \"]]\"", a:lines)
     execute ':normal! a' . r
 endfunction
 
