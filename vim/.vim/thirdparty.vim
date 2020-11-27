@@ -255,6 +255,7 @@ nnoremap <silent> <leader>m :call fzf#run({
 let g:mdip_imgdir = 'static'
 " let g:mdip_imgname = 'image'
 
+let g:fzf_buffers_jump = 1
 function! s:FileSelect() abort
     if (!empty(FugitiveGitDir()))
         execute 'GitFiles'
