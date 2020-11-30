@@ -220,6 +220,7 @@ let g:zettel_options = [{
             \}]
             "\"template" :  "~/.vim/template/skeleton.wiki"
 "let g:zettel_link_format = "[[%link|%title]]"
+let g:zettel_link_format = "[[%link]]"
 
 let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
 
