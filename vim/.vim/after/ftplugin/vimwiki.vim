@@ -1,4 +1,10 @@
 imap <buffer> <silent> ]] ]]<esc><Plug>ZettelSearchMap
+
+iab <buffer> hh ##
+iab <buffer> hhh ###
+iab <buffer> hhhh ####
+iab <buffer> hhhhh #####
+
 nmap <buffer> T <Plug>ZettelYankNameMap
 xmap <buffer> z <Plug>ZettelNewSelectedMap
 nmap <buffer> gZ <Plug>ZettelReplaceFileWithLink
@@ -24,5 +30,9 @@ let b:undo_ftplugin = 'iunmap <buffer> ]]'
             \ . '|nunmap <buffer> <leader>gg'
             \ . '|unlet b:surround_115'
             \ . '|unlet b:surround_105'
-            \ . '|unmap <buffer> <F5>'
-            \ . '|unmap <buffer> <leader>f'
+            \ . '|nunmap <buffer> <F5>'
+            \ . '|nunmap <buffer> <leader>f'
+            \ . '|iuna <buffer> hh'
+            \ . '|iuna <buffer> hhh'
+            \ . '|iuna <buffer> hhhh'
+            \ . '|iuna <buffer> hhhhh'
