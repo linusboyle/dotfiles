@@ -52,6 +52,20 @@ let g:ycm_seed_identifiers_with_syntax = 1
             "\ "python":1
             "\ }
 
+let g:ycm_filetype_blacklist = {
+    \ 'notes': 1,
+    \ 'markdown': 1,
+    \ 'netrw': 1,
+    \ 'unite': 1,
+    \ 'pandoc': 1,
+    \ 'tagbar': 1,
+    \ 'leaderf': 1,
+    \ 'text': 1,
+    \ 'infolog': 1,
+    \ 'mail': 1
+    \}
+
+
 "nnoremap <leader>s :YcmCompleter GetType<CR>
  "kind of useful
 "nnoremap <leader>f :YcmCompleter FixIt<CR>
@@ -195,7 +209,7 @@ let g:vimwiki_list = [
             \"syntax": "markdown",
             \"ext": ".md",
             \"auto_tags" : 0,
-            \"auto_diary_index" : 1,
+            \"auto_diary_index" : 0,
             \"diary_rel_path" : "./"
             \}]
 
