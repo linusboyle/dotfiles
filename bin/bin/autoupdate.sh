@@ -9,4 +9,5 @@ update () {
 }
 
 update "/home/linusboyle/sync/vnote/notes/"
+update "/home/linusboyle/sync/wiki/text/"
 update "/home/linusboyle/dfile/"
