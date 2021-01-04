@@ -150,6 +150,7 @@ endif
 set autoread
 
 " backup/swap/undo
+set directory=~/tmp/vim//
 set nobackup
 set nowritebackup
 if has("persistent_undo")
