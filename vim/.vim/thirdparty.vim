@@ -204,14 +204,14 @@ tnoremap <silent> + <c-w>:call TerminalToggle()<CR>
 " VimWiki
 let g:vimwiki_list = [
             \{
-            \"path" : "~/sync/wiki/text/", 
-            \"path_html" : "~/sync/wiki/html/", 
+            \"path" : "~/sync/wiki/text/",
+            \"path_html" : "~/sync/wiki/html/",
             \"syntax": "markdown",
             \"ext": ".md",
             \"auto_tags" : 0,
             \"auto_diary_index" : 0,
-            \"diary_rel_path" : "./"
             \}]
+            " \"diary_rel_path" : "./",
 
 let g:vimwiki_ext2syntax = {}
 let g:vimwiki_hl_headers = 1
@@ -229,7 +229,7 @@ let g:vimwiki_key_mappings =
 let g:zettel_format = "%random"
 let g:zettel_default_mappings = 0
 let g:zettel_date_format = "%Y-%m-%dT%H:%M"
-let g:zettel_options = [{ 
+let g:zettel_options = [{
             \"front_matter" : [["tags", ""]],
             \}]
             "\"template" :  "~/.vim/template/skeleton.wiki"

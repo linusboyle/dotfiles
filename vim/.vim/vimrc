@@ -224,7 +224,8 @@ set termencoding=utf-8
 
 " colorscheme and gui setting
 if has('gui_running')
-    set guifont=Source\ Code\ Pro\ SemiBold\ 12
+    set guifont=Source\ Code\ Pro\ 14
+    set guifontwide=Noto\ Sans\ Mono\ CJK\ SC\ 14
     set guioptions+=c " no native GUI popup for simple command
     set guioptions+=d " favor dark
     set guioptions-=e " no GUI tab

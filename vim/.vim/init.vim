@@ -60,6 +60,7 @@ Plug 'mattn/calendar-vim'
 Plug 'michal-h21/vim-zettel'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+"Plug 'fiatjaf/neuron.vim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'dominikduda/vim_current_word'
 Plug 'liuchengxu/vim-which-key'
