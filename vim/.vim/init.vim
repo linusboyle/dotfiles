@@ -66,7 +66,6 @@ Plug 'dominikduda/vim_current_word'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wellle/context.vim'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'psliwka/vim-smoothie'
 
 Plug 'rhysd/vim-llvm'
 Plug 'let-def/ocp-indent-vim'
