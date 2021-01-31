@@ -54,11 +54,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -n "$DISPLAY" ]; then
-    export EDITOR="gvim -f"
-else
-    export EDITOR=vim
-fi
+#if [ -n "$DISPLAY" ]; then
+    #export EDITOR="gvim -f"
+#else
+    #export EDITOR=vim
+#fi
+export EDITOR=vim
 
 export LESS="-M -i -j 10 -# 4"
 export LESSOPEN="| ~/bin/lesspipe.sh %s"
