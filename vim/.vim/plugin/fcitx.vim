@@ -19,7 +19,7 @@
 " OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 " SOFTWARE.
 
-if !executable('fcitx-remote')
+if !executable('fcitx5-remote')
     echom "fcitx.vim: fcitx-remote not found!"
     finish
 endif
@@ -33,13 +33,13 @@ let g:loaded_fcitx = 1
 function s:switchon() abort
     "exec "AsyncStop"
     "exec "AsyncRun -silent fcitx-remote -o"
-    silent call system('fcitx-remote -o')
+    silent call system('fcitx5-remote -o')
 endfunction
 
 function s:switchoff() abort
     "exec "AsyncStop"
     "exec "AsyncRun -silent fcitx-remote -c"
-    silent call system('fcitx-remote -c')
+    silent call system('fcitx5-remote -c')
 endfunction
 
 function! s:enable()
