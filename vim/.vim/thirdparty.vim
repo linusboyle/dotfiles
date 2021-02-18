@@ -281,3 +281,5 @@ endfunction
 
 nnoremap <silent> <leader>f :call <sid>FileSelect()<CR>
 nnoremap - :Buffer<cr>
+
+let g:calendar_monday = 1
