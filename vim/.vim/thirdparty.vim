@@ -55,6 +55,7 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_filetype_blacklist = {
     \ 'notes': 1,
     \ 'markdown': 1,
+    \ 'vimwiki': 1,
     \ 'netrw': 1,
     \ 'unite': 1,
     \ 'pandoc': 1,
