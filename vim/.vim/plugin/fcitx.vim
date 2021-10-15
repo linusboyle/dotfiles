@@ -19,16 +19,22 @@
 " OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 " SOFTWARE.
 
+if &compatible || !has('autocmd') || get(g:, 'loaded_fcitx', 0) || !has('unix')
+    finish
+endif
+
+let uname = substitute(system('uname'),'\n','','')
+if uname == 'Linux'
+    let lines = readfile("/proc/version")
+    if lines[0] =~ "microsoft"
+        finish
+    endif
+endif
+
 if !executable('fcitx5-remote')
-    echom "fcitx.vim: fcitx-remote not found!"
+    " echom "fcitx.vim: fcitx-remote not found!"
     finish
 endif
-
-if &compatible || !has('autocmd') || get(g:, 'loaded_fcitx', 0)
-    finish
-endif
-
-let g:loaded_fcitx = 1
 
 function s:switchon() abort
     "exec "AsyncStop"
